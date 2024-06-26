@@ -1,9 +1,9 @@
 ---
- title: SEEK User Guide - ISA-JSON compliant Experiment
- layout: page
+title: ISA-JSON compliant Experiment
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# ISA-JSON compliant Experiment
 
 When using ISA-JSON compliant experiments to organise your Project, you structure your research fully according to the [ISA metadata framework](https://isa-specs.readthedocs.io/en/latest/isamodel.html), so that it can be exported as ISA-JSON. When referring to Investigation, Study, and Assay within an ISA-JSON compliant experiment, we use the terms ISA Investigation, ISA Study, and ISA Assay to emphasize the additional information required.
 

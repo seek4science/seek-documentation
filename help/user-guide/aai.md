@@ -1,9 +1,9 @@
 ---
-title: SEEK User Guide - Logging in via LS Login
-layout: page
+title: Logging into via LS Login
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Logging into SEEK via LS Login
 
 *Note*: This section assumes you have an LS Login account (or your organization is connected to LS Login), 
 and LS Login authentication is enabled on the SEEK instance you are using. For more information on LS Login, please 

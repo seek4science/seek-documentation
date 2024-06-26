@@ -1,9 +1,9 @@
 ---
-title: SEEK User Guide - Designing an ISA-JSON compliant experiment
-layout: page
+title: Designing an ISA-JSON compliant experiment
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Designing an ISA-JSON compliant experiment
 The [ISA metadata framework](https://isa-specs.readthedocs.io/en/latest/isamodel.html) requires the description (metadata) of different types of samples, namely Study Sources, Study Samples and Assay Samples. This description is based on customisable Experiment Sample Templates and includes the linking of applied Protocols. Follow the link for an overview about [ISA-JSON compliant experiments](isa-json-compliant-experiment.html).
 
 In the context of an ISA-JSON compliant experiment, we use the terms ISA Investigation, ISA Study, and ISA Assay when referring to Investigation, Study, and Assay, respectively.

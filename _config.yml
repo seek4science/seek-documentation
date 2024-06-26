@@ -19,7 +19,8 @@ topnav_title: ""
 
 
 exclude:
- - Gemfile
+ - Gemfile*
+ - .gitignore
 
 defaults:
   -

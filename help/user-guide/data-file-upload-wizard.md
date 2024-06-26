@@ -1,9 +1,9 @@
 ---
-title: SEEK User Guide - Data file upload wizard
-layout: page
+title: Data file upload wizard
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Data file upload wizard
 
 ## Template processing
 

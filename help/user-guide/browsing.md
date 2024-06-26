@@ -1,9 +1,9 @@
 ---
-title: SEEK User Guide - Browsing
-layout: page
+title: Browsing content on SEEK
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Browsing content on seek
 
 Seek contains several types of content which you can access by clicking on "Browse" from any page.
 

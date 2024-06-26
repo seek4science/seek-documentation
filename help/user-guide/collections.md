@@ -1,9 +1,8 @@
 ---
-title: SEEK User Guide - Collections
-layout: page
+title: Collections
+layout: user-guide-page
+sidebar: userguide
 ---
-
-# Collections
 
 A collection is a group of SEEK items that are conceptually related to each other. Items within a collection can be ordered.
 

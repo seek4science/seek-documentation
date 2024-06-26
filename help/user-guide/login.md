@@ -1,6 +1,7 @@
 ---
-title: SEEK User Guide - Logging in
-layout: page
+title: Logging into SEEK
+layout: user-guide-page
+sidebar: userguide
 ---
 
 # Logging into SEEK

@@ -1,9 +1,8 @@
 ---
-title: SEEK User Guide - Samples
-layout: page
+title: Samples
+layout: user-guide-page
+sidebar: userguide
 ---
-
-# Samples
 
 ## Introduction
 

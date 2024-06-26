@@ -1,6 +1,7 @@
 ---
-title: SEEK User Guide - Create Samples Type
-layout: page
+title: Create a Sample Type
+layout: user-guide-page
+sidebar: userguide
 ---
 
 # Create a Sample Type

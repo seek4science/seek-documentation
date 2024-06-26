@@ -1,8 +1,8 @@
 ---
-title: SEEK User Guide - Experiment Sample Templates
-layout: page
+title: Experiment Sample Templates
+layout: user-guide-page
+sidebar: userguide
 ---
-# Experiment Sample Templates
 
 Experiment Sample Templates act as blueprints to create Sample Types within ISA Studies and ISA Assays and ensure that
 the metadata collected conforms to community standards. The same Experiment Sample Template can be applied multiple times to create Sample Types in different ISA Studies or ISA Assays.

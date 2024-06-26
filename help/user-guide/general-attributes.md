@@ -1,10 +1,10 @@
 ---
-title: SEEK User Guide - Generic linking variables
-layout: page
+title: Generic linking variables in SEEK
+layout: user-guide-page
+sidebar: userguide
 redirect_from: "/help/user-guide/generic-linking-variables.html"
 ---
 
-# Generic linking variables in SEEK
 
 ## Title
 You should make titles as descriptive as possible.

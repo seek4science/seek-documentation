@@ -1,8 +1,8 @@
 ---
-title: SEEK User Guide - Adding assets
-layout: page
+title: Adding assets (Data, Models, SOPs, Presentations, Documents) to SEEK
+layout: user-guide-page
+sidebar: userguide
 ---
-# Adding assets (Data, Models, SOPs, Presentations, Documents) to SEEK
 
 To add a data file to SEEK, select Create from the menu bar, and select the appropriate asset from the drop down menu.
 

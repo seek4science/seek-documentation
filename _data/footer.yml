@@ -1,15 +1,26 @@
 copyright: Copyright notice
 extra_line: 
 columns:
+  - type: image
+    image_width: 64px
+    width: 1
+    src: 'images/favicon.png'
+    alt: SEEK logo
   - type: links
-    width: 3
+    width: 2
     children: 
       - url_text: Home
         url: /
   - type: links
-    width: 3
+    width: 2
     children: 
-      - url_text: Useful Links
-        url: /tech/useful-links.html
-
+      - url_text: Contacting Us
+        url: /contacting-us.html
+  - type: links
+    width: 2
+    children: 
+      - url_text: Contributing
+        url: /contributing.html
+#      - url_text: Useful Links
+#        url: /tech/useful-links.html
 

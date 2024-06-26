@@ -7,15 +7,14 @@ subitems:
   url: /tech/roadmap
 - title: "Getting FAIRDOM-SEEK"
   url: /get-seek.html
-- title: Contacting Us
-  url: /contacting-us.html
-- title: Contributing
-  url: /contributing.html
+#- title: Contacting Us
+#  url: /contacting-us.html
+#- title: Contributing
+#  url: /contributing.html
 - title: User Guide
   url: /help/user-guide/index.html
-  subitems:
-  - title: API
-    url: /help/user-guide/api.html
-#- title: Useful Links
-#  url: /tech/useful-links.html
-## move useful links to footer
+- title: API
+  url: /help/user-guide/api.html
+- title: Useful Links
+  url: /tech/useful-links.html
+## move some links to footer

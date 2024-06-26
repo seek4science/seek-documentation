@@ -1,9 +1,9 @@
 ---
-title: SEEK User Guide - Creating and Managing Programmes
-layout: page
+title: Creating and Managing Programmes
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Creating and managing Programmes
 
 ## What are Programmes and why create them?
 

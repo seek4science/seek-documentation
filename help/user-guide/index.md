@@ -1,9 +1,9 @@
 ---
 title: FAIRDOM-SEEK User Guide
-layout: page
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# FAIRDOM-SEEK user documentation
 
 <div class="alert alert-info">
 Note that FAIRDOM-SEEK instances are highly customisable. Functionality such as e.g. the ISA structure, ISA-JSON compliant 
@@ -11,6 +11,8 @@ experiments and the different asset types need to be enabled by an instance admi
 Therefore, some functionality described in this general user guide might not be available on your local instance. 
 Please contact your local instance admin for more information.
 </div>
+
+<!-- THE FOLLOWING IS REPLACED BY THE SIDEBAR:
 
 ## Profile
 - [Registering in SEEK](registering.html)
@@ -137,6 +139,6 @@ Capabilities
 - [Contributing to these SEEK Documents](/contributing.html)
 
 
-
+-->
 
 
