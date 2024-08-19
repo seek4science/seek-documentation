@@ -1,14 +1,24 @@
-header .navbar {
-    background-color: #f8f8f8;
-    border: thin solid #e7e7e7;
+//header .navbar {
+    //background-color: #f0f5fd;
+    //border: thin solid #e7e7e7;
+//}
+
+.form-control::placeholder {
+    color: $white;
 }
 
-#main {
-    color: #606c71;
-}
+//#main {
+    //color: #606c71;
+//}
 
-#sidebar {
-    border-right: solid thick #f3f1f2;
+//#sidebar {
+    //border-right: solid thick #f3f1f2;
+//}
+
+@media (min-width: 768px) {
+    header .input-group > .form-control {
+        width: 300px;
+    }
 }
 
 .sidebar-title {
@@ -45,4 +55,12 @@ img.screenshot {
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+}
+
+footer {
+    background-color: $light;
+}
+
+footer .copyright {
+    background-color: #0903780f;
 }

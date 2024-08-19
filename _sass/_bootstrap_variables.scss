@@ -1,32 +1,38 @@
 /*-----Theme colors-----*/
 $white: #fff;
-$primary: #392b99; 
+$primary: #2363cc; 
 /* $indigo; #392b99; */
 /* $alertblue: #d7e1f3; */
 /* $brightblue: #8cddf6; */
-$gray-600: #73757d;
+$secondary: #090378;
+$gray-600: #74767f;
 $blue: #376ac3;
-$light: #f3f1f2;
+$light: #f0f5fd;
 $light-x: #e3e1e4;
-$dark: #2a2e3d;
+$dark: #080b0f;
 
 /*-----Custom values for Bootstrap variables-----*/
 $component-active-bg: $primary;
-$navbar-dark-color: $white;
+/*$navbar-dark-color: $white;
 $navbar-dark-hover-color: $primary;
-$navbar-dark-toggler-border-color: transparent;
-$border-radius: 0.45rem;
+$navbar-dark-toggler-border-color: transparent;*/
+$navbar-light-toggler-border-color: transparent;
+$navbar-light-color: $primary;
+$navbar-light-hover-color: $secondary;
+$border-radius: 0;
 $btn-border-radius-sm: $border-radius;
 $card-border-width: 0;
 $link-color: $blue;
 $info: $blue;
 $link-decoration: none;
 $body-bg: $white;
-$body-color: $dark;
+$body-color: #606c71;
 $font-family-sans-serif: "Open Sans", sans-serif;
 $alert-border-width: 0;
-$input-group-addon-bg: $light-x;
-$input-bg: $light;
+$input-group-addon-bg: $primary;
+$input-group-addon-color: $white;
+$input-bg: $primary;
+$input-color:  $white;
 $input-border-width: 0;
 $h1-font-size: 1rem * 3.5;
 $h2-font-size: 1rem * 2.2;
