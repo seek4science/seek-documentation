@@ -11,6 +11,17 @@ Please see [Getting FAIRDOM-SEEK](/get-seek.html) for details about installing S
 
 If you have any comments or feedback about a release, then please [Contact Us](/contacting-us.html)
 
+## Version 1.15.2
+
+Release date: _18th July 2024_
+
+A patch release with a couple of small fixes:
+
+* Fix to XLSX files incorrectly being detected and changed to a zip mime type in some cases when a processing error occurs.
+* Fix to losing the temporary access code in the URL when switching between versions or clicking on the "Back to Model" button.
+
+For a full list, see [closed issues for 1.15.2](https://github.com/seek4science/seek/milestone/25?closed=1)
+
 ## Version 1.15.1
 
 Release date: _20th June 2024_
@@ -23,7 +34,7 @@ A patch release that includes some important bug fixes and improvements, in part
 * Fix to correctly transfer Sample sharing policies from the originating Data file when extracted.
 * Fix to the page shown when starting to import a DMP.
 * Better error handing and reporting when BiVeS model comparison fails.
-* Various small Datahub and Single Page View fixes and improvements. 
+* Various small fixes and improvements, regarding Experiment Sample Templates and the Single Page View. 
 
 For a full list, see [closed issues for 1.15.1](https://github.com/seek4science/seek/milestone/22?closed=1)
 
