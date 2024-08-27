@@ -1,9 +1,9 @@
 ---
-title: SEEK User Guide - Editing your profile
-layout: page
+title: Editing your profile
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Editing your profile
 To edit your profile, you must be logged in. When logged in you can click your name in the top right hand corner of SEEK.
 
 ![edit profile 1](/images/user-guide/edit_profile_1.png){:.screenshot}

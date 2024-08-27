@@ -1,9 +1,9 @@
 ---
 title: Project Dashboard
-layout: page
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Project Dashboard
 
 ## About
 

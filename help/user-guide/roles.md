@@ -1,10 +1,10 @@
 ---
-title: SEEK User Guide - Roles
-layout: page
+title: Specialist User Roles
+layout: user-guide-page
+sidebar: userguide
 ---
 
 
-# Specialist user roles
 SEEK has a number of specialist roles to which users can be assigned 
 
 Programme specific roles:

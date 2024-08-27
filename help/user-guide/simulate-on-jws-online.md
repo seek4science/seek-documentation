@@ -1,9 +1,8 @@
 ---
-title: SEEK User Guide - simulate model on JWS Online
-layout: page
+title: Simulating Models with JWS Online
+layout: user-guide-page
+sidebar: userguide
 ---
-
-# Simulating Models with JWS Online
 
 Models uploaded to SEEK in SBML format can be simulated in SEEK using [JWS Online](http://jjj.mib.ac.uk/).
 

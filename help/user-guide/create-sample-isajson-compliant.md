@@ -1,9 +1,8 @@
 ---
-title: SEEK User Guide - Create Sample in ISA-JSON compliant Experiments
-layout: page
+title: Working with Samples in ISA-JSON compliant Experiments
+layout: user-guide-page
+sidebar: userguide
 ---
-
-# Working with Samples in ISA-JSON compliant Experiments
 
 ## Types of samples in ISA-JSON compliant Experiments
 

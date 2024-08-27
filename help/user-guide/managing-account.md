@@ -1,9 +1,9 @@
 ---
-title: SEEK User Guide - Managing account
-layout: page
+title: Managing your account
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Managing your account
 
 To manage your account you need to navigate to your profile in the top right hand corner for SEEK
 

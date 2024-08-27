@@ -1,9 +1,9 @@
 ---
-title: SEEK User Guide - Managing Identities
-layout: page
+title: Managing Identities
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Managing Identities
 
 Depending on the configuration of the SEEK instance, in addition to the usual username/password method, 
 you may be able to login through one of the following: 

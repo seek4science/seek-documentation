@@ -1,9 +1,8 @@
 ---
 title: API Introduction
-layout: page
+layout: user-guide-page
+sidebar: userguide
 ---
-
-# API introduction
 
 FAIRDOM-SEEK includes a [JSON](https://www.json.org/) Application
 Programming Interface (API) that allows the **searching,
@@ -25,7 +24,7 @@ There are also some examples that are available as Jupyter notebook scripts. The
 a general overview and walk through some typical scenarios. They can be found at [https://github.com/FAIRdom/api-workshop](https://github.com/FAIRdom/api-workshop
 )
 
-# Authentication
+## Authentication
 
 The API supports [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication), OAuth and API Tokens.
 

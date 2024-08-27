@@ -1,6 +1,7 @@
 ---
-title: NeLS Integration
-layout: page
+title: Registering NeLS data
+layout: user-guide-page
+sidebar: userguide
 ---
 
 Pre-requisites:
@@ -8,7 +9,7 @@ Pre-requisites:
  - You are a member of a NeLS-enabled project.
  - You have [created an ISA structure](generating-the-isa-structure.html), or have "edit" permissions for an assay in that project.
 
-# Registering NeLS data
+
 
 When viewing an assay in SEEK, if you have "edit" permissions, and the assay is part of a project affiliated with NeLS, you will
 see a button to "Add data from NeLS".

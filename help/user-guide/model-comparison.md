@@ -1,9 +1,8 @@
 ---
-title: SEEK User Guide - model comparison
-layout: page
+title: Comparing two versions of a Model 
+layout: user-guide-page
+sidebar: userguide
 ---
-
-# Comparing two versions of a Model
 
 
 If a model has a number of versions, you can compare between two versions to see what was changed.

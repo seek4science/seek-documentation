@@ -1,9 +1,9 @@
 ---
 title: Licenses
-layout: page
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Licenses
 
 
 We recommended giving a license to public resources in SEEK to clarify under what terms they may be used.

@@ -1,9 +1,9 @@
 ---
- title: SEEK User Guide - Viewing Project in Single Page
- layout: page
+title: Experiment View
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Experiment View
 
 (Alias "Single Page")
 

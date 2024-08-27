@@ -1,9 +1,9 @@
 ---
-title: SEEK User Guide - Create Sample
-layout: page
+title: Creating a Sample
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Creating a Sample
 
 You can create a new sample directly in SEEK, or by uploading samples contained within a Sample Type Template. 
 

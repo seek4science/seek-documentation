@@ -1,9 +1,9 @@
 ---
-title: SEEK User Guide - Generating the ISA structure
-layout: page
+title: Generating the ISA structure
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Generating the ISA structure
 The ISA (Investigation, Study, Assay) is a general purpose framework for describing how experiments relate to one another. For more information you can look at our ISA best practice guide.
 
 ## Creating an investigation

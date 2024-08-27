@@ -1,0 +1,20 @@
+## 
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+subitems:
+- title: Home
+  url: /
+- title: Roadmap
+  url: /tech/roadmap
+- title: "Getting FAIRDOM-SEEK"
+  url: /get-seek.html
+#- title: Contacting Us
+#  url: /contacting-us.html
+#- title: Contributing
+#  url: /contributing.html
+- title: User Guide
+  url: /help/user-guide/index.html
+- title: API
+  url: /help/user-guide/api.html
+- title: Useful Links
+  url: /tech/useful-links.html
+## move some links to footer

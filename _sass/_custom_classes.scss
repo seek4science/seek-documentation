@@ -1,0 +1,66 @@
+//header .navbar {
+    //background-color: #f0f5fd;
+    //border: thin solid #e7e7e7;
+//}
+
+.form-control::placeholder {
+    color: $white;
+}
+
+//#main {
+    //color: #606c71;
+//}
+
+//#sidebar {
+    //border-right: solid thick #f3f1f2;
+//}
+
+@media (min-width: 768px) {
+    header .input-group > .form-control {
+        width: 300px;
+    }
+}
+
+.sidebar-title {
+    font-weight: bolder;
+}
+
+#main h1, #main h2, #main h3 {
+    color: #392b99;
+}
+
+#main h1 {
+    font-size: 36px;
+}
+
+#main h2 { 
+    font-size: 30px;
+    font-weight: normal;
+}
+
+#main h3 {
+    font-size: 24px;
+}
+
+.user-guide-crumb {
+    font-size: smaller;
+    color: grey;
+}
+
+img.screenshot {
+    border: 1px solid #bbb;
+    padding: 1em;
+    max-width: 40em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+footer {
+    background-color: $light;
+}
+
+footer .copyright {
+    background-color: #0903780f;
+}

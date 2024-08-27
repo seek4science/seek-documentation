@@ -1,9 +1,9 @@
 ---
-title: SEEK User Guide - uploading versions
-layout: page
+title: Creatnig a new version of an asset
+layout: user-guide-page
+sidebar: userguide
 ---
 
-# Creating a new version of an asset
 
 _The following describes creating a new Model version, but also applies to Data files, SOPs or Presentations._
 
