@@ -1,5 +1,5 @@
 ---
-title: Workign with Samples in ISA-JSON compliant Experiments
+title: Working with Samples in ISA-JSON compliant Experiments
 layout: user-guide-page
 sidebar: userguide
 ---

@@ -4,8 +4,6 @@ layout: user-guide-page
 sidebar: userguide
 ---
 
-# Create a Sample Type
-
 Sample Types are templates that detail the key information that needs to be included to describe a given sample correctly.
 
 By default, any member of a Project may create a Sample Type and associate with that Project. By default the Sample Type will only be visible to members of that
