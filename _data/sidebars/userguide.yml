@@ -75,27 +75,27 @@ subitems:
     subitems: 
     - title: Generating the ISA structure
       url: /help/user-guide/generating-the-isa-structure.html
-      subitems:
-      - title: Creating an Investigation
-        url: /help/user-guide/generating-the-isa-structure.html#creating-an-investigation
-      - title: Creating a Study
-        url: /help/user-guide/generating-the-isa-structure.html#creating-a-study
-      - title: Creating an Experimental assay
-        url: /help/user-guide/generating-the-isa-structure.html#creating-an-experimental-assay
-      - title: Creating a Modelling analysis
-        url: /help/user-guide/generating-the-isa-structure.html#creating-a-modelling-analysis
+      #subitems:
+      #- title: Creating an Investigation
+      #  url: /help/user-guide/generating-the-isa-structure.html#creating-an-investigation
+      #- title: Creating a Study
+      #  url: /help/user-guide/generating-the-isa-structure.html#creating-a-study
+      #- title: Creating an Experimental assay
+      #  url: /help/user-guide/generating-the-isa-structure.html#creating-an-experimental-assay
+      #- title: Creating a Modelling analysis
+      #  url: /help/user-guide/generating-the-isa-structure.html#creating-a-modelling-analysis
     - title: ISA Overview Graph
       url: /help/user-guide/isa-overview.html
     - hr: true
       title: Designing an ISA-JSON compliant experiment
       url: /help/user-guide/designing-experiments-isajson-compliant.html
-      subitems:
-      - title: Creating an ISA Investigation
-        url: /help/user-guide/designing-experiments-isajson-compliant.html#1-creating-an-isa-investigation
-      - title: Creating an ISA Study
-        url: /help/user-guide/designing-experiments-isajson-compliant.html#2-creating-an-isa-study
-      - title: Creating an ISA Assay
-        url: /help/user-guide/designing-experiments-isajson-compliant.html#5-creating-an-assay-stream
+      #subitems:
+      #- title: Creating an ISA Investigation
+      #  url: /help/user-guide/designing-experiments-isajson-compliant.html#1-creating-an-isa-investigation
+      #- title: Creating an ISA Study
+      #  url: /help/user-guide/designing-experiments-isajson-compliant.html#2-creating-an-isa-study
+      #- title: Creating an ISA Assay
+      #  url: /help/user-guide/designing-experiments-isajson-compliant.html#5-creating-an-assay-stream
     - title: ISA-JSON complient experiment
       url: /help/user-guide/isa-json-compliant-experiment.html
       subitems:
