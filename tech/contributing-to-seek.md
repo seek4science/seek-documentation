@@ -42,4 +42,5 @@ For a contribution to be accepted, we do have a few requirements.
 
   * Code should follow the [Ruby Style Guidelines](https://github.com/bbatsov/ruby-style-guide). Our gems include the tool [Rubocop](https://github.com/bbatsov/rubocop), which can be used to check against the guidelines and (with care) automatically fix some issues.
   * Where practical, tests should be added to cover your changes, and all existing tests should pass. The continuous integration tool: [Travis](https://travis-ci.org/seek4science/seek) is useful to checking your tests as your work. _Be pragmatic, don't spend 2 days writing tests for a 5 minute 2 line fix!_
-  * Code should be clear, and in some cases we may request some documentation.
+  * Code should be clear, and in some cases we may request some documentation. Any documentation should explain how your contribution applies to everyone, not just your FAIRDOM-SEEK instance. You can add further explanation in your own instance's customised documentation.
+
