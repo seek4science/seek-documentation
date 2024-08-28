@@ -2,18 +2,24 @@
 title: FAIRDOM-SEEK User Guide
 layout: page-ett
 sidebar: userguide
+toc: false
 ---
 
+The FAIRDOM-SEEK user guide is written for users of any FAIRDOM-SEEK instance. The pages are organised by sections on the left. You can also search at the top-right of any page.
 
-<div class="alert alert-info">
+<i class="fa-solid fa-user-group fa-5x"></i> <i class="fa-solid fa-book fa-5x"></i>
+
+## Disclaimer about FAIRDOM-SEEK instances
+
+<!--<div class="alert alert-info">-->
 Note that FAIRDOM-SEEK instances are highly customisable. Functionality such as e.g. the ISA structure, ISA-JSON compliant 
 experiments and the different asset types need to be enabled by an instance admin. 
 Therefore, some functionality described in this general user guide might not be available on your local instance. 
 Please contact your local instance admin for more information.
-</div>
+<!--</div>-->
 
-## Aliases
-The names of different features and functions may vary across FAIRDOM-SEEK instances. This general user guide includes the default or most common names.
+## Aliases for names of features and functions
+The names of different features and functions may vary across FAIRDOM-SEEK instances. This general user guide includes the default or most common names. For examples of the most common aliases, see:
 - [Aliases across FAIRDOM-SEEK instances](aliases.html)
 
 
