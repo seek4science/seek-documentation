@@ -12,6 +12,11 @@ Therefore, some functionality described in this general user guide might not be 
 Please contact your local instance admin for more information.
 </div>
 
+## Aliases
+The names of different features and functions may vary across FAIRDOM-SEEK instances. This general user guide includes the default or most common names.
+- [Aliases across FAIRDOM-SEEK instances](aliases.html)
+
+
 <!-- THE FOLLOWING IS REPLACED BY THE SIDEBAR:
 
 ## Profile
