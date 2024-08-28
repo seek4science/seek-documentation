@@ -1,3 +1,4 @@
+/*---Header---*/
 //header .navbar {
     //background-color: #f0f5fd;
     //border: thin solid #e7e7e7;
@@ -21,10 +22,23 @@
     }
 }
 
+/*-----Sidebar-----*/
 .sidebar-title {
     font-weight: bolder;
 }
 
+@include media-breakpoint-up(lg) {
+    /* Scroll bar on left sidebar */
+    #sidebar {
+        top: 3rem;
+        z-index: 2;
+        height: calc(100vh - 10rem);
+        overflow-y: auto;
+        position: sticky;
+    }
+}
+
+/*----Headings----*/
 #main h1, #main h2, #main h3 {
     color: #392b99;
 }
@@ -42,11 +56,13 @@
     font-size: 24px;
 }
 
+/*----Breadcrumb ---*/
 .user-guide-crumb {
     font-size: smaller;
     color: grey;
 }
 
+/*----Screenshots----*/
 img.screenshot {
     border: 1px solid #bbb;
     padding: 1em;
@@ -57,6 +73,7 @@ img.screenshot {
     cursor: pointer;
 }
 
+/*----Footer----*/
 footer {
     background-color: $light;
 }
@@ -65,7 +82,7 @@ footer .copyright {
     background-color: #0903780f;
 }
 
-/* Font Aweseome icon colour, match headings */
+/*----Font Aweseome icon colour, match headings----*/
 main .fa-solid {
     color: #392b99;
 }

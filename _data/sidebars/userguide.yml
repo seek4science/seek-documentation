@@ -138,8 +138,11 @@ subitems:
     - title: Collections
       url: /help/user-guide/collections.html
     - title: "[Document]"
+      url: ""
     - title: "[Workflow]"
+      url: ""
     - title: "[File template]"
+      url: ""
     - title: Creating new asset versions
       url: /help/user-guide/uploading-new-versions.html
       subitems:
@@ -215,7 +218,8 @@ subitems:
     #  url: /help/user-guide/general-attributes.html#creators
     #- title: Tags
     #  url: /help/user-guide/general-attributes.html#tags
-    - title: Discussion channel
+    - title: "[Discussion channel]"
+      url: ""
     - title: Licenses
       url: /help/user-guide/licenses.html
     - title: Sharing
@@ -223,12 +227,15 @@ subitems:
       subitems:
       - title: Bulk changing of sharing permissions
         url: /help/user-guide/bulk-change-sharing-permission.html
+    - title: "[Extended metadata]"
+      url: ""
   -
     #hr: true
     title: Activities
     description: How to change the events and presentations.
     subitems:
-    - title: Presentation
+    - title: "[Presentation]"
+      url: ""
     - title: Events
       url: /help/user-guide/general-attributes.html#events
   - 
