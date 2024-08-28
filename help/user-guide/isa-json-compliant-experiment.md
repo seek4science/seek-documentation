@@ -1,6 +1,6 @@
 ---
 title: ISA-JSON compliant Experiment
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

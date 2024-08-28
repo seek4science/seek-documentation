@@ -1,6 +1,6 @@
 ---
 title: Editing your profile
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

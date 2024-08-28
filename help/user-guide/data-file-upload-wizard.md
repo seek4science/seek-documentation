@@ -1,6 +1,6 @@
 ---
 title: Data file upload wizard
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Creating a project
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

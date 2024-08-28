@@ -1,6 +1,6 @@
 ---
 title: Exporting experiments as ISA-JSON
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

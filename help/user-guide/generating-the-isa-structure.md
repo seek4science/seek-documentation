@@ -1,6 +1,6 @@
 ---
 title: Generating the ISA structure
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

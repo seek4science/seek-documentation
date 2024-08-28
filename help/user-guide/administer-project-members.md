@@ -1,6 +1,6 @@
 ---
 title: Administer project members
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

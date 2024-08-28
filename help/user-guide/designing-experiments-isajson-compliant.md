@@ -1,6 +1,6 @@
 ---
 title: Designing an ISA-JSON compliant experiment
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Legacy Biosamples
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

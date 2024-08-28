@@ -1,6 +1,6 @@
 ---
 title: Comparing two versions of a Model 
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

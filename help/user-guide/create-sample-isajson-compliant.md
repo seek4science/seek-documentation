@@ -1,6 +1,6 @@
 ---
 title: Working with Samples in ISA-JSON compliant Experiments
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

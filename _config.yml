@@ -26,9 +26,9 @@ defaults:
   -
     scope:
       path: "help/user-guide"
-      type: "user-guide-page"
+      type: "page-ett"
     values:
-      #layout: "user-guide-page"
+      #layout: "page-ett"
       sidebar: userguide
 # adding type and sidebar to this scope is not working
 

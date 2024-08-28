@@ -1,6 +1,6 @@
 ---
 title: Creatnig a new version of an asset
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

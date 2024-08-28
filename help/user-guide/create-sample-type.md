@@ -1,6 +1,6 @@
 ---
 title: Create a Sample Type
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

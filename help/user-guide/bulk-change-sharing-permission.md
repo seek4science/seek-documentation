@@ -1,6 +1,6 @@
 ---
 title: Bulk changing of sharing permissions
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

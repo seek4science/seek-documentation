@@ -1,6 +1,6 @@
 ---
 title: Registering NeLS data
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

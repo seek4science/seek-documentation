@@ -1,6 +1,6 @@
 ---
 title: Logging into via LS Login
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

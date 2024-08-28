@@ -1,6 +1,6 @@
 ---
 title: FAIRDOM-SEEK User Guide
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Managing your account
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Creating and Managing Programmes
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

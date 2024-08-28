@@ -1,6 +1,6 @@
 ---
 title: Request to join a project
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

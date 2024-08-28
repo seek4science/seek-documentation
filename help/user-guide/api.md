@@ -1,6 +1,6 @@
 ---
 title: API Introduction
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

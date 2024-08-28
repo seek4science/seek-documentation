@@ -1,6 +1,6 @@
 ---
 title: Simulating Models with JWS Online
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Using Copasi in SEEK
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

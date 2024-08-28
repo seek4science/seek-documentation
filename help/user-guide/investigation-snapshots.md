@@ -1,6 +1,6 @@
 ---
 title: Making an Investigation, Study or Assay citable
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Samples
-layout: user-guide-page
+layout: page-ett
 sidebar: userguide
 ---
 
