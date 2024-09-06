@@ -53,6 +53,6 @@ theme_variables:
 # theme color is not working! Trying c23669 from RDMkit doesn't help
 
 github:
-  repository_url: https://github.com/seek4science/seek
+  repository_url: https://github.com/seek4science/seek-documentation
   source:
     branch: main
