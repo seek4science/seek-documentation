@@ -22,9 +22,13 @@ For example, this page can be found at [https://raw.githubusercontent.com/seek4s
 The **user guide pages** use a remote theme called [ELIXIR Toolkit Theme](https://elixir-belgium.github.io/elixir-toolkit-theme/) (ETT). The ETT theme provides additional support for styling and navigation, including the sidebar menus. New user guide pages require a slightly different formatter at the top, that looks like:
 
     ---
-    title: my lovely page
+    title: my lovely userguide page
     layout: page-ett
     ---
+
+To add your new page to the sidebar, add a line to the data file:
+ `_data` &#9658; `sidebars` &#9658; `userguide.yml`. 
+ More details are available from the [ETT theme documentation](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures).
 
 ## Viewing your changes locally
 

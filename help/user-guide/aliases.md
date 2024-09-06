@@ -13,6 +13,7 @@ The names of different features and functions may vary across FAIRDOM-SEEK insta
  Name in user guide | Alias | Where the alias is used 
 --------------------|-------|-------------------------
 Project | Team | WorkflowHub
+Programme | Space | WorkflowHub
 
 
 
