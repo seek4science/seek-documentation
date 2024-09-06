@@ -1,7 +1,6 @@
 ---
 title: Working with Samples in ISA-JSON compliant Experiments
 layout: page-ett
-sidebar: userguide
 ---
 
 ## Types of samples in ISA-JSON compliant Experiments

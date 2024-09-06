@@ -1,7 +1,6 @@
 ---
 title: Create a Sample Type
 layout: page-ett
-sidebar: userguide
 ---
 
 Sample Types are templates that detail the key information that needs to be included to describe a given sample correctly.

@@ -1,7 +1,6 @@
 ---
 title: Registering NeLS data
 layout: page-ett
-sidebar: userguide
 ---
 
 Pre-requisites:

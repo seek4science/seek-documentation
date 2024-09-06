@@ -3,18 +3,21 @@
 subitems:
 - title: Home
   url: /
-- title: Roadmap
-  url: /tech/roadmap
-- title: "Getting FAIRDOM-SEEK"
-  url: /get-seek.html
+#- title: "Getting FAIRDOM-SEEK"
+#  url: /get-seek.html
 #- title: Contacting Us
 #  url: /contacting-us.html
 #- title: Contributing
 #  url: /contributing.html
+- title: Help
+  url: /help/index.html
 - title: User Guide
-  url: /help/user-guide/index.html
-- title: API
-  url: /help/user-guide/api.html
-- title: Useful Links
-  url: /tech/useful-links.html
+  url: /help/user-guide/
+#- title: API
+#  url: /help/user-guide/api
+#- title: Useful Links
+#  url: /tech/useful-links.html
+- title: Tech
+  url: /tech/install.html
 ## move some links to footer
+## need a Tech landing/index page; for now, use install page

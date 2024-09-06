@@ -1,11 +1,10 @@
 ---
-title: Creatnig a new version of an asset
+title: Creating a new version of an asset
 layout: page-ett
-sidebar: userguide
 ---
 
 
-_The following describes creating a new Model version, but also applies to Data files, SOPs or Presentations._
+{% include callout.html type="note" content="The following describes creating a new Model version, but also applies to Data files, SOPs or Presentations." %}
 
 We only recommend creating new versions for minor modifications, improvements or correcting errors. If the new version changes the
 original intention or purpose of the asset, you should you create an entirely new asset entry.

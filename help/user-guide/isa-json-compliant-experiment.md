@@ -1,15 +1,12 @@
 ---
 title: ISA-JSON compliant Experiment
 layout: page-ett
-sidebar: userguide
 ---
 
 
 When using ISA-JSON compliant experiments to organise your Project, you structure your research fully according to the [ISA metadata framework](https://isa-specs.readthedocs.io/en/latest/isamodel.html), so that it can be exported as ISA-JSON. When referring to Investigation, Study, and Assay within an ISA-JSON compliant experiment, we use the terms ISA Investigation, ISA Study, and ISA Assay to emphasize the additional information required.
 
-<div class="alert alert-info">
-Note that the ISA-JSON compliance feature must be enabled by the platform administrator. If you do not see the ISA-JSON compliance options in your Project, please contact your local instance administrator.
-</div>
+{% include callout.html type="note" content="The ISA-JSON compliance feature must be enabled by the platform administrator. If you do not see the ISA-JSON compliance options in your Project, please contact your local instance administrator." %}
 
 
 ## ISA Investigation

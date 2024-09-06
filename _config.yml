@@ -26,11 +26,12 @@ defaults:
   -
     scope:
       path: "help/user-guide"
-      type: "page-ett"
+      #type: "page-ett"
     values:
+      permalink: /help/user-guide/:basename
       #layout: "page-ett"
       sidebar: userguide
-# adding type and sidebar to this scope is not working
+# adding type and layout to this scope is not working
 
 theme_variables: 
   #git_host: GitHub

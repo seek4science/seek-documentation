@@ -1,10 +1,8 @@
 ---
 title: Logging into SEEK
 layout: page-ett
-sidebar: userguide
 ---
 
-# Logging into SEEK
 
 To log in you need to click the login button in the top right hand corner of SEEK.
 

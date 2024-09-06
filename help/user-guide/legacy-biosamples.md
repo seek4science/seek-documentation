@@ -1,7 +1,6 @@
 ---
 title: Legacy Biosamples
 layout: page-ett
-sidebar: userguide
 ---
 
 

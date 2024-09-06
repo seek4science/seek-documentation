@@ -1,7 +1,6 @@
 ---
 title: Creating and Managing Programmes
 layout: page-ett
-sidebar: userguide
 ---
 
 

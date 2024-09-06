@@ -1,21 +1,21 @@
 title: User Guide
-title_url: /help/user-guide/index.html
+title_url: /help/user-guide/
 subitems:
   - title: Profile
     description: Registering and logging into SEEK, managing your account and identities, editing your profile.
     subitems:
     - title: Registering in SEEK
-      url: /help/user-guide/registering.html
+      url: /help/user-guide/registering
       subitems:
       - title: Logging into SEEK via LS Login
-        url: /help/user-guide/aai.html
+        url: /help/user-guide/aai
     - title: Managing your account
-      url: /help/user-guide/managing-account.html
+      url: /help/user-guide/managing-account
       subitems:
       - title: Managing your identities/alternative login methods
-        url: /help/user-guide/managing-identities.html
+        url: /help/user-guide/managing-identities
     - title: Editing your profile
-      url: /help/user-guide/editing-profile.html
+      url: /help/user-guide/editing-profile
     - title: "[Favourites: drag and drop your favourite searchers]"
       url: ""
   - 
@@ -26,117 +26,117 @@ subitems:
     - title: "Directory"
       subitems:
       - title: Browsing content
-        url: /help/user-guide/browsing.html  
+        url: /help/user-guide/browsing  
       - title: Creating and managing your own Programmes
-        url: /help/user-guide/programme-creation-and-management.html
+        url: /help/user-guide/programme-creation-and-management
       - title: Creating a Project
-        url: /help/user-guide/create-a-project.html
+        url: /help/user-guide/create-a-project
       - title: Joining a Project
-        url: /help/user-guide/join-a-project.html
+        url: /help/user-guide/join-a-project
       - title: Project Dashboard
-        url: /help/user-guide/project-dashboard.html
+        url: /help/user-guide/project-dashboard
       - title: Viewing Project in Experiment View
-        url: /help/user-guide/viewing-project-in-single-page.html
+        url: /help/user-guide/viewing-project-in-single-page
       #- title: Specialist user roles and their capabilities
-      #  url: /help/user-guide/roles.html
+      #  url: /help/user-guide/roles
     - title: Specialist user roles
-      url: /help/user-guide/roles.html
+      url: /help/user-guide/roles
       #subitems:
       #- title: Programme administrator
-      #  url: /help/user-guide/roles.html#programme-administrator
+      #  url: /help/user-guide/roles#programme-administrator
       #- title: Project administrator
-      #  url: /help/user-guide/roles.html#project-administrator
+      #  url: /help/user-guide/roles#project-administrator
       #- title: Asset housekeeper
-      #  url: /help/user-guide/roles.html#asset-housekeeper
+      #  url: /help/user-guide/roles#asset-housekeeper
       #- title: Asset gatekeeper
-      #  url: /help/user-guide/roles.html#asset-gatekeeper
+      #  url: /help/user-guide/roles#asset-gatekeeper
     - title: Capabilities
       subitems:
       - title: Administer project members
-        url: /help/user-guide/administer-project-members.html
+        url: /help/user-guide/administer-project-members
       - title: Adding admin items
-        url: /help/user-guide/adding-admin-items.html
+        url: /help/user-guide/adding-admin-items
       #- title: Assign people to Project roles
-      #  url: /help/user-guide/administer-project-members.html#assign-people-to-project-roles
+      #  url: /help/user-guide/administer-project-members#assign-people-to-project-roles
       #- title: Flag when a person becomes inactive in a Project
-      #  url: /help/user-guide/administer-project-members.html#flag-when-a-person-becomes-inactive-in-a-project
+      #  url: /help/user-guide/administer-project-members#flag-when-a-person-becomes-inactive-in-a-project
       #- title: Create Organisms
-      #  url: /help/user-guide/adding-admin-items.html#creating-organisms
+      #  url: /help/user-guide/adding-admin-items#creating-organisms
       #- title: Create Profiles
-      #  url: /help/user-guide/adding-admin-items.html#creating-profiles
+      #  url: /help/user-guide/adding-admin-items#creating-profiles
       #- title: Create Institutions
-      #  url: /help/user-guide/adding-admin-items.html#creating-institutions
+      #  url: /help/user-guide/adding-admin-items#creating-institutions
       #- title: Add and remove people from a Project
-      #  url: /help/user-guide/administer-project-members.html#add-and-remove-people-from-a-project - 
+      #  url: /help/user-guide/administer-project-members#add-and-remove-people-from-a-project - 
   -
     #hr: true
     title: Experiments
     description: Generating the ISA structure, designing an ISA-JSON compliant experiement, making items citable.
     subitems: 
     - title: Generating the ISA structure
-      url: /help/user-guide/generating-the-isa-structure.html
+      url: /help/user-guide/generating-the-isa-structure
       #subitems:
       #- title: Creating an Investigation
-      #  url: /help/user-guide/generating-the-isa-structure.html#creating-an-investigation
+      #  url: /help/user-guide/generating-the-isa-structure#creating-an-investigation
       #- title: Creating a Study
-      #  url: /help/user-guide/generating-the-isa-structure.html#creating-a-study
+      #  url: /help/user-guide/generating-the-isa-structure#creating-a-study
       #- title: Creating an Experimental assay
-      #  url: /help/user-guide/generating-the-isa-structure.html#creating-an-experimental-assay
+      #  url: /help/user-guide/generating-the-isa-structure#creating-an-experimental-assay
       #- title: Creating a Modelling analysis
-      #  url: /help/user-guide/generating-the-isa-structure.html#creating-a-modelling-analysis
+      #  url: /help/user-guide/generating-the-isa-structure#creating-a-modelling-analysis
     - title: ISA Overview Graph
-      url: /help/user-guide/isa-overview.html
+      url: /help/user-guide/isa-overview
     - hr: true
       title: Designing an ISA-JSON compliant experiment
-      url: /help/user-guide/designing-experiments-isajson-compliant.html
+      url: /help/user-guide/designing-experiments-isajson-compliant
       #subitems:
       #- title: Creating an ISA Investigation
-      #  url: /help/user-guide/designing-experiments-isajson-compliant.html#1-creating-an-isa-investigation
+      #  url: /help/user-guide/designing-experiments-isajson-compliant#1-creating-an-isa-investigation
       #- title: Creating an ISA Study
-      #  url: /help/user-guide/designing-experiments-isajson-compliant.html#2-creating-an-isa-study
+      #  url: /help/user-guide/designing-experiments-isajson-compliant#2-creating-an-isa-study
       #- title: Creating an ISA Assay
-      #  url: /help/user-guide/designing-experiments-isajson-compliant.html#5-creating-an-assay-stream
+      #  url: /help/user-guide/designing-experiments-isajson-compliant#5-creating-an-assay-stream
     - title: ISA-JSON complient experiment
-      url: /help/user-guide/isa-json-compliant-experiment.html
+      url: /help/user-guide/isa-json-compliant-experiment
       subitems:
       - title: Experiment Sample Templates
-        url: /help/user-guide/isa-json-compliant-experiment.html#experiment-sample-templates
+        url: /help/user-guide/isa-json-compliant-experiment#experiment-sample-templates
     - title: Export experiments as ISA-JSON
-      url: /help/user-guide/exporting-experiments-as-isajson.html
+      url: /help/user-guide/exporting-experiments-as-isajson
     - hr: true
       title: Making an Investigation, Study or Assay citable
-      url: /help/user-guide/investigation-snapshots.html
+      url: /help/user-guide/investigation-snapshots
       #subitems:
       #- title: Making public
-      #  url: /help/user-guide/investigation-snapshots.html#making-public
+      #  url: /help/user-guide/investigation-snapshots#making-public
       #- title: Snapshotting
-      #  url: /help/user-guide/investigation-snapshots.html#snapshotting
+      #  url: /help/user-guide/investigation-snapshots#snapshotting
       #- title: Creating a Research Object
-      #  url: /help/user-guide/investigation-snapshots.html#creating-a-research-object
+      #  url: /help/user-guide/investigation-snapshots#creating-a-research-object
       #- title: Assigning a DOI
-      #  url: /help/user-guide/investigation-snapshots.html#assigning-a-doi
+      #  url: /help/user-guide/investigation-snapshots#assigning-a-doi
   -
     #hr: true
     title: Assets
     description: Adding different types of assets to SEEK, creating new asset versions.
     subitems:
     - title: Adding assets (data, models, SOPs, publications) to SEEK
-      url: /help/user-guide/adding-assets.html
+      url: /help/user-guide/adding-assets
     - title: Data Files
-      url: /help/user-guide/general-attributes.html#data-files
+      url: /help/user-guide/general-attributes#data-files
       subitems:
       - title: Data file wizard
-        url: /help/user-guide/data-file-upload-wizard.html
+        url: /help/user-guide/data-file-upload-wizard
     - title: Model
       subitems:
       - title: Simulate a model on JWS Online
-        url: /help/user-guide/simulate-on-jws-online.html
+        url: /help/user-guide/simulate-on-jws-online
     - title: SOPs
-      url: /help/user-guide/general-attributes.html#sops
+      url: /help/user-guide/general-attributes#sops
     - title: Publications
-      url: /help/user-guide/general-attributes.html#publications
+      url: /help/user-guide/general-attributes#publications
     - title: Collections
-      url: /help/user-guide/collections.html
+      url: /help/user-guide/collections
     - title: "[Document]"
       url: ""
     - title: "[Workflow]"
@@ -144,89 +144,89 @@ subitems:
     - title: "[File template]"
       url: ""
     - title: Creating new asset versions
-      url: /help/user-guide/uploading-new-versions.html
+      url: /help/user-guide/uploading-new-versions
       subitems:
       - title: Comparing two versions of a Model
-        url: /help/user-guide/model-comparison.html
+        url: /help/user-guide/model-comparison
   -
     #hr: true
     title: Samples
     description: Creating and browsing samples, and samples in ISA-JSON compliant experiments.
     subitems:
     - title: Samples
-      url: /help/user-guide/samples.html
+      url: /help/user-guide/samples
       subitems:
       - title: Create a Sample Type
-        url: /help/user-guide/create-sample-type.html
+        url: /help/user-guide/create-sample-type
       - title: Create a Sample
-        url: /help/user-guide/create-sample.html
+        url: /help/user-guide/create-sample
       - title: Legacy Biosamples
-        url: /help/user-guide/legacy-biosamples.html
+        url: /help/user-guide/legacy-biosamples
     - title: Samples in ISA-JSON compliant experiments
-      url: /help/user-guide/isa-json-compliant-experiment.html#samples-in-isa-json-compliant-experiment
+      url: /help/user-guide/isa-json-compliant-experiment#samples-in-isa-json-compliant-experiment
       subitems:
       - title: Working with samples in ISA-JSON compliant Experiments
-        url: /help/user-guide/create-sample-isajson-compliant.html
+        url: /help/user-guide/create-sample-isajson-compliant
       #- title: Viewing samples in ISA-JSON compliant Experiments
-      #  url: /help/user-guide/create-sample-isajson-compliant.html#viewing-samples-isajson-compliant-experiments
+      #  url: /help/user-guide/create-sample-isajson-compliant#viewing-samples-isajson-compliant-experiments
       #- title: Create Study Sources
-      #  url: /help/user-guide/create-sample-isajson-compliant.html#create-study-sources
+      #  url: /help/user-guide/create-sample-isajson-compliant#create-study-sources
       #- title: Create Study Samples
-      #  url: /help/user-guide/create-sample-isajson-compliant.html#create-study-samples
+      #  url: /help/user-guide/create-sample-isajson-compliant#create-study-samples
       #- title: Create Assay Samples
-      #  url: /help/user-guide/create-sample-isajson-compliant.html#create-assay-samples
+      #  url: /help/user-guide/create-sample-isajson-compliant#create-assay-samples
     - title: Browsing samples
-      url: /help/user-guide/browsing.html#browsing-samples
+      url: /help/user-guide/browsing#browsing-samples
       subitems:
       - title: Browse samples by Sample Type
-        url: /help/user-guide/browsing.html#browse-samples-by-sample-type
+        url: /help/user-guide/browsing#browse-samples-by-sample-type
       - title: Browse samples by Experiment Sample Template
-        url: /help/user-guide/browsing.html#browse-samples-by-experiment-sample-template
+        url: /help/user-guide/browsing#browse-samples-by-experiment-sample-template
   -
     #hr: true
     title: General attributes and links
     description: How to change the many attributes such as titles, types, attributions, licenses. 
     subitems:
     - title: General attributes and links
-      url: /help/user-guide/general-attributes.html
+      url: /help/user-guide/general-attributes
     - hr: true
     #  title: Title
-    #  url: /help/user-guide/general-attributes.html#title
+    #  url: /help/user-guide/general-attributes#title
     #- title: Description
-    #  url: /help/user-guide/general-attributes.html#description
+    #  url: /help/user-guide/general-attributes#description
     #- title: Projects
-    #  url: /help/user-guide/general-attributes.html#projects
+    #  url: /help/user-guide/general-attributes#projects
     #- title: Investigation details
-    #  url: /help/user-guide/general-attributes.html#investigation-details
+    #  url: /help/user-guide/general-attributes#investigation-details
     #- title: Study
-    #  url: /help/user-guide/general-attributes.html#study
+    #  url: /help/user-guide/general-attributes#study
     #- title: Biological Problem Addressed
-    #  url: /help/user-guide/general-attributes.html#biological-problem-addressed
+    #  url: /help/user-guide/general-attributes#biological-problem-addressed
     #- title: Assay Type
-    #  url: /help/user-guide/general-attributes.html#assay-type
+    #  url: /help/user-guide/general-attributes#assay-type
     #- title: Experimental assays and Modelling analysis
-    #  url: /help/user-guide/general-attributes.html#experimental-assays-and-modelling-analysis
+    #  url: /help/user-guide/general-attributes#experimental-assays-and-modelling-analysis
     #- title: Technology Type
-    #  url: /help/user-guide/general-attributes.html#technology-type
+    #  url: /help/user-guide/general-attributes#technology-type
     #- title: Organisms
-    #  url: /help/user-guide/general-attributes.html#organisms
+    #  url: /help/user-guide/general-attributes#organisms
     #- title: Experiementalists
-    #  url: /help/user-guide/general-attributes.html#experimentalists
+    #  url: /help/user-guide/general-attributes#experimentalists
     #- title: Attributions
-    #  url: /help/user-guide/general-attributes.html#attributions
+    #  url: /help/user-guide/general-attributes#attributions
     #- title: Creators
-    #  url: /help/user-guide/general-attributes.html#creators
+    #  url: /help/user-guide/general-attributes#creators
     #- title: Tags
-    #  url: /help/user-guide/general-attributes.html#tags
+    #  url: /help/user-guide/general-attributes#tags
     - title: "[Discussion channel]"
       url: ""
     - title: Licenses
-      url: /help/user-guide/licenses.html
+      url: /help/user-guide/licenses
     - title: Sharing
-      url: /help/user-guide/general-attributes.html#sharing
+      url: /help/user-guide/general-attributes#sharing
       subitems:
       - title: Bulk changing of sharing permissions
-        url: /help/user-guide/bulk-change-sharing-permission.html
+        url: /help/user-guide/bulk-change-sharing-permission
     - title: "[Extended metadata]"
       url: ""
   -
@@ -237,33 +237,33 @@ subitems:
     - title: "[Presentation]"
       url: ""
     - title: Events
-      url: /help/user-guide/general-attributes.html#events
+      url: /help/user-guide/general-attributes#events
   - 
     #hr: true
     title: Integrations
     description: Using SEEK and openBIS or Copasi, compliance with ISA-JSON schemas.
     subitems:
     - title: Using SEEK with openBIS
-      url: /help/user-guide/openbis.html
+      url: /help/user-guide/openbis
     - title: Using Copasi with SEEK
-      url: /help/user-guide/copasi-button.html
+      url: /help/user-guide/copasi-button
     - title: Experiment view (or Simple page)
-      url: /help/user-guide/viewing-project-in-single-page.html
+      url: /help/user-guide/viewing-project-in-single-page
     - title: Compliance with ISA-JSON schemas
-      url: /help/user-guide/isa-json-compliant-experiment.html
+      url: /help/user-guide/isa-json-compliant-experiment
   -
     #hr: true
     title: User guide for API
     description: Introduction to the SEEK API.
     subitems:
     - title: API Introduction
-      url: /help/user-guide/api.html
+      url: /help/user-guide/api
   -
     hr: true
     title: Contribute
     description: Reporting bugs or feature requests, contributing to these documents.
     subitems:
     - title: Reporting a bug or feature request
-      url: /tech/reporting-bugs-and-features.html
+      url: /tech/reporting-bugs-and-features
     - title: Contributing to these SEEK Documents
-      url: /contributing.html
+      url: /contributing

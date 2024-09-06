@@ -1,7 +1,6 @@
 ---
 title: Browsing content on SEEK
 layout: page-ett
-sidebar: userguide
 ---
 
 

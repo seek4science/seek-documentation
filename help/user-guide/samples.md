@@ -1,7 +1,6 @@
 ---
 title: Samples
 layout: page-ett
-sidebar: userguide
 ---
 
 ## Introduction

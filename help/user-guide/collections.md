@@ -1,7 +1,6 @@
 ---
 title: Collections
 layout: page-ett
-sidebar: userguide
 ---
 
 A collection is a group of SEEK items that are conceptually related to each other. Items within a collection can be ordered.

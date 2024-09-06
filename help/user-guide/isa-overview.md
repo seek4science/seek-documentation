@@ -1,7 +1,6 @@
 ---
 title: ISA Overview
 layout: page-ett
-sidebar: userguide
 ---
 
 

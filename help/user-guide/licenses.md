@@ -1,7 +1,6 @@
 ---
 title: Licenses
 layout: page-ett
-sidebar: userguide
 ---
 
 

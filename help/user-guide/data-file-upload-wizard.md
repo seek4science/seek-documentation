@@ -1,7 +1,6 @@
 ---
 title: Data file upload wizard
 layout: page-ett
-sidebar: userguide
 ---
 
 

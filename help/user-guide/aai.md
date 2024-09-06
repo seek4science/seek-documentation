@@ -1,13 +1,12 @@
 ---
 title: Logging into via LS Login
 layout: page-ett
-sidebar: userguide
 ---
 
 
-*Note*: This section assumes you have an LS Login account (or your organization is connected to LS Login), 
+{% include callout.html type="note" content="This section assumes you have an LS Login account (or your organization is connected to LS Login), 
 and LS Login authentication is enabled on the SEEK instance you are using. For more information on LS Login, please 
-see their [documentation](https://lifescience-ri.eu/ls-login/documentation/user-documentation/user-documentation.html){:target="_blank"}.
+see their [documentation](https://lifescience-ri.eu/ls-login/documentation/user-documentation/user-documentation.html){:target=\"_blank\"}." %}
 
 Already got a SEEK account? See how to [add LS Login to your account](managing-identities.html#add-identity) instead. 
 

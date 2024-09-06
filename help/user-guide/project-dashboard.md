@@ -1,7 +1,6 @@
 ---
 title: Project Dashboard
 layout: page-ett
-sidebar: userguide
 ---
 
 

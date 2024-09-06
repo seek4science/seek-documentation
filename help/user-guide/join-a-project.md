@@ -1,7 +1,6 @@
 ---
 title: Request to join a project
 layout: page-ett
-sidebar: userguide
 ---
 
 For details about what a Project and Programme is, please see [Creating a Project](./create-a-project.html)

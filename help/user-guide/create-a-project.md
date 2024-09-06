@@ -1,7 +1,6 @@
 ---
 title: Creating a project
 layout: page-ett
-sidebar: userguide
 ---
 
 ## What is a Project
