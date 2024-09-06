@@ -26,6 +26,8 @@ The **user guide pages** use a remote theme called [ELIXIR Toolkit Theme](https:
     layout: page-ett
     ---
 
+The _title_ metadata is used to create a first-level heading at the top of the page. Do not include it again. Instead, use `##` and `###` for subheadings (second- and third-level, respectively).  
+
 To add your new page to the sidebar, add a line to the data file:
  `_data` &#9658; `sidebars` &#9658; `userguide.yml`. 
  More details are available from the [ETT theme documentation](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures).
