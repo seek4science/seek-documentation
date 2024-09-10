@@ -1,23 +1,23 @@
 ## 
 ## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
 subitems:
-- title: Home
-  url: /
+#- title: Home
+#  url: /
 #- title: "Getting FAIRDOM-SEEK"
 #  url: /get-seek.html
 #- title: Contacting Us
 #  url: /contacting-us.html
 #- title: Contributing
 #  url: /contributing.html
-- title: Help
-  url: /help/index.html
+#- title: Help
+#  url: /help/index.html
 - title: User Guide
   url: /help/user-guide/
 #- title: API
 #  url: /help/user-guide/api
 #- title: Useful Links
 #  url: /tech/useful-links.html
-- title: Tech
-  url: /tech/install.html
+#- title: Developers
+#  url: /tech/install.html
 ## move some links to footer
 ## need a Tech landing/index page; for now, use install page
