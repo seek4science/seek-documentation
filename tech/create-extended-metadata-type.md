@@ -33,8 +33,12 @@ The page is organized into four tabs:
 
 ### top level
 
+
 ![](/images/user-guide/extended-metadata/emt-top-level-tab.png)
 {:.screenshot}
+
+<img src="/images/user-guide/extended-metadata/emt-top-level-tab.png" alt="emt-top-level-tab" width="300">
+
 
 * **Internal ID:** A unique identifier assigned to each extended metadata type within the SEEK system.
 
