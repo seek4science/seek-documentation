@@ -18,18 +18,19 @@ You may sometimes hear or read it referred to as Custom Metadata, and they are t
 
 It is not a feature a user would directly see, other than revealed through extensions that are made available:
 
-![](/images/user-guide/extended-metadata/extended-metadata-select.png)
-{:.screenshot}
+
+<img src="/images/user-guide/extended-metadata/extended-metadata-select.png" alt="extended-metadata-select" width="400">
+<br>
 
 ... will reveal new fields below:
 
-![](/images/user-guide/extended-metadata/extended-metadata-fields.png)
-{:.screenshot}
+<img src="/images/user-guide/extended-metadata/extended-metadata-fields.png" alt="extended-metadata-fields" width="400">
 
 The attributes can be associated with a particular attribute type, and marked as optional or mandatory, and will be validated against. This is very similar to Samples.
 
 Extended metadata will only be shown if defined within the database, which is currently the only way of configuring it.
 
+<br>
 
 ## How it works
 
@@ -49,12 +50,10 @@ You can think of Extended Metadata being a Sample, but instead of standing alone
 This is explained in the following high level representation.
 
 ![](/images/user-guide/extended-metadata/high-level-arch.png)
-{:.screenshot}
+<br>
 
 
 ## Administrative Rights for Creating and Managing Extended Metadata Types
-
-
 
 As a SEEK instance administrator, you have the ability to create, manage (enable, disable), and delete extended metadata types. This guide will walk you through how to perform these actions efficiently by navigating to the "Manage Extended Metadata Types" section in the Admin area.
 
