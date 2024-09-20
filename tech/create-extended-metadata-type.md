@@ -3,68 +3,80 @@ title: Manage Extended Metadata Type
 layout: page
 ---
 
-# How To Create and Manage Extended Metadata Type as a System Administrator
+# How to Create and Manage Extended Metadata Types as a System Administrator
+
+
 
 ## Introduction
 
-As a SEEK instance Administrator, you have the ability to create, manage (enable, disable), and delete extended metadata types. You can navigate to the relevant section by clicking on the "Manage Extended Metadata Types" link in the Admin area. This guide explains how to perform these actions efficiently.
+As a SEEK instance administrator, you have the ability to create, manage (enable, disable), and delete extended metadata types. This guide will walk you through how to perform these actions efficiently by navigating to the "Manage Extended Metadata Types" section in the Admin area.
 
 <img src="/images/user-guide/extended-metadata/emt-management.png" alt="emt-top-level-tab" width="400">
 {:.screenshot}
 
-On the "Manage Extended Metadata Types" page, you will see a list of existing extended metadata types and resources that are useful when creating a new extended metadata type.
-
-The page is organized into four tabs:
-
-- **Top level**: This tab displays a list of top-level extended metadata types. A top-level metadata type is associated with specific resource types in SEEK. <br> It can currently be applied to such as  <a id="top-level-resource-type">`Investigation`, `Study`, `Assay`, `Collection`, `DataFile`, `Document`, `Event`, `Model`, `Presentation`, `Sop`, and `Project`</a>.
-
-
-
-- **Nested level**: This tab lists all extended metadata types that have the `supported_type` "ExtendedMetadata". Nested-level extended metadata types are primarily used when defining the attribute types "Linked Extended Metadata" or "Linked Extended Metadata (multiple)". These attributes enable a nested relationship between metadata types, enhancing flexibility and depth in data entry and management.
-
-
-- **Controlled vocabularies**: This tab lists all the existing controlled vocabularies (CV) within SEEK. CVs can be used of definition of both sample types and extended metadata types. Administrators can create new CVs directly from this page by clicking the "Create Controlled Vocabulary" button.
-
-
-- **Extended attribute types**: This tab provides a list of all supported extended attribute types. Each attribute type's "Title" is crucial, as it will be used when defining a custom JSON file to create a new extended metadata type.
-
 
 ## Manage Extended Metadata Types
 
-### Top level
+On the "Manage Extended Metadata Types" page, you will see a list of existing extended metadata types along with relevant resources for creating new ones. The page is divided into four tabs:
 
+
+### 1.  Top Level Tab: 
+
+
+This tab displays all top-level extended metadata types, which are associated with specific resource types in SEEK. Examples of resource types include<a id="top-level-resource-type">`Investigation`, `Study`, `Assay`, `Collection`, `DataFile`, `Document`, `Event`, `Model`, `Presentation`, `Sop`, and `Project`</a>.
 
 ![](/images/user-guide/extended-metadata/emt-top-level-tab.png)
 {:.screenshot}
 
+The table on this tab contains the following columns:
 
-* **Internal ID:** A unique identifier assigned to each extended metadata type within the SEEK system.
-
-
-* **Title:** The name of the extended metadata type, displayed in the dropdown list when creating a new resource.
+* **Internal Id:**  A unique identifier assigned to each extended metadata type within the SEEK system.
 
 
-* **Supported Type:** The SEEK [top level resource types](#top-level-resource-type) associated with this extended metadata type. 
+* **Title:**  The name of the extended metadata type, which appears in the dropdown list when creating a new resource.
 
 
-* **Number of Times Used**: The number of times metadata has been created based on this extended metadata type.
+* **Supported Type:**  The SEEK [top level resource types](#top-level-resource-type) associated with this extended metadata type. 
 
 
-* **Status:** Indicates whether the extended metadata type is active (enabled) or inactive (disabled). Disabling a type prevents it from appearing as an option in the UI, but it won’t delete the metadata or affect where it’s been used. Disabled types will not appear for viewing items they are associated with, but editing existing metadata remains possible. Disabled types can be re-enabled at any time.
+* **Number of Times Used**:  The number of times metadata has been created based on this extended metadata type.
 
 
-* **Disable/Enable:**  A button to disable or enable the extended metadata type.
+* **Status:**  Indicates whether the extended metadata type is active (enabled) or inactive (disabled). Disabling a type prevents it from being used to create new metadata, but does not delete existing metadata or impact associated resources. You can still edit existing metadata, and disabled types can be re-enabled at any time.
 
 
-* **Delete:**  A button to delete the extended metadata type, available only if the type has not been used to create any metadata.
+* **Disable/Enable Button:**  Toggle to enable or disable the extended metadata type..
 
-### Nested level：
+
+* **Delete Button:**   Available only if the type hasn’t been used to create any metadata.
+
+### 2.  Nested Level Tab
 
 ![](/images/user-guide/extended-metadata/emt-nested-level-tab.png)
 {:.screenshot}
 
-The **Nested Level** tab displays similar columns to the **Top Level** tab. The key difference is that the Supported Type is always set to "ExtendedMetadata".
+This tab lists all extended metadata types with the supported type "ExtendedMetadata." Nested-level metadata types are primarily used to define attributes like `Linked Extended Metadata` or `Linked Extended Metadata (Multiple)`, allowing for deeper, more flexible relationships between metadata.
 
-Additionally, the **Internal ID** is primarily used when defining attribute types such as "Linked Extended Metadata" or "Linked Extended Metadata (Multiple)".
+The columns here are similar to those in the [Top-Level tab](#1-top-level-tab-), with the key difference being that the `Supported Type` is always set to `ExtendedMetadata`.
 
-Extended metadata types in the nested level cannot be deleted if they are linked to other extended metadata types.
+Extended metadata types in this tab cannot be deleted if they are linked to other metadata types.
+
+### 3.  Controlled Vocabularies Tab
+
+This tab lists all the existing controlled vocabularies (CV) within SEEK. CVs can be used of definition of both sample types and extended metadata types. Administrators can create new CVs directly from this page by clicking the "Create Controlled Vocabulary" button.
+
+
+![](/images/user-guide/extended-metadata/cvs-tab.png)
+{:.screenshot}
+
+This tab lists all the controlled vocabularies (CV) available in SEEK, which can be used when defining sample types or extended metadata types. Administrators can create new controlled vocabularies by clicking the "Create Controlled Vocabulary" button.
+
+The Internal ID of a controlled vocabulary is important when defining attributes such as `Controlled Vocabulary` or `Controlled Vocabulary List`.
+
+### 4. Extended Metadata Attribute Types Tab
+
+This tab provides a list of all supported extended metadata attribute types. The Title of each attribute type is crucial, as it is used when defining a custom JSON file for creating new extended metadata types.
+
+
+![](/images/user-guide/extended-metadata/emas-tab.png)
+{:.screenshot}
