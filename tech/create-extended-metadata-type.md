@@ -9,14 +9,14 @@ layout: page
 
 As a SEEK instance Administrator, you have the ability to create, manage (enable, disable), and delete extended metadata types. You can navigate to the relevant section by clicking on the "Manage Extended Metadata Types" link in the Admin area. This guide explains how to perform these actions efficiently.
 
-![](/images/user-guide/extended-metadata/emt-management.png)
+<img src="/images/user-guide/extended-metadata/emt-management.png" alt="emt-top-level-tab" width="400">
 {:.screenshot}
 
 On the "Manage Extended Metadata Types" page, you will see a list of existing extended metadata types and resources that are useful when creating a new extended metadata type.
 
 The page is organized into four tabs:
 
-- **Top level**: This tab displays a list of top-level extended metadata types. A top-level metadata type is associated with specific resource types in SEEK. <br> It can currently be applied to such as  `Investigation`, `Study`, `Assay`, `Collection`, `DataFile`, `Document`, `Event`, `Model`, `Presentation`, `Sop`, and `Project`.
+- **Top level**: This tab displays a list of top-level extended metadata types. A top-level metadata type is associated with specific resource types in SEEK. <br> It can currently be applied to such as  <a id="top-level-resource-type">`Investigation`, `Study`, `Assay`, `Collection`, `DataFile`, `Document`, `Event`, `Model`, `Presentation`, `Sop`, and `Project`</a>.
 
 
 
@@ -31,13 +31,11 @@ The page is organized into four tabs:
 
 ## Manage Extended Metadata Types
 
-### top level
+### Top level
 
 
 ![](/images/user-guide/extended-metadata/emt-top-level-tab.png)
 {:.screenshot}
-
-<img src="/images/user-guide/extended-metadata/emt-top-level-tab.png" alt="emt-top-level-tab" width="300">
 
 
 * **Internal ID:** A unique identifier assigned to each extended metadata type within the SEEK system.
@@ -46,7 +44,7 @@ The page is organized into four tabs:
 * **Title:** The name of the extended metadata type, displayed in the dropdown list when creating a new resource.
 
 
-* **Supported Type:** The SEEK [top level resource types](#top-level) associated with this extended metadata type. 
+* **Supported Type:** The SEEK [top level resource types](#top-level-resource-type) associated with this extended metadata type. 
 
 
 * **Number of Times Used**: The number of times metadata has been created based on this extended metadata type.
@@ -59,3 +57,14 @@ The page is organized into four tabs:
 
 
 * **Delete:**  A button to delete the extended metadata type, available only if the type has not been used to create any metadata.
+
+### Nested level：
+
+![](/images/user-guide/extended-metadata/emt-nested-level-tab.png)
+{:.screenshot}
+
+The **Nested Level** tab displays similar columns to the **Top Level** tab. The key difference is that the Supported Type is always set to "ExtendedMetadata".
+
+Additionally, the **Internal ID** is primarily used when defining attribute types such as "Linked Extended Metadata" or "Linked Extended Metadata (Multiple)".
+
+Extended metadata types in the nested level cannot be deleted if they are linked to other extended metadata types.
