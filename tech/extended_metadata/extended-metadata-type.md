@@ -18,12 +18,12 @@ You may sometimes hear or read it referred to as Custom Metadata, and they are t
 
 It is not a feature a user would directly see, other than revealed through extensions that are made available:
 
-![](../images/user-guide/extended-metadata/extended-metadata-select.png)
+![](/images/user-guide/extended-metadata/extended-metadata-select.png)
 {:.screenshot}
 
 ... will reveal new fields below:
 
-![](../images/user-guide/extended-metadata/extended-metadata-fields.png)
+![](/images/user-guide/extended-metadata/extended-metadata-fields.png)
 {:.screenshot}
 
 The attributes can be associated with a particular attribute type, and marked as optional or mandatory, and will be validated against. This is very similar to Samples.
@@ -48,7 +48,7 @@ ExtendedMetadataType.new(title: 'person', supported_type: 'YOUR_TYPE_NAME')
 You can think of Extended Metadata being a Sample, but instead of standing alone is embedded within another type to extend it's metadata.
 This is explained in the following high level representation.
 
-![](../images/user-guide/extended-metadata/high-level-arch.png)
+![](/images/user-guide/extended-metadata/high-level-arch.png)
 {:.screenshot}
 
 
@@ -58,7 +58,7 @@ This is explained in the following high level representation.
 
 As a SEEK instance administrator, you have the ability to create, manage (enable, disable), and delete extended metadata types. This guide will walk you through how to perform these actions efficiently by navigating to the "Manage Extended Metadata Types" section in the Admin area.
 
-<img src="../images/user-guide/extended-metadata/emt-management.png" alt="emt-top-level-tab" width="400">
+<img src="/images/user-guide/extended-metadata/emt-management.png" alt="emt-top-level-tab" width="400">
 
 
 
