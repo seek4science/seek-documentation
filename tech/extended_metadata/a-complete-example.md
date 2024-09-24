@@ -12,8 +12,7 @@ layout: page
 
 Currently, controlled vocabularies can only be created through the user interface by anyone with permission to create resources in SEEK
 
-You can also use the following direct link to create controlled vocabularies: <br>
-```HTTP://{HOST_NAME}/sample_controlled_vocabs/new```
+You can also use the following direct link  ```HTTP://{HOST_NAME}/sample_controlled_vocabs/new``` to create controlled vocabularies or the button on the [Controlled Vocabulary](manage-extended-metadata-type.md/#3-controlled-vocabularies-tab) tab.
 
 Assuming the controlled vocabularies have been created here:
 <img src="/images/user-guide/extended-metadata/cvs-tab.png" alt="extended-metadata-fields" width="600">
@@ -50,7 +49,7 @@ You can view the detailed controlled vocabularies by clicking the corresponding 
 }
 ```
 
-2. Define another metadata type named `role_emt`. As a result, `role_emt` is created with five attributes and assigned ID `159`.
+2.Define a new metadata type called `role_emt`, which will have one attribute linked to the previously created `role_name_identifiers`. Consequently, the `role_emt` type will be established with five attributes and assigned the ID 159.
 
 ```json
 {
@@ -190,7 +189,7 @@ You can view the detailed controlled vocabularies by clicking the corresponding 
 
 ## Step 4: Use Extended Metadata Type 
 
-As the result, you can select to load this extended metadata type on the study creation page.
+As the result, you can choose to load this extended metadata type on the study creation page.
 ![](/images/user-guide/extended-metadata/emt-ui.png)
 
 

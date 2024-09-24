@@ -13,7 +13,7 @@ On the "Manage Extended Metadata Types" page, you will see a list of existing ex
 ## 1. Top Level Tab: 
 
 
-This tab displays all top-level extended metadata types, which are associated with specific resource types in SEEK. Examples of resource types include<a id="top-level-resource-type">`Investigation`, `Study`, `Assay`, `Collection`, `DataFile`, `Document`, `Event`, `Model`, `Presentation`, `Sop`, and `Project`</a>.
+This tab displays all top-level extended metadata types, which are associated with specific resource types in SEEK, including <a id="top-level-resource-type">`Investigation`, `Study`, `Assay`, `Collection`, `DataFile`, `Document`, `Event`, `Model`, `Presentation`, `Sop`, and `Project`</a>.
 
 ![](/images/user-guide/extended-metadata/emt-top-level-tab.png)
 
@@ -26,7 +26,7 @@ The table on this tab contains the following columns:
 * **Title:**  The name of the extended metadata type, which appears in the dropdown list when creating a new resource.
 
 
-* **Supported Type:**  The SEEK [top level resource types](#top-level-resource-type) associated with this extended metadata type. 
+* **Supported Type:**  The SEEK [top level resource types](#1-top-level-tab-) associated with this extended metadata type. 
 
 
 * **Number of Times Used**:  The number of times metadata has been created based on this extended metadata type.
@@ -53,11 +53,9 @@ Extended metadata types in this tab cannot be deleted if they are linked to othe
 
 ## 3. Controlled Vocabularies Tab
 
-This tab lists all the existing controlled vocabularies (CV) within SEEK. CVs can be used of definition of both sample types and extended metadata types. Administrators can create new CVs directly from this page by clicking the "Create Controlled Vocabulary" button.
+This tab lists all the controlled vocabularies (CV) available in SEEK, which can be used when defining sample types or extended metadata types. Administrators can create new controlled vocabularies by clicking the "Create Controlled Vocabulary" button.
 
 <img src="/images/user-guide/extended-metadata/cvs-tab.png" alt="extended-metadata-select" style="max-width: 80%;">
-
-This tab lists all the controlled vocabularies (CV) available in SEEK, which can be used when defining sample types or extended metadata types. Administrators can create new controlled vocabularies by clicking the "Create Controlled Vocabulary" button.
 
 The Internal ID of a controlled vocabulary is important when defining attributes such as `Controlled Vocabulary` or `Controlled Vocabulary List`.
 

@@ -16,11 +16,9 @@ This is [JSON schema](extended_metadata_type_schema.json) used to define your JS
     
 Simple attributes are those that are not linked to any other metadata type or controlled vocabulary. <br>
 <br>
-You can define the attribute using the following types, which can also be viewed on the [Extended Metadata attribute Type](manage-extended-metadata-type.md/#4-extended-metadata-attribute-types-tab) tab as a system admin in your instance.
+You can define the attribute using the following types, which can also be viewed on the [Extended Metadata attribute Type](manage-extended-metadata-type.md/#4-extended-metadata-attribute-types-tab) tab.
 <br><br>
 `Date time`, `Date`, `Real number`, `Integer`, `Web link`, `Email address`, `Text`,`String`, `ChEBI`,`ECN`,`MetaNetX chemical`,`MetaNetX reaction`,`MetaNetX compartment`,`InChI`,`ENA custom date`,`Boolean`,`URI`,`DOI`, `NCBI ID`,`Registered Strain`,`Registered Data file` 
-
-They are the same types when create `SampleType` attributes. <br>
 
 Here is an example:
 
@@ -51,7 +49,7 @@ Here is an example:
 
 ## Example 2: Define an Extended Metadata Type with Nested Metadata Attribute Types
 
-Those attributes are linked to other extended metadata types. These include: `Linked Extended Metadata`,`Linked Extended Metadata (multiple)`
+Those attributes are linked to other extended metadata types, including `Linked Extended Metadata`,`Linked Extended Metadata (multiple)`
 
 For `Linked Extended Metadata` or `Linked Extended Metadata (Multiple)` attributes, you need to supply the ID of the nested extended metadata. The available nested metadata IDs are located on the [Nest Level](manage-extended-metadata-type.md/#2-nested-level-tab) tab as a system administrator.
 
@@ -72,7 +70,7 @@ Here is an example:
       "description": null,
       "type": "Linked Extended Metadata",
       "required": false,
-      "ID": /ID/ 
+      "ID": /ID/  // ID of the nested extended metadata type 'person'
     },
     {
       "title": "mom",
@@ -80,7 +78,7 @@ Here is an example:
       "description": null,
       "type": "Linked Extended Metadata",
       "required": false,
-      "ID": /ID/ 
+      "ID": /ID/ // ID of the nested extended metadata type 'person'
     },
     {
       "title": "child",
@@ -88,7 +86,7 @@ Here is an example:
       "description": null,
       "type": "Linked Extended Metadata (multiple)",
       "required": false,
-      "ID": /ID/
+      "ID": /ID/ // ID of the nested extended metadata type 'person'
     }
   ]
 }
@@ -115,14 +113,14 @@ Here is an example:
       "description": "resource type general",
       "type": "Controlled Vocabulary",
       "required": true,
-      "ID": /ID/
+      "ID": /ID/ // ID of CV "resource_type_general"
     },
     {
       "title": "resource_study_country",
       "description": "study country",
       "type": "Controlled Vocabulary List",
       "required": true,
-      "ID": /ID/
+      "ID": /ID/ // ID of CV "resource_study_country"
     }
   ]
 }
