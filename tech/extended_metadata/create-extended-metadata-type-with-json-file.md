@@ -7,7 +7,7 @@ layout: page
 
 # Create Extended Metadata Types by Uploading a JSON File
 
-Here are [JSON schema](extended_metadata_type_schema.json) is the JSON schema used to define your JSON file for creating a new extended metadata type via upload.
+This is [JSON schema](extended_metadata_type_schema.json) used to define your JSON file for creating a new extended metadata type via upload.
 
 ## Example 1: Define Extended Metadata Type with Simple Extended Meatadata Attribute Types
 
@@ -20,7 +20,7 @@ You can define the attribute using the following types, which can also be viewed
 <br><br>
 `Date time`, `Date`, `Real number`, `Integer`, `Web link`, `Email address`, `Text`,`String`, `ChEBI`,`ECN`,`MetaNetX chemical`,`MetaNetX reaction`,`MetaNetX compartment`,`InChI`,`ENA custom date`,`Boolean`,`URI`,`DOI`, `NCBI ID`,`Registered Strain`,`Registered Data file` 
 
-They are the same types when create `SampleType` attributes <br>
+They are the same types when create `SampleType` attributes. <br>
 
 Here is an example:
 
@@ -49,7 +49,7 @@ Here is an example:
 ```
 
 
-## Example 2: Defining an Extended Metadata Type with Nested Metadata Attribute Types
+## Example 2: Define an Extended Metadata Type with Nested Metadata Attribute Types
 
 Those attributes are linked to other extended metadata types. These include: `Linked Extended Metadata`,`Linked Extended Metadata (multiple)`
 
@@ -127,7 +127,5 @@ Here is an example:
   ]
 }
 ```
-
-This is the [JSON schema](extended_metadata_type_schema.json) used to define your JSON file for creating a new extended metadata type via upload. 
 
 Here’s a step-by-step [example](a-complete-example.md) of how to create a new extended metadata type using all the attribute types mentioned above.

@@ -10,7 +10,7 @@ layout: page
 On the "Manage Extended Metadata Types" page, you will see a list of existing extended metadata types along with relevant resources for creating new ones. The page is divided into four tabs:
 
 
-## 1.  Top Level Tab: 
+## 1. Top Level Tab: 
 
 
 This tab displays all top-level extended metadata types, which are associated with specific resource types in SEEK. Examples of resource types include<a id="top-level-resource-type">`Investigation`, `Study`, `Assay`, `Collection`, `DataFile`, `Document`, `Event`, `Model`, `Presentation`, `Sop`, and `Project`</a>.
@@ -40,7 +40,7 @@ The table on this tab contains the following columns:
 
 * **Delete Button:**   Available only if the type hasn’t been used to create any metadata.
 
-## 2.  Nested Level Tab
+## 2. Nested Level Tab
 
 ![](/images/user-guide/extended-metadata/emt-nested-level-tab.png)
 
@@ -51,7 +51,7 @@ The columns here are similar to those in the [Top-Level tab](#1-top-level-tab-),
 
 Extended metadata types in this tab cannot be deleted if they are linked to other metadata types.
 
-## 3.  Controlled Vocabularies Tab
+## 3. Controlled Vocabularies Tab
 
 This tab lists all the existing controlled vocabularies (CV) within SEEK. CVs can be used of definition of both sample types and extended metadata types. Administrators can create new CVs directly from this page by clicking the "Create Controlled Vocabulary" button.
 

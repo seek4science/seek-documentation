@@ -10,20 +10,20 @@ layout: page
 
 ## Step 1: Define Controlled Vocabularies 
 
-Currently `Controlled Vocabularies` can only be created via the SEEK UI.
+Currently, controlled vocabularies can only be created through the user interface by anyone with permission to create resources in SEEK
 
 You can also use the following direct link to create controlled vocabularies: <br>
 ```HTTP://{HOST_NAME}/sample_controlled_vocabs/new```
 
 Assuming the controlled vocabularies have been created here:
-![](/images/user-guide/extended-metadata/cvs-tab.png)
+<img src="/images/user-guide/extended-metadata/cvs-tab.png" alt="extended-metadata-fields" width="600">
 
-You can view the detailed CV by clicking the corresponding CV ID. 
-![](/images/user-guide/extended-metadata/role_name_identifier_scheme_cv.png)
+You can view the detailed controlled vocabularies by clicking the corresponding its ID. 
+<img src="/images/user-guide/extended-metadata/role_name_identifier_scheme_cv.png" alt="extended-metadata-fields" width="500">
 
 ## Step 2: Define Nested Exended Metadata Types
 
-1. Define a metadata type named `role_name_identifiers` with two attributes: `scheme` and `identifier`, and it is assigned ID `158`.
+1. Define a metadata type named `role_name_identifiers` with two attributes: `scheme` and `identifier`. After creation, it is assigned ID `158`.
 
 ```json
 {
@@ -188,7 +188,9 @@ You can view the detailed CV by clicking the corresponding CV ID.
 }
 ```
 
-You can select to load this extended metadata type on the study creation page.
+## Step 4: Use Extended Metadata Type 
+
+As the result, you can select to load this extended metadata type on the study creation page.
 ![](/images/user-guide/extended-metadata/emt-ui.png)
 
 
