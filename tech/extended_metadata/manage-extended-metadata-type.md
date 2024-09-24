@@ -51,13 +51,11 @@ The columns here are similar to those in the [Top-Level tab](#1-top-level-tab-),
 
 Extended metadata types in this tab cannot be deleted if they are linked to other metadata types.
 
-### 3.  Controlled Vocabularies Tab
+## 3.  Controlled Vocabularies Tab
 
 This tab lists all the existing controlled vocabularies (CV) within SEEK. CVs can be used of definition of both sample types and extended metadata types. Administrators can create new CVs directly from this page by clicking the "Create Controlled Vocabulary" button.
 
-
-![](/images/user-guide/extended-metadata/cvs-tab.png)
-
+<img src="/images/user-guide/extended-metadata/cvs-tab.png" alt="extended-metadata-select" style="max-width: 80%;">
 
 This tab lists all the controlled vocabularies (CV) available in SEEK, which can be used when defining sample types or extended metadata types. Administrators can create new controlled vocabularies by clicking the "Create Controlled Vocabulary" button.
 
