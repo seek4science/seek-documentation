@@ -13,6 +13,6 @@ The names of different features and functions may vary across FAIRDOM-SEEK insta
 --------------------|-------|-------------------------
 Project | Team | WorkflowHub
 Programme | Space | WorkflowHub
-
+SOP | Protocol | DataHub
 
 
