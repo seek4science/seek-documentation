@@ -13,7 +13,7 @@ However, if there other ways you feel you can contribute, such as running a work
 
 ## Contributing to SEEK
 
-Please read [contributing to SEEK](tech/contributing-to-seek.html).
+Please read [contributing to SEEK](tech/contributing-to-seek.html) or [reporting a bug or feature request](/tech/reporting-bugs-and-features).
 
 
 ## Contributing to these pages

@@ -16,8 +16,8 @@ subitems:
         url: /help/user-guide/managing-identities
     - title: Editing your profile
       url: /help/user-guide/editing-profile
-    - title: "[Favourites: drag and drop your favourite searchers]"
-      url: ""
+#    - title: "[Favourites: drag and drop your favourite searchers]"
+#      url: ""
   - 
     #hr: true
     title: Yellow Pages
@@ -37,37 +37,14 @@ subitems:
         url: /help/user-guide/project-dashboard
       - title: Viewing Project in Experiment View
         url: /help/user-guide/viewing-project-in-single-page
-      #- title: Specialist user roles and their capabilities
-      #  url: /help/user-guide/roles
     - title: Specialist user roles
       url: /help/user-guide/roles
-      #subitems:
-      #- title: Programme administrator
-      #  url: /help/user-guide/roles#programme-administrator
-      #- title: Project administrator
-      #  url: /help/user-guide/roles#project-administrator
-      #- title: Asset housekeeper
-      #  url: /help/user-guide/roles#asset-housekeeper
-      #- title: Asset gatekeeper
-      #  url: /help/user-guide/roles#asset-gatekeeper
     - title: Capabilities
       subitems:
       - title: Administer project members
         url: /help/user-guide/administer-project-members
       - title: Adding admin items
         url: /help/user-guide/adding-admin-items
-      #- title: Assign people to Project roles
-      #  url: /help/user-guide/administer-project-members#assign-people-to-project-roles
-      #- title: Flag when a person becomes inactive in a Project
-      #  url: /help/user-guide/administer-project-members#flag-when-a-person-becomes-inactive-in-a-project
-      #- title: Create Organisms
-      #  url: /help/user-guide/adding-admin-items#creating-organisms
-      #- title: Create Profiles
-      #  url: /help/user-guide/adding-admin-items#creating-profiles
-      #- title: Create Institutions
-      #  url: /help/user-guide/adding-admin-items#creating-institutions
-      #- title: Add and remove people from a Project
-      #  url: /help/user-guide/administer-project-members#add-and-remove-people-from-a-project - 
   -
     #hr: true
     title: Experiments
@@ -75,27 +52,11 @@ subitems:
     subitems: 
     - title: Generating the ISA structure
       url: /help/user-guide/generating-the-isa-structure
-      #subitems:
-      #- title: Creating an Investigation
-      #  url: /help/user-guide/generating-the-isa-structure#creating-an-investigation
-      #- title: Creating a Study
-      #  url: /help/user-guide/generating-the-isa-structure#creating-a-study
-      #- title: Creating an Experimental assay
-      #  url: /help/user-guide/generating-the-isa-structure#creating-an-experimental-assay
-      #- title: Creating a Modelling analysis
-      #  url: /help/user-guide/generating-the-isa-structure#creating-a-modelling-analysis
     - title: ISA Overview Graph
       url: /help/user-guide/isa-overview
     - hr: true
       title: Designing an ISA-JSON compliant experiment
       url: /help/user-guide/designing-experiments-isajson-compliant
-      #subitems:
-      #- title: Creating an ISA Investigation
-      #  url: /help/user-guide/designing-experiments-isajson-compliant#1-creating-an-isa-investigation
-      #- title: Creating an ISA Study
-      #  url: /help/user-guide/designing-experiments-isajson-compliant#2-creating-an-isa-study
-      #- title: Creating an ISA Assay
-      #  url: /help/user-guide/designing-experiments-isajson-compliant#5-creating-an-assay-stream
     - title: ISA-JSON complient experiment
       url: /help/user-guide/isa-json-compliant-experiment
       subitems:
@@ -106,15 +67,6 @@ subitems:
     - hr: true
       title: Making an Investigation, Study or Assay citable
       url: /help/user-guide/investigation-snapshots
-      #subitems:
-      #- title: Making public
-      #  url: /help/user-guide/investigation-snapshots#making-public
-      #- title: Snapshotting
-      #  url: /help/user-guide/investigation-snapshots#snapshotting
-      #- title: Creating a Research Object
-      #  url: /help/user-guide/investigation-snapshots#creating-a-research-object
-      #- title: Assigning a DOI
-      #  url: /help/user-guide/investigation-snapshots#assigning-a-doi
   -
     #hr: true
     title: Assets
@@ -137,12 +89,12 @@ subitems:
       url: /help/user-guide/general-attributes#publications
     - title: Collections
       url: /help/user-guide/collections
-    - title: "[Document]"
-      url: ""
-    - title: "[Workflow]"
-      url: ""
-    - title: "[File template]"
-      url: ""
+#    - title: "[Document]"
+#      url: ""
+#    - title: "[Workflow]"
+#      url: ""
+#    - title: "[File template]"
+#      url: ""
     - title: Creating new asset versions
       url: /help/user-guide/uploading-new-versions
       subitems:
@@ -167,14 +119,6 @@ subitems:
       subitems:
       - title: Working with samples in ISA-JSON compliant Experiments
         url: /help/user-guide/create-sample-isajson-compliant
-      #- title: Viewing samples in ISA-JSON compliant Experiments
-      #  url: /help/user-guide/create-sample-isajson-compliant#viewing-samples-isajson-compliant-experiments
-      #- title: Create Study Sources
-      #  url: /help/user-guide/create-sample-isajson-compliant#create-study-sources
-      #- title: Create Study Samples
-      #  url: /help/user-guide/create-sample-isajson-compliant#create-study-samples
-      #- title: Create Assay Samples
-      #  url: /help/user-guide/create-sample-isajson-compliant#create-assay-samples
     - title: Browsing samples
       url: /help/user-guide/browsing#browsing-samples
       subitems:
@@ -189,37 +133,9 @@ subitems:
     subitems:
     - title: General attributes and links
       url: /help/user-guide/general-attributes
-    - hr: true
-    #  title: Title
-    #  url: /help/user-guide/general-attributes#title
-    #- title: Description
-    #  url: /help/user-guide/general-attributes#description
-    #- title: Projects
-    #  url: /help/user-guide/general-attributes#projects
-    #- title: Investigation details
-    #  url: /help/user-guide/general-attributes#investigation-details
-    #- title: Study
-    #  url: /help/user-guide/general-attributes#study
-    #- title: Biological Problem Addressed
-    #  url: /help/user-guide/general-attributes#biological-problem-addressed
-    #- title: Assay Type
-    #  url: /help/user-guide/general-attributes#assay-type
-    #- title: Experimental assays and Modelling analysis
-    #  url: /help/user-guide/general-attributes#experimental-assays-and-modelling-analysis
-    #- title: Technology Type
-    #  url: /help/user-guide/general-attributes#technology-type
-    #- title: Organisms
-    #  url: /help/user-guide/general-attributes#organisms
-    #- title: Experiementalists
-    #  url: /help/user-guide/general-attributes#experimentalists
-    #- title: Attributions
-    #  url: /help/user-guide/general-attributes#attributions
-    #- title: Creators
-    #  url: /help/user-guide/general-attributes#creators
-    #- title: Tags
-    #  url: /help/user-guide/general-attributes#tags
-    - title: "[Discussion channel]"
-      url: ""
+  #  - hr: true
+#    - title: "[Discussion channel]"
+#      url: ""
     - title: Licenses
       url: /help/user-guide/licenses
     - title: Sharing
@@ -227,15 +143,15 @@ subitems:
       subitems:
       - title: Bulk changing of sharing permissions
         url: /help/user-guide/bulk-change-sharing-permission
-    - title: "[Extended metadata]"
-      url: ""
+#    - title: "[Extended metadata]"
+#      url: ""
   -
     #hr: true
     title: Activities
     description: How to change the events and presentations.
     subitems:
-    - title: "[Presentation]"
-      url: ""
+#    - title: "[Presentation]"
+#      url: ""
     - title: Events
       url: /help/user-guide/general-attributes#events
   - 
@@ -258,12 +174,3 @@ subitems:
     subitems:
     - title: API Introduction
       url: /help/user-guide/api
-  -
-    hr: true
-    title: Contribute
-    description: Reporting bugs or feature requests, contributing to these documents.
-    subitems:
-    - title: Reporting a bug or feature request
-      url: /tech/reporting-bugs-and-features
-    - title: Contributing to these SEEK Documents
-      url: /contributing
