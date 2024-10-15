@@ -93,7 +93,7 @@ subitems:
     title: Samples
     description: Creating and browsing samples, and samples in ISA-JSON compliant experiments.
     subitems:
-    - title: Samples
+    - title: Samples introduction
       url: /help/user-guide/samples
       subitems:
       - title: Create a Sample Type
