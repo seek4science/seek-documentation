@@ -53,12 +53,12 @@ The outputs of an Assay can only be used as inputs by the next Assay in the same
 
 ## Experiment Sample Templates
 
-[Experiment Sample Templates](isajson-templates.html) act as blueprints to create Sample Types within ISA Studies and ISA Assays and ensure that 
+[Experiment Sample Templates](isajson-templates) act as blueprints to create Sample Types within ISA Studies and ISA Assays and ensure that 
 the metadata collected conforms to community standards.
 
-Experiment Sample Templates can be [provided by the platform administrator](isajson-templates.html#for-system-administrator) or created by Project members based on an existing template. Templates provided by the platform administrator are platform-wide (or instance-wide) and visible to every registered user. Project-specific Experiment Sample Templates created by Project members are subject to sharing permissions.
+Experiment Sample Templates can be [provided by the platform administrator](isajson-templates#for-system-administrator) or created by Project members based on an existing template. Templates provided by the platform administrator are platform-wide (or instance-wide) and visible to every registered user. Project-specific Experiment Sample Templates created by Project members are subject to sharing permissions.
 
-See [Experiment Sample Templates](isajson-templates.html) for more information.
+See [Experiment Sample Templates](isajson-templates) for more information.
 
 
 ## Samples in ISA-JSON compliant Experiments
@@ -71,13 +71,13 @@ The "level" of the Experiment Sample Template applied to generate a Sample Type 
 * ISA material output Assay Template for material samples
 * ISA data file Assay Template for digital data file samples
 
-See [Working with Samples in ISA-JSON compliant Experiments](create-sample-isajson-compliant.html) for more information.
+See [Working with Samples in ISA-JSON compliant Experiments](create-sample-isajson-compliant) for more information.
 
 ## Designing ISA-JSON compliant Experiments
 
-See [Designing ISA-JSON compliant Experiments](designing-experiments-isajson-compliant.html) for a step-by-step description 
+See [Designing ISA-JSON compliant Experiments](designing-experiments-isajson-compliant) for a step-by-step description 
 of how to set up ISA-JSON compliant Experiments.
 
 ## ISA-JSON export
-[Export Experiments as ISA-JSON](exporting-experiments-as-isajson.html)
+[Export Experiments as ISA-JSON](exporting-experiments-as-isajson)
 

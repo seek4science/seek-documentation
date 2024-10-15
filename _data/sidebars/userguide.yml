@@ -59,6 +59,9 @@ subitems:
       url: /help/user-guide/designing-experiments-isajson-compliant
     - title: ISA-JSON complient experiment
       url: /help/user-guide/isa-json-compliant-experiment
+      subitems:
+        - title: Experiment Sample Templates
+          url: /help/user-guide/isajson-templates
     - title: Export experiments as ISA-JSON
       url: /help/user-guide/exporting-experiments-as-isajson
     - hr: true
