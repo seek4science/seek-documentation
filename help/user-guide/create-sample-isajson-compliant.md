@@ -103,5 +103,5 @@ Experiment overview table shows an overview of all Sources and Samples in a sear
 * In ISA Assay, Experiment overview shows Study Samples and Assay samples, up until that experimental step.
 
 ## Browsing samples by Experiment Sample templates
-[Browsing samples by experiment sample templates](browsing.html#browsing-samples-by-experiment-sample-templates)
+[Browsing samples by experiment sample templates](browsing#browsing-samples-by-experiment-sample-templates)
 

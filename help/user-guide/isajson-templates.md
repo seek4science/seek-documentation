@@ -44,7 +44,7 @@ Project-specific Experiment Sample Templates
 
 ## Creating Experiment Sample Templates as a project member
 
-Project members have the capability to create Experiment Sample Templates for their laboratory or research project, called "Project specific Experiment Sample Templates". These templates can be shared among Projects and Programmes on the platform via granular [sharing permissions](general-attributes.html#sharing), allowing other project members to utilize them for designing their experiments.
+Project members have the capability to create Experiment Sample Templates for their laboratory or research project, called "Project specific Experiment Sample Templates". These templates can be shared among Projects and Programmes on the platform via granular [sharing permissions](general-attributes#sharing), allowing other project members to utilize them for designing their experiments.
 
 
 1. From the header menu bar, select "Create" and then "Experiment Sample Templates" under the Experiments section.

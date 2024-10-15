@@ -12,11 +12,11 @@ The investigation is a high level concept that links related studies. To generat
 
 An investigation is described and linked using the following fields:
 
-* [Title](general-attributes.html#title)
-* [Description](general-attributes.html#description)
-* [Creators](general-attributes.html#creators)
-* [Sharing](general-attributes.html#sharing)
-* [Publications](general-attributes.html#publications)
+* [Title](general-attributes#title)
+* [Description](general-attributes#description)
+* [Creators](general-attributes#creators)
+* [Sharing](general-attributes#sharing)
+* [Publications](general-attributes#publications)
 
 
 

@@ -6,7 +6,7 @@ layout: page-ett
 Pre-requisites:
  - You have an account on the NeLS system.
  - You are a member of a NeLS-enabled project.
- - You have [created an ISA structure](generating-the-isa-structure.html), or have "edit" permissions for an assay in that project.
+ - You have [created an ISA structure](generating-the-isa-structure), or have "edit" permissions for an assay in that project.
 
 
 
@@ -38,7 +38,7 @@ Upon completing the form and clicking "Create", the data will be registered in S
 
 When viewing NeLS data in SEEK, two additional buttons are present on the top right of the entry page:
 
- - *Fetch sample metadata* - If there is a sample metadata spreadsheet registered for this subtype in NeLS, click this button to import it into SEEK as [samples](samples.html) (only visible if you have "edit" permissions)
+ - *Fetch sample metadata* - If there is a sample metadata spreadsheet registered for this subtype in NeLS, click this button to import it into SEEK as [samples](samples) (only visible if you have "edit" permissions)
  - *Open in NeLS* - View the data in NeLS, prompting for login details if required.
 
 ![NeLS data-specific buttons](/images/user-guide/nels_buttons.png){:.screenshot}

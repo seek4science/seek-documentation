@@ -3,7 +3,7 @@ title: Request to join a project
 layout: page-ett
 ---
 
-For details about what a Project and Programme is, please see [Creating a Project](./create-a-project.html)
+For details about what a Project and Programme is, please see [Creating a Project](./create-a-project)
 
 ## Joining a Project
 

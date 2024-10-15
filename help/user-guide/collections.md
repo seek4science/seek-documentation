@@ -25,13 +25,13 @@ Collections can be created via "Assets" section of the Create menu:
 
 Collections share many of the same attributes as other asset types in SEEK:
 
-* [Title](general-attributes.html#title)
-* [Description](general-attributes.html#description)
-* [Projects](general-attributes.html#projects)
-* [Licenses](licenses.html)
-* [Sharing](general-attributes.html#sharing)
-* [Tags](general-attributes.html#tags)
-* [Attributions](general-attributes.html#attributions)
+* [Title](general-attributes#title)
+* [Description](general-attributes#description)
+* [Projects](general-attributes#projects)
+* [Licenses](licenses)
+* [Sharing](general-attributes#sharing)
+* [Tags](general-attributes#tags)
+* [Attributions](general-attributes#attributions)
 
 ### Maintainers
 One difference from other asset types is that Collections have "maintainers" instead of "creators".

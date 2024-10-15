@@ -28,10 +28,10 @@ You can also jump straight to the end or back to the start by clicking the "End"
 
 You should provide the basic general metadata about the data file:
 
-* [Title](general-attributes.html#title) (**Mandatory**)
-* [Description](general-attributes.html#description)
-* [Projects](general-attributes.html#projects) (**Mandatory**)
-* [Tags](general-attributes.html#tags)
+* [Title](general-attributes#title) (**Mandatory**)
+* [Description](general-attributes#description)
+* [Projects](general-attributes#projects) (**Mandatory**)
+* [Tags](general-attributes#tags)
 
 ### Licensing and sharing
 
@@ -39,8 +39,8 @@ You should provide the basic general metadata about the data file:
 
 The preferred license for the data, and sharing permissions can now be set. These will automatically be the project defaults, if they have been defined for the project.
 
-* [Licenses](licenses.html)
-* [Sharing](general-attributes.html#sharing)
+* [Licenses](licenses)
+* [Sharing](general-attributes#sharing)
 
 ### Associated Assays
 
@@ -48,7 +48,7 @@ The preferred license for the data, and sharing permissions can now be set. Thes
 
 For this step, you can defined the Assays the Data will be linked to. This will usually be an existing Assay.
 
-* [Experimental assays and Modelling analysis](general-attributes.html#experimental-assays-and-modelling-analysis)
+* [Experimental assays and Modelling analysis](general-attributes#experimental-assays-and-modelling-analysis)
 
 If necessary, it is also possible to create a new Assay during this step:
     
@@ -61,9 +61,9 @@ If necessary, it is also possible to create a new Assay during this step:
 
 The final step allows you to associate the Data with other items, if necessary.
 
-* [Attributions](general-attributes.html#attributions)
-* [Publications](general-attributes.html#publications)
-* [Events](general-attributes.html#events)
+* [Attributions](general-attributes#attributions)
+* [Publications](general-attributes#publications)
+* [Events](general-attributes#events)
   
   
 
