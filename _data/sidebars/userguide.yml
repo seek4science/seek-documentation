@@ -59,9 +59,6 @@ subitems:
       url: /help/user-guide/designing-experiments-isajson-compliant
     - title: ISA-JSON complient experiment
       url: /help/user-guide/isa-json-compliant-experiment
-      subitems:
-      - title: Experiment Sample Templates
-        url: /help/user-guide/isa-json-compliant-experiment#experiment-sample-templates
     - title: Export experiments as ISA-JSON
       url: /help/user-guide/exporting-experiments-as-isajson
     - hr: true
@@ -74,19 +71,10 @@ subitems:
     subitems:
     - title: Adding assets (data, models, SOPs, publications) to SEEK
       url: /help/user-guide/adding-assets
-    - title: Data Files
-      url: /help/user-guide/general-attributes#data-files
-      subitems:
-      - title: Data file wizard
-        url: /help/user-guide/data-file-upload-wizard
-    - title: Model
-      subitems:
-      - title: Simulate a model on JWS Online
-        url: /help/user-guide/simulate-on-jws-online
-    - title: SOPs
-      url: /help/user-guide/general-attributes#sops
-    - title: Publications
-      url: /help/user-guide/general-attributes#publications
+    - title: Data file wizard
+      url: /help/user-guide/data-file-upload-wizard
+    - title: Simulate a model on JWS Online
+      url: /help/user-guide/simulate-on-jws-online
     - title: Collections
       url: /help/user-guide/collections
 #    - title: "[Document]"
@@ -114,18 +102,8 @@ subitems:
         url: /help/user-guide/create-sample
       - title: Legacy Biosamples
         url: /help/user-guide/legacy-biosamples
-    - title: Samples in ISA-JSON compliant experiments
-      url: /help/user-guide/isa-json-compliant-experiment#samples-in-isa-json-compliant-experiment
-      subitems:
-      - title: Working with samples in ISA-JSON compliant Experiments
-        url: /help/user-guide/create-sample-isajson-compliant
-    - title: Browsing samples
-      url: /help/user-guide/browsing#browsing-samples
-      subitems:
-      - title: Browse samples by Sample Type
-        url: /help/user-guide/browsing#browse-samples-by-sample-type
-      - title: Browse samples by Experiment Sample Template
-        url: /help/user-guide/browsing#browse-samples-by-experiment-sample-template
+    - title: Working with samples in ISA-JSON compliant Experiments
+      url: /help/user-guide/create-sample-isajson-compliant
   -
     #hr: true
     title: General attributes and links
@@ -138,22 +116,19 @@ subitems:
 #      url: ""
     - title: Licenses
       url: /help/user-guide/licenses
-    - title: Sharing
-      url: /help/user-guide/general-attributes#sharing
-      subitems:
-      - title: Bulk changing of sharing permissions
-        url: /help/user-guide/bulk-change-sharing-permission
+    - title: Bulk changing of sharing permissions
+      url: /help/user-guide/bulk-change-sharing-permission
 #    - title: "[Extended metadata]"
 #      url: ""
-  -
-    #hr: true
-    title: Activities
-    description: How to change the events and presentations.
-    subitems:
+#  -
+#    #hr: true
+#    title: Activities
+#    description: How to change the events and presentations.
+#    subitems:
 #    - title: "[Presentation]"
 #      url: ""
-    - title: Events
-      url: /help/user-guide/general-attributes#events
+#    - title: Events
+#      url: /help/user-guide/general-attributes#events
   - 
     #hr: true
     title: Integrations

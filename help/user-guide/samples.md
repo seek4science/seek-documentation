@@ -21,9 +21,13 @@ explained and reported, that convert one sample into another. In essence this is
 A process can only occur if a protocol and/or a standard operating procedure is associated with it.
 
 
-[Creating a new Sample Type](create-sample-type.html)
+[Creating a new Sample Type](create-sample-type)
 
-[Creating a new Sample](create-sample.html)
+[Creating a new Sample](create-sample)
 
-[Legacy Biosamples](legacy-biosamples.html)
+[Legacy Biosamples](legacy-biosamples)
 
+[Browsing samples](browsing#browsing-samples)
+
+   - [Browse samples by Sample Type](browsing#browse-samples-by-sample-type)
+   - [Browse samples by Experiment Sample Template](browsing#browse-samples-by-experiment-sample-template)
