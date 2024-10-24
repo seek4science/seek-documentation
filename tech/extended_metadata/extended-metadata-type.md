@@ -69,7 +69,7 @@ In this diagram:
 * Inherits the same attribute structure as the Sample Type.
 * Unlike a Sample Type, it does not create standalone entities.
 
-**Extended Metadatae:**
+**Extended Metadata:**
 
 * Extended Metadata created from a Extended Metadata Type.
 
