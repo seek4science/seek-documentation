@@ -3,12 +3,12 @@
 subitems:
 #- title: Home
 #  url: /
-#- title: "Getting FAIRDOM-SEEK"
-#  url: /get-seek.html
+- title: "Getting FAIRDOM-SEEK"
+  url: /get-seek
 #- title: Contacting Us
-#  url: /contacting-us.html
+#  url: /contacting-us
 #- title: Contributing
-#  url: /contributing.html
+#  url: /contributing
 - title: Help and Guidelines
   url: /help/
 - title: User Guide
