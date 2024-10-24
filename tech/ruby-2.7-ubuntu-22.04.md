@@ -1,10 +1,9 @@
 ---
 title: Installing Ruby 2.7 on Ubuntu 22.04
-layout: page
+layout: page-ett
 redirect_from: "/install.html"
 ---
 
-# Installing Ruby 2.7 on Ubuntu 22.04
 
 ## Install openssl libraries
 

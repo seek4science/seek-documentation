@@ -1,11 +1,8 @@
 ---
-title: Docker - Docker compose
-layout: page
+title: Docker - Using Docker compose
+layout: page-ett
 ---
 
-# Docker
-
-## Using docker compose
 
 You can run SEEK in Docker together with MySQL and SOLR running in its own containers as micro-services, using Docker Compose.
 
@@ -106,7 +103,7 @@ The cache and solr index don't need backing up. Once up and running, if necessar
 
 ## Upgrading between versions
 
-The process is very similar to [Upgrading a Basic Container](basic-container.html#upgrades).
+The process is very similar to [Upgrading a Basic Container](basic-container#upgrades).
 
 First update the [docker-compose.yml](https://github.com/seek4science/seek/blob/seek-{{ site.current_docker_tag }}/docker-compose.yml) for the new version.
 You will be able to tell the version from the image tag - e.g for {{ site.current_docker_tag }}
@@ -125,7 +122,7 @@ using the new docker-compose.yml do:
 
 ## Moving from a standalone installation to Docker Compose
 
-If you have an existing SEEK installation running on "Bare Metal" and would like to move to using Docker compose, we have a script that can help migrate the data. The script was created to help move some of our own services, but hasn't been heavily tested beyond that so please use with care. Please feel free to [Contribute](/contributing-to-seek.html) any improvements.
+If you have an existing SEEK installation running on "Bare Metal" and would like to move to using Docker compose, we have a script that can help migrate the data. The script was created to help move some of our own services, but hasn't been heavily tested beyond that so please use with care. Please feel free to [Contribute](../contributing-to-seek) any improvements.
 
 First a dump of the mysql database is needed, which can be created using _mysqldump_
 

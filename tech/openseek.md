@@ -1,9 +1,8 @@
 ---
 title: openSEEK
-layout: page
+layout: page-ett
 ---
 
-# openSEEK
 
 The combined openBIS & SEEK Docker package is no longer supported, and each need to be installed separately.
 

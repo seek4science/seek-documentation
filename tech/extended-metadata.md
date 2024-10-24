@@ -1,9 +1,7 @@
 ---
 title: Extended Metadata Technical Overview
-layout: page
+layout: page-ett
 ---
-
-# Extended Metadata Technical Overview
 
 ## Introduction
 

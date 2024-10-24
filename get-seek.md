@@ -12,14 +12,14 @@ If you do not want to install your own version of FAIRDOM-SEEK, you can register
 
 ## Changes
 
-To review changes and new features introduced between FAIRDOM-SEEK versions please visit our [Change Log](/tech/releases/)
+To review changes and new features introduced between FAIRDOM-SEEK versions please visit our [Change Log](/tech/releases/).
 
 ## Installation
 
-For details on how to install FAIRDOM-SEEK please refer to our [Installation Guide](tech/install.html)
+For details on how to install FAIRDOM-SEEK please refer to our [Installation Guide](tech/install).
 
-For details on how to upgrade an existing FAIRDOM-SEEK installation please refer to our [Upgrade Guide](tech/upgrading.html)
+For details on how to upgrade an existing FAIRDOM-SEEK installation please refer to our [Upgrade Guide](tech/upgrading).
 
 ## Docker
 
-FAIRDOM-SEEK can also be deployed using [Docker](https://docker.com), for which we provide Docker images. Please read our [Docker guide](/tech/docker.html).
+FAIRDOM-SEEK can also be deployed using [Docker](https://docker.com), for which we provide Docker images. Please read our [Docker guide](/tech/docker).

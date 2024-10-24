@@ -1,10 +1,11 @@
 ---
 title: Roadmap
-layout: page
+layout: page-ett
+sidebar: tech
 redirect_from: "/roadmap.html"
 ---
 
-# Roadmap
+## Upcoming
 
 This is an outline of plans the core FAIRDOM-SEEK development team will be working on in the near future.
 

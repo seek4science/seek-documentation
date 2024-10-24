@@ -39,6 +39,55 @@ defaults:
       permalink: /help/user-guide/:basename
       #layout: "page-ett"
       sidebar: userguide
+  -
+    scope:
+      path: "tech"
+    values:
+      permalink: /tech/:basename
+      sidebar: tech
+  -
+    scope:
+      path: "tech/docker"
+    values:
+      permalink: /tech/docker/:basename
+      sidebar: tech
+  -
+    scope:
+      path: "tech/releases"
+    values:
+      permalink: /tech/releases/:basename
+      sidebar: tech
+  -
+    scope:
+      path: "tech/scripts"
+    values:
+      permalink: /tech/scripts/:basename
+      sidebar: tech
+  -
+    scope:
+      path: "tech/api"
+    values:
+      permalink: /tech/api/:basename
+  -
+    scope:
+      path: "tech/api/definitions"
+    values:
+      permalink: /tech/api/definitions/:basename
+  -
+    scope:
+      path: "tech/api/descriptions"
+    values:
+      permalink: /tech/api/descriptions/:basename
+  -
+    scope:
+      path: "tech/api/examples"
+    values:
+      permalink: /tech/api/examples/:basename
+  -
+    scope:
+      path: "tech/api/scripts"
+    values:
+      permalink: /tech/api/scripts/:basename
 # adding type and layout to this scope is not working
 
 theme_variables: 

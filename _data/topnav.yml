@@ -17,7 +17,7 @@ subitems:
 #  url: /help/user-guide/api
 #- title: Useful Links
 #  url: /tech/useful-links.html
-#- title: Developers
-#  url: /tech/install.html
+- title: Technical References
+  url: /tech/
 ## move some links to footer
 ## need a Tech landing/index page; for now, use install page

@@ -1,13 +1,8 @@
 ---
-title: Docker - Installing
-layout: page
+title: Docker - Installing Docker
+layout: page-ett
 ---
 
-# Docker
-
-
-
-## Installing Docker
 
 As a miminum you will need the Docker Engine. 
 

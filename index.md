@@ -30,6 +30,10 @@ Details on how to get started using the Application Programme Interface (API) ca
 We also have other information for topics related to FAIRDOM-SEEK, including Metadata, ISA, and controlled vocabularies, which can be found
 in our [Guides](/help/).
 
+## Technical references
+
+For more detailed information about installation and upgrading, please see our [Technical and Reference documentation](/tech/).
+
 ## Contacting and Contributions
 
 There are [Contact Details](/contacting-us), should you wish to ask a question or make a suggestion.

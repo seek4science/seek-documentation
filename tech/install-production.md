@@ -1,10 +1,9 @@
 ---
-title: installing for production
-layout: page
+title: Installing SEEK in a production environment
+layout: page-ett
 redirect_from: "/install-production.html"
 ---
 
-# Installing SEEK in a production environment
 
 This page contains some extra notes about setting up SEEK for production (i.e.
 for real use rather than for development).
@@ -13,7 +12,7 @@ By reading and following these extra notes, you will more performance out of
 SEEK, and reduce the ongoing maintenance.
 
 If you wish to run under a sub URI, e.g. example.com/seek, then please read and
-follow [Installing under a sub URI](install-on-suburi.html) at the end
+follow [Installing under a sub URI](install-on-suburi) at the end
 of the installation.
 
 ## Before you install SEEK
@@ -48,7 +47,7 @@ you will need to reset this variable if you close your shell and start a new
 session
 
 
-You can now follow the overall [Installation Guide](install.html), and
+You can now follow the overall [Installation Guide](install), and
 then return to this page for some additional steps to get SEEK running
 together with Apache, and also automating the required services.
 

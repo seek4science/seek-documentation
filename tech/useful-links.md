@@ -1,6 +1,6 @@
 ---
-title: Useful links
-layout: page
+title: Useful Links
+layout: page-ett
 ---
 
 FAIRDOM Website: [https://fair-dom.org](https://fair-dom.org)
@@ -11,7 +11,7 @@ SEEK Issue tracking: [https://fair-dom.org/issues](https://fair-dom.org/issues)
 
 SEEK software website: [https://seek4science.org](https://seek4science.org)
 
-SEEK installation guide: [/tech/install.html](/tech/install.html)
+SEEK installation guide: [/tech/install](/tech/install)
 
 SEEK changelog: [/tech/releases/](/tech/releases)
 

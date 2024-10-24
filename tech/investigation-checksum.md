@@ -1,11 +1,10 @@
 ---
-title: investigation checksum
-layout: page
+title: Checksum fingerprints
+layout: page-ett
 redirect_from:
     - /investigation_checksum.html
     - /tech/investigation_checksum.html
 ---
-# Checksum fingerprints
 
 ## What are they?
 
@@ -43,7 +42,7 @@ For SHA1
 This will return and display the checksum
 
 
-### Mac OS X
+### Mac OS
 
 For MD5
 

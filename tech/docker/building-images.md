@@ -1,15 +1,12 @@
 ---
-title: Docker - Building your own images
-layout: page
+title: Docker - Building your own Docker image
+layout: page-ett
 ---
 
-# Docker
-
-## Building your own docker image
 
 If you are doing your own development, or you want to tweak the Docker image, it is simple to build your own.
 
-You need first of course, to have the SEEK code which you can get from [GitHub](https://github.com/seek4science/seek), see [Getting SEEK](../install.html#getting-seek)
+You need first of course, to have the SEEK code which you can get from [GitHub](https://github.com/seek4science/seek), see [Getting SEEK](../install#getting-seek)
 
 The Docker image is determined by the [Dockerfile](https://github.com/seek4science/seek/blob/main/Dockerfile), 
 and in most cases you shouldn't need to change this.

@@ -1,15 +1,15 @@
 ---
 title: FAIRDOM-SEEK releases
-layout: page
+layout: page-ett
+permalink: /tech/releases/
 ---
 
-# FAIRDOM-SEEK Releases
+{% capture latest_version_long %}Latest version - {{ site.current_seek_version }}{% endcapture %}
+{% include callout.html type="note" content=latest_version_long %}
 
-**Latest version - {{ site.current_seek_version }}**
+Please see [Getting FAIRDOM-SEEK](/get-seek) for details about installing SEEK.
 
-Please see [Getting FAIRDOM-SEEK](/get-seek.html) for details about installing SEEK
-
-If you have any comments or feedback about a release, then please [Contact Us](/contacting-us.html)
+If you have any comments or feedback about a release, then please [Contact Us](/contacting-us).
 
 ## Version 1.15.2
 

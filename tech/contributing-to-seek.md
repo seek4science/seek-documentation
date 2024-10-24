@@ -1,17 +1,15 @@
 ---
-title: contributing to seek
-layout: page
+title: Contributing to SEEK
+layout: page-ett
 redirect_from: "/contributing-to-seek.html"
 ---
-
-# Contributing to SEEK
 
 We welcome all sorts of contributions to SEEK,
 
 * **Non-developer contributions.** These are contributions that can be made by anyone
   using SEEK.
-  * *Vote and comment other feature requests:* [Contact us](/contacting-us.html) please use the [SEEK issue tracker](https://fair-dom.org/issues). 
-  * *Documentation:* Are you reading the documentation and feel something could/should be better explained? Please read [Contributing to these Pages](/contributing-to-pages.html)
+  * *Vote and comment other feature requests:* [Contact us](/contacting-us) please use the [SEEK issue tracker](https://fair-dom.org/issues). 
+  * *Documentation:* Are you reading the documentation and feel something could/should be better explained? Please read [Contributing to these Pages](/contributing-to-pages)
   * *Reporting errors:* We are also thankful if you spot errors or broken links.
 * **Developer contributions** These are contributions that can be made by other software
   developers.
@@ -20,7 +18,7 @@ We welcome all sorts of contributions to SEEK,
 
 ## Before you start
 
-Always read [Report bugs and new features](reporting-bugs-and-features.html) before you start, and contact us.
+Always read [Report bugs and new features](reporting-bugs-and-features) before you start, and contact us.
 It is possible the feature is already being looked at by another contributor and effort could be combined.
 
 
