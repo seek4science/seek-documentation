@@ -1,6 +1,8 @@
 title: About
 title_url: /
 subitems:
+  - title: Get FAIRDOM-SEEK
+    url: /get-seek
   - title: Contacting us
     url: /contacting-us
   - title: Contributing
@@ -16,5 +18,3 @@ subitems:
     url: /credits
   - title: Definitions
     url: /definitions
-  - title: Get FAIRDOM-SEEK
-    url: /get-seek
