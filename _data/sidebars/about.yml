@@ -1,0 +1,20 @@
+title: About
+title_url: /
+subitems:
+  - title: Contacting us
+    url: /contacting-us
+  - title: Contributing
+    url: /contributing
+    subitems:
+      - title: Contributing to pages
+        url: /contributing-to-pages
+      - title: Style guide
+        url: /style-guide
+  - title: Cookies
+    url: /cookies
+  - title: Credits
+    url: /credits
+  - title: Definitions
+    url: /definitions
+  - title: Get FAIRDOM-SEEK
+    url: /get-seek

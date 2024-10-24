@@ -1,10 +1,10 @@
 ---
 title: Get FAIRDOM-SEEK
-layout: page
+layout: page-ett
+sidebar: about
+permalink: /get-seek
 redirect_from: "/get_seek.html"
 ---
-
-# Get FAIRDOM-SEEK
 
 FAIRDOM-SEEK is open source software, and is distributed under a [BSD License](https://github.com/seek4science/seek/blob/main/BSD-LICENSE). The source code is all available on [GitHub](https://github.com/seek4science/seek).
 

@@ -1,9 +1,10 @@
 ---
 title: Style guide
-layout: page
+layout: page-ett
+sidebar: about
+permalink: /style-guide
 ---
 
-# Style guide
 
 In general, we follow the European Commission's [Web Writing Style Guide](https://wikis.ec.europa.eu/display/WEBGUIDE/02.+Web+writing+guidelines) and their more detailed English Style Guide. Search online for "EC English style guide" to find the link, since it changes regularly. Below are the points that you might find most useful, though, and that relate particularly to FAIRDOM-SEEK documentation. 
 

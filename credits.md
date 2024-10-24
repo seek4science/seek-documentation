@@ -1,9 +1,9 @@
 ---
-title: credits
-layout: page
+title: Credits
+layout: page-ett
+sidebar: about
+permalink: /credits
 ---
-
-# Credits
 
 ## Related Projects
 

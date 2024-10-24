@@ -1,9 +1,10 @@
 ---
-title: Definitions
-layout: page
+title: FAIRDOM-SEEK Definitions
+layout: page-ett
+sidebar: about
+permalink: /definitions
 ---
 
-# FAIRDOM-SEEK definitions
 Definition of terms used in FAIRDOM-SEEK.
 
 ## Profile

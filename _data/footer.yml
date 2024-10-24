@@ -12,9 +12,9 @@ columns:
       - url_text: Home
         url: /
       - url_text: "Getting FAIRDOM-SEEK"
-        url: /get-seek.html
+        url: /get-seek
       - url_text: Contacting Us
-        url: /contacting-us.html
+        url: /contacting-us
   - type: links
     width: 2
     children: 
@@ -28,7 +28,7 @@ columns:
     width: 2
     children: 
       - url_text: Contributing
-        url: /contributing.html
+        url: /contributing
       - url_text: Roadmap
         url: /tech/roadmap
       - url_text: Useful Links

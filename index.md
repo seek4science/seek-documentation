@@ -12,23 +12,23 @@ For an example of FAIRDOM-SEEK please visit our [Demo](https://demo.seek4science
 
 ## Getting FAIRDOM-SEEK
 
-To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-SEEK as a Virtual Machine, please go to [Getting FAIRDOM-SEEK](get-seek.html)
+To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-SEEK as a Virtual Machine, please go to [Getting FAIRDOM-SEEK](/get-seek)
 
 ## User Guides
 
-General documentation on how to use and administer FAIRDOM-SEEK can be found in our [User Guide](help/user-guide/index.html)
+General documentation on how to use and administer FAIRDOM-SEEK can be found in our [User Guide](/help/user-guide/)
 
 ## API Documentation
 
-Details on how to get started using the Application Programme Interface (API) can be found in the [API Introduction](/help/user-guide/api.html) 
+Details on how to get started using the Application Programme Interface (API) can be found in the [API Introduction](/help/user-guide/api) 
 
 ## Other Guides
 
 We also have other information for topics related to FAIRDOM-SEEK, including Metadata, ISA, and controlled vocabularies, which can be found
-in our [Guides](help/index.html)
+in our [Guides](/help/)
 
 ## Contacting and Contributions
 
-There are [Contact Details](/contacting-us.html), should you wish to ask a question or make a suggestion.
+There are [Contact Details](/contacting-us), should you wish to ask a question or make a suggestion.
 
-We also welcome contributions, so please visit our [Contributors Guide](/contributing.html)
+We also welcome contributions, so please visit our [Contributors Guide](/contributing)

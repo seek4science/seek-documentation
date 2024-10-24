@@ -1,10 +1,11 @@
 ---
-title: contacting us
-layout: page
+title: Contacting us
+layout: page-ett
+sidebar: about
+permalink: /contacting-us
 redirect_from: "/contacting_us.html"
 ---
 
-# Contacting us
 
 We have a number of ways you can contact us:
 

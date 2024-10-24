@@ -1,9 +1,9 @@
 ---
-layout: page
 title: Cookies
+layout: page-ett
+sidebar: about
+permalink: /cookies
 ---
-
-# Cookies
 
 We measure visitors to our website using Google Analytics, which requires the use of cookies.
 
