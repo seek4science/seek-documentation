@@ -1,12 +1,11 @@
 ---
-title: ISA Guide
-layout: page
+title: A Quick Guide to Using ISA in SEEK
+layout: page-ett
 redirect_from: "/isa-guide.html"
 ---
 
-# A Quick Guide to Using ISA in SEEK
 
-**This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK.**
+{% include callout.html type="note" content="This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK." %}
 
 ISA stands for Investigations, Studies and Assays. It is the structure developed by the ISA-TAB community (http://isacommons.org/) and adopted by the SEEK to help you describe your data, experiments and models.  
 In SEEK, you can upload or link to any data, models or protocols from your projects, but they don't normally exist in isolation. ISA provides a framework for expressing how the work in your projects fits together. For example, you may have transcriptomics, proteomics and metabolomics data which was all created to address the same biological problem.   

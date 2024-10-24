@@ -1,10 +1,9 @@
 ---
 title: JERM Templates
-layout: page
+layout: page-ett
 redirect_from: "/templates.html"
 ---
 
-# JERM Templates
 
 SEEK have been developing a collection of JERM templates to facilitate standard formats for sharing the same kinds of data through the consortium. This page lists the current templates available, although we are always looking to update and add to them with help from the community.
 

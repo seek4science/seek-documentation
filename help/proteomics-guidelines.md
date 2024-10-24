@@ -1,12 +1,11 @@
 ---
 title: Proteomics Guidelines
-layout: page
+layout: page-ett
 redirect_from: "/proteomics-guidelines.html"
 ---
 
-# Proteomics Guidelines
 
-**This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK.**
+{% include callout.html type="note" content="This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK." %}
 
 The MIAPE standard (Minimum Information About a Proteomics Experiment) follows the same principles as the longer established MIAME standard for transcriptomics. It is a set of guidelines describing the minimum information required to adequately record a proteomics experiment (i.e. where the samples came from, how they were analysed and what equipment was used etc) to allow others to understand and potentially reuse data.
 

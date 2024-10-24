@@ -1,12 +1,10 @@
 ---
 title: Controlled Vocabularies and Ontologies
-layout: page
+layout: page-ett
 redirect_from: "/controlled-vocabularies.html"
 ---
 
-# Controlled Vocabularies and Ontologies
-
-**This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK.**
+{% include callout.html type="note" content="This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK." %}
 
 We recommend SEEK users use identifiers from public databases and terms from community ontologies wherever possible when describing and annotating data and models. The following table shows the resources available for annotation by biological object category. These represent the most commonly used within System Biology.
 

@@ -1,8 +1,8 @@
 ---
-title: Help
-layout: page
+title: Help and Guidelines
+layout: page-ett
 ---
-
+<!--
 ## User Guide
 
 [SEEK user documentation](user-guide/index.html)
@@ -35,6 +35,14 @@ layout: page
 ## FAQ
 
 [Frequently Asked Questions](faq.html)
+-->
+The FAIRDOM-SEEK help and guidelines are written for users of any FAIRDOM-SEEK instance. The pages are organised by sections on the left. You can also search at the top-right of any page.
+
+## Featured help: User Guide
+
+- [<i class="fa-solid fa-user-group fa-1x"></i> <i class="fa-solid fa-book fa-1x"></i> User Guide](/help/user-guide) and [API Introduction](/help/user-guide/api)
+
+
 
 ## Contributing 
 

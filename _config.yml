@@ -25,6 +25,14 @@ exclude:
 defaults:
   -
     scope:
+      path: "help"
+      #type: "page-ett"
+    values:
+      permalink: /help/:basename
+      #layout: "page-ett"
+      sidebar: help
+  -
+    scope:
       path: "help/user-guide"
       #type: "page-ett"
     values:

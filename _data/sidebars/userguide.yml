@@ -152,3 +152,7 @@ subitems:
     subitems:
     - title: API Introduction
       url: /help/user-guide/api
+  -
+    hr: true
+    title: All Help and Guidelines
+    url: /help

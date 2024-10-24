@@ -1,12 +1,11 @@
 ---
-title: ISA Best Practice
-layout: page
+title: ISA Best Practice Guide
+layout: page-ett
 redirect_from: "/isa-best-practice.html"
 ---
 
-# ISA Best Practice Guide
 
-**This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK.**
+{% include callout.html type="note" content="This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK." %}
 
 The ISA Infrastructure (Investigation, Study, Assay) is a general purpose framework for describing how experiments relate to one another. It describes both metadata (samples, characteristics, technologies, etc) and data (transcriptomics, proteomics etc), but the data itself is stored separately, and can therefore be as public or private as required. The ISA descriptions are visible to the rest of SEEK users.  
 The original purpose of the ISA infrastructure was to provide a common framework for relating multiple omics data and to provide a single mechanism for submission to omics data repositories (such as ArrayExpress for Microarray data, or PRIDE, for proteomics data). SEEK data often involves omics data and generally relies on the integration of multiple data types, so the ISA infrastructure will provide a mechanism for SEEK data export as well as providing a common framework for navigation.   

@@ -9,8 +9,8 @@ subitems:
 #  url: /contacting-us.html
 #- title: Contributing
 #  url: /contributing.html
-#- title: Help
-#  url: /help/index.html
+- title: Help and Guidelines
+  url: /help/
 - title: User Guide
   url: /help/user-guide/
 #- title: API

@@ -18,11 +18,11 @@ columns:
   - type: links
     width: 2
     children: 
-      - url_text: Help
-        url: /help/index.html
+      - url_text: Help and Guidelines
+        url: /help/
       - url_text: User Guide
         url: /help/user-guide/
-      - url_text: API
+      - url_text: API Introduction
         url: /help/user-guide/api
   - type: links
     width: 2

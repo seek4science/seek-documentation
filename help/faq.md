@@ -1,10 +1,9 @@
 ---
 title: Frequently Asked Questions
-layout: page
+layout: page-ett
 redirect_from: "/faq.html"
 ---
 
-# Frequently Asked Questions
 
 *Here we refer to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK.*
 

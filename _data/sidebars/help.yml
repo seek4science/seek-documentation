@@ -1,0 +1,34 @@
+title: Help and Guidelines
+title_url: /help/
+subitems:
+  - title: User Guide
+    url: /help/user-guide/
+    subitems:
+    - title: API Introduction
+      url: /help/user-guide/api
+  - title: Guidelines for Data and Model Annotation in SEEK
+    subitems:
+    - title: Guidelines for Data and Model Annotation in SEEK
+      url: /help/metadata-guidelines
+    - title: A Quick Guide to Using the ISA Structure
+      url: /help/isa-guide
+    - title: ISA Best Practice
+      url: /help/isa-best-practice
+    - title: Transcriptomics Guidelines
+      url: /help/transcriptomics-guidelines
+    - title: Proteomics Guidelines
+      url: /help/proteomics-guidelines
+  - title: Guidelines for using Community Resources and Controlled Vocabularies
+    subitems:
+      - title: Controlled Vocabularies and Ontologies
+        url: /help/controlled-vocabularies
+  - title: JERM Templates for use in SEEK
+    subitems:
+      - title: JERM (Just Enough Results Model)
+        url: /help/jerm
+      - title: JERM Templates
+        url: /help/templates
+  - title: FAQ
+    subitems:
+      - title: Frequently Asked Questions
+        url: /help/faq
