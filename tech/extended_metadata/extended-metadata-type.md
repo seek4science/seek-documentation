@@ -59,25 +59,24 @@ In this diagram:
 
 * Represents a blueprint used to define and create individual Samples.
 * Contains attributes that describe the properties of a sample (e.g., Version, Start, Gender).
+
+**Sample:**
+
 * Samples created from a Sample Type exist as standalone entities.
 
 **Extended Metadata Type:**
 
 * Inherits the same attribute structure as the Sample Type.
 * Unlike a Sample Type, it does not create standalone entities.
-* Its purpose is to extend the metadata of other entities (e.g., Investigations, Studies, Assays).
-* Embedded within another entity, it adds additional descriptive details to that entity without being independent.
+
+**Extended Metadatae:**
+
+* Extended Metadata created from a Extended Metadata Type.
 
 **Entity (e.g., Investigation):**
 
 * Represents the object (such as an Investigation, Study, or Assay) that holds the extended metadata.
-* The Extended Metadata Type is embedded within this entity, enriching its existing metadata.
-
-**Relationship:**
-
-* The Sample Type is used to generate independent Samples.
-* The Extended Metadata Type shares a similar structure but is embedded in another entity to add more detailed metadata.
-
+* The Extended Metadata is embedded within this entity, enriching its existing metadata.
 
 
 ## Administrative Rights for Creating and Managing Extended Metadata Types
