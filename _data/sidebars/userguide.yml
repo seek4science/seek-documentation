@@ -156,3 +156,7 @@ subitems:
     hr: true
     title: All Help and Guidelines
     url: /help
+  -
+    hr: true
+    title: Home
+    url: /

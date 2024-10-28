@@ -40,7 +40,8 @@ The FAIRDOM-SEEK help and guidelines are written for users of any FAIRDOM-SEEK i
 
 ## Featured help: User Guide
 
-- [<i class="fa-solid fa-user-group fa-1x"></i> <i class="fa-solid fa-book fa-1x"></i> User Guide](/help/user-guide) and [API Introduction](/help/user-guide/api)
+- [<i class="fa-solid fa-user-group fa-1x"></i> <i class="fa-solid fa-book fa-1x"></i> User Guide](/help/user-guide)
+- [API Introduction](/help/user-guide/api)
 
 
 
@@ -48,4 +49,4 @@ The FAIRDOM-SEEK help and guidelines are written for users of any FAIRDOM-SEEK i
 
 There are many ways in which you can contribute to the SEEK software, these documents or our [FAIRDOM](https://fair-dom.org) project.
 
-If you are interested in contributing please visit our [Contributors guide](/contributing.html).
+If you are interested in contributing please visit our [Contributors guide](/contributing).

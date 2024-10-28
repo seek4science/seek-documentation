@@ -58,3 +58,7 @@ subitems:
         url: /tech/using-teaspoon
   - title: FAIRDOM-SEEK releases
     url: /tech/releases/
+  -
+    hr: true
+    title: Home
+    url: /

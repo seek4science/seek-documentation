@@ -32,3 +32,7 @@ subitems:
     subitems:
       - title: Frequently Asked Questions
         url: /help/faq
+  -
+    hr: true
+    title: Home
+    url: /
