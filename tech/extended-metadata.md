@@ -60,14 +60,15 @@ or need help adding to your own instance, then please [contact us](/contacting-u
 
 This is something we've been rolling out slowly and carefully, after initially using internally, because once defined and populated they are difficult to redefine.
 
- ## Define your own Extended Metadata type 
+
+## Define your own Extended Metadata type 
 
 
 If you are managing your own SEEK instance, you have the flexibility to define your project-specific Extended Metadata Types by populating the database with a seed file. 
 
 The following are the supported Extended Metadata Attribute Types, each accompanied by a corresponding code snippet for implementation and screenshot in SEEK.
 
-1.**String type**: the attribute refers to a fixed-length character field. (e.g. "blue")
+### 1.**String type**: the attribute refers to a fixed-length character field. (e.g. "blue")
 
 ```
  ExtendedMetadataAttribute.new(
@@ -92,7 +93,7 @@ The following are the supported Extended Metadata Attribute Types, each accompan
 ![](/images/user-guide/extended-metadata/atrribute_string_type.png) 
 {:.screenshot}
 
-2. **Text type**: the attribute is used for longer, variable-length character fields. (e.g. "The 4th experiment in the batch, it was sampled late, so may not be as accurate" ).
+### 2. **Text type**: the attribute is used for longer, variable-length character fields. (e.g. "The 4th experiment in the batch, it was sampled late, so may not be as accurate" ).
 
 ```
  ExtendedMetadataAttribute.new(title: 'description', required:true, sample_attribute_type: SampleAttributeType.where(title:'Text').first)
@@ -100,14 +101,14 @@ The following are the supported Extended Metadata Attribute Types, each accompan
 ![](/images/user-guide/extended-metadata/attribute_text_type.png) 
 {:.screenshot}
 
-3. **Date type**: the attribute is used to represent dates. (e.g. January 1, 2015)
+### 3. **Date type**: the attribute is used to represent dates. (e.g. January 1, 2015)
 ```
  ExtendedMetadataAttribute.new(title: 'study_start_date', required:true, sample_attribute_type: SampleAttributeType.where(title:'Date').first)
 ```
 ![](/images/user-guide/extended-metadata/attribute_date_type.png) 
 {:.screenshot}
 
-4. **Date-Time type**: the attribute is used to represent dates and times. (e.g. January 1, 2015 at 14:00 GMT)
+### 4. **Date-Time type**: the attribute is used to represent dates and times. (e.g. January 1, 2015 at 14:00 GMT)
 
 ```
  ExtendedMetadataAttribute.new(title: 'study_start_time', required:true, sample_attribute_type: SampleAttributeType.where(title:'Date time').first)
@@ -115,7 +116,7 @@ The following are the supported Extended Metadata Attribute Types, each accompan
 ![](/images/user-guide/extended-metadata/attribute_time_type.png) 
 {:.screenshot}
 
-5. **Integer type**: the attribute is positive, negative, or zero numbers that do not have a fractional part. (e.g. 1, 2, 3, 4)
+### 5. **Integer type**: the attribute is positive, negative, or zero numbers that do not have a fractional part. (e.g. 1, 2, 3, 4)
 
 ```
  ExtendedMetadataAttribute.new(title: 'study_age', required:true, sample_attribute_type: SampleAttributeType.where(title:'Integer').first)
@@ -123,7 +124,7 @@ The following are the supported Extended Metadata Attribute Types, each accompan
 ![](/images/user-guide/extended-metadata/attribute_integer_type.png) 
 {:.screenshot}
 
-6. **Real Number**: the attribute is used to represent numbers that may have a fractional component or decimal point. (e.g. 180.5)
+### 6. **Real Number**: the attribute is used to represent numbers that may have a fractional component or decimal point. (e.g. 180.5)
 
 ```
  ExtendedMetadataAttribute.new(title: 'cholesterol_level', required:true, sample_attribute_type: SampleAttributeType.where(title:'Real number').first)
@@ -131,7 +132,7 @@ The following are the supported Extended Metadata Attribute Types, each accompan
 ![](/images/user-guide/extended-metadata/attribute_real_number_type.png) 
 {:.screenshot}
 
-7. **Boolean**: the attribute uses true and false to represent truth values. (e.g. true, false)
+### 7. **Boolean**: the attribute uses true and false to represent truth values. (e.g. true, false)
 
 ```
  ExtendedMetadataAttribute.new(title: 'resource_use_rights_authors_confirmation', required:true, sample_attribute_type: SampleAttributeType.where(title:'Boolean').first)
@@ -139,7 +140,7 @@ The following are the supported Extended Metadata Attribute Types, each accompan
 ![](/images/user-guide/extended-metadata/attribute_boolean_type.png) 
 {:.screenshot}
 
-8. **Controlled Vocabulary**: The attribute is limited to a predefined set of terms, and users must choose from this set. This selection is presented as a single-select dropdown list in the user interface.
+### 8. **Controlled Vocabulary**: The attribute is limited to a predefined set of terms, and users must choose from this set. This selection is presented as a single-select dropdown list in the user interface.
 
 ```
 def create_sample_controlled_vocab_terms_attributes(array)
@@ -163,7 +164,7 @@ end
 ![](/images/user-guide/extended-metadata/attribute_cv_type.png) 
 {:.screenshot}
 
-9. **Controlled Vocabulary List**: Unlike a single-select option in Controlled Vocabulary, Controlled Vocabulary List allows users to make multiple selections from a predefined set of terms for a given attribute. 
+### 9. **Controlled Vocabulary List**: Unlike a single-select option in Controlled Vocabulary, Controlled Vocabulary List allows users to make multiple selections from a predefined set of terms for a given attribute. 
 
 ```
 # Create a controlled vocabulary for European study countries.
@@ -187,7 +188,7 @@ end
 ![](/images/user-guide/extended-metadata/attribute_cvlist_type.png) 
 {:.screenshot}
 
-10. **Nested Extended Metadata**: the attribute allows for a hierarchical structure where one Extended Metadata type definition can reference another, resulting in the nesting of these types within a single form. 
+### 10. **Nested Extended Metadata**: the attribute allows for a hierarchical structure where one Extended Metadata type definition can reference another, resulting in the nesting of these types within a single form. 
 Furthermore, The inner Extended Metadata type can also now be defined as a list, with the form allowing new items to be added or removed.
 
 ```
