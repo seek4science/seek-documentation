@@ -51,7 +51,7 @@ subitems:
       - title: Extended Metadata Technical Overview
         url: /tech/extended-metadata
       - title: openSEEK
-        url: /tech/openSEEK
+        url: /tech/openseek
       - title: Configuring SEEK for Virtuoso
         url: /tech/setting-up-virtuoso
       - title: Using Teaspoon
