@@ -103,7 +103,7 @@ theme_variables:
   #   headings: 'h2'
   topnav:
     theme: light
-    brand_logo: images/seek-logo-header.png
+    brand_logo: images/fairdom-seek-logo-header.png
     #github: true
     #twitter: false
   theme_color: 8cddf6
