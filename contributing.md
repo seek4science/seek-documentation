@@ -1,9 +1,11 @@
 ---
 title: Contributing
 layout: page-ett
-sidebar: about
+sidebar: tech
 permalink: /contributing
 ---
+
+<i class="fa-solid fa-truck-fast fa-5x"></i>
 
 
 We welcome many contributions to our [SEEK software](https://seek4science.org), these Documentation pages and our [FAIRDOM](https://fair-dom.org) project in general.

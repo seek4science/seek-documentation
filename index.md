@@ -5,7 +5,10 @@ title: FAIRDOM-SEEK Documentation
 ---
 ![FAIRDOM-SEEK logo](/images/fairdom-seek-logo-alt.svg)
 
-## About FAIRDOM-SEEK
+<h2>
+<i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i>
+ About FAIRDOM-SEEK
+</h2>
 
 The FAIRDOM-SEEK platform is a web-based resource for sharing heterogeneous scientific research datasets, 
 models or simulations, processes and research outcomes. More details about SEEK can be found on the [FAIRDOM-SEEK Website](https://seek4science.org).
@@ -14,11 +17,13 @@ For an example of FAIRDOM-SEEK please visit our [Demo](https://demo.seek4science
 
 ### Getting FAIRDOM-SEEK
 
-To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-SEEK as a Virtual Machine, please go to [Getting FAIRDOM-SEEK](/get-seek).
+To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-SEEK as a Virtual Machine, please go to our [Get FAIRDOM-SEEK quick start page](/get-seek).
 
 <hr />
 
-## User guide
+<h2>
+<i class="fa-solid fa-user-group fa-1x"></i> <i class="fa-solid fa-book fa-1x"></i>
+ User guide</h2>
 
 ### Latest User Guide
 
@@ -35,14 +40,17 @@ in our [archive of help and guidelines](/help/). These guides are no longer bein
 
 <hr />
 
-## Technical references
+<h2>
+<i class="fa-solid fa-wrench fa-1x"></i> <i class="fa-solid fa-book-atlas fa-1x"></i>
+ Technical references</h2>
 
-For more detailed information about installation and upgrading, please see our [Technical and Reference documentation](/tech/).
+For more detailed information about installation and upgrading, please see our [<i class="fa-solid fa-wrench fa-1x"></i> <i class="fa-solid fa-book-atlas fa-1x"></i> Technical and Reference documentation](/tech/).
 
 <hr />
 
-## Contacting and contributions
+<h2>
+<i class="fa-solid fa-envelopes-bulk fa-1x"></i> <i class="fa-solid fa-truck-fast fa-1x"></i> Contacting and contributions</h2>
 
-There are [contact details](/contacting-us), should you wish to ask a question or make a suggestion.
+There are [<i class="fa-solid fa-envelopes-bulk fa-1x"></i>  contact details](/contacting-us), should you wish to ask a question or make a suggestion.
 
-We also welcome contributions, so please visit our [Contributors Guide](/contributing).
+We also welcome contributions, so please visit our [<i class="fa-solid fa-truck-fast fa-1x"></i> Contributors Guide](/contributing).

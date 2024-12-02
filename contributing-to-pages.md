@@ -1,7 +1,7 @@
 ---
 title: Contributing to these pages
 layout: page-ett
-sidebar: about
+sidebar: tech
 permalink: /contributing-to-pages
 ---
 

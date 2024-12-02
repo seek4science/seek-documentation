@@ -5,14 +5,22 @@ subitems:
     url: /tech/roadmap
   - title: Useful Links
     url: /tech/useful-links
-  - title: Contributing to SEEK
-    url: /tech/contributing-to-seek
+  - title: Contributing
     subitems:
+      - title: Contributing introduction
+        url: /contributing
+      - title: Contributing to SEEK
+        url: /tech/contributing-to-seek
       - title: Reporting Bugs and raising Feature Requests
         url: /tech/reporting-bugs-and-features
-  - title: Installing SEEK
-    url: /tech/install
+      - title: Contributing to these pages
+        url: /contributing-to-pages
+      - title: Style guide
+        url: /style-guide
+  - title: Installing
     subitems:
+      - title: Installing SEEK
+        url: /tech/install
       - title: Installing SEEK for other Linux distributions
         url: /tech/other-distributions
       - title: Installing SEEK in a production environment
@@ -35,9 +43,10 @@ subitems:
         url: /tech/docker/docker-compose
       - title: Building your own image
         url: /tech/docker/building-images
-  - title: Administration of SEEK
-    url: /tech/administration
+  - title: Administering
     subitems:
+      - title: Administration of SEEK
+        url: /tech/administration
       - title: Providing your own Assay and Technology types
         url: /tech/assay-types
       - title: Backing up SEEK

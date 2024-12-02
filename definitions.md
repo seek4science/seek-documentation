@@ -1,7 +1,7 @@
 ---
 title: FAIRDOM-SEEK Definitions
 layout: page-ett
-sidebar: about
+sidebar: userguide
 permalink: /definitions
 ---
 

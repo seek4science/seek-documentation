@@ -1,7 +1,7 @@
 ---
 title: Style guide
 layout: page-ett
-sidebar: about
+sidebar: tech
 permalink: /style-guide
 ---
 

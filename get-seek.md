@@ -1,5 +1,5 @@
 ---
-title: Get FAIRDOM-SEEK
+title: Get FAIRDOM-SEEK (Quick Start)
 layout: page-ett
 sidebar: about
 permalink: /get-seek

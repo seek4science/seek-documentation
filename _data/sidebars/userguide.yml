@@ -1,6 +1,8 @@
 title: User Guide
 title_url: /help/user-guide/
 subitems:
+  - title: Definitions
+    url: /definitions
   - title: Profile
     description: Registering and logging into SEEK, managing your account and identities, editing your profile.
     subitems:

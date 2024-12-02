@@ -11,17 +11,15 @@ columns:
     children: 
       - url_text: Home
         url: /
-      - url_text: "Get FAIRDOM-SEEK"
+      - url_text: "Get FAIRDOM-SEEK (Quick Start)"
         url: /get-seek
       - url_text: Contacting Us
         url: /contacting-us
-      - url_text: Contributing
-        url: /contributing
+      - url_text: Credits
+        url: /credits
   - type: links
     width: 2
-    children: 
-      - url_text: Help and Guidelines
-        url: /help/
+    children:
       - url_text: User Guide
         url: /help/user-guide/
       - url_text: API Introduction
@@ -35,4 +33,6 @@ columns:
         url: /tech/roadmap
       - url_text: Useful Links
         url: /tech/useful-links.html
+      - url_text: Contributing
+        url: /contributing
 
