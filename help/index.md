@@ -1,6 +1,7 @@
 ---
-title: Help and Guidelines
+title: Archived help and guidelines
 layout: page-ett
+permalink: /help
 ---
 <!--
 ## User Guide
@@ -36,17 +37,26 @@ layout: page-ett
 
 [Frequently Asked Questions](faq.html)
 -->
-The FAIRDOM-SEEK help and guidelines are written for users of any FAIRDOM-SEEK instance. The pages are organised by sections on the left. You can also search at the top-right of any page.
+The FAIRDOM-SEEK help and guidelines are written for users of any FAIRDOM-SEEK instance. 
 
-## Featured help: User Guide
+{% include callout.html type="important" content="Please see the [user guide](/help/user-guide) for the latest help." %}
+
+<!--
+## Latest help: User Guide
 
 - [<i class="fa-solid fa-user-group fa-1x"></i> <i class="fa-solid fa-book fa-1x"></i> User Guide](/help/user-guide)
 - [API Introduction](/help/user-guide/api)
+-->
 
+## Archived pages
 
+All other pages have been archived and may not provide current information. 
+They are organised by sections on the left menu and cover Metadata, ISA, and controlled vocabularies. You can also search at the top-right of any page. 
 
+<!--
 ## Contributing 
 
 There are many ways in which you can contribute to the SEEK software, these documents or our [FAIRDOM](https://fair-dom.org) project.
 
 If you are interested in contributing please visit our [Contributors guide](/contributing).
+-->

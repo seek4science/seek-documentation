@@ -30,7 +30,7 @@ defaults:
     values:
       permalink: /help/:basename
       #layout: "page-ett"
-      sidebar: help
+      sidebar: userguide
   -
     scope:
       path: "help/user-guide"

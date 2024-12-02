@@ -4,6 +4,7 @@ layout: page-ett
 redirect_from: "/isa-guide.html"
 ---
 
+{% include callout.html type="warning" content="This guide has been archived. Please see the [user guide](/help/user-guide) for the latest help." %}
 
 {% include callout.html type="note" content="This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK." %}
 
