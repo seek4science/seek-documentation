@@ -5,7 +5,9 @@ layout: page-ett
 
 FAIRDOM Website: [https://fair-dom.org](https://fair-dom.org)
 
-SEEK Github page: [https://github.com/seek4science/seek](https://github.com/seek4science/seek)
+SEEK GitHub page: [https://github.com/seek4science/seek](https://github.com/seek4science/seek)
+
+SEEK documentation GitHub page: [https://github.com/seek4science/seek](https://github.com/seek4science/seek-documentation)
 
 SEEK Issue tracking: [https://fair-dom.org/issues](https://fair-dom.org/issues)
 

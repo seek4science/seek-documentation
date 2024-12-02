@@ -3,8 +3,8 @@
 subitems:
 #- title: Home
 #  url: /
-- title: "Get FAIRDOM-SEEK (Quick Start)"
-  url: /get-seek
+#- title: "Get FAIRDOM-SEEK (Quick Start)"
+#  url: /get-seek
 #- title: Contacting Us
 #  url: /contacting-us
 #- title: Contributing
@@ -18,4 +18,3 @@ subitems:
 - title: Technical References
   url: /tech/
 ## move some links to footer
-## need a Tech landing/index page; for now, use install page

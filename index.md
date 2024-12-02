@@ -3,7 +3,7 @@ layout: page-ett
 sidebar: home 
 title: FAIRDOM-SEEK Documentation
 ---
-![FAIRDOM-SEEK logo](/images/fairdom-seek-logo-alt.svg)
+![FAIRDOM-SEEK logo](/images/banner-plain.svg)
 
 <h2>
 <i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i>
