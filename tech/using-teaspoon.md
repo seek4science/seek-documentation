@@ -4,6 +4,7 @@ layout: page-ett
 redirect_from: "/using-teaspoon.html"
 ---
 
+{% include callout.html type="warning" content="This page is out-of-date and may be removed." %}
 
 [Teaspoon](https://github.com/modeset/teaspoon) is a javascript test runner for Rails. You can use it to run tests in the browser or headless with PhantomJS, Selenium WebDriver or Capybara Webkit.
 In SEEK, we use Teaspoon together with [Selenium WebDriver](https://rubygems.org/gems/selenium-webdriver).

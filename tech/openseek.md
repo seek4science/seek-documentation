@@ -3,6 +3,7 @@ title: openSEEK
 layout: page-ett
 ---
 
+{% include callout.html type="warning" content="This page is out-of-date and may be removed." %}
 
 The combined openBIS & SEEK Docker package is no longer supported, and each need to be installed separately.
 

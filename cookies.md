@@ -4,6 +4,7 @@ layout: page-ett
 sidebar: about
 permalink: /cookies
 ---
+{% include callout.html type="warning" content="This page is out-of-date and may be removed." %}
 
 We measure visitors to our website using Google Analytics, which requires the use of cookies.
 

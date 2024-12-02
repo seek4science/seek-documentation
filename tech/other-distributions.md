@@ -4,6 +4,8 @@ layout: page-ett
 redirect_from: "/other-distributions.html"
 ---
 
+{% include callout.html type="important" content="This page is out-of-date. It may be most useful for macOS." %}
+
 
 Our main [Install Guide](install) is based upon the Ubuntu 18.04
 (LTS) distribution and version. However, other than the distribution packages
@@ -220,9 +222,9 @@ terminal to run commands as a login shell. There is a checkbox that can be
 found under the menu *Edit*, *Profile Preferences* and then under the tab
 *Title and Command*.
 
-## Installing SEEK for Mac OS
+## Installing SEEK for macOS
 
-*Though you can run Seek on Mac OS, you might encounter random issues and need to do several adaptations, some listed below. Some versions of several Ruby Gems are not fully functional or cannot be installed on Mac OS. It is thus strongly recommended to install Seek in a virtual machine, preferably running Ubuntu.*
+*Though you can run Seek on macOS, you might encounter random issues and need to do several adaptations, some listed below. Some versions of several Ruby Gems are not fully functional or cannot be installed on macOS. It is thus strongly recommended to install Seek in a virtual machine, preferably running Ubuntu.*
 
 ### Catalina
 
@@ -230,7 +232,7 @@ This section will guide you to install prerequisite packages, for other steps
 please read the main [Install Guide](install)
 
 You will need first to install Fink and MacPorts, two package manager tools
-for Mac OS. Most of the packages will be installed by Finks, while some will
+for macOS. Most of the packages will be installed by Finks, while some will
 be installed by MacPorts Follow this link to install Fink:
 http://www.finkproject.org/download/index.php?phpLang=en and for MacPorts:
 https://www.macports.org/install.php

@@ -12,8 +12,8 @@ subitems:
         url: /contributing-to-pages
       - title: Style guide
         url: /style-guide
-  - title: Cookies
-    url: /cookies
+#  - title: Cookies
+#    url: /cookies
   - title: Credits
     url: /credits
   - title: Definitions

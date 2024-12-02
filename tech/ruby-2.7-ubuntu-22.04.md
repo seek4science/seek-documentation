@@ -4,6 +4,7 @@ layout: page-ett
 redirect_from: "/install.html"
 ---
 
+{% include callout.html type="warning" content="This page is out-of-date and may be removed." %}
 
 ## Install openssl libraries
 

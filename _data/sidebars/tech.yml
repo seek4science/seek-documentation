@@ -13,17 +13,6 @@ subitems:
   - title: Installing SEEK
     url: /tech/install
     subitems:
-      - title: Docker
-        url: /tech/docker
-        subitems:
-          - title: Installing Docker
-            url: /tech/docker/docker-install
-          - title: Running a basic container
-            url: /tech/docker/basic-container
-          - title: Docker compose
-            url: /tech/docker/docker-compose
-          - title: Building your own image
-            url: /tech/docker/building-images
       - title: Installing SEEK for other Linux distributions
         url: /tech/other-distributions
       - title: Installing SEEK in a production environment
@@ -32,8 +21,20 @@ subitems:
         url: /tech/install-on-suburi
       - title: Setting up the Apache Solr Search Engine
         url: /tech/setting-up-solr
-      - title: Installing Ruby 2.7 on Ubuntu 22.04
-        url: /tech/ruby-2.7-ubuntu-22.04
+#      - title: Installing Ruby 2.7 on Ubuntu 22.04
+#        url: /tech/ruby-2.7-ubuntu-22.04
+  - title: Docker
+    subitems:
+      - title: Introduction to Docker
+        url: /tech/docker
+      - title: Installing Docker
+        url: /tech/docker/docker-install
+      - title: Running a basic container
+        url: /tech/docker/basic-container
+      - title: Docker compose
+        url: /tech/docker/docker-compose
+      - title: Building your own image
+        url: /tech/docker/building-images
   - title: Administration of SEEK
     url: /tech/administration
     subitems:
@@ -41,24 +42,29 @@ subitems:
         url: /tech/assay-types
       - title: Backing up SEEK
         url: /tech/backups
-      - title: Upgrading SEEK
-        url: /tech/upgrading
+      - title: Upgrading
         subitems:
+          - title: Upgrading SEEK
+            url: /tech/upgrading
           - title: Upgrades between earlier versions
             url: /tech/earlier-upgrades
       - title: Checksum fingerprints
         url: /tech/investigation-checksum
-      - title: Extended Metadata Technical Overview
-        url: /tech/extended-metadata
-      - title: openSEEK
-        url: /tech/openseek
+#      - title: openSEEK
+#        url: /tech/openseek
       - title: Configuring SEEK for Virtuoso
         url: /tech/setting-up-virtuoso
-      - title: Using Teaspoon
-        url: /tech/using-teaspoon
+#      - title: Using Teaspoon
+#        url: /tech/using-teaspoon
+  - title: Extended Metadata Technical Overview
+    url:
+      /tech/extended-metadata
   - title: FAIRDOM-SEEK releases
     url: /tech/releases/
   -
     hr: true
+    title: API Introduction
+    url: /help/user-guide/api
+  -
     title: Home
     url: /
