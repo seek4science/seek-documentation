@@ -6,6 +6,7 @@ permalink: /contacting-us
 redirect_from: "/contacting_us.html"
 ---
 
+<i class="fa-solid fa-envelopes-bulk fa-5x"></i>
 
 We have a number of ways you can contact us:
 

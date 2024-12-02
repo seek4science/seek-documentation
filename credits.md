@@ -5,6 +5,9 @@ sidebar: about
 permalink: /credits
 ---
 
+<i class="fa-solid fa-trophy fa-5x"></i>
+
+
 ## Related Projects
 
 * [WorkflowHub](https://about.workflowhub.eu/)
