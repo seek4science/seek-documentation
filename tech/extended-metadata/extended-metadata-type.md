@@ -1,6 +1,7 @@
 ---
 title: Extended Metadata Technical Overview
 layout: page
+redirect_from: '/tech/extended-metadata'
 ---
 
 # Extended Metadata Technical Overview
@@ -87,6 +88,6 @@ As a SEEK instance administrator, you have the ability to create, manage (enable
 
 
 
-* #### [Manage Extended Metadata Types](manage-extended-metadata-type.md)
-* #### [Create Extended Metadata Types](create-extended-metadata-type.md)
+* #### [Manage Extended Metadata Types](manage-extended-metadata-type.html)
+* #### [Create Extended Metadata Types](create-extended-metadata-type.html)
 

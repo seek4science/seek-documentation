@@ -3,7 +3,7 @@ title: Manage Extended Metadata Type
 layout: page
 ---
 
-<a href="extended-metadata-type.md">back</a>
+<a href="extended-metadata-type.html">back</a>
 
 # Manage Extended Metadata Types
 

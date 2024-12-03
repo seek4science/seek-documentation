@@ -3,7 +3,7 @@ title: A Complete Example to Create Extended Metadata Types by Uploading a JSON 
 layout: page
 ---
 
-<a href="create-extended-metadata-type-with-json-file.md">back</a>
+<a href="create-extended-metadata-type-with-json-file.html">back</a>
 
 # A Complete Example
 
@@ -12,7 +12,7 @@ layout: page
 
 Currently, controlled vocabularies can only be created through the user interface by anyone with permission to create resources in SEEK
 
-You can also use the following direct link  ```HTTP://{HOST_NAME}/sample_controlled_vocabs/new``` to create controlled vocabularies or the button on the [Controlled Vocabulary](manage-extended-metadata-type.md/#3-controlled-vocabularies-tab) tab.
+You can also use the following direct link  ```HTTP://{HOST_NAME}/sample_controlled_vocabs/new``` to create controlled vocabularies or the button on the [Controlled Vocabulary](manage-extended-metadata-type.html/#3-controlled-vocabularies-tab) tab.
 
 Assuming the controlled vocabularies have been created here:
 <img src="/images/user-guide/extended-metadata/cvs-tab.png" alt="extended-metadata-fields" width="600">

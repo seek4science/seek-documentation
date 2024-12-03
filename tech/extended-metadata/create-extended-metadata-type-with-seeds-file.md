@@ -3,7 +3,7 @@ title: Define your own Extended Metadata Type with SEEDs File
 layout: page
 ---
 
-<a href="create-extended-metadata-type.md">back</a>
+<a href="create-extended-metadata-type.html">back</a>
 
 ## Define your own Extended Metadata Type with SEEDs File
 
