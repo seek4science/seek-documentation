@@ -15,9 +15,9 @@ models or simulations, processes and research outcomes. More details about SEEK 
 
 For an example of FAIRDOM-SEEK please visit our [Demo](https://demo.seek4science.org).
 
-### Getting FAIRDOM-SEEK
+### Get FAIRDOM-SEEK (or use FAIRDOMHub)
 
-To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-SEEK as a Virtual Machine, please go to our [Get FAIRDOM-SEEK quick start page](/get-seek).
+To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-SEEK as a Virtual Machine, please go to our [<i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i> Get FAIRDOM-SEEK (Is it for me?) page](/get-seek).
 
 <hr />
 

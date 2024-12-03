@@ -11,7 +11,7 @@ columns:
     children: 
       - url_text: Home
         url: /
-      - url_text: "Get FAIRDOM-SEEK (Quick Start)"
+      - url_text: "Get FAIRDOM-SEEK (Is it for me?)"
         url: /get-seek
       - url_text: Contacting Us
         url: /contacting-us
