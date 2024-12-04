@@ -11,6 +11,27 @@ Please see [Getting FAIRDOM-SEEK](/get-seek.html) for details about installing S
 
 If you have any comments or feedback about a release, then please [Contact Us](/contacting-us.html)
 
+## Version 1.16.0
+
+Release date: _ December 2024_
+
+A major release that contains a number of improvements, upgrades and bug fixes, the hightlights including:
+
+* FAIR Data Station Integration ( with Observation Units)
+* Explicit Sample Type permissions
+* Fewer constraints on editing Sample Types with existing Samples
+* Extended Metadata Data import (via JSON) and improved management
+* RDF support extended to support Extended Metadata and Samples
+* Assay Streams ( DataHub )
+* ISA-JSON compliance improvements ?? ( DataHub )
+* Registering multiple Datafiles via a zip file (PhenomUK contribution)
+* Search indexing improvements to better support non-ascii characters
+* Improved support for Copasi models with Copasi javascript integration
+* Workflow scraping improvements ( WorkflowHub )
+* Workflow API and RO-Crate support improvements ( WorkflowHub )
+
+And much more, for a full list see [closed issues for 1.16.0](https://github.com/seek4science/seek/milestone/24?closed=1)
+
 ## Version 1.15.2
 
 Release date: _18th July 2024_
