@@ -23,7 +23,8 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
 * Extended Metadata Data import (via JSON) and improved management
 * RDF support extended to support Extended Metadata and Samples
 * Assay Streams ( DataHub )
-* ISA-JSON compliance improvements ?? ( DataHub )
+* Better integration of ISA-JSON compliant items ( DataHub )
+* Improved sample querying using the Experiment Sample Template Attributes ( DataHub )
 * Registering multiple Datafiles via a zip file (PhenomUK contribution)
 * Search indexing improvements to better support non-ascii characters
 * Improved support for Copasi models with Copasi javascript integration
