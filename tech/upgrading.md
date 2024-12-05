@@ -15,6 +15,8 @@ support SEEK and the associated tools.
 **Always backup your SEEK data before starting to upgrade!!** - see the
 [Backup Guide](backups.html).
 
+**If you are running using Docker Compose**, then please follow the steps there - [Upgrading between versions](docker/docker-compose.html#upgrading-between-versions)
+
 **You should always upgrade between minor (1.X) versions incrementally**, i.e:
 
 1.12.x --> 1.13.x --> 1.14.x --> 1.15.x,
@@ -105,6 +107,24 @@ It is necessary to upgrade to Ruby 3.1.4. If you are using [RVM](https://rvm.io/
 If you are not prompted you can install with the command:
 
     rvm install $(cat .ruby-version)
+
+### Apply new Apache Solr configuration
+
+If running Solr **via the docker scripts**, then you just need to stop, delete, pull the latest image, and restart:
+
+    sh ./script/stop-docker-solr.sh
+    sh ./script/delete-docker-solr.sh
+    docker pull fairdom/seek-solr:8.11
+    sh ./script/start-docker-solr.sh
+
+If running an **Apache Solr installed** using [Setting up Solr](setting-up-solr.html#installing-apache-solr), first stop the service, then replace the new core, and restart:
+
+    sudo service solr stop
+    sudo su - solr -c "/opt/solr/bin/solr delete -c seek
+    sudo su - solr -c "/opt/solr/bin/solr create -c seek -d $(pwd)/solr/seek/conf"
+    sudo service solr start
+
+A full reindexing of SEEK content will be triggered during the upgrade.
 
 ### Doing the upgrade
 
