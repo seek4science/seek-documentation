@@ -13,23 +13,41 @@ If you have any comments or feedback about a release, then please [Contact Us](/
 
 ## Version 1.16.0
 
-Release date: _ December 2024_
+Release date: _6th December 2024_
 
 A major release that contains a number of improvements, upgrades and bug fixes, the hightlights including:
 
-* FAIR Data Station Integration ( with Observation Units)
-* Explicit Sample Type permissions
-* Fewer constraints on editing Sample Types with existing Samples
-* Extended Metadata Data import (via JSON) and improved management
-* RDF support extended to support Extended Metadata and Samples
-* Assay Streams ( DataHub )
-* Better integration of ISA-JSON compliant items ( DataHub )
-* Improved sample querying using the Experiment Sample Template Attributes ( DataHub )
-* Registering multiple Datafiles via a zip file (PhenomUK contribution)
-* Search indexing improvements to better support non-ascii characters
-* Improved support for Copasi models with Copasi javascript integration
-* Workflow scraping improvements ( WorkflowHub )
-* Workflow API and RO-Crate support improvements ( WorkflowHub )
+* FAIR Data Station Integration ( with Observation Units )
+* **Explicit Sample Type permissions** - previously, Sample Type visibility was automatically derived according to the
+  Projects it is shared with and the visibility of related Samples.
+  This has now been updated to allow the permissions to be explicitly defined under user control. When upgrading SEEK
+  permissions will be set that mirror the derived permissions.
+* **Fewer constraints on editing Sample Types** - Previously, once a Sample Type has Samples created from it, the
+  ability to change the attributes was limited.
+  This has been relaxed to allow some changes to be made that won't invalidate existing Samples, including adding new
+  optional attributes and changing the name of an attribute.
+* **Creating new Extended Metadata Types** - An instance administrator of SEEK can now create new Extended Metadata
+  Types through the user interface, using a simple JSON file that defines the type and attributes.
+  The JSON has a corresponding [schema](/tech/extended-metadata/extended-metadata-type-schema.json) against which it is
+  validated. There is new [extensive Documentation](/tech/extended-metadata/extended-metadata-type.html) on how to do
+  this, and we are also planning on supporting doing so with an Excel template.
+* **Deleting Extended Metadata Types** - in addition to being able to disable, an administrator is now able to delete
+  Extended Metadata Types.
+* **RDF support** extended to support **Extended Metadata** and **Samples** - RDF generation will now including Extended
+  Metadata when present and the attributes include an identifier, and similarly some basic RDF is generated for Samples.
+* **DataHub enhancements** including
+    * Assay Streams.
+    * Better integration of ISA-JSON compliant items.
+    * Improved sample querying using the Experiment Sample Template Attributes.
+* **Registering multiple Datafiles via a zip file** - a contribution from PhenomUK, that allows multiple DataFiles to be
+  registered at once by uploading a zip file.
+* **Search improvements** - to better support non-ASCII characters, such as umlauts and accented characters. How both
+  the original and closest ASCII representation are indexed.
+* **COPASI model simulation** - enables the interpretation and manipulation of [COPASI](http://copasi.org/) models
+  directly within the SEEK client interface, using [COPASI.js](https://github.com/copasi/COPASI.js).
+* **WorkflowHub enhancements** including
+    * Improved support for importing workflows from Github, which is also now configurable and handles versions better.
+    * Improved support for RO-Crates, and submitting RO-Crates through the API.
 
 And much more, for a full list see [closed issues for 1.16.0](https://github.com/seek4science/seek/milestone/24?closed=1)
 
