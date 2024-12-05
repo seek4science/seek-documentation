@@ -20,28 +20,31 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
 * FAIR Data Station Integration ( with Observation Units )
 * **Explicit Sample Type permissions** - previously, Sample Type visibility was automatically derived according to the
   Projects it is shared with and the visibility of related Samples.
-  This has now been updated to allow the permissions to be explicitly defined under user control. When upgrading SEEK
-  permissions will be set that mirror the derived permissions.
-* **Fewer constraints on editing Sample Types** - Previously, once a Sample Type has Samples created from it, the
+  This has now been updated to allow the permissions to be explicitly defined and under user control. When upgrading
+  SEEK
+  permissions will be set that mirror the old derived permissions.
+* **Fewer constraints on editing Sample Types** - previously, once a Sample Type has Samples created from it, the
   ability to change the attributes was limited.
   This has been relaxed to allow some changes to be made that won't invalidate existing Samples, including adding new
-  optional attributes and changing the name of an attribute.
-* **Creating new Extended Metadata Types** - An instance administrator of SEEK can now create new Extended Metadata
+  optional attributes, changing attributes from required to options, the title attribute, the attribute pid and
+  description, and changing the name of an attribute.
+* **Creating new Extended Metadata Types** - an instance administrator of SEEK can now create new Extended Metadata
   Types through the user interface, using a simple JSON file that defines the type and attributes.
   The JSON has a corresponding [schema](/tech/extended-metadata/extended-metadata-type-schema.json) against which it is
-  validated. There is new [extensive Documentation](/tech/extended-metadata/extended-metadata-type.html) on how to do
-  this, and we are also planning on supporting doing so with an Excel template.
+  validated. There is new [extensive Documentation](/tech/extended-metadata/extended-metadata-type.html) including on
+  on how to do create, and we are also planning on supporting doing so with an Excel template.
 * **Deleting Extended Metadata Types** - in addition to being able to disable, an administrator is now able to delete
   Extended Metadata Types.
 * **RDF support** extended to support **Extended Metadata** and **Samples** - RDF generation will now including Extended
-  Metadata when present and the attributes include an identifier, and similarly some basic RDF is generated for Samples.
+  Metadata when present for the attributes that include an identifier, and similarly some basic RDF is generated for
+  Samples.
 * **DataHub enhancements** including
     * Implementation of Assay Streams to group multiple assays that share similar traits like the technology type.
     * Better integration of ISA-JSON compliant items.
     * Improved sample querying using the Experiment Sample Template Attributes.
 * **Registering multiple Datafiles via a zip file** - a contribution from PhenomUK, that allows multiple DataFiles to be
   registered at once by uploading a zip file.
-* **Search improvements** - to better support non-ASCII characters, such as umlauts and accented characters. How both
+* **Search improvements** - to better support non-ASCII characters, such as umlauts and accented characters. Now both
   the original and closest ASCII representation are indexed.
 * **COPASI model simulation** - enables the interpretation and manipulation of [COPASI](http://copasi.org/) models
   directly within the SEEK client interface, using [COPASI.js](https://github.com/copasi/COPASI.js).
