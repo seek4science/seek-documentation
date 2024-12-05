@@ -15,7 +15,7 @@ If you have any comments or feedback about a release, then please [Contact Us](/
 
 Release date: _6th December 2024_
 
-A major release that contains a number of improvements, upgrades and bug fixes, the hightlights including:
+A major release that contains a number of improvements, upgrades and bug fixes, the highlights including:
 
 * **FAIR Data Station Integration** - new work carried out as part of [BioIndustry4.0](https://fair-dom.org/fairdom-in-use/bioindustry4.0) and with contributions from
   [PhenomUK](https://phenomuk.org/) (for improved MIAPPE support).
@@ -894,7 +894,7 @@ Release date: _March 17th 2017_
 
 ![new_sharing_matrix](/images/release-notes/openbis.png)
 
-This is the first public release that supports [openBIS](https://fair-dom.org/platform/openbis/) integration. This version includes
+This is the first public release that supports [openBIS](https://openbis.ch/) integration. This version includes
 
   * Ability to link and browse an openBIS space and datastore, and browse DataSets
   * Easily register an openBIS DataSet with SEEK as a DataFile
@@ -942,7 +942,7 @@ Release date: _January 23rd 2017_
 Large update with many new features and improvements, in particular a new approach to handling Sample information.
 
   * A major reimplementation and design of our support for Samples
-    * Developed as part of our discussions within the [FAIRDOM-ELIXIR Samples Club](https://fair-dom.org/communities/samplesclub/), which was setup specifically to overcome problems with
+    * Developed as part of our discussions within the FAIRDOM-ELIXIR Samples Club, which was setup specifically to overcome problems with
      our old BioSamples
     * Flexible system that allows users to design their own Sample Type standards, which are associated with an 
     extractable spreadsheet template
