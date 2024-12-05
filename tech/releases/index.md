@@ -36,7 +36,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
 * **RDF support** extended to support **Extended Metadata** and **Samples** - RDF generation will now including Extended
   Metadata when present and the attributes include an identifier, and similarly some basic RDF is generated for Samples.
 * **DataHub enhancements** including
-    * Assay Streams.
+    * Implementation of Assay Streams to group multiple assays that share similar traits like the technology type.
     * Better integration of ISA-JSON compliant items.
     * Improved sample querying using the Experiment Sample Template Attributes.
 * **Registering multiple Datafiles via a zip file** - a contribution from PhenomUK, that allows multiple DataFiles to be
