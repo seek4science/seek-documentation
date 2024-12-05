@@ -15,7 +15,7 @@ They are expected to be added to FAIRDOM-SEEK in roughly the order they are pres
 | Feature | Milestone date |
 | --- |----------------|
 | Extended integration with the Norwegian e-Infrastructure for Life Sciences (NeLS) system | Q1 2025        |
-| Rails 7 and Ruby 3.2 upgrades | Q1 2024        |
+| Rails 7 and Ruby 3.2 upgrades | Q1 2025        |
 | Ability to Merge accounts | Q2 2025        |
 | UI Improvements to the Admin area | Q2 2025        |
 | Research Organisation Registry (ROR) integration for institutions | Q2 2025        |
