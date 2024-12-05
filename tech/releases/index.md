@@ -22,7 +22,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
 * Fewer constraints on editing Sample Types with existing Samples
 * Extended Metadata Data import (via JSON) and improved management
 * RDF support extended to support Extended Metadata and Samples
-* Assay Streams ( DataHub )
+* Implementation of Assay Streams to group multiple assays that share similar traits like the technology type ( DataHub )
 * Better integration of ISA-JSON compliant items ( DataHub )
 * Improved sample querying using the Experiment Sample Template Attributes ( DataHub )
 * Registering multiple Datafiles via a zip file (PhenomUK contribution)
