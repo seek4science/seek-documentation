@@ -117,12 +117,11 @@ If running Solr **via the docker scripts**, then you just need to stop, delete, 
     docker pull fairdom/seek-solr:8.11
     sh ./script/start-docker-solr.sh
 
-If running an **Apache Solr installed** using [Setting up Solr](setting-up-solr.html#installing-apache-solr), first stop the service, then replace the new core, and restart:
-
-    sudo service solr stop
-    sudo su - solr -c "/opt/solr/bin/solr delete -c seek
+If running an **Apache Solr installed** using [Setting up Solr](setting-up-solr.html#installing-apache-solr), then replace with the new core configuration, and restart:
+ 
+    sudo su - solr -c "/opt/solr/bin/solr delete -c seek"
     sudo su - solr -c "/opt/solr/bin/solr create -c seek -d $(pwd)/solr/seek/conf"
-    sudo service solr start
+    sudo service solr restart
 
 A full reindexing of SEEK content will be triggered during the upgrade.
 
