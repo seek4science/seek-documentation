@@ -41,8 +41,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
 * **Fewer constraints on editing Sample Types** - previously, once a Sample Type has Samples created from it, the
   ability to change the attributes was limited.
   This has been relaxed to allow some changes to be made that won't invalidate existing Samples, including adding new
-  optional attributes, changing attributes from required to options, the title attribute, the attribute pid and
-  description, and changing the name of an attribute.
+  optional attributes, the attribute pid and description, and changing the name of an attribute.
 * **Creating new Extended Metadata Types** - an instance administrator of SEEK can now create new Extended Metadata
   Types through the user interface, using a simple JSON file that defines the type and attributes.
   The JSON has a corresponding [schema](/tech/extended-metadata/extended-metadata-type-schema.json) against which it is
