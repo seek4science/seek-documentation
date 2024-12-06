@@ -50,7 +50,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
   on how to create, and we are also planning on supporting doing so with an Excel template.
 * **Deleting Extended Metadata Types** - in addition to being able to disable, an administrator is now able to delete
   Extended Metadata Types.
-* **RDF support** extended to support **Extended Metadata** and **Samples** - RDF generation will now including Extended
+* **RDF support** extended to support **Extended Metadata** and **Samples** - RDF generation will now include Extended
   Metadata when present for the attributes that include an identifier, and similarly some basic RDF is generated for
   Samples.
 * **[DataHub](https://fair-dom.org/fairdom-in-use/Datahub) enhancements** including
