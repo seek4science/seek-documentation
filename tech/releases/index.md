@@ -11,6 +11,64 @@ Please see [Getting FAIRDOM-SEEK](/get-seek.html) for details about installing S
 
 If you have any comments or feedback about a release, then please [Contact Us](/contacting-us.html)
 
+## Version 1.16.0
+
+Release date: _6th December 2024_
+
+A major release that contains a number of improvements, upgrades and bug fixes, the highlights including:
+
+* **FAIR Data Station Integration** - new work carried out as part of [BioIndustry4.0](https://fair-dom.org/fairdom-in-use/bioindustry4.0) and with contributions from
+  [PhenomUK](https://phenomuk.org/) (for improved MIAPPE support).
+  [FAIR Data Station](https://fairds.fairbydesign.nl/) provides a light weight approach to gathering, validating, and injesting metadata through the use of
+  spreadsheet templates and following FAIR principles.
+  Current support includes:
+    * The introduction of (optional) [Observation Units](https://docs.fairbydesign.nl/docs/fairdatastation/template.html#observation-unit), that fall between Study and Sample in the ISA structure.
+    * Ability to import the metadata produced by the FAIR Data Station, following validation of a spreadsheet template. And
+      also afterwards should the template change, allowing updated, additions and items moving (but not
+      deletion).
+    * Allows the registration and updates of the full Investigation, Study, Observation Units, Samples, Assays and
+      registration of Data Files.
+    * Matches metadata attributes configured in FAIR Data Station with those of pre-configured Extended Metadata Types
+      which are then automatically applied.
+    * _This is currently an experimental feature_, disabled by default (but can be enabled in the settings), with
+      documentation planned, and also automatic creation of Extended Metadata Types, tighter coupling through API's and
+      [RO-Crate](https://www.researchobject.org/ro-crate/) support. 
+* **Explicit Sample Type permissions** - previously, Sample Type visibility was automatically derived according to the
+  Projects it is shared with and the visibility of related Samples.
+  This has now been updated to allow the permissions to be explicitly defined and under user control. When upgrading
+  SEEK
+  permissions will be set that mirror the old derived permissions.
+* **Fewer constraints on editing Sample Types** - previously, once a Sample Type has Samples created from it, the
+  ability to change the attributes was limited.
+  This has been relaxed to allow some changes to be made that won't invalidate existing Samples, including adding new
+  optional attributes, changing attributes from required to options, the title attribute, the attribute pid and
+  description, and changing the name of an attribute.
+* **Creating new Extended Metadata Types** - an instance administrator of SEEK can now create new Extended Metadata
+  Types through the user interface, using a simple JSON file that defines the type and attributes.
+  The JSON has a corresponding [schema](/tech/extended-metadata/extended-metadata-type-schema.json) against which it is
+  validated. There is new [extensive Documentation](/tech/extended-metadata/extended-metadata-type.html) including on
+  on how to create, and we are also planning on supporting doing so with an Excel template.
+* **Deleting Extended Metadata Types** - in addition to being able to disable, an administrator is now able to delete
+  Extended Metadata Types.
+* **RDF support** extended to support **Extended Metadata** and **Samples** - RDF generation will now including Extended
+  Metadata when present for the attributes that include an identifier, and similarly some basic RDF is generated for
+  Samples.
+* **[DataHub](https://fair-dom.org/fairdom-in-use/Datahub) enhancements** including
+    * Implementation of Assay Streams to group multiple assays that share similar traits like the technology type.
+    * Better integration of ISA-JSON compliant items.
+    * Improved sample querying using the Experiment Sample Template Attributes.
+* **Registering multiple Datafiles via a zip file** - a contribution from PhenomUK, that allows multiple DataFiles to be
+  registered at once by uploading a zip file.
+* **Search improvements** - to better support non-ASCII characters, such as umlauts and accented characters. Now both
+  the original and closest ASCII representation are indexed.
+* **COPASI model simulation** - enables the interpretation and manipulation of [COPASI](http://copasi.org/) models
+  directly within the SEEK client interface, using [COPASI.js](https://github.com/copasi/COPASI.js).
+* **[WorkflowHub](https://about.workflowhub.eu/) enhancements** including
+    * Improved support for importing workflows from Github, which is also now configurable and handles versions better.
+    * Improved support for RO-Crates, and submitting RO-Crates through the API.
+
+And much more, for a full list see [closed issues for 1.16.0](https://github.com/seek4science/seek/milestone/24?closed=1)
+
 ## Version 1.15.2
 
 Release date: _18th July 2024_
@@ -836,7 +894,7 @@ Release date: _March 17th 2017_
 
 ![new_sharing_matrix](/images/release-notes/openbis.png)
 
-This is the first public release that supports [openBIS](https://fair-dom.org/platform/openbis/) integration. This version includes
+This is the first public release that supports [openBIS](https://openbis.ch/) integration. This version includes
 
   * Ability to link and browse an openBIS space and datastore, and browse DataSets
   * Easily register an openBIS DataSet with SEEK as a DataFile
@@ -884,7 +942,7 @@ Release date: _January 23rd 2017_
 Large update with many new features and improvements, in particular a new approach to handling Sample information.
 
   * A major reimplementation and design of our support for Samples
-    * Developed as part of our discussions within the [FAIRDOM-ELIXIR Samples Club](https://fair-dom.org/communities/samplesclub/), which was setup specifically to overcome problems with
+    * Developed as part of our discussions within the FAIRDOM-ELIXIR Samples Club, which was setup specifically to overcome problems with
      our old BioSamples
     * Flexible system that allows users to design their own Sample Type standards, which are associated with an 
     extractable spreadsheet template

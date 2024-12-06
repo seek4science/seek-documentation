@@ -15,6 +15,8 @@ support SEEK and the associated tools.
 **Always backup your SEEK data before starting to upgrade!!** - see the
 [Backup Guide](backups.html).
 
+**If you are running using Docker Compose**, then please follow the steps there - [Upgrading between versions](docker/docker-compose.html#upgrading-between-versions)
+
 **You should always upgrade between minor (1.X) versions incrementally**, i.e:
 
 1.12.x --> 1.13.x --> 1.14.x --> 1.15.x,
@@ -47,7 +49,7 @@ When upgrading between patch versions, it should only be necessary to run
     bundle install
     bundle exec rake seek:upgrade 
 
-## Steps to upgrade from 1.14.x to 1.15.x
+## Steps to upgrade from 1.15.x to 1.16.x
 
 
 ### Set RAILS_ENV
@@ -71,17 +73,17 @@ If you have an existing installation linked to our GitHub, you can fetch the
 files with:
 
     git fetch
-    git checkout v1.15.2
+    git checkout v1.16.0
 
 #### Updating using the tarball
 
 You can download the file from
-<https://github.com/seek4science/seek/archive/v1.15.2.tar.gz> You can
+<https://github.com/seek4science/seek/archive/v1.16.0.tar.gz> You can
 unpack this file using:
 
-    tar zxvf seek-1.15.2.tar.gz
+    tar zxvf seek-1.16.0.tar.gz
     mv seek seek-previous
-    mv seek-1.15.2 seek
+    mv seek-1.16.0 seek
     cd seek/
 
 and then copy across your existing filestore and database configuration file
@@ -106,13 +108,28 @@ If you are not prompted you can install with the command:
 
     rvm install $(cat .ruby-version)
 
+### Apply new Apache Solr configuration
+
+If running Solr **via the docker scripts**, then you just need to stop, delete, pull the latest image, and restart:
+
+    sh ./script/stop-docker-solr.sh
+    sh ./script/delete-docker-solr.sh
+    docker pull fairdom/seek-solr:8.11
+    sh ./script/start-docker-solr.sh
+
+If running an **Apache Solr installed** using [Setting up Solr](setting-up-solr.html#installing-apache-solr), then replace with the new core configuration, and restart:
+ 
+    sudo su - solr -c "/opt/solr/bin/solr delete -c seek"
+    sudo su - solr -c "/opt/solr/bin/solr create -c seek -d $(pwd)/solr/seek/conf"
+    sudo service solr restart
+
+A full reindexing of SEEK content will be triggered during the upgrade.
+
 ### Doing the upgrade
 
 After updating the files, the following steps will update the database, gems,
 and other necessary changes. Note that seek:upgrade may take longer than usual if you have data stored that points to remote
 content.
-
-**Please note** - during the upgrade the step _Updating session store_ can take a long time and appear that it has frozen, so please be patient. 
 
     cd . # this is to allow RVM to set the correct ruby version
     gem install bundler

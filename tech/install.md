@@ -29,7 +29,7 @@ describing Ruby on Rails can be found at https://rubyonrails.org/documentation
 SEEK is built upon Rails, and requires Ruby 3.1.
 
 We recommend that you run SEEK on a Linux system. This guide is based on an
-[Ubuntu (20.04 LTS)](https://releases.ubuntu.com/20.04/) system, but is also happily being run on Ubuntu 22.04 (24.04 is yet to be tested).
+[Ubuntu (22.04 LTS)](https://releases.ubuntu.com/22.04/) system (24.04 is yet to be tested).
 When running on other Linux distributions the main difference is the name of the required packages that have to be installed
 for that distribution, other than that the steps will be the same. If you want
 to install on different distribution or version please visit [Other
