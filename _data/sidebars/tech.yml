@@ -65,9 +65,20 @@ subitems:
         url: /tech/setting-up-virtuoso
 #      - title: Using Teaspoon
 #        url: /tech/using-teaspoon
-  - title: Extended Metadata Technical Overview
-    url:
-      /tech/extended-metadata
+  - title: Extended Metadata
+    subitems:
+      - title: Extended Metadata Technical Overview
+        url: /tech/extended-metadata/extended-metadata-type
+      - title: Manage Extended Metadata Types
+        url: /tech/extended-metadata/manage-extended-metadata-type
+      - title: Create Extended Metadata Types
+        url: /tech/extended-metadata/create-extended-metadata-type
+      - title: Define your own Extended Metadata Type with SEEDs File
+        url: /tech/extended-metadata/create-extended-metadata-type-with-seeds-file
+      - title: Create Extended Metadata Types by Uploading a JSON File
+        url: /tech/extended-metadata/create-extended-metadata-type-with-json-file
+      - title: A Complete Example to Create Extended Metadata Types by Uploading a JSON File
+        url: /tech/extended-metadata/a-complete-example
   - title: FAIRDOM-SEEK releases
     url: /tech/releases/
   -

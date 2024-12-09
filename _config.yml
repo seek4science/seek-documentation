@@ -2,8 +2,8 @@
 
 remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@3.2.0
 
-current_seek_version: "1.15.2"
-current_docker_tag: "1.15"
+current_seek_version: "1.16.0"
+current_docker_tag: "1.16"
 
 plugins:
   - jekyll-sitemap
@@ -50,6 +50,12 @@ defaults:
       path: "tech/docker"
     values:
       permalink: /tech/docker/:basename
+      sidebar: tech
+
+  - scope:
+      path: "tech/extended-metadata"
+    values:
+      permalink: /tech/extended-metadata/:basename
       sidebar: tech
   -
     scope:
