@@ -1,6 +1,6 @@
 ---
 title: Extended Metadata Technical Overview
-layout: page
+layout: page-ett
 redirect_from: '/tech/extended-metadata'
 ---
 

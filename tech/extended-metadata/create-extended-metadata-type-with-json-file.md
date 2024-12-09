@@ -1,6 +1,6 @@
 ---
 title: Create Extended Metadata Types by Uploading a JSON File
-layout: page
+layout: page-ett
 ---
 
 <a href="create-extended-metadata-type.html">back</a>

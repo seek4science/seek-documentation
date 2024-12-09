@@ -1,6 +1,6 @@
 ---
 title: Manage Extended Metadata Type
-layout: page
+layout: page-ett
 ---
 
 <a href="extended-metadata-type.html">back</a>
