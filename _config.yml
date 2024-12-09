@@ -51,6 +51,12 @@ defaults:
     values:
       permalink: /tech/docker/:basename
       sidebar: tech
+
+  - scope:
+      path: "tech/extended-metadata"
+    values:
+      permalink: /tech/extended-metadata/:basename
+      sidebar: tech
   -
     scope:
       path: "tech/releases"
