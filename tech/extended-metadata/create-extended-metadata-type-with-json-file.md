@@ -3,9 +3,6 @@ title: Create Extended Metadata Types by Uploading a JSON File
 layout: page-ett
 ---
 
-<a href="create-extended-metadata-type.html">back</a>
-
-# Create Extended Metadata Types by Uploading a JSON File
 
 This is [JSON schema](extended-metadata-type-schema.json) used to define your JSON file for creating a new extended metadata type via upload.
 
@@ -16,7 +13,7 @@ This is [JSON schema](extended-metadata-type-schema.json) used to define your JS
     
 Simple attributes are those that are not linked to any other metadata type or controlled vocabulary. <br>
 <br>
-You can define the attribute using the following types, which can also be viewed on the [Extended Metadata attribute Type](manage-extended-metadata-type.html/#4-extended-metadata-attribute-types-tab) tab.
+You can define the attribute using the following types, which can also be viewed on the [Extended Metadata attribute Type](manage-extended-metadata-type/#4-extended-metadata-attribute-types-tab) tab.
 <br><br>
 `Date time`, `Date`, `Real number`, `Integer`, `Web link`, `Email address`, `Text`,`String`, `ChEBI`,`ECN`,`MetaNetX chemical`,`MetaNetX reaction`,`MetaNetX compartment`,`InChI`,`ENA custom date`,`Boolean`,`URI`,`DOI`, `NCBI ID`,`Registered Strain`,`Registered Data file` 
 
@@ -51,7 +48,7 @@ Here is an example:
 
 Those attributes are linked to other extended metadata types, including `Linked Extended Metadata`,`Linked Extended Metadata (multiple)`
 
-For `Linked Extended Metadata` or `Linked Extended Metadata (Multiple)` attributes, you need to supply the ID of the nested extended metadata. The available nested metadata IDs are located on the [Nest Level](manage-extended-metadata-type.html/#2-nested-level-tab) tab as a system administrator.
+For `Linked Extended Metadata` or `Linked Extended Metadata (Multiple)` attributes, you need to supply the ID of the nested extended metadata. The available nested metadata IDs are located on the [Nest Level](manage-extended-metadata-type/#2-nested-level-tab) tab as a system administrator.
 
 From last example, we haven created a nested level extended metadata type `person`, with `supported_type` of `ExtendeMetadata` with two attributes `first_name` and `last_name`. Now we want to create a new extended metadata type `family` with two attributes `dad` and `mom` which are linked to `person` type. 
 In this case, we need to provide the **/ID/**  of the nested extended metadata `person` in the `dad`, `mom`, `child` attributes.
@@ -96,9 +93,9 @@ Here is an example:
 
 When defining a `Controlled Vocabulary` or `Controlled Vocabulary List` attribute, you must provide the ID of the controlled vocabulary. 
 
-The list of existing vocabulary IDs can be found under the [Controlled Vocabulary](manage-extended-metadata-type.html/#3-controlled-vocabularies-tab) tab as a system administrator. 
+The list of existing vocabulary IDs can be found under the [Controlled Vocabulary](manage-extended-metadata-type/#3-controlled-vocabularies-tab) tab as a system administrator. 
 
-You can also create a new controlled vocabulary by clicking the button on the [Controlled Vocabulary](manage-extended-metadata-type.html/#3-controlled-vocabularies-tab) tab.
+You can also create a new controlled vocabulary by clicking the button on the [Controlled Vocabulary](manage-extended-metadata-type/#3-controlled-vocabularies-tab) tab.
 
 Here is an example:
 
@@ -126,4 +123,4 @@ Here is an example:
 }
 ```
 
-Here’s a step-by-step [example](a-complete-example.html) of how to create a new extended metadata type using all the attribute types mentioned above.
+Here’s a step-by-step [example](a-complete-example) of how to create a new extended metadata type using all the attribute types mentioned above.

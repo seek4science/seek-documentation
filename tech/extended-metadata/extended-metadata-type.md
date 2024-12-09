@@ -4,8 +4,6 @@ layout: page-ett
 redirect_from: '/tech/extended-metadata'
 ---
 
-# Extended Metadata Technical Overview
-
 ## Introduction
 
 Extended Metadata is a feature added to SEEK as part of [version 1.11](/tech/releases/#version-1110), originally to support
@@ -88,6 +86,6 @@ As a SEEK instance administrator, you have the ability to create, manage (enable
 
 
 
-* #### [Manage Extended Metadata Types](manage-extended-metadata-type.html)
-* #### [Create Extended Metadata Types](create-extended-metadata-type.html)
+* **[Manage Extended Metadata Types](manage-extended-metadata-type)**
+* **[Create Extended Metadata Types](create-extended-metadata-type)**
 

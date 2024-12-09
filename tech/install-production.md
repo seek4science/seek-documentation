@@ -7,7 +7,7 @@ redirect_from: "/install-production.html"
 
 This page contains some extra notes about setting up SEEK for production (i.e.
 for real use rather than for development). Before proceeding with these steps, you should have first 
-followed the [Install Guide](install.html)
+followed the [Install Guide](install)
 
 By reading and following these extra notes, you will get more performance out of
 SEEK, and reduce the ongoing maintenance.

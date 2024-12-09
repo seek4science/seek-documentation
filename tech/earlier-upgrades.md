@@ -72,7 +72,7 @@ Then the other dependencies can be installed
 
 ### Upgrading Ruby
 
-It is necessary to upgrade to Ruby 3.1.4. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install.html) )you should be prompted to install during the standard installation steps that follow.
+It is necessary to upgrade to Ruby 3.1.4. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install) )you should be prompted to install during the standard installation steps that follow.
 If you are not prompted you can install with the command:
 
     rvm install $(cat .ruby-version)
@@ -982,7 +982,7 @@ If you are running a production SEEK behing Apache, then move onto the next part
     
 If you are running SEEK with Passenger, it is likely you will need to upgrade Passenger and your Apache or Ngninx configuration.
  
-Please read [Serving SEEK through Apache](/tech/install-production.html#serving-seek-through-apache) for a reminder
+Please read [Serving SEEK through Apache](/tech/install-production#serving-seek-through-apache) for a reminder
 on how to install the new version, and update your virtual host configuration accordingly.
 
 ### Note on Search results
@@ -1191,7 +1191,7 @@ after upgrading from ruby 2.1.7 to ruby 2.1.9
 
 If you have problems, you may need to upgrade and reinstall the Passenger Phusion modules (if unsure there no harm in doing so).
 
-Please read [Installing SEEK in a production environment](install-production.html) for more details about setting up Apache and installing the module.
+Please read [Installing SEEK in a production environment](install-production) for more details about setting up Apache and installing the module.
 
 ---
 
@@ -1286,7 +1286,7 @@ after upgrading from ruby 2.1.6 to ruby 2.1.7
 
 If you have problems, you may need to upgrade and reinstall the Passenger Phusion modules (if unsure there no harm in doing so).
 
-Please read [Installing SEEK in a production environment](install-production.html) for more details about setting up Apache and installing the module.
+Please read [Installing SEEK in a production environment](install-production) for more details about setting up Apache and installing the module.
 
 
 ---
@@ -1549,7 +1549,7 @@ Rails to version 3.2 - this means the upgrade process is a little bit more
 involved that usual. For this reason we have a seperate page detailing this
 upgrade.
 
-Please visit [Upgrading to 0.18](upgrading-to-0.18.html) for details of
+Please visit [Upgrading to 0.18](upgrading-to-0.18) for details of
 how to do this upgrade.
 
 ---

@@ -13,7 +13,7 @@ support SEEK and the associated tools.
 **Always backup your SEEK data before starting to upgrade!!** - see the
 [Backup Guide](backups).
 
-**If you are running using Docker Compose**, then please follow the steps there - [Upgrading between versions](docker/docker-compose.html#upgrading-between-versions)
+**If you are running using Docker Compose**, then please follow the steps there - [Upgrading between versions](docker/docker-compose#upgrading-between-versions)
 
 **You should always upgrade between minor (1.X) versions incrementally**, i.e:
 
@@ -115,7 +115,7 @@ If running Solr **via the docker scripts**, then you just need to stop, delete, 
     docker pull fairdom/seek-solr:8.11
     sh ./script/start-docker-solr.sh
 
-If running an **Apache Solr installed** using [Setting up Solr](setting-up-solr.html#installing-apache-solr), then replace with the new core configuration, and restart:
+If running an **Apache Solr installed** using [Setting up Solr](setting-up-solr#installing-apache-solr), then replace with the new core configuration, and restart:
  
     sudo su - solr -c "/opt/solr/bin/solr delete -c seek"
     sudo su - solr -c "/opt/solr/bin/solr create -c seek -d $(pwd)/solr/seek/conf"
