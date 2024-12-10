@@ -199,7 +199,7 @@ end
 You can find the [complete example here](https://github.com/seek4science/seek/blob/main/db/seeds/extended_metadata_drafts/family_example.seeds.rb), you need to move the file under the `db/seeds` folder, then run the seed file using the command
 ```bundle exec rake db:seed:family_example``` from the SEEK instance root path.
 
-## How to run the seed file?
+## How to run the seed file
 
 Here is a seed file named **[extended_study_metadata_example.seeds.rb](https://github.com/seek4science/seek/blob/main/db/seeds/extended_metadata_drafts/extended_study_metadata_example.seeds.rb)**, which creates an Extended Metadata type named **"My study metadata"** for study. 
 
