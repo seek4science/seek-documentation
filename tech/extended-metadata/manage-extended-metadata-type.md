@@ -63,4 +63,4 @@ This tab provides a list of all supported extended metadata attribute types. The
 ![](/images/user-guide/extended-metadata/emas-tab.png)
 
 
-Back to [Extended Metadata Technical Overview](Extended-metadata-type)
+Back to [Extended Metadata Technical Overview](extended-metadata-type)
