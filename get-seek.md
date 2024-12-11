@@ -1,5 +1,5 @@
 ---
-title: Get FAIRDOM-SEEK (Is it for me?)
+title: Get FAIRDOM-SEEK
 layout: page-ett
 sidebar: about
 permalink: /get-seek
@@ -8,21 +8,6 @@ redirect_from: "/get_seek.html"
 
 <i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i> FAIRDOM-SEEK is open source software, and is distributed under a [BSD License](https://github.com/seek4science/seek/blob/main/BSD-LICENSE). The source code is all available on [GitHub](https://github.com/seek4science/seek).
 
-
-
-## Alternative: FAIRDOMHub public hub
-{% include callout.html type="tip" content="
-If you do not want to install your own version of FAIRDOM-SEEK, you can register to use the [FAIRDOMHub](https://fairdomhub.org), a version of SEEK which is hosted by [FAIRDOM](https://fair-dom.org) for general community use.
-" %}
-
-### What are the differences? 
-
-| ![FAIRDOMHub logo](/images/fairdomhub-favicon.png) <br />FAIRDOMHub public hub | ![SEEK logo](/images/favicon.png) <br /> Your own FAIRDOM-SEEK installation |
-|-------|---------|
-| Requires registration   | Requires installation and hosting |
-| Managed by the FAIRDOM consortium   | Managed by your technical team |
-| Registry for data, operating procedures and models  | Registry for your choice of content  |
-| Open and public  | Can be open, public or private  |
 
 
 
@@ -41,3 +26,19 @@ FAIRDOM-SEEK can also be deployed using [Docker](https://docker.com), for which 
 ### Changes
 
 To review changes and new features introduced between FAIRDOM-SEEK versions please visit our [Change Log](/tech/releases/).
+
+
+
+## Alternative: FAIRDOMHub public hub
+{% include callout.html type="tip" content="
+If you do not want to install your own version of FAIRDOM-SEEK, you can register to use the [FAIRDOMHub](https://fairdomhub.org), a version of SEEK which is hosted by [FAIRDOM](https://fair-dom.org) for general community use.
+" %}
+
+### What are the differences?
+
+| ![FAIRDOMHub logo](/images/fairdomhub-favicon.png) <br />FAIRDOMHub public hub | ![SEEK logo](/images/favicon.png) <br /> Your own FAIRDOM-SEEK installation |
+|-------|---------|
+| Requires registration   | Requires installation and hosting |
+| Managed by the FAIRDOM consortium   | Managed by your technical team |
+| Registry for data, operating procedures and models  | Registry for your choice of content  |
+| Open and public  | Can be open, public or private  |
