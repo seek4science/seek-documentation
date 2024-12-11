@@ -15,7 +15,7 @@ models or simulations, processes and research outcomes. More details about SEEK 
 
 For an example of FAIRDOM-SEEK please visit our [Demo](https://demo.seek4science.org).
 
-### Get FAIRDOM-SEEK (or use FAIRDOMHub)
+### Get FAIRDOM-SEEK
 
 To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-SEEK as a Virtual Machine, please go to our [<i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i> Get FAIRDOM-SEEK page](/get-seek).
 
@@ -36,7 +36,7 @@ Details on how to get started using the Application Programme Interface (API) ca
 ### Archived help and guidelines
 
 We also have other information for topics related to FAIRDOM-SEEK, including Metadata, ISA, and controlled vocabularies, which can be found
-in our [archive of help and guidelines](/help/). These guides are no longer being updated, please see the [<i class="fa-solid fa-user-group fa-1x"></i> <i class="fa-solid fa-book fa-1x"></i> User Guide](/help/user-guide/) for latest information.
+in our [archive of help and guidelines](/help/).
 
 <hr />
 
