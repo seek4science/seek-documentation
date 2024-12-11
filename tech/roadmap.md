@@ -30,7 +30,7 @@ They are expected to be added to FAIRDOM-SEEK in roughly the order they are pres
 
 <br/>
 
-Please also see the [Workflow Hub Roadmap](https://about.workflowhub.eu/roadmap/), 
+Please also see the [WorkflowHub Roadmap](https://about.workflowhub.eu/roadmap/), 
 which is being built on and in conjunction with FAIRDOM-SEEK.
 
 ---

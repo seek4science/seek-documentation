@@ -1,5 +1,5 @@
 ---
-title: Controlled Vocabularies and Ontologies
+title: Controlled vocabularies and ontologies
 layout: page-ett
 redirect_from: "/controlled-vocabularies.html"
 ---
@@ -108,7 +108,7 @@ SEEK documentation is a community driven activity, and we are always looking to 
 	</tr>
 </tbody></table>
 
-## Assistance with Data and Models Annotation
+## Assistance with annotation
 
 Accessing and navigating these resources can be difficult and time-consuming for large data sets. SysMO-DB provide tools to make data and model annotation easier.
 

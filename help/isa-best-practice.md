@@ -1,5 +1,5 @@
 ---
-title: ISA Best Practice Guide
+title: ISA best practice guide
 layout: page-ett
 redirect_from: "/isa-best-practice.html"
 ---
@@ -39,7 +39,7 @@ of the yeast Saccharomyces cerevisiae under different nutrient limitations
         * Comparison of proteome at 70 and 80c (Protein expression profiling)
         * Intracellular metabolomics of s. solfataricus at 70 and 80c (Metabolomics)
 
-## Required Fields in the SEEK ISA
+## Required fields in the SEEK ISA
 
 A short guide to creating a new ISA file
 

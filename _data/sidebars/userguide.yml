@@ -158,29 +158,29 @@ subitems:
     hr: true
     title: Archives
     subitems:
-      - title: Archived help and guidelines (introduction)
+      - title: Archived help and guidelines
         url: /help
-      - title: Guidelines for Data and Model Annotation in SEEK
+      - title: Data and model annotation
         subitems:
-         - title: Minimum Metadata Guidelines for SEEK
+         - title: Minimum metadata guidelines for SEEK
            url: /help/metadata-guidelines
-         - title: A Quick Guide to Using the ISA Structure
+         - title: A Quick guide to using the ISA structure
            url: /help/isa-guide
-         - title: ISA Best Practice
+         - title: ISA best practice
            url: /help/isa-best-practice
-         - title: Transcriptomics Guidelines
+         - title: "Transcriptomics: guidelines for SEEK templates"
            url: /help/transcriptomics-guidelines
-         - title: Proteomics Guidelines
+         - title: Proteomics guidelines
            url: /help/proteomics-guidelines
-      - title: Guidelines for using Community Resources and Controlled Vocabularies
+      - title: Controlled vocabularies
         subitems:
-         - title: Controlled Vocabularies and Ontologies
+         - title: Controlled vocabularies and ontologies
            url: /help/controlled-vocabularies
-      - title: JERM Templates for use in SEEK
+      - title: JERM
         subitems:
          - title: JERM (Just Enough Results Model)
            url: /help/jerm
-         - title: JERM Templates
+         - title: JERM templates
            url: /help/templates
   -
     hr: true
