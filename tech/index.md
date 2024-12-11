@@ -1,5 +1,5 @@
 ---
-title: Technical References
+title: FAIRDOM-SEEK Technical References
 layout: page-ett
 ---
 
