@@ -1,18 +1,15 @@
 ---
 title: A Complete Example to Create Extended Metadata Types by Uploading a JSON File
-layout: page
+layout: page-ett
 ---
 
-<a href="create-extended-metadata-type-with-json-file.html">back</a>
-
-# A Complete Example
-
+Here is a step-by-step example of how to create a new extended metadata type using all the attribute types mentioned in our guide: [Create Extended Metatypes by Uploading a JSON File](create-extended-metadata-type-with-json-file).
 
 ## Step 1: Define Controlled Vocabularies 
 
-Currently, controlled vocabularies can only be created through the user interface by anyone with permission to create resources in SEEK
+Currently, controlled vocabularies can only be created through the user interface by anyone with permission to create resources in SEEK.
 
-You can also use the following direct link  ```HTTP://{HOST_NAME}/sample_controlled_vocabs/new``` to create controlled vocabularies or the button on the [Controlled Vocabulary](manage-extended-metadata-type.html/#3-controlled-vocabularies-tab) tab.
+You can also use the following direct link  ```HTTP://{HOST_NAME}/sample_controlled_vocabs/new``` to create controlled vocabularies or the button on the [Controlled Vocabulary](manage-extended-metadata-type/#3-controlled-vocabularies-tab) tab.
 
 Assuming the controlled vocabularies have been created here:
 <img src="/images/user-guide/extended-metadata/cvs-tab.png" alt="extended-metadata-fields" width="600">
@@ -20,9 +17,9 @@ Assuming the controlled vocabularies have been created here:
 You can view the detailed controlled vocabularies by clicking the corresponding its ID. 
 <img src="/images/user-guide/extended-metadata/role_name_identifier_scheme_cv.png" alt="extended-metadata-fields" width="500">
 
-## Step 2: Define Nested Exended Metadata Types
+## Step 2: Define Nested Extended Metadata Types
 
-1. Define a metadata type named `role_name_identifiers` with two attributes: `scheme` and `identifier`. After creation, it is assigned ID `158`.
+Step 2.1. Define a metadata type named `role_name_identifiers` with two attributes: `scheme` and `identifier`. After creation, it is assigned ID `158`.
 
 ```json
 {
@@ -49,7 +46,7 @@ You can view the detailed controlled vocabularies by clicking the corresponding 
 }
 ```
 
-2.Define a new metadata type called `role_emt`, which will have one attribute linked to the previously created `role_name_identifiers`. Consequently, the `role_emt` type will be established with five attributes and assigned the ID 159.
+Step 2.2. Define a new metadata type called `role_emt`, which will have one attribute linked to the previously created `role_name_identifiers`. Consequently, the `role_emt` type will be established with five attributes and assigned the ID 159.
 
 ```json
 {

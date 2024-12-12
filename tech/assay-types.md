@@ -1,10 +1,8 @@
 ---
-title: assay types
-layout: page
+title: Providing your own Assay and Technology types
+layout: page-ett
 redirect_from: "/assay-types.html"
 ---
-
-# Providing your own Assay and Technology types
 
 This page describes how to customise the Assay and Technology types available in SEEK. The same approach is taken for
 both assay and technology types.

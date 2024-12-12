@@ -1,10 +1,13 @@
 ---
-title: Definitions
-layout: page
+title: FAIRDOM-SEEK Definitions
+layout: page-ett
+sidebar: userguide
+permalink: /definitions
 ---
 
-# FAIRDOM-SEEK definitions
 Definition of terms used in FAIRDOM-SEEK.
+
+---
 
 ## Profile
 A profile corresponds to information in SEEK about a person that can be a registered user (with an account) or a non-registered user (without an account).
@@ -33,8 +36,12 @@ List of all Projects that the registered user administers and is a member of.
 ### Provide feedback
 Form to provide feedback (also anonymously) about the platform to the provider team.
 
+---
+
 ## Directory
 Alias for Yellow pages. Section listing registered people, institutions, projects and programmes.
+
+---
 
 ## Yellow pages
 Section listing registered people, institutions, projects and programmes.
@@ -68,6 +75,8 @@ Alias for Programme. An umbrella to group one or more Teams.
 ### Team
 Alias for Project.
 <!--From info icon: research activities conducted by a group of one or more people. From user guide: represents a group of one or more people collaborating together on a particular activity.-->
+
+---
 
 ## Experiments
 Scientific procedures undertaken to make a discovery, test a hypothesis or demonstrate a fact.
@@ -127,6 +136,8 @@ From info icon: A Study is a particular hypothesis, which you are planning to te
 ### Study design
 Tab to interact with protocols, sources and samples in an ISA-JSON compliant experiment.
 
+---
+
 ## Assets
 ### Attribution
 Some assets are based on others, for example, a model may use data from an experimental assay, or a SOP may be a modified version of another. The attribution section allows you to specify when this is the case. As you type in the attribution, related assets will appear in a drop down menu.
@@ -162,6 +173,8 @@ A Computational Workflow describes the complex multi-step methods that lead to n
 ### Version History <!-- don't know what to add here, took text from uploading-new-versions.md -->
 When there are minor modifications, improvements or error corrections to an Asset, a new version can be created. If the new version changes the original intention or purpose of the asset, you should instead create an entirely new asset.
 
+---
+
 ## Activities
 ### Announce an Event
 To create a new event.
@@ -171,6 +184,8 @@ From info icon: Events associated with one or more Projects, happening on specif
 To create a new presentation.
 ### Presentation
 <!--From info icon:-->Presentations associated with one or more Projects can be registered in SEEK.
+
+---
 
 ## Samples
 ### Attributes
@@ -272,6 +287,8 @@ To visualise samples from one Sample Type in a searchable table.
 ### Tags
 ### Title-->
 
+---
+
 ## Actions
 * Administer Project members
   * Add members: to add registered users to the project, using one or more institutions. 
@@ -290,65 +307,67 @@ To visualise samples from one Sample Type in a searchable table.
 * Order: to arrange the order in which multiple Investigations, Studies and Assays are visually listed within Project, Investigation and Study, respectively.
 <!--* Populate: to populate the structure (ISA, metadata what???) of the project via a compatible tsv file previosly uploaded to the same project.-->
 
-## Add new
+### Add new
 To create new Investigation, Study and Assay from the overview page of a Project, Investigation or Study, respectively, even if the newly created item can be associated with a different Project, Investigation or Study from the one selected in the first place.
 
 Also to create an asset immediately associated with the currently selected Assay. The assat can still be associated with different project than the one associated with the Assay.
-## Asset report
+### Asset report
 Short report about items that have been shared outside of the project. <!--more detailed needed? no extra info in the guide-->
-## Dashboard
+### Dashboard
 Page containing various charts presenting metrics on activity within the programme or project over a given time period.
-## Download
+### Download
 To download assets for which sharing permissions allows the download for a user.
-## Experiment view
+### Experiment view
 (aliases: Single Page)
 To visualise Experiments (Investigations, Studies, Assays) and the linked SOPs in the Project in a tree view on the left side of the page, while each item’s details are shown and accessible from the center of the page. Only samples created within ISA-JSON compliant experiments are shown in Experiment view.
-## Overview
+### Overview
 Tree view of the items associated with the project. The associated Programme is also shown.
-## Request Contact
+### Request Contact
 To send an email to the submitter of the item to show your interest for it.
-## View content
+### View content
 To visualise the content of the file in the browser.
-## SEEK ID
+### SEEK ID
 Unique identifier within the platform.
-## Activity
+### Activity
 * Created: creation date of an item, e.g. 4th Dec 2012 at 17:38 (Time Zone unkown).
 * Downloads: number of times the item has been downloaded.
 * Last updated: date of when an item has been last edited, e.g. 26th Jun 2015 at 10:27 (Time Zone unkown).
 * Last updated by: user that last edited an item.
 * Views: number of <!--UNIQUE?--> views of an item. <!--based on ??? (dobled clicks?).-->
 
-## Browse
+### Browse
 To browse the content of one specific item category at the time (e.g. Documents).
 * Query: to search for a specific query within the selected category. The search will attempt to find partial matches for the search term.
 * Faceted navigation: to refine search results based on multiple attributes available.
 
-### Condensed
+#### Condensed
 The condensed view has collapsible items that make it easier to view and browse more results in a single results page.
-### Default
+#### Default
 By default, the content is listed as cards, providing title and some basic information.
-### Table
+#### Table
 The table view shows more results at once. A small set of attributes about the items are shown as columns. This set can be extended and customised to include or remove attributes related to that item type, as well as choosing their order.
-## Overview
+### Overview
 Tab showing basic information about the selected item.
-## Related items
+### Related items
 Tab showing items related to the selected one.
-## Search
+### Search
 To search for a specific query. The search will attempt to find partial matches for the search term in all item categories. The search can be restricted to one specific item category (e.g. Documents), as for browsing.
-### External
+#### External
 The search can be extended to incude results from external online resources Linked? Integrated? with FAIRDOM-SEEK.
-### Advanced search with filtering
+#### Advanced search with filtering
 To access the query and the faceted navigation option for one specific item category (e.g. Documents). 
 
-## Storage Usage
+### Storage Usage
 Storage metrics, for Programmes and Projects, available to FAIRDOM-SEEK administrator. It provides the total size of all Programme or Project assets.
-## Change picture or avatar
+### Change picture or avatar
 Custom graphic for a secific item.
-## (number)
+### (number)
 Number of items of a category (e.g. Documents) visible to you.
-## (number + number)
+### (number + number)
 * first number: number of items visible to you.
 * second number: number of items hidden from you.
+
+---
 
 ## Integrations
 ### Bio.tools

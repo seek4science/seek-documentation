@@ -1,15 +1,14 @@
 ---
-title: SEEK User Guide - Logging in via LS Login
-layout: page
+title: Logging into via LS Login
+layout: page-ett
 ---
 
-# Logging into SEEK via LS Login
 
-*Note*: This section assumes you have an LS Login account (or your organization is connected to LS Login), 
+{% include callout.html type="note" content="This section assumes you have an LS Login account (or your organization is connected to LS Login), 
 and LS Login authentication is enabled on the SEEK instance you are using. For more information on LS Login, please 
-see their [documentation](https://lifescience-ri.eu/ls-login/documentation/user-documentation/user-documentation.html){:target="_blank"}.
+see their [documentation](https://lifescience-ri.eu/ls-login/documentation/user-documentation/user-documentation.html){:target=\"_blank\"}." %}
 
-Already got a SEEK account? See how to [add LS Login to your account](managing-identities.html#add-identity) instead. 
+Already got a SEEK account? See how to [add LS Login to your account](managing-identities#add-identity) instead. 
 
 If enabled on the SEEK instance you are using, you will see a tab on the login form titled "LS Login"
 
@@ -36,6 +35,6 @@ which outlines what personal data will be provided by LS Login to the SEEK insta
 At a minimum, the identifier must be provided, or login is not possible. Any other information is used solely to 
 populate fields in your SEEK profile.
 
-If this is your first time logging in via LS Login, you will be directed to create a new "Profile". For guidance on how to do this, see [Registering in SEEK](registering.html#new-profile). Some fields such as your name and email address may already be populated with information provided by your institution.
+If this is your first time logging in via LS Login, you will be directed to create a new "Profile". For guidance on how to do this, see [Registering in SEEK](registering#new-profile). Some fields such as your name and email address may already be populated with information provided by your institution.
 
 Otherwise, you will be directed to the home page and should now be logged in.

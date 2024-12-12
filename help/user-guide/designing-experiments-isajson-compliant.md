@@ -1,9 +1,8 @@
 ---
-title: SEEK User Guide - Designing an ISA-JSON compliant experiment
-layout: page
+title: Designing an ISA-JSON compliant experiment
+layout: page-ett
 ---
 
-# Designing an ISA-JSON compliant experiment
 The [ISA metadata framework](https://isa-specs.readthedocs.io/en/latest/isamodel.html) requires the description (metadata) of different types of samples, namely Study Sources, Study Samples and Assay Samples. This description is based on customisable Experiment Sample Templates and includes the linking of applied Protocols. Follow the link for an overview about [ISA-JSON compliant experiments](isa-json-compliant-experiment.html).
 
 In the context of an ISA-JSON compliant experiment, we use the terms ISA Investigation, ISA Study, and ISA Assay when referring to Investigation, Study, and Assay, respectively.
@@ -64,23 +63,23 @@ The Attributes table can be used to customise the Study Sources table. However, 
 ![create isastudy source 3](/images/user-guide/isajson-compliance/create_isastudy_source_3.png){:.screenshot}
 
 ## 2.2 Link the sampling Protocol 
-Select Protocols already registered in the platform that describe the used method or procedure (SOP) used to collect Samples from Sources in your Study (Samples collection protocol). See how to [create an SOP](adding-assets.html) in SEEK.
+Select Protocols already registered in the platform that describe the used method or procedure (SOP) used to collect Samples from Sources in your Study (Samples collection protocol). See how to [create an SOP](adding-assets) in SEEK.
 
 ## 2.3 Design a Samples table for Study Samples
 
 Follow the same steps described for designing the Study Sources table to create and customise the Study Samples table.
 
 ## 2.4 Visualise ISA Study
-Upon creation, the newly designed ISA Study will appear in the tree view on the left sidebar, in Experiment View. Follow the link to know more about [Experiment View](viewing-project-in-single-page.html).
+Upon creation, the newly designed ISA Study will appear in the tree view on the left sidebar, in Experiment View. Follow the link to know more about [Experiment View](viewing-project-in-single-page).
 
 ## 3. Adding Sources to ISA Study
 After you have designed the Sources table, you can then start by creating and describing your Study Sources according to the designed table.
 
-Follow the link to know how to [create samples in ISA-JSON compliant experiments](create-sample-isajson-compliant.html), including [Study Sources](create-sample-isa-json-compliant.html#create-study-sources).
+Follow the link to know how to [create samples in ISA-JSON compliant experiments](create-sample-isajson-compliant), including [Study Sources](create-sample-isa-json-compliant#create-study-sources).
 
 ## 4. Adding Samples to ISA Study
 
-Follow the link to know how to [create samples in ISA-JSON compliant experiments](create-sample-isajson-compliant.html), including [Study Samples](create-sample-isajson-compliant.html#create-study-samples).
+Follow the link to know how to [create samples in ISA-JSON compliant experiments](create-sample-isajson-compliant), including [Study Samples](create-sample-isajson-compliant#create-study-samples).
 
 ## 5. Creating an Assay Stream
 
@@ -94,7 +93,7 @@ Follow the link to know how to [create samples in ISA-JSON compliant experiments
 * Fill out the provided form as explained below.
 
 ## 6.1 Link the sampling Protocol 
-Select Protocols already registered in the platform that describe the used method or procedure (SOP) applied to the Assay. See how to [create an SOP](adding-assets.html) in SEEK.
+Select Protocols already registered in the platform that describe the used method or procedure (SOP) applied to the Assay. See how to [create an SOP](adding-assets) in SEEK.
 
 ## 6.2 Design a Samples table for Assay
 
@@ -136,7 +135,7 @@ The Attributes table can be used to customise the Assay Samples table. However, 
 ![create isaassay 3](/images/user-guide/isajson-compliance/create_isaassay_3.png){:.screenshot}
 
 ## 6.3 Visualise ISA Assay
-Upon creation, the newly designed ISA Assay will appear in the tree view on the left sidebar, in Experiment View. Follow the link to know more about [Experiment View](viewing-project-in-single-page.html).
+Upon creation, the newly designed ISA Assay will appear in the tree view on the left sidebar, in Experiment View. Follow the link to know more about [Experiment View](viewing-project-in-single-page).
     
 ## 7. Adding samples to ISA Assay
-Follow the link to know how to [create samples in ISA-JSON compliant experiments](create-sample-isajson-compliant.html), including [Assay Samples](create-sample-isajson-compliant.html#create-assay-samples).
+Follow the link to know how to [create samples in ISA-JSON compliant experiments](create-sample-isajson-compliant), including [Assay Samples](create-sample-isajson-compliant#create-assay-samples).

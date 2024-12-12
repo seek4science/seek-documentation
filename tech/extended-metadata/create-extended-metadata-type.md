@@ -1,13 +1,10 @@
 ---
 title: Create Extended Metadata Type
-layout: page
+layout: page-ett
 ---
 
-<a href="extended-metadata-type.html">back</a>
+There are two ways to create an Extended Metadata type:
 
+* [Using a SEED File](create-extended-metadata-type-with-seeds-file): Run a SEED file in the backend to define the metadata type.
 
-# Create Extended Metadata Types
-
-* [Using a SEED File](create-extended-metadata-type-with-seeds-file.html): Run a SEED file in the backend to define the metadata type.
-
-* [Uploading a JSON File](create-extended-metadata-type-with-json-file.html): Upload a JSON file through the Admin Area UI to create the metadata type.
+* [Uploading a JSON File](create-extended-metadata-type-with-json-file): Upload a JSON file through the Admin Area UI to create the metadata type.

@@ -1,10 +1,9 @@
 ---
-title: install on a suburi
-layout: page
+title: Installing SEEK under a sub URI
+layout: page-ett
 redirect_from: "/install-on-suburi.html"
 ---
 
-# Installing SEEK under a sub URI
 
 Running under a sub URI means running seek with a path below the main domain
 URI - e.g http://myhost.org/seek

@@ -1,9 +1,8 @@
 ---
-title: SEEK User Guide - Creating and Managing Programmes
-layout: page
+title: Creating and Managing Programmes
+layout: page-ett
 ---
 
-# Creating and managing Programmes
 
 ## What are Programmes and why create them?
 
@@ -16,7 +15,7 @@ If you wish to create and manage your own Projects, you will first need to creat
 
 ## Creating a Programme
 
-Once you have [registered](registering.html) and logged in, you will be able to create a Programme. You can do so from Create menu
+Once you have [registered](registering) and logged in, you will be able to create a Programme. You can do so from Create menu
 at the top of the screen
 
 ![Programme create menu](/images/user-guide/programme-create-menu.png){:.screenshot}
@@ -32,7 +31,7 @@ The Programme will not appear in lists or search results until it has been activ
 
 Once either Accepted or Rejected you will be notified by email.
 
-After its creation and likely acceptance you will automatically become the default [Programme Administrator](roles.html#programme-administrator). Follow the link to find out what you can do next, such as creating a Project.
+After its creation and likely acceptance you will automatically become the default [Programme Administrator](roles#programme-administrator). Follow the link to find out what you can do next, such as creating a Project.
 
 
 # Administrator details

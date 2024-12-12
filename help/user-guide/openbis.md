@@ -1,9 +1,7 @@
 ---
-title: SEEK User Guide - openBIS
-layout: page
+title: Using SEEK with openBIS
+layout: page-ett
 ---
-
-# Using SEEK with openBIS
 
 ## Enabling openBIS in SEEK
 

@@ -1,9 +1,8 @@
 ---
-title: SEEK User Guide - ISA overview
-layout: page
+title: ISA Overview
+layout: page-ett
 ---
 
-# ISA Overview
 
 ## Summary
 

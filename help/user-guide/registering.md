@@ -1,9 +1,8 @@
 ---
-title: SEEK User Guide - Registering
-layout: page
+title: Registering in SEEK
+layout: page-ett
 ---
 
-# Registering in SEEK
 In order to register yourself in SEEK, you need to click the Register button in the top right hand corner of SEEK.
 
 ![Registration 1](/images/user-guide/register_1.png){:.screenshot}
@@ -38,5 +37,5 @@ After you have registered the rest of your information, in most installations of
 
 Once you have activated your account and logged in, you will need to either create or join a Project before you can register content, for more information please see:
 
-  * [Join an existing Project](./join-a-project.html)
-  * [Create a new Project](./create-a-project.html)
+  * [Join an existing Project](join-a-project)
+  * [Create a new Project](create-a-project)

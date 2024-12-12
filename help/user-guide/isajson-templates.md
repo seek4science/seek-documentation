@@ -1,8 +1,7 @@
 ---
-title: SEEK User Guide - Experiment Sample Templates
-layout: page
+title: Experiment Sample Templates
+layout: page-ett
 ---
-# Experiment Sample Templates
 
 Experiment Sample Templates act as blueprints to create Sample Types within ISA Studies and ISA Assays and ensure that
 the metadata collected conforms to community standards. The same Experiment Sample Template can be applied multiple times to create Sample Types in different ISA Studies or ISA Assays.
@@ -45,7 +44,7 @@ Project-specific Experiment Sample Templates
 
 ## Creating Experiment Sample Templates as a project member
 
-Project members have the capability to create Experiment Sample Templates for their laboratory or research project, called "Project specific Experiment Sample Templates". These templates can be shared among Projects and Programmes on the platform via granular [sharing permissions](general-attributes.html#sharing), allowing other project members to utilize them for designing their experiments.
+Project members have the capability to create Experiment Sample Templates for their laboratory or research project, called "Project specific Experiment Sample Templates". These templates can be shared among Projects and Programmes on the platform via granular [sharing permissions](general-attributes#sharing), allowing other project members to utilize them for designing their experiments.
 
 
 1. From the header menu bar, select "Create" and then "Experiment Sample Templates" under the Experiments section.

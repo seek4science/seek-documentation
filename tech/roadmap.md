@@ -1,10 +1,11 @@
 ---
 title: Roadmap
-layout: page
+layout: page-ett
+sidebar: tech
 redirect_from: "/roadmap.html"
 ---
 
-# Roadmap
+## Upcoming
 
 This is an outline of plans the core FAIRDOM-SEEK development team will be working on in the near future.
 
@@ -29,7 +30,7 @@ They are expected to be added to FAIRDOM-SEEK in roughly the order they are pres
 
 <br/>
 
-Please also see the [Workflow Hub Roadmap](https://about.workflowhub.eu/roadmap/), 
+Please also see the [WorkflowHub Roadmap](https://about.workflowhub.eu/roadmap/), 
 which is being built on and in conjunction with FAIRDOM-SEEK.
 
 ---

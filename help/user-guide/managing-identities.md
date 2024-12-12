@@ -1,9 +1,8 @@
 ---
-title: SEEK User Guide - Managing Identities
-layout: page
+title: Managing Identities
+layout: page-ett
 ---
 
-# Managing Identities
 
 Depending on the configuration of the SEEK instance, in addition to the usual username/password method, 
 you may be able to login through one of the following: 
@@ -30,7 +29,7 @@ If you already have a SEEK account and want to login using a different method, y
 (The options listed will vary depending on the SEEK configuration)
 
 Clicking one of the identity options will direct you to login via that provider. 
-For more detail on how to proceed with LS Login, see [here](aai.html#aai-flow).
+For more detail on how to proceed with LS Login, see [here](aai#aai-flow).
 
 After successfully logging in, you should be redirected back to the "Manage Identities" page, and see the new identity listed.
 

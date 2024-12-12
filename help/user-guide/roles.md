@@ -1,10 +1,9 @@
 ---
-title: SEEK User Guide - Roles
-layout: page
+title: Specialist User Roles
+layout: page-ett
 ---
 
 
-# Specialist user roles
 SEEK has a number of specialist roles to which users can be assigned 
 
 Programme specific roles:
@@ -26,16 +25,16 @@ Here is a summary of the capabilities of each role.
 A programme administrator looks after an entire Programme. They have the ability to assign other Programme administrators to their Programme, but cannot remove themself. To remove themself they first need to assign another administrator and ask them to do so for them, this is to prevent a Programme accidentally becoming without an administrator.
 Any other SEEK user can be made a Programme administrator.
 
-A Programme administrator also has the ability to create Projects, which will become automatically assigned to their Programme. Although they will not automatically become the [Project administrator](roles.html#project-administrator) or member of that Project, there is an option to do so by selecting the Institution.
+A Programme administrator also has the ability to create Projects, which will become automatically assigned to their Programme. Although they will not automatically become the [Project administrator](roles#project-administrator) or member of that Project, there is an option to do so by selecting the Institution.
 
-To create a Project you can do so from the Create menu at the top of the page. Your Programme must first have been [accepted and activated](programme-creation-and-management.html#creating-a-programme).
+To create a Project you can do so from the Create menu at the top of the page. Your Programme must first have been [accepted and activated](programme-creation-and-management#creating-a-programme).
 Once created you can also provide a logo or picture by clicking change picture under the picture on the right of the Project page.
 A Programme administrator also has some of the abilities of a Project Administrator:
 
-* [Add and remove people from a project](administer-project-members.html#add-and-remove-people-from-a-project)
-* [Create organisms](adding-admin-items.html#creating-organisms)
-* [Create profiles](adding-admin-items.html#creating-profiles)
-* [Create Institutions](adding-admin-items.html#creating-institutions)
+* [Add and remove people from a project](administer-project-members#add-and-remove-people-from-a-project)
+* [Create organisms](adding-admin-items#creating-organisms)
+* [Create profiles](adding-admin-items#creating-profiles)
+* [Create Institutions](adding-admin-items#creating-institutions)
 
 ## Asset housekeeper
 The Asset Housekeeper has the special ability to manage assets belonging to other people in the project – but only people who have been flagged as having become inactive in the project. It is useful to prevent items being "stranded" when somebody leaves a project, but without handing over their assets from the project to be managed by other users.
@@ -115,12 +114,12 @@ You can cancel the publishing request in many ways:
 ## Project administrator
 The Project Administrator gets notified when someone new signs up to the project within SEEK. They also have the ability to:
 
-* [Add and remove people from a project](administer-project-members.html#add-and-remove-people-from-a-project)
-* [Create organisms](adding-admin-items.html#creating-organisms)
-* [Create profiles](adding-admin-items.html#creating-profiles)
-* [Create Institutions](adding-admin-items.html#creating-institutions)
-* [Assign people to project roles](administer-project-members.html#assign-people-to-project-roles)
-* [Flag when a person becomes inactive a project](administer-project-members.html#flag-when-a-person-becomes-inactive-in-a-project)
+* [Add and remove people from a project](administer-project-members#add-and-remove-people-from-a-project)
+* [Create organisms](adding-admin-items#creating-organisms)
+* [Create profiles](adding-admin-items#creating-profiles)
+* [Create Institutions](adding-admin-items#creating-institutions)
+* [Assign people to project roles](administer-project-members#assign-people-to-project-roles)
+* [Flag when a person becomes inactive a project](administer-project-members#flag-when-a-person-becomes-inactive-in-a-project)
 
 They can also edit the Project details, along with Institutions associated with the Project.
 

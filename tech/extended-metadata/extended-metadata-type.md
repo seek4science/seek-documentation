@@ -1,10 +1,8 @@
 ---
 title: Extended Metadata Technical Overview
-layout: page
+layout: page-ett
 redirect_from: '/tech/extended-metadata'
 ---
-
-# Extended Metadata Technical Overview
 
 ## Introduction
 
@@ -12,10 +10,8 @@ Extended Metadata is a feature added to SEEK as part of [version 1.11](/tech/rel
 MIAPPE but designed for future use.
 It provides the ability to define additional metadata attributes for a particular type, to support a particular standard (i.e MIAPPE).
 
-<div class="alert alert-warning" markdown="1">
-It was originally referred to as 'Custom Metadata' but recently renamed to avoid confusion, as the metadata can only be extended but not entirely customised. 
-You may sometimes hear or read it referred to as Custom Metadata, and they are the same thing.
-</div>
+{% include callout.html type="important" content="It was originally referred to as 'Custom Metadata' but recently renamed to avoid confusion, as the metadata can only be extended but not entirely customised.
+You may sometimes hear or read it referred to as Custom Metadata, and they are the same thing." %}
 
 It is not a feature a user would directly see, other than revealed through extensions that are made available:
 
@@ -80,7 +76,7 @@ In this diagram:
 * The Extended Metadata is embedded within this entity, enriching its existing metadata.
 
 
-## Administrative Rights for Creating and Managing Extended Metadata Types
+## Creating and managing types
 
 As a SEEK instance administrator, you have the ability to create, manage (enable, disable), and delete extended metadata types. This guide will walk you through how to perform these actions efficiently by navigating to the "Manage Extended Metadata Types" section in the Admin area.
 
@@ -88,6 +84,6 @@ As a SEEK instance administrator, you have the ability to create, manage (enable
 
 
 
-* #### [Manage Extended Metadata Types](manage-extended-metadata-type.html)
-* #### [Create Extended Metadata Types](create-extended-metadata-type.html)
+* **[Manage Extended Metadata Types](manage-extended-metadata-type)**
+* **[Create Extended Metadata Types](create-extended-metadata-type)**
 

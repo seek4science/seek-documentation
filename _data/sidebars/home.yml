@@ -1,0 +1,17 @@
+title: Popular pages
+#title_url: /
+subitems:
+  - title: Roadmap
+    url: /tech/roadmap.html
+  - title: Get FAIRDOM-SEEK
+    url: /get-seek
+  - title: Contacting us
+    url: /contacting-us
+  - title: Contributing
+    url: /contributing
+  - title: User Guide
+    url: /help/user-guide/
+  - title: API
+    url: /help/user-guide/api
+  - title: Useful Links
+    url: /tech/useful-links

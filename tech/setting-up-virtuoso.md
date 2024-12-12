@@ -1,10 +1,9 @@
 ---
-title: Virtuoso
-layout: page
+title: Configuring SEEK for Virtuoso
+layout: page-ett
 redirect_from: "/setting-up-virtuoso.html"
 ---
 
-# Configuring SEEK for Virtuoso
 
 It is possible to configure SEEK to automatically send RDF triples to a
 Virtuoso Repository.

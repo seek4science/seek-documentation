@@ -1,10 +1,9 @@
 ---
-title: adminstration
-layout: page
+title: Administration of SEEK
+layout: page-ett
 redirect_from: "/administration.html"
 ---
 
-# Administration of SEEK
 
 Here are described some basic administration tasks you may want to do after
 installing SEEK. All admin tasks can be found in the Admin area, by selecting
