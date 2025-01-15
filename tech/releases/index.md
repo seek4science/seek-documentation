@@ -1,15 +1,15 @@
 ---
 title: FAIRDOM-SEEK releases
-layout: page
+layout: page-ett
+permalink: /tech/releases/
 ---
 
-# FAIRDOM-SEEK Releases
+{% capture latest_version_long %}Latest version - {{ site.current_seek_version }}{% endcapture %}
+{% include callout.html type="note" content=latest_version_long %}
 
-**Latest version - {{ site.current_seek_version }}**
+Please see [Getting FAIRDOM-SEEK](/get-seek) for details about installing SEEK.
 
-Please see [Getting FAIRDOM-SEEK](/get-seek.html) for details about installing SEEK
-
-If you have any comments or feedback about a release, then please [Contact Us](/contacting-us.html)
+If you have any comments or feedback about a release, then please [Contact Us](/contacting-us).
 
 ## Version 1.16.0
 
@@ -46,7 +46,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
 * **Creating new Extended Metadata Types** - an instance administrator of SEEK can now create new Extended Metadata
   Types through the user interface, using a simple JSON file that defines the type and attributes.
   The JSON has a corresponding [schema](/tech/extended-metadata/extended-metadata-type-schema.json) against which it is
-  validated. There is new [extensive Documentation](/tech/extended-metadata/extended-metadata-type.html) including on
+  validated. There is new [extensive Documentation](/tech/extended-metadata/extended-metadata-type) including on
   on how to create, and we are also planning on supporting doing so with an Excel template.
 * **Deleting Extended Metadata Types** - in addition to being able to disable, an administrator is now able to delete
   Extended Metadata Types.

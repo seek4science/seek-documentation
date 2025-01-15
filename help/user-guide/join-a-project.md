@@ -1,11 +1,11 @@
 ---
-title: SEEK User Guide - Request to join a project
-layout: page
+title: Request to join a project
+layout: page-ett
 ---
 
-For details about what a Project and Programme is, please see [Creating a Project](./create-a-project.html)
+For details about what a Project and Programme is, please see [Creating a Project](./create-a-project)
 
-# Joining a Project
+## Joining a Project
 
 You will be prompted to join a Project when you first register and are not yet a member of one. 
 
@@ -15,7 +15,7 @@ You can also request to join a Project from a Project page itself. To do so, fir
 
 It is only possible to make a request to the same Project once every 12 hours.
 
-## Selecting the Projects
+### Selecting the Projects
 
 If you enter this page after make a request to join from the Project page, the Project will already be selected:
 
@@ -29,7 +29,7 @@ You do this by typing the name of the Project into the box, and suggestions will
 
 ![Search to Join](/images/user-guide/search-to-join-project-selected-3.png){:.screenshot}
 
-## Defining your Institution
+### Defining your Institution
 
 When you join the Project, you will do so associated with an Institution (or affiliation). You need to describe this whilst making the request. You are free to be associated with a different Institutions for different Projects if necessary.
 
@@ -39,11 +39,11 @@ If describing a new Institution only the title is required, but you can also pro
 
 ![Define Institution](/images/user-guide/create-project-define-institution.png){:.screenshot}
 
-## Providing a comment
+### Providing a comment
 
 You also have the option to provide a comment to describe why you wish to join the Project. This is particularly important if you are not already known by the Project administrator.
 
-## Approval step
+### Approval step
 
 Your request will be sent to the Project administrators, both through email or a notification in FAIRDOM-SEEK. You will either then be approved and added to the Project, or your request may be rejected. Either way, you will be notified by email of the outcome.
 

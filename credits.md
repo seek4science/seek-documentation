@@ -1,9 +1,12 @@
 ---
-title: credits
-layout: page
+title: Credits
+layout: page-ett
+sidebar: about
+permalink: /credits
 ---
 
-# Credits
+<i class="fa-solid fa-trophy fa-5x"></i>
+
 
 ## Related Projects
 

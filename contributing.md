@@ -1,9 +1,12 @@
 ---
-title: contributing
-layout: page
+title: Contributing
+layout: page-ett
+sidebar: tech
+permalink: /contributing
 ---
 
-# Contributing
+<i class="fa-solid fa-truck-fast fa-5x"></i>
+
 
 We welcome many contributions to our [SEEK software](https://seek4science.org), these Documentation pages and our [FAIRDOM](https://fair-dom.org) project in general.
 
@@ -13,10 +16,10 @@ However, if there other ways you feel you can contribute, such as running a work
 
 ## Contributing to SEEK
 
-Please read [contributing to SEEK](tech/contributing-to-seek.html)
+Please read [contributing to SEEK](tech/contributing-to-seek) or [reporting a bug or feature request](/tech/reporting-bugs-and-features).
 
 
 ## Contributing to these pages
 
 You can also contribute to these pages.
-Please read [contributing to these pages](contributing-to-pages.html)
+Please read [contributing to these pages](/contributing-to-pages) and the [style guide](/style-guide).

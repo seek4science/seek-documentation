@@ -1,12 +1,12 @@
 ---
-title: Transcriptomics Guidelines
-layout: page
+title: "Transcriptomics: Guidelines for SEEK templates"
+layout: page-ett
 redirect_from: "/transcriptomics-guidelines.html"
 ---
 
-**This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK.**
+{% include callout.html type="warning" content="This guide has been archived. Please see the [user guide](/help/user-guide) for the latest help." %}
 
-# Transcriptomics: Guidelines for SEEK Templates
+{% include callout.html type="note" content="This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK." %}
 
 The MIAME standard and the associated MAGE-ML format are well established in the transcriptomics community and adherence to MAGE-ML is becoming increasingly important for publishing data.
 
@@ -45,13 +45,13 @@ This worksheet also contains fields to link to publications. In many cases, data
 This file links the sample and source information to the data files and their locations.  
 The "protocol" columns will normally be followed by "factor value" columns. Again, we can extract these from the experimental conditions and factors studies sections of SEEK where you are referring to a SOP already submitted.
 
-### Raw Data and Processed Data
+### Raw data and processed data
 
-##### Raw Data
+##### Raw data
 
 We do not generally expect you to share raw data within SEEK by default, but links to this upon request are essential. The MAGE-TAB specification supports many different types of raw data format. For a complete list, please see [here][4]
 
-##### Processed Data
+##### Processed data
 
 If your processed data maps to the identifier in your array design, you can create a single results file with column 1 being those identifiers with the heading "Reporter Identifier" followed by the quantitation columns with the quantitation types as the headings and the column of data values. Additionally, you may want to add columns for a name and/or description of identifier, but this is optional
 

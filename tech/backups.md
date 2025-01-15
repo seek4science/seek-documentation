@@ -1,10 +1,9 @@
 ---
-title: backing up
-layout: page
+title: Backing up SEEK
+layout: page-ett
 redirect_from: "/backups.html"
 ---
 
-# Backing Up
 
 ## Backing up the database
 

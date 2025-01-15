@@ -1,9 +1,7 @@
 ---
-title: SEEK User Guide - Using Copasi in SEEK
-layout: page
+title: Using Copasi in SEEK
+layout: page-ett
 ---
-
-# Using Copasi in SEEK
 
 You can download a public SBML format **model** to a locally installed Copasi application and start the simulation in Copasi. 
 

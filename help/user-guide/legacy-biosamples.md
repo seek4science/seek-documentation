@@ -1,9 +1,8 @@
 ---
-title: SEEK User Guide - Legacy Biosamples
-layout: page
+title: Legacy Biosamples
+layout: page-ett
 ---
 
-# Legacy Biosamples
 
 Biosamples was a Sample type that was generated as part of the SysMO project. 
 This used to be the only sample type that was available to use within SEEK. 

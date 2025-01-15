@@ -1,9 +1,8 @@
 ---
 title: Licenses
-layout: page
+layout: page-ett
 ---
 
-# Licenses
 
 
 We recommended giving a license to public resources in SEEK to clarify under what terms they may be used.

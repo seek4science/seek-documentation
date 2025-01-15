@@ -1,0 +1,188 @@
+title: User Guide
+title_url: /help/user-guide/
+subitems:
+  - title: Definitions
+    url: /definitions
+  - title: Profile
+    description: Registering and logging into SEEK, managing your account and identities, editing your profile.
+    subitems:
+    - title: Registering in SEEK
+      url: /help/user-guide/registering
+      subitems:
+      - title: Logging into SEEK via LS Login
+        url: /help/user-guide/aai
+    - title: Managing your account
+      url: /help/user-guide/managing-account
+      subitems:
+      - title: Managing your identities/alternative login methods
+        url: /help/user-guide/managing-identities
+    - title: Editing your profile
+      url: /help/user-guide/editing-profile
+#    - title: "[Favourites: drag and drop your favourite searchers]"
+#      url: ""
+  - 
+    #hr: true
+    title: Yellow Pages
+    description: Directory of common project tasks, specialist user roles, capabilities.
+    subitems: 
+    - title: "Directory"
+      subitems:
+      - title: Browsing content
+        url: /help/user-guide/browsing  
+      - title: Creating and managing your own Programmes
+        url: /help/user-guide/programme-creation-and-management
+      - title: Creating a Project
+        url: /help/user-guide/create-a-project
+      - title: Joining a Project
+        url: /help/user-guide/join-a-project
+      - title: Project Dashboard
+        url: /help/user-guide/project-dashboard
+      - title: Viewing Project in Experiment View
+        url: /help/user-guide/viewing-project-in-single-page
+    - title: Specialist user roles
+      url: /help/user-guide/roles
+    - title: Capabilities
+      subitems:
+      - title: Administer project members
+        url: /help/user-guide/administer-project-members
+      - title: Adding admin items
+        url: /help/user-guide/adding-admin-items
+  -
+    #hr: true
+    title: Experiments
+    description: Generating the ISA structure, designing an ISA-JSON compliant experiement, making items citable.
+    subitems: 
+    - title: Generating the ISA structure
+      url: /help/user-guide/generating-the-isa-structure
+    - title: ISA Overview Graph
+      url: /help/user-guide/isa-overview
+    - hr: true
+      title: Designing an ISA-JSON compliant experiment
+      url: /help/user-guide/designing-experiments-isajson-compliant
+    - title: ISA-JSON complient experiment
+      url: /help/user-guide/isa-json-compliant-experiment
+      subitems:
+        - title: Experiment Sample Templates
+          url: /help/user-guide/isajson-templates
+    - title: Export experiments as ISA-JSON
+      url: /help/user-guide/exporting-experiments-as-isajson
+    - hr: true
+      title: Making an Investigation, Study or Assay citable
+      url: /help/user-guide/investigation-snapshots
+  -
+    #hr: true
+    title: Assets
+    description: Adding different types of assets to SEEK, creating new asset versions.
+    subitems:
+    - title: Adding assets (data, models, SOPs, publications) to SEEK
+      url: /help/user-guide/adding-assets
+    - title: Data file wizard
+      url: /help/user-guide/data-file-upload-wizard
+    - title: Simulate a model on JWS Online
+      url: /help/user-guide/simulate-on-jws-online
+    - title: Collections
+      url: /help/user-guide/collections
+#    - title: "[Document]"
+#      url: ""
+#    - title: "[Workflow]"
+#      url: ""
+#    - title: "[File template]"
+#      url: ""
+    - title: Creating new asset versions
+      url: /help/user-guide/uploading-new-versions
+      subitems:
+      - title: Comparing two versions of a Model
+        url: /help/user-guide/model-comparison
+  -
+    #hr: true
+    title: Samples
+    description: Creating and browsing samples, and samples in ISA-JSON compliant experiments.
+    subitems:
+    - title: Samples introduction
+      url: /help/user-guide/samples
+      subitems:
+      - title: Create a Sample Type
+        url: /help/user-guide/create-sample-type
+      - title: Create a Sample
+        url: /help/user-guide/create-sample
+      - title: Legacy Biosamples
+        url: /help/user-guide/legacy-biosamples
+    - title: Working with samples in ISA-JSON compliant Experiments
+      url: /help/user-guide/create-sample-isajson-compliant
+  -
+    #hr: true
+    title: General attributes and links
+    description: How to change the many attributes such as titles, types, attributions, licenses. 
+    subitems:
+    - title: General attributes and links
+      url: /help/user-guide/general-attributes
+  #  - hr: true
+#    - title: "[Discussion channel]"
+#      url: ""
+    - title: Licenses
+      url: /help/user-guide/licenses
+    - title: Bulk changing of sharing permissions
+      url: /help/user-guide/bulk-change-sharing-permission
+#    - title: "[Extended metadata]"
+#      url: ""
+#  -
+#    #hr: true
+#    title: Activities
+#    description: How to change the events and presentations.
+#    subitems:
+#    - title: "[Presentation]"
+#      url: ""
+#    - title: Events
+#      url: /help/user-guide/general-attributes#events
+  - 
+    #hr: true
+    title: Integrations
+    description: Using SEEK and openBIS or Copasi, compliance with ISA-JSON schemas.
+    subitems:
+    - title: Using SEEK with openBIS
+      url: /help/user-guide/openbis
+    - title: Using Copasi with SEEK
+      url: /help/user-guide/copasi-button
+    - title: Experiment view (or Simple page)
+      url: /help/user-guide/viewing-project-in-single-page
+    - title: Compliance with ISA-JSON schemas
+      url: /help/user-guide/isa-json-compliant-experiment
+  -
+    #hr: true
+    title: User guide for API
+    description: Introduction to the SEEK API.
+    subitems:
+    - title: API Introduction
+      url: /help/user-guide/api
+  -
+    hr: true
+    title: Archives
+    subitems:
+      - title: Archived help and guidelines
+        url: /help
+      - title: Data and model annotation
+        subitems:
+         - title: Minimum metadata guidelines for SEEK
+           url: /help/metadata-guidelines
+         - title: A Quick guide to using the ISA structure
+           url: /help/isa-guide
+         - title: ISA best practice
+           url: /help/isa-best-practice
+         - title: "Transcriptomics: guidelines for SEEK templates"
+           url: /help/transcriptomics-guidelines
+         - title: Proteomics guidelines
+           url: /help/proteomics-guidelines
+      - title: Controlled vocabularies
+        subitems:
+         - title: Controlled vocabularies and ontologies
+           url: /help/controlled-vocabularies
+      - title: JERM
+        subitems:
+         - title: JERM (Just Enough Results Model)
+           url: /help/jerm
+         - title: JERM templates
+           url: /help/templates
+  -
+    hr: true
+    title: Home
+    url: /

@@ -1,6 +1,6 @@
 ---
-title: earlier upgrades
-layout: page
+title: Upgrades between earlier versions
+layout: page-ett
 redirect_from: "/earlier-upgrades.html"
 ---
 
@@ -9,7 +9,7 @@ redirect_from: "/earlier-upgrades.html"
 **Also if upgrading from a Mercurial based SEEK to our Git one, please contact
 us. Mercurial versions of SEEK are only available up to v0.21.**
 
-You can find details on how to contact us at the [Contact Page](/contacting-us.html)
+You can find details on how to contact us at the [Contact Page](/contacting-us)
 
 When upgrading between versions greater than v0.11.x you need to upgrade to
 each released minor version in order incrementally (i.e. 0.13.x -> 0.14.x ->
@@ -72,7 +72,7 @@ Then the other dependencies can be installed
 
 ### Upgrading Ruby
 
-It is necessary to upgrade to Ruby 3.1.4. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install.html) )you should be prompted to install during the standard installation steps that follow.
+It is necessary to upgrade to Ruby 3.1.4. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install) )you should be prompted to install during the standard installation steps that follow.
 If you are not prompted you can install with the command:
 
     rvm install $(cat .ruby-version)
@@ -180,7 +180,7 @@ Then the other dependencies can be installed
 
 ### Upgrading Ruby
 
-It is necessary to upgrade to Ruby 3.1.4. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install.html) )you should be prompted to install during the standard installation steps that follow.
+It is necessary to upgrade to Ruby 3.1.4. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install) )you should be prompted to install during the standard installation steps that follow.
 If you are not prompted you can install with the command:
 
     rvm install $(cat .ruby-version)
@@ -274,7 +274,7 @@ Then the other dependencies can be installed
 
 ### Upgrading Ruby
 
-You are recommended to upgrade to Ruby 2.7.8 If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install.html) )you should be prompted to install during the standard installation steps that follow.
+You are recommended to upgrade to Ruby 2.7.8 If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install) )you should be prompted to install during the standard installation steps that follow.
 If you are not prompted you can install with the command:
 
     rvm install $(cat .ruby-version)
@@ -347,7 +347,7 @@ and the filestore is simply _filestore/_
 
 ### Upgrading Ruby
 
-You are recommended to upgrade to Ruby 2.7. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install.html) )you should be prompted to install during the standard installation steps that follow.
+You are recommended to upgrade to Ruby 2.7. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install) )you should be prompted to install during the standard installation steps that follow.
 If you are not prompted you can install with the command:
 
     rvm install $(cat .ruby-version)
@@ -393,7 +393,7 @@ you now stop and remove this (the soffice executable from LibreOffice is still r
 
 ### Upgrading Ruby
 
-You will need to upgrade Ruby to Ruby 2.6.6. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install.html) )you should be prompted to install during the standard installation steps that follow.
+You will need to upgrade Ruby to Ruby 2.6.6. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install) )you should be prompted to install during the standard installation steps that follow.
 If you are not prompted you can install with the command:
 
     rvm install ruby-2.6.6
@@ -469,7 +469,7 @@ This version includes an update to ActiveJob and requires some cron jobs for per
 
 ### Upgrading Ruby
 
-You will need to upgrade Ruby to Ruby 2.4.10. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install.html) )you should be prompted to install during the standard installation steps that follow.
+You will need to upgrade Ruby to Ruby 2.4.10. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install) )you should be prompted to install during the standard installation steps that follow.
 If you are not prompted you can install with the command:
 
     rvm install ruby-2.4.10
@@ -538,7 +538,7 @@ content.
 
 ### Upgrading Ruby
 
-You will need to upgrade Ruby to Ruby 2.4.9. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install.html) )you should be prompted to install during the standard installation steps that follow.
+You will need to upgrade Ruby to Ruby 2.4.9. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install) )you should be prompted to install during the standard installation steps that follow.
 If you are not prompted you can install with the command:
 
     rvm install ruby-2.4.9
@@ -608,7 +608,7 @@ content.
 
 ### Upgrading Ruby
 
-You will need to upgrade Ruby to Ruby 2.4.5. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install.html) ) you should be prompted to install during the standard installation steps that follow.
+You will need to upgrade Ruby to Ruby 2.4.5. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install) ) you should be prompted to install during the standard installation steps that follow.
 If you are not prompted you can install with the command:
 
     rvm install ruby-2.4.5
@@ -678,7 +678,7 @@ content.
 
 ### Upgrading Ruby
 
-You will need to upgrade Ruby to Ruby 2.4.4. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install.html) )you should be prompted to install during the standard installation steps that follow.
+You will need to upgrade Ruby to Ruby 2.4.4. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install) )you should be prompted to install during the standard installation steps that follow.
 If you are not prompted you can install with the command:
 
     rvm install ruby-2.4.4
@@ -982,7 +982,7 @@ If you are running a production SEEK behing Apache, then move onto the next part
     
 If you are running SEEK with Passenger, it is likely you will need to upgrade Passenger and your Apache or Ngninx configuration.
  
-Please read [Serving SEEK through Apache](/tech/install-production.html#serving-seek-through-apache) for a reminder
+Please read [Serving SEEK through Apache](/tech/install-production#serving-seek-through-apache) for a reminder
 on how to install the new version, and update your virtual host configuration accordingly.
 
 ### Note on Search results
@@ -1191,7 +1191,7 @@ after upgrading from ruby 2.1.7 to ruby 2.1.9
 
 If you have problems, you may need to upgrade and reinstall the Passenger Phusion modules (if unsure there no harm in doing so).
 
-Please read [Installing SEEK in a production environment](install-production.html) for more details about setting up Apache and installing the module.
+Please read [Installing SEEK in a production environment](install-production) for more details about setting up Apache and installing the module.
 
 ---
 
@@ -1286,7 +1286,7 @@ after upgrading from ruby 2.1.6 to ruby 2.1.7
 
 If you have problems, you may need to upgrade and reinstall the Passenger Phusion modules (if unsure there no harm in doing so).
 
-Please read [Installing SEEK in a production environment](install-production.html) for more details about setting up Apache and installing the module.
+Please read [Installing SEEK in a production environment](install-production) for more details about setting up Apache and installing the module.
 
 
 ---
@@ -1549,7 +1549,7 @@ Rails to version 3.2 - this means the upgrade process is a little bit more
 involved that usual. For this reason we have a seperate page detailing this
 upgrade.
 
-Please visit [Upgrading to 0.18](upgrading-to-0.18.html) for details of
+Please visit [Upgrading to 0.18](upgrading-to-0.18) for details of
 how to do this upgrade.
 
 ---

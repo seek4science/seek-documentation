@@ -1,19 +1,19 @@
 ---
-title: ISA Guide
-layout: page
+title: A Quick guide to using ISA in SEEK
+layout: page-ett
 redirect_from: "/isa-guide.html"
 ---
 
-# A Quick Guide to Using ISA in SEEK
+{% include callout.html type="warning" content="This guide has been archived. Please see the [user guide](/help/user-guide) for the latest help." %}
 
-**This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK.**
+{% include callout.html type="note" content="This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK." %}
 
 ISA stands for Investigations, Studies and Assays. It is the structure developed by the ISA-TAB community (http://isacommons.org/) and adopted by the SEEK to help you describe your data, experiments and models.  
 In SEEK, you can upload or link to any data, models or protocols from your projects, but they don't normally exist in isolation. ISA provides a framework for expressing how the work in your projects fits together. For example, you may have transcriptomics, proteomics and metabolomics data which was all created to address the same biological problem.   
 ISA also allows you to associate your data to the SOPs that were used to create them. For models, it allows linkage to construction or validation data sets. This makes it easier for others to interpret your results, or to repeat or validate your results when required.   
 The aim of using the ISA structure is to ensure a complete record of the experiment and associated assets is available and accessible to other project members in a standard format.
 
-## Investigations, Studies and Assays Defined
+## Investigations, studies and assays defined
 
 The following describes the purpose of each 'layer' in the structure, using examples from SEEK Projects, and also from the public BioInvestigation Index database(BII http://www.ebi.ac.uk/bioinvindex/), which also uses the ISA structure for managing data
 
@@ -33,7 +33,7 @@ Comparison of transcriptome 70 and 80c (Cdna microarray)
 Comparison of proteome at 70 and 80c (Protein expression profiling)  
 Intracellular metabolomics of s. solfataricus at 70 and 80c (Metabolomics)
 
-## Viewing Associations Between SEEK Assets
+## Viewing associations between SEEK assets
 
 In SEEK, the ISA structure is displayed graphically, so you can see at a glance what items are associated with one another
 
@@ -46,11 +46,11 @@ The figure above shows the Investigation &quot;Central Carbon Metabolism of Sulf
 In this case, the Assay is not a laboratory experiment, but a modelling task. This is key point to note when using ISA, the assays refer, in essence, to experiments, which means they can be laboratory analysis, modelling analysis, data analysis and more. In this example the assay has data files, a model, and a publication associated with it.
 It is possible to associate data files, models, and other SEEK assets with more than one assay if necessary.
 
-## Using ISA when Uploading SEEK Assets
+## Using ISA when uploading SEEK assets
 
 You can link assets to ISA parts, or vice versa, so it doesn't matter which you do first. Many projects prefer to have a higher level structure of Investigations and Studies defined from the beginning, so that new experiments can be linked up with little work for the uploader.
 
-## Starting with your Data
+## Starting with your data
 
 We recommend using a JERM template to describe your data wherever available. We have some available templates: [JERM Templates](templates.html)  
 If there is not a specific template for your type of data, consider using the general JERM master template. This template contains all the required JERM metadata elements, but not necessarily any technology-specific extensions.  If you have your data in any other format, you can still upload it to SEEK, but indexing will be limited, so subsequent searches will also be limited. Our templates are community driven, which means our users help us keep them up to date. If you generate a new template, or make changes to a template to bring it up to date, it would be great if you could send us the updates and a brief description so we can make them available for others to use. Contact us <community@fair-dom.org>.

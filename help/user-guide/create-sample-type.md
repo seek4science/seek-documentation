@@ -1,9 +1,7 @@
 ---
-title: SEEK User Guide - Create Samples Type
-layout: page
+title: Create a Sample Type
+layout: page-ett
 ---
-
-# Create a Sample Type
 
 Sample Types are templates that detail the key information that needs to be included to describe a given sample correctly.
 
@@ -33,10 +31,10 @@ First we will show generating a Sample type through manually creating a sample t
 
 Sample Type allows you to include:
  
-* [Title](general-attributes.html#title)
-* [Description](general-attributes.html#description)
-* [Projects](general-attributes.html#projects)
-* [Tags](general-attributes.html#tags)
+* [Title](general-attributes#title)
+* [Description](general-attributes#description)
+* [Projects](general-attributes#projects)
+* [Tags](general-attributes#tags)
 
 
 You can define your own attributes for the Sample Type. 

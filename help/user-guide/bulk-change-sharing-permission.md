@@ -1,9 +1,8 @@
 ---
-title: SEEK User Guide - Bulk changing of sharing permissions
-layout: page
+title: Bulk changing of sharing permissions
+layout: page-ett
 ---
 
-# Bulk changing of sharing permissions
 
 You can change the sharing policy and permissions for your assets in batch.
 

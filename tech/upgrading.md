@@ -1,21 +1,19 @@
 ---
-title: upgrading seek
-layout: page
+title: Upgrading SEEK
+layout: page-ett
 redirect_from: "/upgrading.html"
 ---
 
-# Upgrading SEEK
-
 If you have an existing SEEK installation, and you haven't done so already,
-please take a moment to fill out our very short,optional [SEEK Registration
+please take a moment to fill out our very short, optional [SEEK Registration
 Form](http://www.seek4science.org/seek-registration). Doing so will be very useful
 to us in the future when we try and raise further funding to develop and
 support SEEK and the associated tools.
 
 **Always backup your SEEK data before starting to upgrade!!** - see the
-[Backup Guide](backups.html).
+[Backup Guide](backups).
 
-**If you are running using Docker Compose**, then please follow the steps there - [Upgrading between versions](docker/docker-compose.html#upgrading-between-versions)
+**If you are running using Docker Compose**, then please follow the steps there - [Upgrading between versions](docker/docker-compose#upgrading-between-versions)
 
 **You should always upgrade between minor (1.X) versions incrementally**, i.e:
 
@@ -24,7 +22,7 @@ support SEEK and the associated tools.
 rather than jumping directly between versions otherwise some upgrade steps may be missed.
 
 This guide assumes that SEEK has been installed following the [Installation
-Guide](install.html). It assumes it is a production server that is
+Guide](install). It assumes it is a production server that is
 being updated, and that commands are run from the root directory of the SEEK
 application.
 
@@ -103,7 +101,7 @@ Then the other dependencies can be installed
 
 ### Upgrading Ruby
 
-It is necessary to upgrade to Ruby 3.1.4. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install.html) )you should be prompted to install during the standard installation steps that follow.
+It is necessary to upgrade to Ruby 3.1.4. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install) )you should be prompted to install during the standard installation steps that follow.
 If you are not prompted you can install with the command:
 
     rvm install $(cat .ruby-version)
@@ -117,7 +115,7 @@ If running Solr **via the docker scripts**, then you just need to stop, delete, 
     docker pull fairdom/seek-solr:8.11
     sh ./script/start-docker-solr.sh
 
-If running an **Apache Solr installed** using [Setting up Solr](setting-up-solr.html#installing-apache-solr), then replace with the new core configuration, and restart:
+If running an **Apache Solr installed** using [Setting up Solr](setting-up-solr#installing-apache-solr), then replace with the new core configuration, and restart:
  
     sudo su - solr -c "/opt/solr/bin/solr delete -c seek"
     sudo su - solr -c "/opt/solr/bin/solr create -c seek -d $(pwd)/solr/seek/conf"
@@ -167,4 +165,4 @@ more details at [passenger_preload_bundler](https://www.phusionpassenger.com/doc
 ## Earlier upgrade notes
 
 For details of how to upgrade between earlier versions please visit
-[Upgrades between earlier versions](earlier-upgrades.html)
+[Upgrades between earlier versions](earlier-upgrades)

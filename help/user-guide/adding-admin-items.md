@@ -1,9 +1,9 @@
 ---
-title: SEEK User Guide - Admin created items
-layout: page
+title: Admin created items
+layout: page-ett
 ---
 
-These are items that cannot be created by a general user, but can be created by a SEEK administrator, [Project Administrator](roles.html#project-administrator), or [Programme Administrator](roles.html#programme-administrator)
+These are items that cannot be created by a general user, but can be created by a SEEK administrator, [Project Administrator](roles#project-administrator), or [Programme Administrator](roles.html#programme-administrator)
 
 ## Creating organisms
 
@@ -15,7 +15,7 @@ An Organism can just have a title, but preferably also include the NCBI taxonomy
 
 ## Creating profiles
 
-It is possible to create profiles for people that have not registered with SEEK. This is useful if you want to describe and credit members of your Project who are not yet SEEK users. They can adopt their profile later during [Registering](registering.html).
+It is possible to create profiles for people that have not registered with SEEK. This is useful if you want to describe and credit members of your Project who are not yet SEEK users. They can adopt their profile later during [Registering](registering).
 
 To create a profile, choose Profile from the Create menu at the top of the page. The first and last name are required, and also the email address. The email address must be unique to SEEK.
 

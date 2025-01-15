@@ -1,17 +1,14 @@
 ---
-title: Docker - Basic container
-layout: page
+title: Docker - Running a basic container
+layout: page-ett
 ---
 
-# Docker
-
-## Running a basic container
 
 This is a single container is available for SEEK that runs on the SQLite3 database, which can only support a small number of concurrent users. 
 
 **This isn't recommended for a production deployment**, but is a good quick way to try out SEEK, and for testing or checking out new features.
  
-For production deployments see [Docker compose](docker-compose.html)
+For production deployments see [Docker compose](docker-compose)
 
 Once Docker is installed it can be started simply with:
  
@@ -40,7 +37,7 @@ Once the container is finshed with, and after it has been stopped you can delete
 Note that in this simple form, deleting the container will also delete 
 the data (see [Persistent Storage](#persistent-storage) for how to avoid this)    
 
-### Image tags
+## Image tags
    
 The above example used the image name _fairdom/seek:{{ site.current_docker_tag }}_. The number following the : is the tag, and corresponds to the SEEK minor version _{{ site.current_docker_tag }}_ . 
 From SEEK 1.1 onwards tags are available for each stable version of SEEK. 
@@ -53,10 +50,10 @@ Note that there is also a _main_ tag. This is the latest development build of SE
 It is useful for testing and trying out new cutting edge features, 
 but is not suitable for a production deployment of SEEK.    
 
-### Persistent Storage
+## Persistent Storage
 
 If running a container for other than basic testing, you will want the stored data to be preserved when updating images. 
-(However, if this is case you should be thinking about using [Docker compose](docker-compose.html)).
+(However, if this is case you should be thinking about using [Docker compose](docker-compose)).
 
 The recommended way to achieve persistance is to use named _data volumes_ for the database and filestore:
   
@@ -77,7 +74,7 @@ It is possible to do so by mounting a directory on the host machine for the data
     docker run -d -p 3000:3000 -v /data/seek-filestore:/seek/filestore -v /data/seek-db:/seek/sqlite3-db --name seek fairdom/seek:{{ site.current_docker_tag }}
 
 
-### Upgrades
+## Upgrades
 
 Upgrades between SEEK container versions is only possible (and only makes sense) when [using Volumes](#persistent-storage). 
 Also, upgrades are generally only necessary when switching between minor versions of SEEK. 

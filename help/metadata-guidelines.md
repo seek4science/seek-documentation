@@ -1,19 +1,20 @@
 ---
-title: Metadata Guidelines
-layout: page
+title: Minimum metadata guidelines for SEEK
+layout: page-ett
 redirect_from: "/metadata-guidelines.html"
 ---
 
-# Minimum Metadata Guidelines for SEEK
 
-**This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK.**
+{% include callout.html type="warning" content="This guide has been archived. Please see the [user guide](/help/user-guide) for the latest help." %}
+
+{% include callout.html type="note" content="This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK." %}
 
 The more metadata you provide for your assets in the SEEK, the easier it is to find them and to compare them with other assets. If you provide assets with very little metadata, these will also be displayed (in accordance with access control policies set by you), but they may be hard to interpret for other people.
 
 In addition to SEEK data sharing guidelines, some types of data have minimum metadata requirements for publication, for example, microarray data must be MIAME compliant. Following the guidelines for SEEK metadata should ensure that when you come to publish, you have already met these requirements.   
 These guidelines outline what we recommend for SEEK.
 
-## General SEEK Metadata
+## General SEEK metadata
 
 **Name** (of the data uploader). This is the person responsible for the data and responsible for setting sharing and dissemination policies. If more than one person was involved in the experiment, you can credit these people separately   
 **SEEK ID** – (Of the above person). This helps us identify each person within SEEK.   
@@ -24,7 +25,7 @@ These guidelines outline what we recommend for SEEK.
 **Version Number** – If your file replaces an existing file, the version number will help us pick this up. Keep it simple, versions should go up by integers.  
 **Names of other people involved** – many experiments involve multiple steps and multiple people. This metadata field allows you to give credit and attribution to all those involved
 
-## ISA Framework
+## ISA framework
 For more information on how the ISA Framework is implemented in SEEK please visit [A Quick Guide to Using the ISA Structure](isa-guide.html), for more information about ISAtab itself please visit http://isatab.sourceforge.net/format.html 
 
 ### Investigation
@@ -58,7 +59,7 @@ Users can also describe their own.
 **Data File Titles** – the title of one or many data files produced during this assay  
 **SOP Titles** – the title of one or many SOPs used to execute this assay
 
-## SEEK Assets (data, models, SOPs, maps etc)
+## SEEK assets (data, models, SOPs, maps etc)
 
 ### Data
 

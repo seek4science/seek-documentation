@@ -1,23 +1,22 @@
 ---
-title: Install Guide
-layout: page
+title: Installing SEEK
+layout: page-ett
 redirect_from: "/install.html"
 ---
 
-# Installing SEEK
 
 ## Introduction
 
 These steps describe how to install SEEK directly on the machine (_bare-metal_). 
 
-Docker is also supported, which in many cases is simpler and quicker, please read the [Docker Compose guide](docker/docker-compose.html).
+Docker is also supported, which in many cases is simpler and quicker, please read the [Docker Compose guide](docker/docker-compose).
 
 If you have installed SEEK, please take a moment to fill out our very
-short,optional [SEEK Registration
+short, optional [SEEK Registration
 Form](https://seek4science.org/seek-registration)
 
 If you have any problems or questions, you should contact us. The following
-link will give you details on how to [Contact Us](/contacting_us.html)
+link will give you details on how to [Contact Us](/contacting_us)
 
 SEEK is based upon the Ruby on Rails platform. Although the information on
 this page should provide you with everything you need to get a basic
@@ -48,7 +47,7 @@ troublesome and is not covered here.
 
 These are the packages required to run SEEK with Ubuntu 20.04 (Desktop or
 Server). For other distributions or versions please visit our [Other
-Distributions](other-distributions.html) notes.
+Distributions](other-distributions) notes.
 
 First add a repo which contains python versions that may not be available in the default repositories
 
@@ -83,7 +82,7 @@ SEEK's Solr implementation currently requires Java 11, so you may need to switch
 The following steps are suitable for either setting up SEEK for development,
 or in a production environment. However, when setting up a production
 environment there are some minor differences - please visit [Installing SEEK
-for Production](install-production.html)
+for Production](install-production)
 
 ## Getting SEEK
 
@@ -197,7 +196,7 @@ However, before continuing, stop SEEK with CTRL+C and start up some services.
 This describes a quick way to start up the services SEEK needs. If setting up
 a production server, following these steps is fine to check things are
 working. However, you should also read the [Installation for
-Production](install-production.html) guide for automating these services.
+Production](install-production) guide for automating these services.
 
 ### Setting up and starting the Search Service
 
@@ -242,9 +241,9 @@ and funding of SEEK.
 ## Final steps
 
 If you are setting up SEEK for production use, please now return to our
-[Installing SEEK for Production Guide](install-production.html).
+[Installing SEEK for Production Guide](install-production).
 
-You should also now read our [Administration Guide](administration.html)
+You should also now read our [Administration Guide](administration)
 for details of some basic tasks and settings.
 
 

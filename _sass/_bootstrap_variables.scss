@@ -1,0 +1,45 @@
+/*-----Theme colors-----*/
+$white: #fff;
+$primary: #2363cc; 
+/* $indigo; #392b99; */
+/* $alertblue: #d7e1f3; */
+/* $brightblue: #8cddf6; */
+$secondary: #090378;
+$gray-600: #74767f;
+$blue: #376ac3;
+$light: #f0f5fd;
+$light-x: #e3e1e4;
+$dark: #080b0f;
+
+/*-----Custom values for Bootstrap variables-----*/
+$component-active-bg: $primary;
+/*$navbar-dark-color: $white;
+$navbar-dark-hover-color: $primary;
+$navbar-dark-toggler-border-color: transparent;*/
+$navbar-light-toggler-border-color: transparent;
+$navbar-light-color: $primary;
+$navbar-light-hover-color: $secondary;
+$border-radius: 0;
+$btn-border-radius-sm: $border-radius;
+$card-border-width: 0;
+$link-color: $blue;
+$info: $blue;
+$link-decoration: none;
+$body-bg: $white;
+$body-color: #606c71;
+$font-family-sans-serif: "Open Sans", sans-serif;
+$alert-border-width: 0;
+$input-group-addon-bg: $primary;
+$input-group-addon-color: $white;
+$input-bg: $primary;
+$input-color:  $white;
+$input-border-width: 0;
+$h1-font-size: 1rem * 3.5;
+$h2-font-size: 1rem * 2.2;
+$h3-font-size: 1rem * 1.5;
+$h4-font-size: 1rem * 1.1;
+$h5-font-size: 1rem;
+$h6-font-size: 1rem;
+$custom-container-max-widths: (
+    xxxl: 1700px
+);
