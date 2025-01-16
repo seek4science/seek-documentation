@@ -58,8 +58,19 @@ like the following:
             proxy_set_header   Host      $host:$server_port;
             proxy_set_header   X-Forwarded-Proto $scheme;
             proxy_pass         http://127.0.0.1:3000;
+
+            # Enforce HTTP Strict Transport Security (HSTS)
+            # add_header Strict-Transport-Security "max-age=31536000; includeSubDomains;" always;
+    
+            # Apply Secure and HttpOnly flags to all cookies
+            # proxy_cookie_flags ~ secure httponly;
+    
+            # Modify cookies to include SameSite
+            # proxy_cookie_path / "/; SameSite=Strict";
         }
     }
+
+**Important:** In a production environment, it is advised to enforce HSTS, secure and HttpOnly flags on cookies, and include SameSite. To enforce these directives, uncomment the relevant lines.
 
 for Apache the virtual host would include:
 
