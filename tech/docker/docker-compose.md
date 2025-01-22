@@ -64,9 +64,6 @@ like the following:
     
             # Apply Secure and HttpOnly flags to all cookies
             # proxy_cookie_flags ~ secure httponly;
-    
-            # Modify cookies to include SameSite
-            # proxy_cookie_path / "/; SameSite=Strict";
         }
     }
 
