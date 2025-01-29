@@ -36,7 +36,7 @@ If you do not want to install your own version of FAIRDOM-SEEK, you can register
 
 ### What are the differences?
 
-| ![FAIRDOMHub logo](/images/fairdomhub-favicon.png) <br />FAIRDOMHub public hub | ![SEEK logo](/images/favicon.png) <br /> Your own FAIRDOM-SEEK installation |
+| ![FAIRDOMHub logo](/images/fairdomhub-favicon.png) <br />FAIRDOMHub public hub | ![SEEK logo](/images/fairdom_seek_logo.png) <br /> Your own FAIRDOM-SEEK installation |
 |-------|---------|
 | Requires registration   | Requires installation and hosting |
 | Managed by the FAIRDOM consortium   | Managed by your technical team |
