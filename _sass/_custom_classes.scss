@@ -40,7 +40,7 @@
 
 /*----Headings----*/
 #main h1, #main h2, #main h3 {
-    color: #392b99;
+    color: $primary;
 }
 
 #main h1 {
@@ -85,5 +85,5 @@ footer .copyright {
 
 /*----Font Aweseome icon colour, match headings----*/
 main .fa-solid {
-    color: #392b99;
+    color: $fa-icon-color;
 }
