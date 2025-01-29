@@ -8,7 +8,6 @@ current_docker_tag: "1.16"
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jekyll-feed
 
 title: "FAIRDOM-SEEK Documentation"
 
