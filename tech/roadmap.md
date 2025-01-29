@@ -1,6 +1,5 @@
 ---
 title: Roadmap
-sidebar: tech
 redirect_from: "/roadmap.html"
 ---
 
