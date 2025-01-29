@@ -1,6 +1,5 @@
 ---
 title: Installing SEEK
-layout: page-ett
 redirect_from: "/install.html"
 ---
 

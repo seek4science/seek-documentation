@@ -1,6 +1,5 @@
 ---
 title: FAIRDOM-SEEK Definitions
-layout: page-ett
 sidebar: userguide
 permalink: /definitions
 ---

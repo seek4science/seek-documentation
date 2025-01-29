@@ -1,6 +1,5 @@
 ---
 title: Providing your own Assay and Technology types
-layout: page-ett
 redirect_from: "/assay-types.html"
 ---
 

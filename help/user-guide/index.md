@@ -1,6 +1,5 @@
 ---
 title: FAIRDOM-SEEK User Guide
-layout: page-ett
 toc: false
 ---
 

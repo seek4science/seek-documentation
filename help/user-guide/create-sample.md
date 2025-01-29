@@ -1,6 +1,5 @@
 ---
 title: Creating a Sample
-layout: page-ett
 ---
 
 

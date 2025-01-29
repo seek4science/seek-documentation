@@ -1,6 +1,5 @@
 ---
 title: Controlled vocabularies and ontologies
-layout: page-ett
 redirect_from: "/controlled-vocabularies.html"
 ---
 

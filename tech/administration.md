@@ -1,6 +1,5 @@
 ---
 title: Administration of SEEK
-layout: page-ett
 redirect_from: "/administration.html"
 ---
 

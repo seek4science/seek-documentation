@@ -1,6 +1,5 @@
 ---
 title: SEEK User Guide - RightField template v1
-layout: page
 ---
 
 # Metadata Template

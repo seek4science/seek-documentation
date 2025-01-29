@@ -1,6 +1,5 @@
 ---
 title: FAIRDOM-SEEK releases
-layout: page-ett
 permalink: /tech/releases/
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Backing up SEEK
-layout: page-ett
 redirect_from: "/backups.html"
 ---
 

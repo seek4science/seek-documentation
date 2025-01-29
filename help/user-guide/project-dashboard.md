@@ -1,6 +1,5 @@
 ---
 title: Project Dashboard
-layout: page-ett
 ---
 
 

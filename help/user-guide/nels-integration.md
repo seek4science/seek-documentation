@@ -1,6 +1,5 @@
 ---
 title: Registering NeLS data
-layout: page-ett
 ---
 
 Pre-requisites:

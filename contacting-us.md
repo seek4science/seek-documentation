@@ -1,6 +1,5 @@
 ---
 title: Contacting us
-layout: page-ett
 sidebar: about
 permalink: /contacting-us
 redirect_from: "/contacting_us.html"

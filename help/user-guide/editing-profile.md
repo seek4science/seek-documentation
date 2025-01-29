@@ -1,6 +1,5 @@
 ---
 title: Editing your profile
-layout: page-ett
 ---
 
 To edit your profile, you must be logged in. When logged in you can click your name in the top right hand corner of SEEK.

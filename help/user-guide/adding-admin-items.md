@@ -1,6 +1,5 @@
 ---
 title: Admin created items
-layout: page-ett
 ---
 
 These are items that cannot be created by a general user, but can be created by a SEEK administrator, [Project Administrator](roles#project-administrator), or [Programme Administrator](roles.html#programme-administrator)

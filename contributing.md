@@ -1,6 +1,5 @@
 ---
 title: Contributing
-layout: page-ett
 sidebar: tech
 permalink: /contributing
 ---

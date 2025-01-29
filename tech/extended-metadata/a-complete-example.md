@@ -1,6 +1,5 @@
 ---
 title: A Complete Example to Create Extended Metadata Types by Uploading a JSON File
-layout: page-ett
 ---
 
 Here is a step-by-step example of how to create a new extended metadata type using all the attribute types mentioned in our guide: [Create Extended Metatypes by Uploading a JSON File](create-extended-metadata-type-with-json-file).

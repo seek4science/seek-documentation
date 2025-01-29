@@ -1,6 +1,5 @@
 ---
 title: Checksum fingerprints
-layout: page-ett
 redirect_from:
     - /investigation_checksum.html
     - /tech/investigation_checksum.html

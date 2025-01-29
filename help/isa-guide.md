@@ -1,6 +1,5 @@
 ---
 title: A Quick guide to using ISA in SEEK
-layout: page-ett
 redirect_from: "/isa-guide.html"
 ---
 

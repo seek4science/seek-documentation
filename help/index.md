@@ -1,6 +1,5 @@
 ---
 title: Archived help and guidelines
-layout: page-ett
 permalink: /help
 ---
 <!--

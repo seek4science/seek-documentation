@@ -1,6 +1,5 @@
 ---
 title: Cookies
-layout: page-ett
 sidebar: about
 permalink: /cookies
 ---

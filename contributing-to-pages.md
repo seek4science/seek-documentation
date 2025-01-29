@@ -1,6 +1,5 @@
 ---
 title: Contributing to these pages
-layout: page-ett
 sidebar: tech
 permalink: /contributing-to-pages
 ---
@@ -15,8 +14,7 @@ New pages require a formatter at the top, that looks like:
 
     ---
     title: my lovely page
-    layout: page-ett
-    ---
+        ---
 
 For example, this page can be found at [https://raw.githubusercontent.com/seek4science/seek-documentation/main/contributing-to-pages.md](https://raw.githubusercontent.com/seek4science/seek-documentation/main/contributing-to-pages.md).
 

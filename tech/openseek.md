@@ -1,6 +1,5 @@
 ---
 title: openSEEK
-layout: page-ett
 ---
 
 {% include callout.html type="warning" content="This page is out-of-date and may be removed." %}

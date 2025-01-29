@@ -1,6 +1,5 @@
 ---
 title: Credits
-layout: page-ett
 sidebar: about
 permalink: /credits
 ---

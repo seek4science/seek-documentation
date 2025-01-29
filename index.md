@@ -1,5 +1,4 @@
 ---
-layout: page-ett
 sidebar: home 
 title: FAIRDOM-SEEK Documentation
 ---

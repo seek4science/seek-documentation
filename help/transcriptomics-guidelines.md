@@ -1,6 +1,5 @@
 ---
 title: "Transcriptomics: Guidelines for SEEK templates"
-layout: page-ett
 redirect_from: "/transcriptomics-guidelines.html"
 ---
 

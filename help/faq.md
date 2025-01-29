@@ -1,6 +1,5 @@
 ---
 title: Frequently Asked Questions
-layout: page-ett
 redirect_from: "/faq.html"
 permalink: /help/faq
 ---

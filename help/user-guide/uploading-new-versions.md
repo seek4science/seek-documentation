@@ -1,6 +1,5 @@
 ---
 title: Creating a new version of an asset
-layout: page-ett
 ---
 
 

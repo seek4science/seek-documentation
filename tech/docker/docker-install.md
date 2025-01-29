@@ -1,6 +1,5 @@
 ---
 title: Docker - Installing Docker
-layout: page-ett
 ---
 
 
