@@ -1,6 +1,5 @@
 ---
 title: Archived help and guidelines
-permalink: /help
 ---
 <!--
 ## User Guide

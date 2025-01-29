@@ -1,7 +1,6 @@
 ---
 title: Style guide
 sidebar: tech
-permalink: /style-guide
 ---
 
 

@@ -15,6 +15,8 @@ exclude:
  - Gemfile*
  - .gitignore
 
+permalink: /:categories/:year/:month/:day/:title
+
 defaults:
   -
     scope:
@@ -26,70 +28,12 @@ defaults:
     scope:
       path: "help"
     values:
-      permalink: /help/:basename
-      sidebar: userguide
-  -
-    scope:
-      path: "help/user-guide"
-    values:
-      permalink: /help/user-guide/:basename
       sidebar: userguide
   -
     scope:
       path: "tech"
     values:
-      permalink: /tech/:basename
       sidebar: tech
-  -
-    scope:
-      path: "tech/docker"
-    values:
-      permalink: /tech/docker/:basename
-      sidebar: tech
-
-  - scope:
-      path: "tech/extended-metadata"
-    values:
-      permalink: /tech/extended-metadata/:basename
-      sidebar: tech
-  -
-    scope:
-      path: "tech/releases"
-    values:
-      permalink: /tech/releases/:basename
-      sidebar: tech
-  -
-    scope:
-      path: "tech/scripts"
-    values:
-      permalink: /tech/scripts/:basename
-      sidebar: tech
-  -
-    scope:
-      path: "tech/api"
-    values:
-      permalink: /tech/api/:basename
-  -
-    scope:
-      path: "tech/api/definitions"
-    values:
-      permalink: /tech/api/definitions/:basename
-  -
-    scope:
-      path: "tech/api/descriptions"
-    values:
-      permalink: /tech/api/descriptions/:basename
-  -
-    scope:
-      path: "tech/api/examples"
-    values:
-      permalink: /tech/api/examples/:basename
-  -
-    scope:
-      path: "tech/api/scripts"
-    values:
-      permalink: /tech/api/scripts/:basename
-# adding type and layout to this scope is not working
 
 theme_variables: 
   #git_host: GitHub

@@ -1,7 +1,6 @@
 ---
 title: Contributing to these pages
 sidebar: tech
-permalink: /contributing-to-pages
 ---
 
 
@@ -28,7 +27,6 @@ To add your new page to the sidebar, add a line to the data file:
 The **about pages** (top level) require additional lines at the top to display correctly:
 ```yaml
 ---
-permalink: /path-of-page
 sidebar: about
 ---
 ```

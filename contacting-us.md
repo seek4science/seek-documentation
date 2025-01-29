@@ -1,7 +1,6 @@
 ---
 title: Contacting us
 sidebar: about
-permalink: /contacting-us
 redirect_from: "/contacting_us.html"
 ---
 

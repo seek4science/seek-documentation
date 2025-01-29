@@ -1,7 +1,6 @@
 ---
 title: Get FAIRDOM-SEEK
 sidebar: about
-permalink: /get-seek
 redirect_from: "/get_seek.html"
 ---
 

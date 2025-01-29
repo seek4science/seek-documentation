@@ -1,7 +1,6 @@
 ---
 title: Frequently Asked Questions
 redirect_from: "/faq.html"
-permalink: /help/faq
 ---
 
 {% include callout.html type="warning" content="This guide has been archived. Please see the [user guide](/help/user-guide) for the latest help." %}
