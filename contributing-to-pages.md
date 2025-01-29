@@ -11,10 +11,11 @@ If you find a mistake or wish to make an improvement to these pages, you can do 
 
 These pages can be found in Github at [https://github.com/seek4science/seek-documentation](https://github.com/seek4science/seek-documentation). Pages are in [Markdown](https://help.github.com/articles/markdown-basics/) format, with a _.md_ extension, but get converted into HTML for you.
 New pages require a formatter at the top, that looks like:
-
-    ---
-    title: my lovely page
-        ---
+```yaml
+---
+title: my lovely page
+---
+```
 
 For example, this page can be found at [https://raw.githubusercontent.com/seek4science/seek-documentation/main/contributing-to-pages.md](https://raw.githubusercontent.com/seek4science/seek-documentation/main/contributing-to-pages.md).
 
@@ -25,20 +26,21 @@ To add your new page to the sidebar, add a line to the data file:
  More details are available from the [ETT theme documentation](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures).
 
 The **about pages** (top level) require additional lines at the top to display correctly:
-
-    ---
-    permalink: /path-of-page
-    sidebar: about
-    ---
-
+```yaml
+---
+permalink: /path-of-page
+sidebar: about
+---
+```
 ## Viewing your changes locally
 
 If you want to view your changes as you edit them, with Ruby installed you can install and run Jekyll with:
 
-    gem install bundler
-    bundle install
-    bundle exec jekyll serve
-
+```sh
+gem install bundler
+bundle install
+bundle exec jekyll serve
+```
 and then goto [localhost:4000](http://localhost:4000). For more information please see [Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages/).
 
 ## Committing your changes
