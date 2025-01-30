@@ -1,6 +1,5 @@
 ---
 title: Bulk changing of sharing permissions
-layout: page-ett
 ---
 
 

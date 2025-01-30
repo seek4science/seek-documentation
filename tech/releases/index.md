@@ -1,7 +1,5 @@
 ---
 title: FAIRDOM-SEEK releases
-layout: page-ett
-permalink: /tech/releases/
 ---
 
 {% capture latest_version_long %}Latest version - {{ site.current_seek_version }}{% endcapture %}

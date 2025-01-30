@@ -1,6 +1,5 @@
 ---
 title: Minimum metadata guidelines for SEEK
-layout: page-ett
 redirect_from: "/metadata-guidelines.html"
 ---
 

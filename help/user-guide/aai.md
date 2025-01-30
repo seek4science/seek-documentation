@@ -1,6 +1,5 @@
 ---
 title: Logging into via LS Login
-layout: page-ett
 ---
 
 

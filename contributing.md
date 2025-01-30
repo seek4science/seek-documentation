@@ -1,8 +1,6 @@
 ---
 title: Contributing
-layout: page-ett
 sidebar: tech
-permalink: /contributing
 ---
 
 <i class="fa-solid fa-truck-fast fa-5x"></i>

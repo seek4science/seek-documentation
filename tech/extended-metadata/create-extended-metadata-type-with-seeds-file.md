@@ -1,6 +1,5 @@
 ---
 title: Define your own Extended Metadata Type with SEEDs File
-layout: page-ett
 ---
 
 If you are managing your own SEEK instance, you have the flexibility to define your project-specific Extended Metadata Types by populating the database with a seed file. 

@@ -1,6 +1,5 @@
 ---
 title: Installing SEEK for other Linux distributions
-layout: page-ett
 redirect_from: "/other-distributions.html"
 ---
 

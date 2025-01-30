@@ -1,6 +1,5 @@
 ---
 title: Using SEEK with openBIS
-layout: page-ett
 ---
 
 ## Enabling openBIS in SEEK

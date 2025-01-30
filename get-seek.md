@@ -1,8 +1,6 @@
 ---
 title: Get FAIRDOM-SEEK
-layout: page-ett
 sidebar: about
-permalink: /get-seek
 redirect_from: "/get_seek.html"
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Comparing two versions of a Model 
-layout: page-ett
 ---
 
 

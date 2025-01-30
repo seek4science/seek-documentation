@@ -1,6 +1,5 @@
 ---
 title: Manage Extended Metadata Type
-layout: page-ett
 ---
 
 On the "Manage Extended Metadata Types" page, you will see a list of existing extended metadata types along with relevant resources for creating new ones. The page is divided into four tabs:

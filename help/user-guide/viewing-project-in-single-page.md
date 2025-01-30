@@ -1,6 +1,5 @@
 ---
 title: Experiment View
-layout: page-ett
 ---
 
 

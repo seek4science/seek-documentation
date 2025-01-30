@@ -1,6 +1,5 @@
 ---
 title: Contributing to SEEK
-layout: page-ett
 redirect_from: "/contributing-to-seek.html"
 ---
 

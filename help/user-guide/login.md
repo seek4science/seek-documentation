@@ -1,6 +1,5 @@
 ---
 title: Logging into SEEK
-layout: page-ett
 ---
 
 

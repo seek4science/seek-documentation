@@ -1,8 +1,6 @@
 ---
 title: Style guide
-layout: page-ett
 sidebar: tech
-permalink: /style-guide
 ---
 
 

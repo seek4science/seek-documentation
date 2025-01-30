@@ -1,6 +1,5 @@
 ---
 title: ISA-JSON compliant Experiment
-layout: page-ett
 ---
 
 

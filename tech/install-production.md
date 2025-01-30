@@ -1,6 +1,5 @@
 ---
 title: Installing SEEK in a production environment
-layout: page-ett
 redirect_from: "/install-production.html"
 ---
 
