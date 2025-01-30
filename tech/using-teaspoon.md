@@ -16,7 +16,6 @@ To run Teaspoon in browser, start your rails server and access:
 To run Teaspoon from rake task:
 
     RAILS_ENV=test bundle exec rake teaspoon
-
     
 [Mocha](https://mochajs.org/) is used together with Teaspoon. Mocha is a javascript testing framework.
 We integrate [Chai](http://chaijs.com/api/assert/) as the assertion library, and [Sinon](http://sinonjs.org/) for stubing/spying/mocking request
