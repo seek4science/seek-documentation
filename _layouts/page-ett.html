@@ -14,7 +14,9 @@ layout: default
         <h1>{{ page.title }}
         {%- endif %}
         {%- if site.theme_variables.github_buttons.position == "top" or site.theme_variables.github_buttons.position == nil %}
+        {%- if page.disable_github_buttons == false or page.disable_github_buttons == nil %}
         {% include github-buttons.html %}
+        {%- endif %}
         {%- endif %}
         </h1>
         {%- endif %}
