@@ -14,7 +14,7 @@ name: FAIRDOM
 url: https://docs.seek4science.org
 author: FAIRDOM
 
-title: "FAIRDOM-SEEK Documentation"
+title: "DataHub Documentation"
 topnav_title: ""
 instance_name: "DataHub"
 
@@ -97,10 +97,10 @@ defaults:
       permalink: /tech/api/scripts/:basename
 # adding type and layout to this scope is not working
 
-theme_variables: 
+theme_variables:
   #git_host: GitHub
   #back_to_top: true
-  #github_buttons: 
+  #github_buttons:
   #  position: top
   #  edit_me: true
   #  open_issue: true
@@ -110,7 +110,7 @@ theme_variables:
   #   headings: 'h2'
   topnav:
     theme: light
-    brand_logo: images/fairdom-seek-logo-header.png
+    brand_logo: images/datahub_logo.png
     #github: true
     #twitter: false
   theme_color: 8cddf6
