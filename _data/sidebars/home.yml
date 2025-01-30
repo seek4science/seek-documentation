@@ -15,3 +15,9 @@ subitems:
     url: /help/user-guide/api
   - title: Useful Links
     url: /tech/useful-links
+  - title: For System Admin
+    url: /sys-admin
+  - title: Organise your experiments
+    url: /experiment-organisation  
+  - title: Step-by-step guide for research groups
+    url: /step-by-step-research-group
