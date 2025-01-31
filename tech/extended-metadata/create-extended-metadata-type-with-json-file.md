@@ -1,6 +1,5 @@
 ---
 title: Create Extended Metadata Types by Uploading a JSON File
-layout: page-ett
 ---
 
 

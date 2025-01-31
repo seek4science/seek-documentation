@@ -1,7 +1,5 @@
 ---
 title: Roadmap
-layout: page-ett
-sidebar: tech
 redirect_from: "/roadmap.html"
 ---
 

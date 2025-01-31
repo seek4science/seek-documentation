@@ -182,7 +182,3 @@ subitems:
            url: /help/jerm
          - title: JERM templates
            url: /help/templates
-  -
-    hr: true
-    title: Home
-    url: /

@@ -1,6 +1,5 @@
 ---
 title: Useful Links
-layout: page-ett
 ---
 
 FAIRDOM Website: [https://fair-dom.org](https://fair-dom.org)

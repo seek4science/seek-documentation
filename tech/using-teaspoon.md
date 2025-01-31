@@ -1,6 +1,5 @@
 ---
 title: Using Teaspoon
-layout: page-ett
 redirect_from: "/using-teaspoon.html"
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Upgrading SEEK
-layout: page-ett
 redirect_from: "/upgrading.html"
 ---
 

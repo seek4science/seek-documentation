@@ -85,6 +85,3 @@ subitems:
     hr: true
     title: API Introduction
     url: /help/user-guide/api
-  -
-    title: Home
-    url: /

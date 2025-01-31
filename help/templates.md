@@ -1,6 +1,5 @@
 ---
 title: JERM templates
-layout: page-ett
 redirect_from: "/templates.html"
 ---
 

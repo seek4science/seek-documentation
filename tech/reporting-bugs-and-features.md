@@ -1,6 +1,5 @@
 ---
 title: Reporting Bugs and raising Feature Requests
-layout: page-ett
 ---
 
 

@@ -1,6 +1,5 @@
 ---
 title: upgrading to 0.18
-layout: page
 redirect_from: "/upgrading-to-0.18.html"
 ---
 

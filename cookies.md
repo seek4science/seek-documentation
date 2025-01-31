@@ -1,8 +1,6 @@
 ---
 title: Cookies
-layout: page-ett
 sidebar: about
-permalink: /cookies
 ---
 {% include callout.html type="warning" content="This page is out-of-date and may be removed." %}
 

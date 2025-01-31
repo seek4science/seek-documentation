@@ -1,6 +1,5 @@
 ---
 title: API Introduction
-layout: page-ett
 ---
 
 FAIRDOM-SEEK includes a [JSON](https://www.json.org/) Application

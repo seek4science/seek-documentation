@@ -1,8 +1,6 @@
 ---
 title: Credits
-layout: page-ett
 sidebar: about
-permalink: /credits
 ---
 
 <i class="fa-solid fa-trophy fa-5x"></i>

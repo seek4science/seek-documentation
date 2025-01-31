@@ -1,6 +1,5 @@
 ---
 title: Configuring SEEK for Virtuoso
-layout: page-ett
 redirect_from: "/setting-up-virtuoso.html"
 ---
 

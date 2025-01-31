@@ -1,6 +1,5 @@
 ---
 title: Upgrades between earlier versions
-layout: page-ett
 redirect_from: "/earlier-upgrades.html"
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Samples
-layout: page-ett
 ---
 
 ## Introduction

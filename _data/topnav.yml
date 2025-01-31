@@ -1,8 +1,8 @@
 ## 
 ## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
 subitems:
-#- title: Home
-#  url: /
+- title: Home
+  url: /
 #- title: "Get FAIRDOM-SEEK (Quick Start)"
 #  url: /get-seek
 #- title: Contacting Us

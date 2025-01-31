@@ -18,7 +18,3 @@ subitems:
     url: /credits
 #  - title: Definitions
 #    url: /definitions
-  -
-    hr: true
-    title: Home
-    url: /

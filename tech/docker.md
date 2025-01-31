@@ -1,6 +1,5 @@
 ---
 title: Docker
-layout: page-ett
 ---
 
 ## Introduction to Docker

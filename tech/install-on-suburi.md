@@ -1,6 +1,5 @@
 ---
 title: Installing SEEK under a sub URI
-layout: page-ett
 redirect_from: "/install-on-suburi.html"
 ---
 

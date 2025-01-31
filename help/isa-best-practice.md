@@ -1,6 +1,5 @@
 ---
 title: ISA best practice guide
-layout: page-ett
 redirect_from: "/isa-best-practice.html"
 ---
 

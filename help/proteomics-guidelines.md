@@ -1,6 +1,5 @@
 ---
 title: Proteomics guidelines
-layout: page-ett
 redirect_from: "/proteomics-guidelines.html"
 ---
 
