@@ -12,7 +12,7 @@ When using ISA-JSON compliant experiments to organise your Project, you structur
 
 In SEEK, an Investigation becomes an ISA-JSON compliant Investigation (or ISA Investigation) when the the option for "Make Investigation compliant to ISA-JSON schemas?" is selected.
 
-![select isajson compliance](/images/user-guide/isajson-compliance/select_isajson_compliance.png){:.screenshot}
+![select isajson compliance]({{ "/images/user-guide/isajson-compliance/select_isajson_compliance.png" | relative_url }}){:.screenshot}
 
 ## ISA Study
 
@@ -29,7 +29,7 @@ An ISA Study is a central unit that must contain the description (metadata) of:
 ## Assay Stream
 An Assay Stream constitutes a structured sequence of sequential assays, interconnected through the flow of samples. Within an Assay Stream, the sample output of one assay serves as the input for the subsequent one. Each Assay Stream aligns with a single Assay in the ISA metadata framework. It is typically associated with one specific technology or technique, such as Metabolomics or Sequencing.
 
-![assay stream](/images/user-guide/isajson-compliance/assaystream.png){:.screenshot}
+![assay stream]({{ "/images/user-guide/isajson-compliance/assaystream.png" | relative_url }}){:.screenshot}
 
 ### ISA Assay
 

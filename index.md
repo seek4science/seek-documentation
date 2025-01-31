@@ -2,7 +2,7 @@
 sidebar: home 
 title: FAIRDOM-SEEK Documentation
 ---
-![FAIRDOM-SEEK logo](/images/banner-plain.svg)
+![FAIRDOM-SEEK logo]({{ "/images/banner-plain.svg" | relative_url }})
 
 <h2>
 <i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i>

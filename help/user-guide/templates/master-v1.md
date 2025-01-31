@@ -19,7 +19,7 @@ The metadata sheet is included with our Samples templates, but can also be used 
 
 Below is a description about each of the fields, which has been labelled in the following screenshot:
 
-![metadata fields](/images/user-guide/templates/master-v1-template.png){:.screenshot}
+![metadata fields]({{ "/images/user-guide/templates/master-v1-template.png" | relative_url }}){:.screenshot}
 
 _**1.**_  The title for the Data file entry that will be registered with SEEK
 
