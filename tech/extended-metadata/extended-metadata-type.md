@@ -15,12 +15,12 @@ You may sometimes hear or read it referred to as Custom Metadata, and they are t
 It is not a feature a user would directly see, other than revealed through extensions that are made available:
 
 
-<img src="/images/user-guide/extended-metadata/extended-metadata-select.png" alt="extended-metadata-select" width="400">
-<br>
+![extended-metadata-select]({{ "/images/user-guide/extended-metadata/extended-metadata-select.png" |  relative_url }})
+
 
 ... will reveal new fields below:
 
-<img src="/images/user-guide/extended-metadata/extended-metadata-fields.png" alt="extended-metadata-fields" width="400">
+![extended-metadata-fields]({{ "/images/user-guide/extended-metadata/extended-metadata-fields.png" |  relative_url }})
 
 The attributes can be associated with a particular attribute type, and marked as optional or mandatory, and will be validated against. This is very similar to Samples.
 
@@ -47,7 +47,7 @@ Instead of existing independently, extended metadata is embedded within another 
 
 This is explained in the following high level representation. 
 
-![](/images/user-guide/extended-metadata/high-level-arch.png)
+![]({{ "/images/user-guide/extended-metadata/high-level-arch.png" |  relative_url }})
 
 In this diagram: 
 
@@ -79,8 +79,8 @@ In this diagram:
 
 As a SEEK instance administrator, you have the ability to create, manage (enable, disable), and delete extended metadata types. This guide will walk you through how to perform these actions efficiently by navigating to the "Manage Extended Metadata Types" section in the Admin area.
 
-<img src="/images/user-guide/extended-metadata/emt-management.png" alt="emt-top-level-tab" width="400">
 
+![emt-top-level-tab]({{ "/images/user-guide/extended-metadata/emt-management.png" |  relative_url }})
 
 
 * **[Manage Extended Metadata Types](manage-extended-metadata-type)**

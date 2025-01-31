@@ -15,7 +15,7 @@ There is a checkbox to enable openBIS towards the bottom of that page.
 To connect a space from an openBIS instance, you need to select *Administer openBIS* from the project administer menu, as shown
 below
 
-![admin openbis menu](/images/user-guide/openbis/admin-openbis-menu.png){:.screenshot}
+![admin openbis menu]({{ "/images/user-guide/openbis/admin-openbis-menu.png" |  relative_url }}){:.screenshot}
 
 From here you will see a list of the currently registered openBIS instances and spaces, 
 and also an button at the top giving the option
