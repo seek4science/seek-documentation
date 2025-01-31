@@ -890,7 +890,7 @@ A full list of changes included in this release can be found in the [SEEK v1.3.1
 
 Release date: _March 17th 2017_
 
-![new_sharing_matrix]({{ "/images/release-notes/openbis.png" |  relative_url }})
+![new_sharing_matrix]({{ "/images/release-notes/openbis.png" | relative_url }})
 
 This is the first public release that supports [openBIS](https://openbis.ch/) integration. This version includes
 
@@ -904,7 +904,7 @@ This is the first public release that supports [openBIS](https://openbis.ch/) in
     * Now displays a matrix for easier setting and viewing of individual permissions, replacing the pre-canned options 
     that weren't always that intuitive or logical.
     
-![new_sharing_matrix]({{ "/images/release-notes/sharing-1.3.0.png" |  relative_url }}){:.screenshot}
+![new_sharing_matrix]({{ "/images/release-notes/sharing-1.3.0.png" | relative_url }}){:.screenshot}
 
 Details on how to use openBIS with SEEK is available in our [User Guide](/help/user-guide/openbis.html)
     
