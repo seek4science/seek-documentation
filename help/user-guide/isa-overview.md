@@ -22,7 +22,7 @@ To help identify the ISA elements, below is a summary of the icons used.
 <div id='isa-overview-avatar-legend'>
 
 | ![Investigation]({{ "/images/user-guide/isa-overview/avatar-investigation.svg" |  relative_url }}) Investigation | ![Study]({{ "/images/user-guide/isa-overview/avatar-study.svg" |  relative_url }}) Study | ![Assay]({{ "/images/user-guide/isa-overview/avatar-assay.svg" |  relative_url }}) Assay | ![Model analysis]({{ "/images/user-guide/isa-overview/avatar-model-analysis.svg" |  relative_url }}) Modelling analysis |
-| ![Event]({{ "/images/user-guide/isa-overview/avatar-event.svg" |  relative_url }}) Event | ![Model](/images/user-guide/isa-overview/avatar-model.svg) Model | ![Publication]({{ "/images/user-guide/isa-overview/avatar-publication.svg" |  relative_url }}) Publication | &nbsp; |
+| ![Event]({{ "/images/user-guide/isa-overview/avatar-event.svg" |  relative_url }}) Event | ![Model]({{ "/images/user-guide/isa-overview/avatar-model.svg" |  relative_url }}) Model | ![Publication]({{ "/images/user-guide/isa-overview/avatar-publication.svg" |  relative_url }}) Publication | &nbsp; |
 
 </div>
 
