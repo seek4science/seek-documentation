@@ -115,6 +115,9 @@ theme_variables:
     #twitter: false
   theme_color: 8cddf6
 # theme color is not working! Trying c23669 from RDMkit doesn't help
+  fonts:
+    - https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap
+
 
 github:
   repository_url: https://github.com/seek4science/seek-documentation
