@@ -30,7 +30,7 @@ You will first be prompted to create (or [Join a Project](join-a-project)) follo
 
 If enabled, first a Programme will need to be chosen or created. If configured, you will also have the option to choose a site managed Programme. By default, the site managed Programme is selected, but if unchecked there is an option to provide the title of a new one. Only the title is required at this stage, but further details can be provided later once created.
 
-[![Choose Programme](/images/user-guide/create-project-select-programme.png){:.screenshot}](/images/user-guide/create-project-select-programme.png)
+![Choose Programme](/images/user-guide/create-project-select-programme.png){:.screenshot}
 
 If you already administer existing Programmes, a dropdown box will be shown instead allowing you to select one of your existing Programmes. You will also have the option to create a new one.
 
@@ -38,7 +38,7 @@ If you already administer existing Programmes, a dropdown box will be shown inst
 
 You next need to define the Project. At a minimum a title is required, but you can also here provide a description and webpage. Once created you can edit and add additional details and add members.
 
-[![Define Project](/images/user-guide/create-project-define-project.png){:.screenshot}](/images/user-guide/create-project-define-project.png)
+![Define Project](/images/user-guide/create-project-define-project.png){:.screenshot}
 
 ## Defining your Institution
 
@@ -49,7 +49,7 @@ Start to type the name of your institution, and existing options will be display
 
 If describing a new Institution only the title is required, but you can also provide details about its website, city and country. You will also be able to edit and add additional information afterwards.
 
-[![Define Institution](/images/user-guide/create-project-define-institution.png){:.screenshot}](/images/user-guide/create-project-define-institution.png)
+![Define Institution](/images/user-guide/create-project-define-institution.png){:.screenshot}
 
 ### Approval step
 

@@ -9,7 +9,7 @@
 }
 
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
     header .input-group > .form-control {
         width: 330px;
     }
@@ -37,14 +37,18 @@
 }
 
 /*---screenshots----*/
-img.screenshot {
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
-    padding: 1em;
-    max-width: 40em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+p:has(img.screenshot) {
+    text-align: center;
+    img.screenshot {
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        padding: 1em;
+    }
+}
+@include media-breakpoint-up(md) {
+    img.screenshot {
+        max-width: 40em;
+    }
 }
 
 
