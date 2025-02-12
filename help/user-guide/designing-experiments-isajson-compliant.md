@@ -13,7 +13,7 @@ Select
 
 Fill out the provided form, check the option for "Make Investigation compliant to ISA-JSON schemas?" and then click the 'Create' button.
 
-[![select isajson compliance](/images/user-guide/isajson-compliance/select_isajson_compliance.png)](/images/user-guide/isajson-compliance/select_isajson_compliance.png){:.screenshot}
+[![select isajson compliance](/images/user-guide/isajson-compliance/select_isajson_compliance.png){:.screenshot}](/images/user-guide/isajson-compliance/select_isajson_compliance.png)
 
 
 ## 2. Creating an ISA Study
@@ -39,13 +39,13 @@ The Study Sources table is a Sample Type associated with the Study and can only 
 
 * Choose one Experiment Sample Templates by clicking on "Existing Experiment Sample Templates" button.
 
-[![create isastudy source 1](/images/user-guide/isajson-compliance/create_isastudy_source_1.png)](/images/user-guide/isajson-compliance/create_isastudy_source_1.png){:.screenshot}
+[![create isastudy source 1](/images/user-guide/isajson-compliance/create_isastudy_source_1.png){:.screenshot}](/images/user-guide/isajson-compliance/create_isastudy_source_1.png)
 
 * Filter existing Experiment Sample Templates based on:
   * the repository that will store metadata about your Study Sources (e.g. ENA, ArrayExpress or your institutional repository). Select "Project specific templates" if you want to use a template made for or by a specific Project
   * organism
 
-[![create isastudy source 2](/images/user-guide/isajson-compliance/create_isastudy_source_2.png)](/images/user-guide/isajson-compliance/create_isastudy_source_2.png){:.screenshot}
+[![create isastudy source 2](/images/user-guide/isajson-compliance/create_isastudy_source_2.png){:.screenshot}](/images/user-guide/isajson-compliance/create_isastudy_source_2.png)
 
 * Choose a template from the resulting dropdown menu.
 * Select "Apply".
@@ -59,7 +59,7 @@ The Attributes table can be used to customise the Study Sources table. However, 
 * Fill out the mandatory and optional fields. Note that for ISA-JSON compliant Experiments, the ISA Tag is a mandatory field.
 * For ISA tag, select "source_characteristic". Note that selecting "source" would generate an error since a "source" is already selected in the starting template.
 
-[![create isastudy source 3](/images/user-guide/isajson-compliance/create_isastudy_source_3.png)](/images/user-guide/isajson-compliance/create_isastudy_source_3.png){:.screenshot}
+[![create isastudy source 3](/images/user-guide/isajson-compliance/create_isastudy_source_3.png){:.screenshot}](/images/user-guide/isajson-compliance/create_isastudy_source_3.png)
 
 ## 2.2 Link the sampling Protocol 
 Select Protocols already registered in the platform that describe the used method or procedure (SOP) used to collect Samples from Sources in your Study (Samples collection protocol). See how to [create an SOP](adding-assets) in SEEK.
@@ -113,7 +113,7 @@ The Assay Samples table is a Sample Type associated with the Assay and can only 
     * assay - data file: if the output of the assays are digital data files
   * organism
 
-[![create isaassay 2](/images/user-guide/isajson-compliance/create_isaassay_2.png)](/images/user-guide/isajson-compliance/create_isaassay_2.png){:.screenshot}
+[![create isaassay 2](/images/user-guide/isajson-compliance/create_isaassay_2.png){:.screenshot}](/images/user-guide/isajson-compliance/create_isaassay_2.png)
 
 * Choose a template from the resulting dropdown menu.
 * Select "Apply".
@@ -131,7 +131,7 @@ The Attributes table can be used to customise the Assay Samples table. However, 
   
   Note that selecting any other options would generate an error since other options are already selected in the starting template.
 
-[![create isaassay 3](/images/user-guide/isajson-compliance/create_isaassay_3.png)](/images/user-guide/isajson-compliance/create_isaassay_3.png){:.screenshot}
+[![create isaassay 3](/images/user-guide/isajson-compliance/create_isaassay_3.png){:.screenshot}](/images/user-guide/isajson-compliance/create_isaassay_3.png)
 
 ## 6.3 Visualise ISA Assay
 Upon creation, the newly designed ISA Assay will appear in the tree view on the left sidebar, in Experiment View. Follow the link to know more about [Experiment View](viewing-project-in-single-page).

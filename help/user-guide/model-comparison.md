@@ -7,19 +7,19 @@ If a model has a number of versions, you can compare between two versions to see
 
 You can only compare versions if you are logged into SEEK.
  
-[![two versions](/images/user-guide/two_versions-zoomed.png)](/images/user-guide/two_versions-zoomed.png){:.screenshot}
+[![two versions](/images/user-guide/two_versions-zoomed.png){:.screenshot}](/images/user-guide/two_versions-zoomed.png)
 
 Scroll down to the Version History towards the end of the page, and click _Compare_.
 
-[![compare versions](/images/user-guide/compare_versions.png)](/images/user-guide/compare_versions.png){:.screenshot}
+[![compare versions](/images/user-guide/compare_versions.png){:.screenshot}](/images/user-guide/compare_versions.png)
 
 You will then be given the option to choose the models that you want to compare:
  
-[![which versions](/images/user-guide/which_versions_to_compare.png)](/images/user-guide/which_versions_to_compare.png){:.screenshot} 
+[![which versions](/images/user-guide/which_versions_to_compare.png){:.screenshot}](/images/user-guide/which_versions_to_compare.png) 
 
 SEEK then returns a list, and diagram containing the differences. 
 Deletions appear in red, additions in blue, and updates that do not affect the network are in yellow.
  
-[![version diff](/images/user-guide/version_diff.png)](/images/user-guide/version_diff.png){:.screenshot} 
+[![version diff](/images/user-guide/version_diff.png){:.screenshot}](/images/user-guide/version_diff.png) 
 
 SEEK uses [BiVES](https://sems.uni-rostock.de/projects/bives/) to compare the different models. 

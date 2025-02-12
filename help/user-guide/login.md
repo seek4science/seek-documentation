@@ -5,8 +5,8 @@ title: Logging into SEEK
 
 To log in you need to click the login button in the top right hand corner of SEEK.
 
-[![Login 1](/images/user-guide/login_1.png)](/images/user-guide/login_1.png){:.screenshot}
+[![Login 1](/images/user-guide/login_1.png){:.screenshot}](/images/user-guide/login_1.png)
 
 This will take you to a page where you need to enter your username, and password.
 
-[![Login 2](/images/user-guide/login_2.png)](/images/user-guide/login_2.png){:.screenshot}
+[![Login 2](/images/user-guide/login_2.png){:.screenshot}](/images/user-guide/login_2.png)

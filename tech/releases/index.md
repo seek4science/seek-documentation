@@ -904,7 +904,7 @@ This is the first public release that supports [openBIS](https://openbis.ch/) in
     * Now displays a matrix for easier setting and viewing of individual permissions, replacing the pre-canned options 
     that weren't always that intuitive or logical.
     
-[![new_sharing_matrix](/images/release-notes/sharing-1.3.0.png)](/images/release-notes/sharing-1.3.0.png){:.screenshot}
+[![new_sharing_matrix](/images/release-notes/sharing-1.3.0.png){:.screenshot}](/images/release-notes/sharing-1.3.0.png)
 
 Details on how to use openBIS with SEEK is available in our [User Guide](/help/user-guide/openbis.html)
     

@@ -5,23 +5,23 @@ title: Browsing content on SEEK
 
 Seek contains several types of content which you can access by clicking on "Browse" from any page.
 
-[![Browse Content type dropdown](/images/user-guide/browsing_home.png)](/images/user-guide/browsing_home.png){:.screenshot}
+[![Browse Content type dropdown](/images/user-guide/browsing_home.png){:.screenshot}](/images/user-guide/browsing_home.png)
 
 The list of results provides filtering options, which vary depending on the type of content. For example, events can be filtered by the country where they take place.
 
-[![Facet filters](/images/user-guide/browsing_filter_facets_events.png)](/images/user-guide/browsing_filter_facets_events.png){:.screenshot}
+[![Facet filters](/images/user-guide/browsing_filter_facets_events.png){:.screenshot}](/images/user-guide/browsing_filter_facets_events.png)
 
 By default, the content is listed as cards, providing title and some basic information.
 
-[![Condensed view](/images/user-guide/browsing_default.png)](/images/user-guide/browsing_default.png){:.screenshot}
+[![Condensed view](/images/user-guide/browsing_default.png){:.screenshot}](/images/user-guide/browsing_default.png)
 
 
 Alternatively, a condensed view and a table view is available, showing more results at once.
-[![Condensed view](/images/user-guide/browsing_condensed.png)](/images/user-guide/browsing_condensed.png){:.screenshot}
+[![Condensed view](/images/user-guide/browsing_condensed.png){:.screenshot}](/images/user-guide/browsing_condensed.png)
 
 The columns to be shown by the table view can be customised, adding/removing columns as well as choosing their order.
 
-[![Table view configuration](/images/user-guide/browsing_table_config.png)](/images/user-guide/browsing_table_config.png){:.screenshot}
+[![Table view configuration](/images/user-guide/browsing_table_config.png){:.screenshot}](/images/user-guide/browsing_table_config.png)
 
 # Browsing Samples
 You can browse Samples registered in SEEK by Sample Type or by Experiment Sample Templates.
@@ -70,4 +70,4 @@ Moreover, Advanced filtering allows you to further refine your query based on Ex
 * Click on Query to view your samples of interest (query’s result)
 * Click on Export table to export the result of the query as spreadsheet
 
-[![Browse sample by Experiment Sample Template](/images/user-guide/isajson-compliance/browse-samples-by-isajson-template.png)](/images/user-guide/isajson-compliance/browse-samples-by-isajson-template.png){:.screenshot}
+[![Browse sample by Experiment Sample Template](/images/user-guide/isajson-compliance/browse-samples-by-isajson-template.png){:.screenshot}](/images/user-guide/isajson-compliance/browse-samples-by-isajson-template.png)
