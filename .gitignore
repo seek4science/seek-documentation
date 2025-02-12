@@ -11,6 +11,7 @@ _site/
 
 Gemfile.lock
 
+.ruby-version
 
 #seek application folders that may hang around
 filestore*/
