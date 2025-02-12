@@ -10,19 +10,19 @@ original intention or purpose of the asset, you should you create an entirely ne
  
 You can upload a new version using the _Administration_ button.
 
-![upload version]({{ "/images/user-guide/upload_new_version.png" | relative_url }}){:.screenshot}
+[![upload version](/images/user-guide/upload_new_version.png)](/images/user-guide/upload_new_version.png){:.screenshot}
 
 When uploading a new model, you can either upload the file, or you can link from a remote URL e.g. from Biomodels database.
  
-![local file or url]({{ "/images/user-guide/local_file_or_url.png" | relative_url }}){:.screenshot} 
+[![local file or url](/images/user-guide/local_file_or_url.png)](/images/user-guide/local_file_or_url.png){:.screenshot} 
 
 When uploading a new model version SEEK updates the file. You should include comments describing the revision. N.B: 
 If you want to edit the metadata associated with the file you need to edit this separately.
  
-![revision comments]({{ "/images/user-guide/revision_comments.png" | relative_url }}){:.screenshot}
+[![revision comments](/images/user-guide/revision_comments.png)](/images/user-guide/revision_comments.png){:.screenshot}
 
 After uploading, you will be able to see the two versions displayed in the metadata.
 
 **Note** that, earlier versions are only visible if logged into SEEK. Anonymous users can only see the latest version.
  
-![two versions]({{ "/images/user-guide/two_versions.png" | relative_url }}){:.screenshot}
+[![two versions](/images/user-guide/two_versions.png)](/images/user-guide/two_versions.png){:.screenshot}

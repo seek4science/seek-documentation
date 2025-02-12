@@ -31,7 +31,7 @@ The attribute refers to a fixed-length character field. (e.g. "blue")
     
 )
 ```
-![]({{ "/images/user-guide/extended-metadata/atrribute_string_type.png" | relative_url }}) 
+[![](/images/user-guide/extended-metadata/atrribute_string_type.png)](/images/user-guide/extended-metadata/atrribute_string_type.png) 
 {:.screenshot}
 
 ### 2. Text type
@@ -40,7 +40,7 @@ The attribute is used for longer, variable-length character fields. (e.g. "The 4
 ```
  ExtendedMetadataAttribute.new(title: 'description', required:true, sample_attribute_type: SampleAttributeType.where(title:'Text').first)
 ```
-![]({{ "/images/user-guide/extended-metadata/attribute_text_type.png" | relative_url }}) 
+[![](/images/user-guide/extended-metadata/attribute_text_type.png)](/images/user-guide/extended-metadata/attribute_text_type.png) 
 {:.screenshot}
 
 ### 3. Date type
@@ -48,7 +48,7 @@ The attribute is used to represent dates. (e.g. January 1, 2015).
 ```
  ExtendedMetadataAttribute.new(title: 'study_start_date', required:true, sample_attribute_type: SampleAttributeType.where(title:'Date').first)
 ```
-![]({{ "/images/user-guide/extended-metadata/attribute_date_type.png" | relative_url }}) 
+[![](/images/user-guide/extended-metadata/attribute_date_type.png)](/images/user-guide/extended-metadata/attribute_date_type.png) 
 {:.screenshot}
 
 ### 4. Date-Time type
@@ -57,7 +57,7 @@ The attribute is used to represent dates and times. (e.g. January 1, 2015 at 14:
 ```
  ExtendedMetadataAttribute.new(title: 'study_start_time', required:true, sample_attribute_type: SampleAttributeType.where(title:'Date time').first)
 ```
-![]({{ "/images/user-guide/extended-metadata/attribute_time_type.png" | relative_url }}) 
+[![](/images/user-guide/extended-metadata/attribute_time_type.png)](/images/user-guide/extended-metadata/attribute_time_type.png) 
 {:.screenshot}
 
 ### 5. Integer type
@@ -66,7 +66,7 @@ The attribute is positive, negative, or zero numbers that do not have a fraction
 ```
  ExtendedMetadataAttribute.new(title: 'study_age', required:true, sample_attribute_type: SampleAttributeType.where(title:'Integer').first)
 ```
-![]({{ "/images/user-guide/extended-metadata/attribute_integer_type.png" | relative_url }}) 
+[![](/images/user-guide/extended-metadata/attribute_integer_type.png)](/images/user-guide/extended-metadata/attribute_integer_type.png) 
 {:.screenshot}
 
 ### 6. Real Number
@@ -75,7 +75,7 @@ The attribute is used to represent numbers that may have a fractional component 
 ```
  ExtendedMetadataAttribute.new(title: 'cholesterol_level', required:true, sample_attribute_type: SampleAttributeType.where(title:'Real number').first)
 ```
-![]({{ "/images/user-guide/extended-metadata/attribute_real_number_type.png" | relative_url }}) 
+[![](/images/user-guide/extended-metadata/attribute_real_number_type.png)](/images/user-guide/extended-metadata/attribute_real_number_type.png) 
 {:.screenshot}
 
 ### 7. Boolean
@@ -84,7 +84,7 @@ The attribute uses true and false to represent truth values. (e.g. true, false).
 ```
  ExtendedMetadataAttribute.new(title: 'resource_use_rights_authors_confirmation', required:true, sample_attribute_type: SampleAttributeType.where(title:'Boolean').first)
 ```
-![]({{ "/images/user-guide/extended-metadata/attribute_boolean_type.png" | relative_url }}) 
+[![](/images/user-guide/extended-metadata/attribute_boolean_type.png)](/images/user-guide/extended-metadata/attribute_boolean_type.png) 
 {:.screenshot}
 
 ### 8. Controlled Vocabulary
@@ -109,7 +109,7 @@ end
     
 ```
 
-![]({{ "/images/user-guide/extended-metadata/attribute_cv_type.png" | relative_url }}) 
+[![](/images/user-guide/extended-metadata/attribute_cv_type.png)](/images/user-guide/extended-metadata/attribute_cv_type.png) 
 {:.screenshot}
 
 ### 9. Controlled Vocabulary List
@@ -134,7 +134,7 @@ Unlike a single-select option in Controlled Vocabulary, Controlled Vocabulary Li
 
  ExtendedMetadataAttribute.new(title: 'study_country', required:true, sample_attribute_type: SampleAttributeType.where(title:'Controlled Vocabulary List').first, sample_controlled_vocab: study_country_cv)
 ```
-![]({{ "/images/user-guide/extended-metadata/attribute_cvlist_type.png" | relative_url }}) 
+[![](/images/user-guide/extended-metadata/attribute_cvlist_type.png)](/images/user-guide/extended-metadata/attribute_cvlist_type.png) 
 {:.screenshot}
 
 ### 10. Nested Extended Metadata
@@ -192,7 +192,7 @@ unless ExtendedMetadataType.where(title: 'family', supported_type: 'Investigatio
 end
 
 ```
-![]({{ "/images/user-guide/extended-metadata/attribute_nested_type.png" | relative_url }}) 
+[![](/images/user-guide/extended-metadata/attribute_nested_type.png)](/images/user-guide/extended-metadata/attribute_nested_type.png) 
 {:.screenshot}
 
 You can find the [complete example here](https://github.com/seek4science/seek/blob/main/db/seeds/extended_metadata_drafts/family_example.seeds.rb), you need to move the file under the `db/seeds` folder, then run the seed file using the command

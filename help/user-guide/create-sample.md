@@ -10,13 +10,13 @@ You can create a new sample directly in SEEK, or by uploading samples contained 
 
 To create a sample directly in SEEK, select Create and then Sample in the drop down menu. 
 
-![menu create sample]({{ "/images/user-guide/samples/menu-create-sample.png" | relative_url }}){:.screenshot}
+[![menu create sample](/images/user-guide/samples/menu-create-sample.png)](/images/user-guide/samples/menu-create-sample.png){:.screenshot}
 
 You will be taken to the collection of Sample Types that you can use to generate a Sample. 
 The default is the projects you are part of, but you can also search through Sample Types that are generated, 
 and publicly available, from other SEEK users. 
 
-![select sample type]({{ "/images/user-guide/samples/select-sample-type.png" | relative_url }}){:.screenshot}
+[![select sample type](/images/user-guide/samples/select-sample-type.png)](/images/user-guide/samples/select-sample-type.png){:.screenshot}
 
 There may be a lot of Sample Types to choose from. To assist in your selection, 
 you can filter the available samples using a single Tag, or a combination of Tags.
@@ -25,7 +25,7 @@ When you have identified the Sample Type you want to use, select New Sample.
 
 The form is split into the attributes required for the sample type:
 
-![create sample attributes]({{ "/images/user-guide/samples/create-sample-attributes.png" | relative_url }}){:.screenshot}
+[![create sample attributes](/images/user-guide/samples/create-sample-attributes.png)](/images/user-guide/samples/create-sample-attributes.png){:.screenshot}
 
 And then the general metadata information including
  

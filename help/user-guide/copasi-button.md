@@ -19,16 +19,16 @@ You can download a public SBML format **model** to a locally installed Copasi ap
 
 If you have a SBML format model and it is publicly downloadable, the “Simulate Model in Copasi” button is visible on the top of the single model page;
 
-![Copasi button in model page]({{ "/images/user-guide/copasi/copasi-button.png" | relative_url }}){:.screenshot}
+[![Copasi button in model page](/images/user-guide/copasi/copasi-button.png)](/images/user-guide/copasi/copasi-button.png){:.screenshot}
 
 ## Download the model and start the simulation in Copasi
 
 Click the button to download the model, the local Copasi is opened and simulation is triggered automatically;
 
-![open Copasi and download the model]({{ "/images/user-guide/copasi/open-CopasiUI.png" | relative_url }}){:.screenshot}
+[![open Copasi and download the model](/images/user-guide/copasi/open-CopasiUI.png)](/images/user-guide/copasi/open-CopasiUI.png){:.screenshot}
 
 Here you can see an example result.
 
-![simulate model in Copasi]({{ "/images/user-guide/copasi/result.png" | relative_url }}){:.screenshot}
+[![simulate model in Copasi](/images/user-guide/copasi/result.png)](/images/user-guide/copasi/result.png){:.screenshot}
 
 
