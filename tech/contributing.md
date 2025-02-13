@@ -1,7 +1,6 @@
 ---
 title: Contributing
 redirect_from: /contributing
-sidebar: tech
 ---
 
 <i class="fa-solid fa-truck-fast fa-5x"></i>

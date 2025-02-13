@@ -1,6 +1,5 @@
 ---
 title: Contributing to these pages
-sidebar: tech
 redirect_from: /contributing-to-pages
 ---
 

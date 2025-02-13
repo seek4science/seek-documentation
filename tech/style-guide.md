@@ -1,6 +1,5 @@
 ---
 title: Style guide
-sidebar: tech
 redirect_from: /style-guide
 ---
 

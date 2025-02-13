@@ -1,6 +1,5 @@
 ---
 title: FAIRDOM-SEEK Definitions
-sidebar: userguide
 redirect_from: definitions
 ---
 
