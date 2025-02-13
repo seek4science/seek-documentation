@@ -1,5 +1,5 @@
 ---
-sidebar: home 
+sidebar: false 
 title: FAIRDOM-SEEK Documentation
 ---
 ![FAIRDOM-SEEK logo](/images/banner-plain.svg)
@@ -18,7 +18,7 @@ For an example of FAIRDOM-SEEK please visit our [Demo](https://demo.seek4science
 
 To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-SEEK as a Virtual Machine, please go to our [<i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i> Get FAIRDOM-SEEK page](/get-seek).
 
-<hr />
+---
 
 <h2>
 <i class="fa-solid fa-user-group fa-1x"></i> <i class="fa-solid fa-book fa-1x"></i>
@@ -37,7 +37,7 @@ Details on how to get started using the Application Programme Interface (API) ca
 We also have other information for topics related to FAIRDOM-SEEK, including Metadata, ISA, and controlled vocabularies, which can be found
 in our [archive of help and guidelines](/help/).
 
-<hr />
+---
 
 <h2>
 <i class="fa-solid fa-wrench fa-1x"></i> <i class="fa-solid fa-book-atlas fa-1x"></i>
@@ -45,7 +45,7 @@ in our [archive of help and guidelines](/help/).
 
 For more detailed information about installation and upgrading, please see our [<i class="fa-solid fa-wrench fa-1x"></i> <i class="fa-solid fa-book-atlas fa-1x"></i> Technical and Reference documentation](/tech/).
 
-<hr />
+---
 
 <h2>
 <i class="fa-solid fa-envelopes-bulk fa-1x"></i> <i class="fa-solid fa-truck-fast fa-1x"></i> Contacting and contributions</h2>
@@ -53,3 +53,33 @@ For more detailed information about installation and upgrading, please see our [
 There are [<i class="fa-solid fa-envelopes-bulk fa-1x"></i>  contact details](/contacting-us), should you wish to ask a question or make a suggestion.
 
 We also welcome contributions, so please visit our [<i class="fa-solid fa-truck-fast fa-1x"></i> Contributors Guide](/contributing).
+
+---
+
+<h2>
+<i class="fa-solid fa-star fa-1x"></i> Popular pages</h2>
+
+<div class="mt-1 row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 navigation-tiles">
+    <div class="col d-grid">
+        <a role="button" class="btn py-3 fs-4 section-title" href="/help/user-guide/api"><b>API Introduction</b></a>
+    </div>
+    <div class="col d-grid">
+        <a role="button" class="btn py-3 fs-4 section-title" href="/contacting-us"><b>Contacting us</b></a>
+    </div>
+    <div class="col d-grid">
+        <a role="button" class="btn py-3 fs-4 section-title" href="/tech/contributing"><b>Contributing</b></a>
+    </div>
+    <div class="col d-grid">
+        <a role="button" class="btn py-3 fs-4 section-title" href="/get-seek"><b>Get FAIRDOM-SEEK</b></a>
+    </div>
+    <div class="col d-grid">
+        <a role="button" class="btn py-3 fs-4 section-title" href="/help/user-guide/"><b>FAIRDOM-SEEK User Guide</b></a>
+    </div>
+    <div class="col d-grid">
+        <a role="button" class="btn py-3 fs-4 section-title" href="/tech/roadmap"><b>Roadmap</b></a>
+    </div>
+    <div class="col d-grid">
+        <a role="button" class="btn py-3 fs-4 section-title" href="/tech/useful-links"><b>Useful Links</b></a>
+    </div>
+</div>
+
