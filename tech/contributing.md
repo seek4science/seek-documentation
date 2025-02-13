@@ -1,5 +1,6 @@
 ---
 title: Contributing
+redirect_from: /contributing
 sidebar: tech
 ---
 
@@ -14,10 +15,10 @@ However, if there other ways you feel you can contribute, such as running a work
 
 ## Contributing to SEEK
 
-Please read [contributing to SEEK](tech/contributing-to-seek) or [reporting a bug or feature request](/tech/reporting-bugs-and-features).
+Please read [contributing to SEEK](/tech/contributing-to-seek) or [reporting a bug or feature request](/tech/reporting-bugs-and-features).
 
 
 ## Contributing to these pages
 
 You can also contribute to these pages.
-Please read [contributing to these pages](/contributing-to-pages) and the [style guide](/style-guide).
+Please read [contributing to these pages](/tech/contributing-to-pages) and the [style guide](/tech/style-guide).

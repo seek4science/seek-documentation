@@ -52,7 +52,7 @@ For more detailed information about installation and upgrading, please see our [
 
 There are [<i class="fa-solid fa-envelopes-bulk fa-1x"></i>  contact details](/contacting-us), should you wish to ask a question or make a suggestion.
 
-We also welcome contributions, so please visit our [<i class="fa-solid fa-truck-fast fa-1x"></i> Contributors Guide](/contributing).
+We also welcome contributions, so please visit our [<i class="fa-solid fa-truck-fast fa-1x"></i> Contributors Guide](/tech/contributing).
 
 ---
 

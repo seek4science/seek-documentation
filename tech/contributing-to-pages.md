@@ -16,7 +16,7 @@ title: my lovely page
 ---
 ```
 
-For example, this page can be found at [https://raw.githubusercontent.com/seek4science/seek-documentation/main/contributing-to-pages.md](https://raw.githubusercontent.com/seek4science/seek-documentation/main/contributing-to-pages.md).
+For example, this page can be found at [https://raw.githubusercontent.com/seek4science/seek-documentation/main/tech/contributing-to-pages.md](https://raw.githubusercontent.com/seek4science/seek-documentation/main/tech/contributing-to-pages.md).
 
 The **top level, technical reference, user guide pages** use a remote theme called [ELIXIR Toolkit Theme](https://elixir-belgium.github.io/elixir-toolkit-theme/) (ETT). The ETT theme provides additional support for styling and navigation, including the sidebar menus. The _title_ metadata is used to create a first-level heading at the top of the page. Do not include it again. Instead, use `##` and `###` for subheadings (second- and third-level, respectively).  
 
