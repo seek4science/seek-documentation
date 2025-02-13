@@ -1,7 +1,7 @@
 ---
 title: FAIRDOM-SEEK Definitions
 sidebar: userguide
-redirect_from: definitions
+redirect_from: /definitions
 ---
 
 Definition of terms used in FAIRDOM-SEEK.
