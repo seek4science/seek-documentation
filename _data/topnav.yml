@@ -3,8 +3,8 @@
 subitems:
 - title: Home
   url: /
-#- title: "Get FAIRDOM-SEEK (Quick Start)"
-#  url: /get-seek
+- title: About
+  url: /get-seek
 #- title: Contacting Us
 #  url: /contacting-us
 #- title: Contributing

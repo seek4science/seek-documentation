@@ -6,9 +6,9 @@ subitems:
   - title: Get FAIRDOM-SEEK
     url: /get-seek
   - title: Contacting us
-    url: /contacting-us
+    url: /about/contacting-us
   - title: Contributing
-    url: /contributing
+    url: /tech/contributing
   - title: User Guide
     url: /help/user-guide/
   - title: API

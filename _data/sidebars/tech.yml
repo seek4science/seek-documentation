@@ -8,15 +8,15 @@ subitems:
   - title: Contributing
     subitems:
       - title: Contributing introduction
-        url: /contributing
+        url: /tech/contributing
       - title: Contributing to SEEK
         url: /tech/contributing-to-seek
       - title: Reporting Bugs and raising Feature Requests
         url: /tech/reporting-bugs-and-features
       - title: Contributing to these pages
-        url: /contributing-to-pages
+        url: /tech/contributing-to-pages
       - title: Style guide
-        url: /style-guide
+        url: /tech/style-guide
   - title: Installing
     subitems:
       - title: Installing SEEK
