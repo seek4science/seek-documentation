@@ -28,11 +28,11 @@ columns:
     width: 2
     children: 
       - url_text: Technical References
-        url: /tech
+        url: /tech/
       - url_text: Roadmap
         url: /tech/roadmap
       - url_text: Useful Links
         url: /tech/useful-links.html
       - url_text: Contributing
-        url: /contributing
+        url: /tech/contributing
 
