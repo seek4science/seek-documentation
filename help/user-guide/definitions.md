@@ -1,6 +1,6 @@
 ---
 title: FAIRDOM-SEEK Definitions
-redirect_from: definitions
+redirect_from: /definitions
 ---
 
 Definition of terms used in FAIRDOM-SEEK.
