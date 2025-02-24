@@ -1,6 +1,5 @@
 ---
 title: Create Extended Metadata Type
-layout: page-ett
 ---
 
 There are two ways to create an Extended Metadata type:

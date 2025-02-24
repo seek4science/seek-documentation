@@ -1,7 +1,5 @@
 ---
 title: FAIRDOM-SEEK User Guide
-layout: page-ett
-toc: false
 ---
 
 The FAIRDOM-SEEK user guide is written for users of any FAIRDOM-SEEK instance. The pages are organised by sections on the left. You can also search at the top-right of any page.

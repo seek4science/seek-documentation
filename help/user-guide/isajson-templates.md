@@ -1,6 +1,5 @@
 ---
 title: Experiment Sample Templates
-layout: page-ett
 ---
 
 Experiment Sample Templates act as blueprints to create Sample Types within ISA Studies and ISA Assays and ensure that

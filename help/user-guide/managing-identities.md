@@ -1,6 +1,5 @@
 ---
 title: Managing Identities
-layout: page-ett
 ---
 
 

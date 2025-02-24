@@ -8,17 +8,10 @@
     color: $white;
 }
 
-//#main {
-    //color: #606c71;
-//}
 
-//#sidebar {
-    //border-right: solid thick #f3f1f2;
-//}
-
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
     header .input-group > .form-control {
-        width: 330px;
+        width: 250px;
     }
 }
 
@@ -38,52 +31,28 @@
     }
 }
 
-/*----Headings----*/
 #main h1, #main h2, #main h3 {
-    color: #392b99;
-}
-
-#main h1 {
-    font-size: 36px;
-}
-
-#main h2 { 
-    font-size: 30px;
+    color: $secondary;
     font-weight: normal;
 }
 
-#main h3 {
-    font-size: 24px;
-    font-weight: normal;
+/*---screenshots----*/
+p:has(img.screenshot) {
+    text-align: center;
+    img.screenshot {
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        padding: 1em;
+    }
+}
+@include media-breakpoint-up(md) {
+    img.screenshot {
+        max-width: 40em;
+    }
 }
 
-/*----Breadcrumb ---*/
-.user-guide-crumb {
-    font-size: smaller;
-    color: grey;
-}
-
-/*----Screenshots----*/
-img.screenshot {
-    border: 1px solid #bbb;
-    padding: 1em;
-    max-width: 40em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-}
-
-/*----Footer----*/
-footer {
-    background-color: $light;
-}
-
-footer .copyright {
-    background-color: #0903780f;
-}
 
 /*----Font Aweseome icon colour, match headings----*/
 main .fa-solid {
-    color: #392b99;
+    color: $secondary;
 }

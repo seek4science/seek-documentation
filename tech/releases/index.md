@@ -1,7 +1,5 @@
 ---
 title: FAIRDOM-SEEK releases
-layout: page-ett
-permalink: /tech/releases/
 ---
 
 {% capture latest_version_long %}Latest version - {{ site.current_seek_version }}{% endcapture %}
@@ -1099,8 +1097,8 @@ Release date: _December 8th 2015_
 
 * Help pages can now be hosted externally and an administrator can point to the source of them.
 * From past experience, we find it much easier to maintain and update our own Help pages and documentation outside of SEEK, allowing us to expand and improve on them between releases.
-* Our documentation will now be published and maintained using GitHub pages making it easier to maintain between versions and receive [Contributions](/contributing.html).
-* Internal help pages are currently still available, but could be deprecated in a future release. If you edit your own internal pages please [contact us](/contacting-us.html).
+* Our documentation will now be published and maintained using GitHub pages making it easier to maintain between versions and receive [Contributions](/tech/contributing).
+* Internal help pages are currently still available, but could be deprecated in a future release. If you edit your own internal pages please [contact us](/contacting-us).
 
 ### Miscellaneous
 

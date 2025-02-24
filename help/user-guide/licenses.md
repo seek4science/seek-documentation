@@ -1,6 +1,5 @@
 ---
 title: Licenses
-layout: page-ett
 ---
 
 

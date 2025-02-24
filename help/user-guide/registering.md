@@ -1,6 +1,5 @@
 ---
 title: Registering in SEEK
-layout: page-ett
 ---
 
 In order to register yourself in SEEK, you need to click the Register button in the top right hand corner of SEEK.
@@ -9,7 +8,7 @@ In order to register yourself in SEEK, you need to click the Register button in 
 
 It will take you to a screen where you need provide
 
-* A Login name (can be your real name, or another appropriate name
+* A Login name (can be your real name, or another appropriate name)
 * An email address
 * A password for your account
 When complete click the Register button in the bottom left hand corner.

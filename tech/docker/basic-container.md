@@ -1,6 +1,5 @@
 ---
 title: Docker - Running a basic container
-layout: page-ett
 ---
 
 

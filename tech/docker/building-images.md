@@ -1,6 +1,5 @@
 ---
 title: Docker - Building your own Docker image
-layout: page-ett
 ---
 
 

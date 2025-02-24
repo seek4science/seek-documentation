@@ -1,6 +1,5 @@
 ---
 title: JERM (Just Enough Results Model)
-layout: page-ett
 redirect_from: "/jerm.html"
 ---
 

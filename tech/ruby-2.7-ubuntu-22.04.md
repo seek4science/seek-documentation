@@ -1,6 +1,5 @@
 ---
 title: Installing Ruby 2.7 on Ubuntu 22.04
-layout: page-ett
 redirect_from: "/install.html"
 ---
 

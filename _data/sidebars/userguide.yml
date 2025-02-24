@@ -2,7 +2,7 @@ title: User Guide
 title_url: /help/user-guide/
 subitems:
   - title: Definitions
-    url: /definitions
+    url: /help/user-guide/definitions
   - title: Profile
     description: Registering and logging into SEEK, managing your account and identities, editing your profile.
     subitems:
@@ -159,7 +159,7 @@ subitems:
     title: Archives
     subitems:
       - title: Archived help and guidelines
-        url: /help
+        url: /help/
       - title: Data and model annotation
         subitems:
          - title: Minimum metadata guidelines for SEEK
@@ -182,7 +182,3 @@ subitems:
            url: /help/jerm
          - title: JERM templates
            url: /help/templates
-  -
-    hr: true
-    title: Home
-    url: /

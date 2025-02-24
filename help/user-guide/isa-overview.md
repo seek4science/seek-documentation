@@ -1,6 +1,5 @@
 ---
 title: ISA Overview
-layout: page-ett
 ---
 
 

@@ -1,6 +1,5 @@
 ---
 title: Creating a project
-layout: page-ett
 ---
 
 ## What is a Project

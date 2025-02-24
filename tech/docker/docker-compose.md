@@ -1,6 +1,5 @@
 ---
 title: Docker - Using Docker compose
-layout: page-ett
 ---
 
 
