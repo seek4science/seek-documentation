@@ -37,7 +37,7 @@ items from the lists you need to hold CTRL as you select them.
 By default email is disabled, but if you are able to you can configure it to
 enable SEEK to send emails - such are emails about changes within your
 project, notification emails, feedback emails and notifications about errors.
-You can configure email under Admin->Configuration->Enable/disable
+You can configure email under Admin area under Enable/disable
 features. Part way down that page there is a checkbox "Email enabled" that you
 should select. This reveals some SMTP settings that you need to fill out. Any
 that are not needed can be left blank. The meaning of the settings are:
@@ -80,25 +80,19 @@ in your api-key should be shown under Account details. More information is
 available at
 https://www.bioontology.org/wiki/index.php/BioPortal_REST_services.
 
-In SEEK, you apply the BioPortal api-key under the Admin->Configuration->Settings.
+In SEEK, you apply the BioPortal api-key under the Admin area under Settings.
 
 ## Configuring DOI and PubMed search
 
-To be able to support adding publications using a
-[PubMed](https://www.ncbi.nlm.nih.gov/pubmed) ID or DOI to your SEEK
-installation, you need to do 2 things.
-
-*   For PubMed you simply need to add your email address under Admin->Configuration->Settings
-*   For DOI - you need to register your email address with
-    [CrossRef](https://www.crossref.org/) at
-    https://www.crossref.org/requestaccount/ and then provide that email to
-    SEEK under Admin->Configuration->Settings
+To be able to support adding publications using a [PubMed](https://www.ncbi.nlm.nih.gov/pubmed) ID or DOI to your SEEK
+installation, you need to provide your email to use the API. Please provide these for the PubMed and CrossRef API under
+Admin area under Settings.
 
 ## Configuring Session Store Timeout
 
 The timeout period is set to 1 hour by default. This means that a user may be logged out after 1 hour, if they haven't selected "Remember Me"
 when logging in, and could lead to lost information if spending a long time filling out a form.
 
-Usually, 1 hour is sufficient, but the timeout can be updated under Admin->Configuration->Settings.
+Usually, 1 hour is sufficient, but the timeout can be updated under Admin area under Settings.
 
 
