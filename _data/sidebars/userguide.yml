@@ -159,7 +159,7 @@ subitems:
     title: Archives
     subitems:
       - title: Archived help and guidelines
-        url: /help/
+        url: /help/archived
       - title: Data and model annotation
         subitems:
          - title: Minimum metadata guidelines for SEEK
