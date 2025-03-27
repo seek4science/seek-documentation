@@ -1,6 +1,8 @@
 title: User Guide
 title_url: /help/user-guide/
 subitems:
+  - title: User roles and permissions
+    url: /help/user-guide/user-roles-permissions
   - title: Definitions
     url: /help/user-guide/definitions
   - title: Profile
