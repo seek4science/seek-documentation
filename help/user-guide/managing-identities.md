@@ -16,14 +16,14 @@ to your SEEK account.
 These can be managed on the "Manage Identities" page, which is found by clicking the user menu on the top-right.
 Note: This link will not appear if there are no alternative login methods enabled on the SEEK instance.
 
-![Manage Identities link]( "/images/user-guide/omniauth/manage_identities.png" | relative_url ){:.screenshot}
+![Manage Identities link]({{ "/images/user-guide/omniauth/manage_identities.png" | relative_url }}){:.screenshot}
 
 <a name="add-identity"></a>
 ## Adding a new identity
 
 If you already have a SEEK account and want to login using a different method, you can add a new identity by clicking the button on the top right:
 
-![Add Identity button]( "/images/user-guide/omniauth/add_identity.png" | relative_url ){:.screenshot}
+![Add Identity button]({{ "/images/user-guide/omniauth/add_identity.png" | relative_url }}){:.screenshot}
 
 (The options listed will vary depending on the SEEK configuration)
 
@@ -32,7 +32,7 @@ For more detail on how to proceed with LS Login, see [here](aai#aai-flow).
 
 After successfully logging in, you should be redirected back to the "Manage Identities" page, and see the new identity listed.
 
-![New identity listed]( "/images/user-guide/omniauth/identity_added.png" | relative_url ){:.screenshot}
+![New identity listed]({{ "/images/user-guide/omniauth/identity_added.png" | relative_url }}){:.screenshot}
 
 ## Removing an identity
 

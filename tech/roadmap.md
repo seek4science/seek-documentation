@@ -37,7 +37,7 @@ which is being built on and in conjunction with FAIRDOM-SEEK.
 
 These are completed Roadmap features, and includes the version of SEEK the feature was included in.
 
-You can find more details about each release in our [Change Logs]( "/tech/releases/" | relative_url )
+You can find more details about each release in our [Change Logs]({{ "/tech/releases/" | relative_url }})
 
 
 | Feature                                                                              | SEEK version |

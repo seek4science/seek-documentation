@@ -11,10 +11,10 @@ Currently, controlled vocabularies can only be created through the user interfac
 You can also use the following direct link  ```HTTP://{HOST_NAME}/sample_controlled_vocabs/new``` to create controlled vocabularies or the button on the [Controlled Vocabulary](manage-extended-metadata-type/#3-controlled-vocabularies-tab) tab.
 
 Assuming the controlled vocabularies have been created here:
-![extended-metadata-fields]( "/images/user-guide/extended-metadata/cvs-tab.png" | relative_url )
+![extended-metadata-fields]({{ "/images/user-guide/extended-metadata/cvs-tab.png" | relative_url }})
 
 You can view the detailed controlled vocabularies by clicking the corresponding its ID.
-![extended-metadata-fields]( "/images/user-guide/extended-metadata/role_name_identifier_scheme_cv.png" | relative_url )
+![extended-metadata-fields]({{ "/images/user-guide/extended-metadata/role_name_identifier_scheme_cv.png" | relative_url }})
 
 ## Step 2: Define Nested Extended Metadata Types
 
@@ -186,6 +186,6 @@ Step 2.2. Define a new metadata type called `role_emt`, which will have one attr
 ## Step 4: Use Extended Metadata Type
 
 As the result, you can choose to load this extended metadata type on the study creation page.
-![]( "/images/user-guide/extended-metadata/emt-ui.png" | relative_url )
+![]({{ "/images/user-guide/extended-metadata/emt-ui.png" | relative_url }})
 
 
