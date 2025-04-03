@@ -15,7 +15,7 @@ short, optional [SEEK Registration
 Form](https://seek4science.org/seek-registration)
 
 If you have any problems or questions, you should contact us. The following
-link will give you details on how to [Contact Us]({{ site.baseurl }}/contacting_us)
+link will give you details on how to [Contact Us]( "/contacting_us" | relative_url )
 
 SEEK is based upon the Ruby on Rails platform. Although the information on
 this page should provide you with everything you need to get a basic
