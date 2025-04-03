@@ -9,6 +9,19 @@ Please see [Getting FAIRDOM-SEEK](/get-seek) for details about installing SEEK.
 
 If you have any comments or feedback about a release, then please [Contact Us](/contacting-us).
 
+## Version 1.16.2
+
+Release date: _3rd April 2025_
+
+A patch release that includes some important bug fixes and improvements, in particular:
+
+* Updated to use Ruby 3.1.7 as the default.
+* Fix an issue with being able to create Samples for Sample Types that aren't visible.
+* Added support to simulate [Morpheus](https://morpheus.gitlab.io/) models directly from the browser.
+* Fix to filtering SOPs in the dynamic table of DataHub.
+
+For a full list, see [closed issues for 1.16.2](https://github.com/seek4science/seek/milestone/28?closed=1)
+
 ## Version 1.16.1
 
 Release date: _4th March 2025_
