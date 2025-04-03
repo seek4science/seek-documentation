@@ -10,7 +10,7 @@ On the "Manage Extended Metadata Types" page, you will see a list of existing ex
 
 This tab displays all top-level extended metadata types, which are associated with specific resource types in SEEK, including <a id="top-level-resource-type">`Investigation`, `Study`, `Assay`, `Collection`, `DataFile`, `Document`, `Event`, `Model`, `Presentation`, `Sop`, and `Project`</a>.
 
-![]({{ site.baseurl }}/images/user-guide/extended-metadata/emt-top-level-tab.png)
+![]( "/images/user-guide/extended-metadata/emt-top-level-tab.png" | relative_url )
 
 
 The table on this tab contains the following columns:
@@ -37,7 +37,7 @@ The table on this tab contains the following columns:
 
 ## 2. Nested Level Tab
 
-![]({{ site.baseurl }}/images/user-guide/extended-metadata/emt-nested-level-tab.png)
+![]( "/images/user-guide/extended-metadata/emt-nested-level-tab.png" | relative_url )
 
 
 This tab lists all extended metadata types with the supported type "ExtendedMetadata." Nested-level metadata types are primarily used to define attributes like `Linked Extended Metadata` or `Linked Extended Metadata (Multiple)`, allowing for deeper, more flexible relationships between metadata.
@@ -50,7 +50,7 @@ Extended metadata types in this tab cannot be deleted if they are linked to othe
 
 This tab lists all the controlled vocabularies (CV) available in SEEK, which can be used when defining sample types or extended metadata types. Administrators can create new controlled vocabularies by clicking the "Create Controlled Vocabulary" button.
 
-![extended-metadata-fields]({{ site.baseurl }}/images/user-guide/extended-metadata/cvs-tab.png)
+![extended-metadata-fields]( "/images/user-guide/extended-metadata/cvs-tab.png" | relative_url )
 
 
 The Internal ID of a controlled vocabulary is important when defining attributes such as `Controlled Vocabulary` or `Controlled Vocabulary List`.
@@ -60,7 +60,7 @@ The Internal ID of a controlled vocabulary is important when defining attributes
 This tab provides a list of all supported extended metadata attribute types. The Title of each attribute type is crucial, as it is used when defining a custom JSON file for creating new extended metadata types.
 
 
-![]({{ site.baseurl }}/images/user-guide/extended-metadata/emas-tab.png)
+![]( "/images/user-guide/extended-metadata/emas-tab.png" | relative_url )
 
 
 Back to [Extended Metadata Technical Overview](extended-metadata-type)

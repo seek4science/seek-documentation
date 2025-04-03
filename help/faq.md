@@ -11,7 +11,7 @@ Please see our general [Seek4Science FAQ](https://seek4science.org/faq) page for
 
 <!--
 ## Contributing
-If you want to contribute to the SEEK software please visit our [Contribution Guide]({{ site.baseurl }}/contributing.html)
+If you want to contribute to the SEEK software please visit our [Contribution Guide]( "/contributing.html" | relative_url )
 
 If you want to contribute to the SEEK guides, templates, or website please contact <community@fair-dom.org> for more details.
 

@@ -38,11 +38,11 @@ Intracellular metabolomics of s. solfataricus at 70 and 80c (Metabolomics)
 
 In SEEK, the ISA structure is displayed graphically, so you can see at a glance what items are associated with one another
 
-![]({{ site.baseurl }}/images/ISAUpperLevel.png){:.screenshot}
+![]( "/images/ISAUpperLevel.png" | relative_url ){:.screenshot}
 
 The figure above shows the Investigation &quot;Central Carbon Metabolism of Sulfolobus solfataricus&quot;  has one study, which in turn contains two different assays. If we zoom in on one particular assay, the &quot;Model Validation Gluconeogenesis in S. solfataricus&quot;, we can see the SEEK downloadable assets it is associated with.
 
-![]({{ site.baseurl }}/images/ISADataModel.png){:.screenshot}
+![]( "/images/ISADataModel.png" | relative_url ){:.screenshot}
 
 In this case, the Assay is not a laboratory experiment, but a modelling task. This is key point to note when using ISA, the assays refer, in essence, to experiments, which means they can be laboratory analysis, modelling analysis, data analysis and more. In this example the assay has data files, a model, and a publication associated with it.
 It is possible to associate data files, models, and other SEEK assets with more than one assay if necessary.
@@ -53,7 +53,7 @@ You can link assets to ISA parts, or vice versa, so it doesn't matter which you 
 
 ## Starting with your data
 
-We recommend using a JERM template to describe your data wherever available. We have some available templates: [JERM Templates]({{ site.baseurl }}/templates.html)
+We recommend using a JERM template to describe your data wherever available. We have some available templates: [JERM Templates]( "/templates.html" | relative_url )
 If there is not a specific template for your type of data, consider using the general JERM master template. This template contains all the required JERM metadata elements, but not necessarily any technology-specific extensions.  If you have your data in any other format, you can still upload it to SEEK, but indexing will be limited, so subsequent searches will also be limited. Our templates are community driven, which means our users help us keep them up to date. If you generate a new template, or make changes to a template to bring it up to date, it would be great if you could send us the updates and a brief description so we can make them available for others to use. Contact us <community@fair-dom.org>.
 
 When uploading your data, you will be asked wish assay(s) it is associated with. If you have already described the assay in the SEEK, you can find it from the drop-down list and link it, if you have not yet described your assay, you can leave this step out for the time-being. If your data is JERM compliant, many of the metadata elements in the upload form are the same as those in the first JERM metadata sheet. Soon, these elements will be automatically populated from your file, but for now, you will be asked to specify them in the web interface.

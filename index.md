@@ -2,7 +2,7 @@
 sidebar: false
 title: FAIRDOM-SEEK Documentation
 ---
-![FAIRDOM-SEEK logo]({{ site.baseurl }}/images/banner-plain.svg)
+![FAIRDOM-SEEK logo]( "/images/banner-plain.svg" | relative_url )
 
 <h2>
 <i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i>
@@ -16,7 +16,7 @@ For an example of FAIRDOM-SEEK please visit our [Demo](https://demo.seek4science
 
 ### Get FAIRDOM-SEEK
 
-To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-SEEK as a Virtual Machine, please go to our [<i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i> Get FAIRDOM-SEEK page]({{ site.baseurl }}/get-seek).
+To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-SEEK as a Virtual Machine, please go to our [<i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i> Get FAIRDOM-SEEK page]( "/get-seek" | relative_url ).
 
 ---
 
@@ -26,16 +26,16 @@ To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-
 
 ### Latest User Guide
 
-General documentation on how to use and administer FAIRDOM-SEEK can be found in our [<i class="fa-solid fa-user-group fa-1x"></i> <i class="fa-solid fa-book fa-1x"></i> User Guide]({{ site.baseurl }}/help/user-guide/).
+General documentation on how to use and administer FAIRDOM-SEEK can be found in our [<i class="fa-solid fa-user-group fa-1x"></i> <i class="fa-solid fa-book fa-1x"></i> User Guide]( "/help/user-guide/" | relative_url ).
 
 ### API documentation
 
-Details on how to get started using the Application Programme Interface (API) can be found in the [API Introduction]({{ site.baseurl }}/help/user-guide/api) .
+Details on how to get started using the Application Programme Interface (API) can be found in the [API Introduction]( "/help/user-guide/api" | relative_url ) .
 
 ### Archived help and guidelines
 
 We also have other information for topics related to FAIRDOM-SEEK, including Metadata, ISA, and controlled vocabularies, which can be found
-in our [archive of help and guidelines]({{ site.baseurl }}/help/).
+in our [archive of help and guidelines]( "/help/" | relative_url ).
 
 ---
 
@@ -43,16 +43,16 @@ in our [archive of help and guidelines]({{ site.baseurl }}/help/).
 <i class="fa-solid fa-wrench fa-1x"></i> <i class="fa-solid fa-book-atlas fa-1x"></i>
  Technical references</h2>
 
-For more detailed information about installation and upgrading, please see our [<i class="fa-solid fa-wrench fa-1x"></i> <i class="fa-solid fa-book-atlas fa-1x"></i> Technical and Reference documentation]({{ site.baseurl }}/tech/).
+For more detailed information about installation and upgrading, please see our [<i class="fa-solid fa-wrench fa-1x"></i> <i class="fa-solid fa-book-atlas fa-1x"></i> Technical and Reference documentation]( "/tech/" | relative_url ).
 
 ---
 
 <h2>
 <i class="fa-solid fa-envelopes-bulk fa-1x"></i> <i class="fa-solid fa-truck-fast fa-1x"></i> Contacting and contributions</h2>
 
-There are [<i class="fa-solid fa-envelopes-bulk fa-1x"></i>  contact details]({{ site.baseurl }}/contacting-us), should you wish to ask a question or make a suggestion.
+There are [<i class="fa-solid fa-envelopes-bulk fa-1x"></i>  contact details]( "/contacting-us" | relative_url ), should you wish to ask a question or make a suggestion.
 
-We also welcome contributions, so please visit our [<i class="fa-solid fa-truck-fast fa-1x"></i> Contributors Guide]({{ site.baseurl }}/tech/contributing).
+We also welcome contributions, so please visit our [<i class="fa-solid fa-truck-fast fa-1x"></i> Contributors Guide]( "/tech/contributing" | relative_url ).
 
 ---
 

@@ -10,7 +10,7 @@ You will be prompted to join a Project when you first register and are not yet a
 
 You can also request to join a Project from a Project page itself. To do so, first navigate to the project page. As long as the Project has an administrator, and you are not yet already a member, a "Request Membership" button should be available:
 
-![Request Membership Button]({{ site.baseurl }}/images/user-guide/request-membership-button.png){:.screenshot}
+![Request Membership Button]( "/images/user-guide/request-membership-button.png" | relative_url ){:.screenshot}
 
 It is only possible to make a request to the same Project once every 12 hours.
 
@@ -18,15 +18,15 @@ It is only possible to make a request to the same Project once every 12 hours.
 
 If you enter this page after make a request to join from the Project page, the Project will already be selected:
 
-![Request Join Project]({{ site.baseurl }}/images/user-guide/request-join-project-selected.png){:.screenshot}
+![Request Join Project]( "/images/user-guide/request-join-project-selected.png" | relative_url ){:.screenshot}
 
 If you have entered the page directly, such as after registration you will need to select the Project you wish to join.
 
 You do this by typing the name of the Project into the box, and suggestions will be displayed. The suggestions are from matching what is typed to the Project title or part of the description. You can select up to 3 at one time. If you can't find the project you want, you can browse the full list and filter and then request to join from the Projects page as described above.
 
-![Search to Join]({{ site.baseurl }}/images/user-guide/search-to-join-project.png){:.screenshot}
+![Search to Join]( "/images/user-guide/search-to-join-project.png" | relative_url ){:.screenshot}
 
-![Search to Join]({{ site.baseurl }}/images/user-guide/search-to-join-project-selected-3.png){:.screenshot}
+![Search to Join]( "/images/user-guide/search-to-join-project-selected-3.png" | relative_url ){:.screenshot}
 
 ### Defining your Institution
 
@@ -36,7 +36,7 @@ Start to type the name of your Institution, and existing options will be display
 
 If describing a new Institution only the title is required, but you can also provide details about its website, city and country. You will also be able to edit and add additional information afterwards.
 
-![Define Institution]({{ site.baseurl }}/images/user-guide/create-project-define-institution.png){:.screenshot}
+![Define Institution]( "/images/user-guide/create-project-define-institution.png" | relative_url ){:.screenshot}
 
 ### Providing a comment
 
