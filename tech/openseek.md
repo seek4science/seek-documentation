@@ -13,4 +13,4 @@ openBIS can be download and installed from the [openBIS download page](https://w
 
 ## Using SEEK and openBIS
 
-For further instructions on how to use SEEK with openBIS please read our [User Guide page for openBIS]( "/help/user-guide/openbis" | relative_url ).
+For further instructions on how to use SEEK with openBIS please read our [User Guide page for openBIS]({{ "/help/user-guide/openbis" | relative_url }}).

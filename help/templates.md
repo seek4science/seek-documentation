@@ -15,7 +15,7 @@ SEEK templates are a community driven activity. If you have any updates, modific
 
 #### SOPs
 
-* [Nature Protocols Format for SOPs]( "/attachments/NatureProtocolsFormat.doc" | relative_url )
+* [Nature Protocols Format for SOPs]({{ "/attachments/NatureProtocolsFormat.doc" | relative_url }})
 
 #### Data
 

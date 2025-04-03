@@ -12,7 +12,7 @@ A SEEK Administrator can change the configuration such that Sample Types can onl
 
 To create a new sample type, select create from the drop down menu, and then select Sample Type from the list
 
-![menu create sample type]( "/images/user-guide/samples/menu-create-sample-type.png" | relative_url ){:.screenshot}
+![menu create sample type]({{ "/images/user-guide/samples/menu-create-sample-type.png" | relative_url }}){:.screenshot}
 
 A Sample Type can be made in two ways
 
@@ -26,7 +26,7 @@ A Sample Type can be made in two ways
 
 First we will show generating a Sample type through manually creating a sample type. To begin with ensure that the Form is selected.
 
-![sample type form]( "/images/user-guide/samples/sample-type-form.png" | relative_url ){:.screenshot}
+![sample type form]({{ "/images/user-guide/samples/sample-type-form.png" | relative_url }}){:.screenshot}
 
 Sample Type allows you to include:
 
@@ -63,16 +63,16 @@ You can define the different types of data that the attributes should be:
 * **Controlled Vocabulary**: An attribute can be a set of predefined terms you have to select from, and any other term is invalid. You can either create a new
 controlled vocabulary or reuse and existing one. In the future we will be adding ontology support the the controlled vocabularies.
 
-![sample type attributes]( "/images/user-guide/samples/sample-type-attributes.png" | relative_url ){:.screenshot}
+![sample type attributes]({{ "/images/user-guide/samples/sample-type-attributes.png" | relative_url }}){:.screenshot}
 
 The attribute type selected dictates the value would be accepted, and also influences how it is displayed for the Sample
 
-If you feel an attribute type is missing, it can usually be easily added so please [Contact Us]( "/contacting-us.html" | relative_url )
+If you feel an attribute type is missing, it can usually be easily added so please [Contact Us]({{ "/contacting-us.html" | relative_url }})
 
 At least one of the attributes must be required and marked as the title. This is the attribute shown in certain views or lists within SEEK.
 Other attributes can be also be marked as required if need be.
 
-![sample type attributes required]( "/images/user-guide/samples/sample-type-attributes-required.png" | relative_url ){:.screenshot}
+![sample type attributes required]({{ "/images/user-guide/samples/sample-type-attributes-required.png" | relative_url }}){:.screenshot}
 
 Once completed click update. Your Sample Type can now be used to generate Samples.
 
@@ -93,7 +93,7 @@ On the initial Sample Template page you can include the following metadata:
 
 and then also select Choose File to select a sample template to upload:
 
-![sample type from template]( "/images/user-guide/samples/sample-type-from-template.png" | relative_url ){:.screenshot}
+![sample type from template]({{ "/images/user-guide/samples/sample-type-from-template.png" | relative_url }}){:.screenshot}
 
 
 Once a template is selected, and the appropriate metadata is added, select Create.
@@ -102,7 +102,7 @@ From here you will be taken to a page containing the metadata, and a list of the
 Here you can select specific attribute types (the default it String). You are also free to delete, rename or reorder the attributes.
 At least one attribute must be required and set to the title, and other attributes can be marked as required if need be.
 
-![sample type attributes from template]( "/images/user-guide/samples/sample-type-attributes-from-template.png" | relative_url ){:.screenshot}
+![sample type attributes from template]({{ "/images/user-guide/samples/sample-type-attributes-from-template.png" | relative_url }}){:.screenshot}
 
 Once completed click update. Your Sample Type can now be used to generate Samples.
 

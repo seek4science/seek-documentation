@@ -5,9 +5,9 @@ title: FAIRDOM-SEEK releases
 {% capture latest_version_long %}Latest version - {{ site.current_seek_version }}{% endcapture %}
 {% include callout.html type="note" content=latest_version_long %}
 
-Please see [Getting FAIRDOM-SEEK]( "/get-seek" | relative_url ) for details about installing SEEK.
+Please see [Getting FAIRDOM-SEEK]({{ "/get-seek" | relative_url }}) for details about installing SEEK.
 
-If you have any comments or feedback about a release, then please [Contact Us]( "/contacting-us" | relative_url ).
+If you have any comments or feedback about a release, then please [Contact Us]({{ "/contacting-us" | relative_url }}).
 
 ## Version 1.16.2
 
@@ -75,8 +75,8 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
   description, and changing the name of an attribute.
 * **Creating new Extended Metadata Types** - an instance administrator of SEEK can now create new Extended Metadata
   Types through the user interface, using a simple JSON file that defines the type and attributes.
-  The JSON has a corresponding [schema]( "/tech/extended-metadata/extended-metadata-type-schema.json" | relative_url ) against which it is
-  validated. There is new [extensive Documentation]( "/tech/extended-metadata/extended-metadata-type" | relative_url ) including on
+  The JSON has a corresponding [schema]({{ "/tech/extended-metadata/extended-metadata-type-schema.json" | relative_url }}) against which it is
+  validated. There is new [extensive Documentation]({{ "/tech/extended-metadata/extended-metadata-type" | relative_url }}) including on
   on how to create, and we are also planning on supporting doing so with an Excel template.
 * **Deleting Extended Metadata Types** - in addition to being able to disable, an administrator is now able to delete
   Extended Metadata Types.
@@ -206,7 +206,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
 * **Upgrade of Ruby**, from Ruby 2.7 to Ruby 3.1.
   * This gives improved speed and overall performance, along with keeping up with security patches.
 * **Upgrade to Rails**, to the latest 6.1 release.
-* **Nested [Extended Metadata]( "/tech/extended-metadata" | relative_url )** (previously referred to as Custom Metadata).
+* **Nested [Extended Metadata]({{ "/tech/extended-metadata" | relative_url }})** (previously referred to as Custom Metadata).
     * Extended Metadata allows items to be customized with additional typed metadata, similar to samples, and was used to support MIAPPE along
     with some bespoke installations.
     * Extended Metadata can now be nested, i.e one Extended Metadata type definition can include a reference to another,
@@ -221,7 +221,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
   * Users can now cancel a publishing request.
   * Added support for Samples.
   * Improved integration with DataHub and the Single Page View.
-  * Updated [documentation]( "/help/user-guide/roles.html#asset-gatekeeper" | relative_url ).
+  * Updated [documentation]({{ "/help/user-guide/roles.html#asset-gatekeeper" | relative_url }}).
 * **Viewing of Excel files in the browser** for all asset types (previously only Data Files were supported).
 * **Event filtering improvements**.
   * Includes the full set of common filters available for other items, plus the addition of Event specific filters.
@@ -255,7 +255,7 @@ A small patch release that contains some small bug fixes:
 * Fix to handle items registered as a remote URL - when the URL needs authorization it is always shown as an external link.
 * Fix for a missing python dependency (filelock), which is required for processing CWL workflows.
 
-We have also provided details about [installing Ruby 2.7 on Ubuntu 22.04]( "/tech/ruby-2.7-ubuntu-22.04" | relative_url ).
+We have also provided details about [installing Ruby 2.7 on Ubuntu 22.04]({{ "/tech/ruby-2.7-ubuntu-22.04" | relative_url }}).
 
 For a full list, see [closed issues for 1.13.4](https://github.com/seek4science/seek/milestone/18?closed=1)
 
@@ -483,16 +483,16 @@ This version includes:
 
   * **Changes to joining a project during registration**.
     * During registration a user will no longer be asked to select a Project and Institution, (this was often missed). Instead, they will be prompted to either Join or Create a Project after registration and until they are a member.
-    * [Joining a Project]( "/help/user-guide/join-a-project.html" | relative_url ) now has an easier interface to search and select the projects the users want to join, and to define either a new Institution or select an existing one
+    * [Joining a Project]({{ "/help/user-guide/join-a-project.html" | relative_url }}) now has an easier interface to search and select the projects the users want to join, and to define either a new Institution or select an existing one
     * The Project administrator is notified by email, and is provided with a single page to accept the join request more easily, and is also prompted through the FAIRDOM-SEEK interface if there are outstanding requests.
   * **Simplified Project and Programme creation.**
-    * A user can now more easily request to [create a Project]( "/help/user-guide/create-a-project.html" | relative_url ). The Project creation request can include a Programme if enabled, along with defining a new Institution or selecting an existing one.
+    * A user can now more easily request to [create a Project]({{ "/help/user-guide/create-a-project.html" | relative_url }}). The Project creation request can include a Programme if enabled, along with defining a new Institution or selecting an existing one.
     * If a Programme or site administrator is needed to approve the request, there is a simpler interface to accept or reject quickly, and the administrators are prompted through the FAIRDOM-SEEK interface as well as email.
   * **Site managed Programme.**
     * FAIRDOM-SEEK can now configured to include a site managed Programme.
     * This can be selected by users who do not want to a Programme to self administer and add additional Projects.
   * **Markdown formatting of descriptions.**
-    * Support has been added for [markdown elements in descriptions]( "/help/user-guide/general-attributes#description" | relative_url ).
+    * Support has been added for [markdown elements in descriptions]({{ "/help/user-guide/general-attributes#description" | relative_url }}).
     * It includes an editor with shortcuts for common formatting options, together with a preview option.
   * **Ontology based controlled vocabularies.**
     * FAIRDOM-SEEK now supports Sample attributes limited to controlled vocabularies (CVs) backed by an ontology.
@@ -503,10 +503,10 @@ This version includes:
     * The exploration presents a table view of data.
     * The exploration extends the existing Excel file explore feature.
   * **Condensed view of lists.**
-    * When viewing the standard index page for items, FAIRDOM-SEEK now has an alternative  [condensed view]( "/help/user-guide/browsing.html" | relative_url ) that can be selected.
+    * When viewing the standard index page for items, FAIRDOM-SEEK now has an alternative  [condensed view]({{ "/help/user-guide/browsing.html" | relative_url }}) that can be selected.
     * The condensed view has collapsible items, that make it easier to view and browse more results in a single results page.
   * **Table view of lists.**
-    * When viewing the standard index page for items, there is now an alternative view that can displays [items in a table]( "/help/user-guide/browsing.html" | relative_url ).
+    * When viewing the standard index page for items, there is now an alternative view that can displays [items in a table]({{ "/help/user-guide/browsing.html" | relative_url }}).
     * By default, a small set of columns of data about the items are shown. This set can be extended and customised to include attributes related to that item type.
   * **MIAPPE support with custom metadata extensions.**
     * FAIRDOM-SEEK now adds the ability to extend entities with additional metadata attributes. The focus is currently on extending metadata for Investigations, Studies and Assays to support [MIAPPE](https://github.com/MIAPPE/MIAPPE).
@@ -516,7 +516,7 @@ This version includes:
       * pre-defined definitions for repository standards, and also
       * support for MIAPPE observed variables.
   * **Bulk changing of sharing permissions.**
-    * FAIRDOM-SEEK 1.11 adds the ability to [bulk change the sharing permissions]( "/help/user-guide/bulk-change-sharing-permission.html" | relative_url ) of many items in a single step.
+    * FAIRDOM-SEEK 1.11 adds the ability to [bulk change the sharing permissions]({{ "/help/user-guide/bulk-change-sharing-permission.html" | relative_url }}) of many items in a single step.
   * **Simplified deleting of Projects.**
     * FAIRDOM-SEEK now allows the deletion of Projects by the Project administrator, even if the project still has members.
     * The members will automatically be removed
@@ -696,10 +696,10 @@ Release data: _February 12th 2019_
 
   * **openBIS integration** has been extended and improved upon, mainly through contributions from [Tomasz Zielinski](https://fairdomhub.org/people/711)
   of [SynthSys](https://fairdomhub.org/programmes/21). The extensions include linking between Studies and openBIS Experiments, and Assays and openBIS Objects.
-  Automation has also been added to automatically detect and synchronise new items. For more information please read our [Guide for using openBIS with SEEK]( "/help/user-guide/openbis.html" | relative_url ).
+  Automation has also been added to automatically detect and synchronise new items. For more information please read our [Guide for using openBIS with SEEK]({{ "/help/user-guide/openbis.html" | relative_url }}).
   **Note** that to use the new features, [openBIS 18.06.1 or later](https://wiki-bsse.ethz.ch/display/bis/openBIS+Download+Page) is required.
   * A new **Project Dashboard** has been added, to allow project members to view various statistics and trends, including graphs, within their project.
-  For more information please read the [Project Dashboard Guide]( "/help/user-guide/project-dashboard.html" | relative_url )
+  For more information please read the [Project Dashboard Guide]({{ "/help/user-guide/project-dashboard.html" | relative_url }})
   * **Former project members**, that have been marked as inactive within a project, are now more clearly indicated along with the date they left.
   * **Project start and end dates** can now be defined for a project, which, if defined, are displayed on the Project page.
 
@@ -781,14 +781,14 @@ Major changes include:
   * Interlinking the [**ELIXIR Norwegian e-Infrastructure for Life Sciences (NeLS)**](https://nels.bioinfo.no/) with the SEEK platform.
  This will provide NeLS and SEEK users with unprecedented opportunities for storing, sharing,
  and archiving of data in ways that comply with the FAIR principles.
-  * Our second installment of our [**JSON API**]( "/help/user-guide/api.html" | relative_url ), in particular to include support for **writing** and submitting new entries in SEEK.
+  * Our second installment of our [**JSON API**]({{ "/help/user-guide/api.html" | relative_url }}), in particular to include support for **writing** and submitting new entries in SEEK.
     Most write abilities are now available through the API including creating Datafiles, SOPs, Models,
     Investigation, Studies and Assays and linking them together. More details about the api can be found in the
-    [API Guide]( "/help/user-guide/api.html" | relative_url ), with more technical details found in the [JSON API Overview]( "/tech/api/index.html" | relative_url )
+    [API Guide]({{ "/help/user-guide/api.html" | relative_url }}), with more technical details found in the [JSON API Overview]({{ "/tech/api/index.html" | relative_url }})
   * Changes to the  **DataFiles upload workflow**, along with better RightField template support. The flow has been changed such that the
  file is registered before providing additional details. This allows information to be extracted and details automatically populated where
  possible. The supported templates are now provided as part of the templates generated for Sample Types, but will soon be available more widely.
-  * DataFile metadata is now provided through a [**Wizard**]( "/help/user-guide/data-file-upload-wizard.html" | relative_url ), split into logical steps, that can easily be stepped through.
+  * DataFile metadata is now provided through a [**Wizard**]({{ "/help/user-guide/data-file-upload-wizard.html" | relative_url }}), split into logical steps, that can easily be stepped through.
   * Assays can be created and linked to the DataFile being submitted as part of the same process. This can either be manual or from the details provided within
  a template.
   * Support for a new **Document** asset type. This is to represent general documents that do not fit as other asset types - such as
@@ -834,7 +834,7 @@ This is quite a large release, and the main highlights include:
   * Our first released version of our **JSON API**. This has been built to conform to the [JSON API](https://jsonapi.org) specification,
     and is documented on [SwaggerHub](https://app.swaggerhub.com/apis/FAIRDOM/SEEK/0.1).
     This read API has been developed in conjuction with, and feeds into, a write API which will be released incrementally
-    in subsequent releases. For more details please read [API]( "/help/user-guide/api.html" | relative_url ).
+    in subsequent releases. For more details please read [API]({{ "/help/user-guide/api.html" | relative_url }}).
   * Incorporating the new **[JERM 2 ontology](https://jermontology.org)**, along with updates and extensions to the RDF produced by
     SEEK.
   * **Migrated legacy sharing permissions**: Given registration for SEEK is open to anyone,
@@ -922,7 +922,7 @@ A full list of changes included in this release can be found in the [SEEK v1.3.1
 
 Release date: _March 17th 2017_
 
-![new_sharing_matrix]( "/images/release-notes/openbis.png" | relative_url )
+![new_sharing_matrix]({{ "/images/release-notes/openbis.png" | relative_url }})
 
 This is the first public release that supports [openBIS](https://openbis.ch/) integration. This version includes
 
@@ -931,16 +931,16 @@ This is the first public release that supports [openBIS](https://openbis.ch/) in
   * Browse and download individual DataSet files, or download as a whole zip file.
   * Search indexing of registered openBIS DataSets
   * Automatic synchronisation with openBIS spaces and DataSets
-  * An [openSEEK bundle]( "/tech/openseek.html" | relative_url ) that provides both SEEK and openBIS through Docker and Docker Compose.
+  * An [openSEEK bundle]({{ "/tech/openseek.html" | relative_url }}) that provides both SEEK and openBIS through Docker and Docker Compose.
   * A new UI for setting sharing permissions
     * Now displays a matrix for easier setting and viewing of individual permissions, replacing the pre-canned options
     that weren't always that intuitive or logical.
 
-![new_sharing_matrix]( "/images/release-notes/sharing-1.3.0.png" | relative_url ){:.screenshot}
+![new_sharing_matrix]({{ "/images/release-notes/sharing-1.3.0.png" | relative_url }}){:.screenshot}
 
-Details on how to use openBIS with SEEK is available in our [User Guide]( "/help/user-guide/openbis.html" | relative_url )
+Details on how to use openBIS with SEEK is available in our [User Guide]({{ "/help/user-guide/openbis.html" | relative_url }})
 
-A full list of changes included in this release can be found in the [SEEK v1.3.0 release notes]( "/release-notes-1.3.0.html" | relative_url ).
+A full list of changes included in this release can be found in the [SEEK v1.3.0 release notes]({{ "/release-notes-1.3.0.html" | relative_url }}).
 
 ## Version 1.2.2
 
@@ -991,7 +991,7 @@ Large update with many new features and improvements, in particular a new approa
     * This new framework now has possibility to support the SampleTab standard, allowing SEEK to deposit to the EBI Biosamples registry
     * A more flexible approach to handling Samples was an important requirement for full openBIS integration.
     * It is a framework that can be built upon and enhanced according to user needs in future versions.
-    * There is documentation available in our [SEEK Samples User Guide]( "/help/user-guide/samples.html" | relative_url )
+    * There is documentation available in our [SEEK Samples User Guide]({{ "/help/user-guide/samples.html" | relative_url }})
   * An improved Graphical and interactive ISA graph viewer. It now contains all details but expands as the user interacts
   with it, avoiding the problem of over-complex graphs. A tree view is also now available to navigate the graph,
   which includes the Programmes and Projects. A full view of the graph is available if necessary.
@@ -1004,7 +1004,7 @@ Large update with many new features and improvements, in particular a new approa
    different versions and can be run either as a single container or multiple micro-services split across different containers.
   Handles upgrades and persistent data. Docker allows SEEK to be setup and run with a single command. This our expected
   approach to simple packaging of SEEK with openBIS.
-    * Documentation on using SEEK with Docker is available in our [Docker Guide]( "/tech/docker.html" | relative_url )
+    * Documentation on using SEEK with Docker is available in our [Docker Guide]({{ "/tech/docker.html" | relative_url }})
   * A Project administrator may now specify the default license for their project which is automatically selected when creating a new item, but can be changed by the user if necessary.
   * Improved usability of adding new Publications from a DOI or PubmedID
   * Arbitrary URL schemes for remote files, that can be handled outside of SEEK. For example, and scp:// url could be
@@ -1045,7 +1045,7 @@ Release date: _June 15th 2016_
       * New logos for Investigation, Study and Assays
       * New logos badges for the different roles
   * Support for Programmes to define funding codes
-  * Licensing of assets. Existing assets will default to 'No License'. For more information please visit [Licenses]( "/help/user-guide/licenses.html" | relative_url )
+  * Licensing of assets. Existing assets will default to 'No License'. For more information please visit [Licenses]({{ "/help/user-guide/licenses.html" | relative_url }})
   * Ability to publish and create Research Object snapshots for Studies and Assays, along with assigning a DOI. Previously only the larger Investigation package was supported
   * Display storage usage information for Programmes and Projects, visible to administrators.
 
@@ -1123,14 +1123,14 @@ Release date: _December 8th 2015_
 * Biosample support has been deprecated and disabled.
 * Biosamples will be improved and reimplemented as our next major feature change.
 * Biosamples can be re-enabled by an administrator.
-* If you currently use the Biosamples that was available in SEEK please [contact us]( "/contacting-us.html" | relative_url ).
+* If you currently use the Biosamples that was available in SEEK please [contact us]({{ "/contacting-us.html" | relative_url }}).
 
 ### Help pages link
 
 * Help pages can now be hosted externally and an administrator can point to the source of them.
 * From past experience, we find it much easier to maintain and update our own Help pages and documentation outside of SEEK, allowing us to expand and improve on them between releases.
-* Our documentation will now be published and maintained using GitHub pages making it easier to maintain between versions and receive [Contributions]( "/tech/contributing" | relative_url ).
-* Internal help pages are currently still available, but could be deprecated in a future release. If you edit your own internal pages please [contact us]( "/contacting-us" | relative_url ).
+* Our documentation will now be published and maintained using GitHub pages making it easier to maintain between versions and receive [Contributions]({{ "/tech/contributing" | relative_url }}).
+* Internal help pages are currently still available, but could be deprecated in a future release. If you edit your own internal pages please [contact us]({{ "/contacting-us" | relative_url }}).
 
 ### Miscellaneous
 

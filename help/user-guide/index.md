@@ -22,14 +22,14 @@ Please contact your local instance admin for more information.
 
 ## Archived help pages
 
-All other pages have been [archived]( "/help/archived" | relative_url ) and may not provide current information.
+All other pages have been [archived]({{ "/help/archived" | relative_url }}) and may not provide current information.
 They are organised into sections for data and model annotations, controlled vocabularies and JERM.
 
 ## Contributing
 
 There are many ways in which you can contribute to the SEEK software, these documents or our [FAIRDOM](https://fair-dom.org) project.
 
-If you are interested in contributing please visit our [Contributors guide]( "/tech/contributing" | relative_url ).
+If you are interested in contributing please visit our [Contributors guide]({{ "/tech/contributing" | relative_url }}).
 
 
 <!-- THE FOLLOWING IS REPLACED BY THE SIDEBAR:

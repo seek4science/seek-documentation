@@ -17,7 +17,7 @@ Project specific roles:
 
 Here is a summary of the capabilities of each role.
 
-![Roles 1]( "/images/user-guide/roles_1.png" | relative_url ){:.screenshot}
+![Roles 1]({{ "/images/user-guide/roles_1.png" | relative_url }}){:.screenshot}
 
 ## Programme administrator
 
@@ -54,7 +54,7 @@ The item will not become available until the asset gatekeeper has approved it.
 
 Gatekeepers can access a list of publishing requests by clicking the menu "My profile" and then the button "Assets you are Gatekeeping".
 
-![gatekeeper gatekeeping]( "/images/user-guide/gatekeeper_gatekeeping.png" | relative_url ){:.screenshot}
+![gatekeeper gatekeeping]({{ "/images/user-guide/gatekeeper_gatekeeping.png" | relative_url }}){:.screenshot}
 
 Gatekeepers are granted permission to view the items in question (if they don't already have it),
 so that they can decide whether to approve or reject the request.
@@ -90,7 +90,7 @@ This applies to both items that have been created before and after the gatekeepe
 
 You can access a list of the items you have requested to be published by clicking the menu "My profile" and then the button "Assets awaiting approval".
 
-![gatekeeper awaiting approval]( "/images/user-guide/gatekeeper_awaiting_approval.png" | relative_url ){:.screenshot}
+![gatekeeper awaiting approval]({{ "/images/user-guide/gatekeeper_awaiting_approval.png" | relative_url }}){:.screenshot}
 
 This allows you to monitor whether the gatekeeper has made a decision on your items or not.
 If an item was rejected, you will be able to see the gatekeeper's comments from this list.

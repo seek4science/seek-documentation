@@ -8,7 +8,7 @@ redirect_from: "/earlier-upgrades.html"
 **Also if upgrading from a Mercurial based SEEK to our Git one, please contact
 us. Mercurial versions of SEEK are only available up to v0.21.**
 
-You can find details on how to contact us at the [Contact Page]( "/contacting-us" | relative_url )
+You can find details on how to contact us at the [Contact Page]({{ "/contacting-us" | relative_url }})
 
 When upgrading between versions greater than v0.11.x you need to upgrade to
 each released minor version in order incrementally (i.e. 0.13.x -> 0.14.x ->
@@ -981,7 +981,7 @@ If you are running a production SEEK behing Apache, then move onto the next part
 
 If you are running SEEK with Passenger, it is likely you will need to upgrade Passenger and your Apache or Ngninx configuration.
 
-Please read [Serving SEEK through Apache]( "/tech/install-production#serving-seek-through-apache" | relative_url ) for a reminder
+Please read [Serving SEEK through Apache]({{ "/tech/install-production#serving-seek-through-apache" | relative_url }}) for a reminder
 on how to install the new version, and update your virtual host configuration accordingly.
 
 ### Note on Search results
