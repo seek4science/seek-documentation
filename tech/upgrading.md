@@ -80,7 +80,7 @@ unpack this file using:
 
     tar zxvf seek-1.16.2.tar.gz
     mv seek seek-previous
-    mv seek-1.16.1 seek
+    mv seek-1.16.2 seek
     cd seek/
 
 and then copy across your existing filestore and database configuration file
