@@ -56,3 +56,11 @@ p:has(img.screenshot) {
 main .fa-solid {
     color: $secondary;
 }
+
+
+/*-----Top navigation-----*/
+
+.navbar-nav .nav-item > a.active {
+    background-color: $primary;
+    color: white;
+}
