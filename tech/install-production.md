@@ -1,5 +1,5 @@
 ---
-title: Installing SEEK in a production environment
+title: Installing FAIRDOM-SEEK in a production environment
 redirect_from: "/install-production.html"
 ---
 

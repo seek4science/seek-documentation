@@ -1,5 +1,5 @@
 ---
-title: Administration of SEEK
+title: Administration of FAIRDOM-SEEK
 redirect_from: "/administration.html"
 ---
 

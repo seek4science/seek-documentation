@@ -1,5 +1,5 @@
 ---
-title: Contributing to SEEK
+title: Contributing to FAIRDOM-SEEK
 redirect_from: "/contributing-to-seek.html"
 ---
 

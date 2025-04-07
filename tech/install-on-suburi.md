@@ -1,5 +1,5 @@
 ---
-title: Installing SEEK under a sub URI
+title: Installing FAIRDOM-SEEK under a sub URI
 redirect_from: "/install-on-suburi.html"
 ---
 

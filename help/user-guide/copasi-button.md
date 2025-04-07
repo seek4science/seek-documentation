@@ -1,5 +1,5 @@
 ---
-title: Using Copasi in SEEK
+title: Using Copasi in FAIRDOM-SEEK
 ---
 
 You can download a public SBML format **model** to a locally installed Copasi application and start the simulation in Copasi.

@@ -1,5 +1,5 @@
 ---
-title: Installing SEEK
+title: Installing FAIRDOM-SEEK
 redirect_from: "/install.html"
 ---
 
