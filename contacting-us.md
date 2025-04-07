@@ -26,11 +26,3 @@ For community related questions, you can use [community@fair-dom.org](mailto:com
 Bugs and feature requests can be reported through [GitHub Issues](https://fair-dom.org/issues).
 
 For more details and guidelines please visit [Reporting Bugs and raising Feature Requests]({{ "/tech/reporting-bugs-and-features" | relative_url }}).
-
-## Google groups
-
-We have 2 Google Groups. These groups are open to anonymous queries, you don't have to be a group member to submit a query.
-
-* For technical or development related queries please use [SEEK Developers Group](https://groups.google.com/group/seek-developers).
-* For general queries, or queries about using SEEK please us [Seek4Science Group](https://groups.google.com/group/seek4science).
-
