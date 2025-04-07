@@ -1,5 +1,5 @@
 ---
-title: Minimum metadata guidelines for SEEK
+title: Minimum metadata guidelines for FAIRDOM-SEEK
 redirect_from: "/metadata-guidelines.html"
 ---
 

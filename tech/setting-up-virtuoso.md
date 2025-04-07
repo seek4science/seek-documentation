@@ -1,5 +1,5 @@
 ---
-title: Configuring SEEK for Virtuoso
+title: Configuring FAIRDOM-SEEK for Virtuoso
 redirect_from: "/setting-up-virtuoso.html"
 ---
 

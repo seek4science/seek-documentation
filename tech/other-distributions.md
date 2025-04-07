@@ -1,5 +1,5 @@
 ---
-title: Installing SEEK for other Linux distributions
+title: Installing FAIRDOM-SEEK for other Linux distributions
 redirect_from: "/other-distributions.html"
 ---
 

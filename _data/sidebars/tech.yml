@@ -9,7 +9,7 @@ subitems:
     subitems:
       - title: Contributing introduction
         url: /tech/contributing
-      - title: Contributing to SEEK
+      - title: Contributing to FAIRDOM-SEEK
         url: /tech/contributing-to-seek
       - title: Reporting Bugs and raising Feature Requests
         url: /tech/reporting-bugs-and-features
@@ -19,13 +19,13 @@ subitems:
         url: /tech/style-guide
   - title: Installing
     subitems:
-      - title: Installing SEEK
+      - title: Installing FAIRDOM-SEEK
         url: /tech/install
-      - title: Installing SEEK for other Linux distributions
+      - title: Installing FAIRDOM-SEEK for other Linux distributions
         url: /tech/other-distributions
-      - title: Installing SEEK in a production environment
+      - title: Installing FAIRDOM-SEEK in a production environment
         url: /tech/install-production
-      - title: Installing SEEK under a sub URI
+      - title: Installing FAIRDOM-SEEK under a sub URI
         url: /tech/install-on-suburi
       - title: Setting up the Apache Solr Search Engine
         url: /tech/setting-up-solr
@@ -45,15 +45,15 @@ subitems:
         url: /tech/docker/building-images
   - title: Administering
     subitems:
-      - title: Administration of SEEK
+      - title: Administration of FAIRDOM-SEEK
         url: /tech/administration
       - title: Providing your own Assay and Technology types
         url: /tech/assay-types
-      - title: Backing up SEEK
+      - title: Backing up FAIRDOM-SEEK
         url: /tech/backups
       - title: Upgrading
         subitems:
-          - title: Upgrading SEEK
+          - title: Upgrading FAIRDOM-SEEK
             url: /tech/upgrading
           - title: Upgrades between earlier versions
             url: /tech/earlier-upgrades
@@ -61,7 +61,7 @@ subitems:
         url: /tech/investigation-checksum
 #      - title: openSEEK
 #        url: /tech/openseek
-      - title: Configuring SEEK for Virtuoso
+      - title: Configuring FAIRDOM-SEEK for Virtuoso
         url: /tech/setting-up-virtuoso
 #      - title: Using Teaspoon
 #        url: /tech/using-teaspoon

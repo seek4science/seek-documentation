@@ -1,5 +1,5 @@
 ---
-title: Using SEEK with openBIS
+title: Using FAIRDOM-SEEK with openBIS
 ---
 
 ## Enabling openBIS in SEEK

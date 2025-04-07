@@ -1,5 +1,5 @@
 ---
-title: "Transcriptomics: Guidelines for SEEK templates"
+title: "Transcriptomics: Guidelines for FAIRDOM-SEEK templates"
 redirect_from: "/transcriptomics-guidelines.html"
 ---
 
