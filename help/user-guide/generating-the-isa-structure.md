@@ -26,13 +26,13 @@ A study is a particular biological hypothesis or analysis. Multiple studies can 
 
 A study is described and linked using the following fields:
 
-* [Title](general-attributes.html#title)
-* [Description](general-attributes.html#description)
-* [Experimentalists](general-attributes.html#experimentalists)
-* [Investigation details](general-attributes.html#investigation-details)
-* [Creators](general-attributes.html#creators)
-* [Sharing](general-attributes.html#sharing)
-* [Publications](general-attributes.html#publications)
+* [Title](general-attributes#title)
+* [Description](general-attributes#description)
+* [Experimentalists](general-attributes#experimentalists)
+* [Investigation details](general-attributes#investigation-details)
+* [Creators](general-attributes#creators)
+* [Sharing](general-attributes#sharing)
+* [Publications](general-attributes#publications)
 
 ## Creating an experimental assay
 An assay is in general an experiment that converts either a material or data sample, into a new material or data sample, via a protocol. Multiple assays can be connected to a Study. Experimental assays refer specifically to laboratory assays. You can select to make an experimental assay by selecting assay from the create menu at the top of the SEEK.
@@ -45,19 +45,19 @@ You can then choose an assay type. Select experimental assay.
 
 A experimental assay is described and linked using the following fields:
 
-* [Title](general-attributes.html#title)
-* [Description](general-attributes.html#description)
-* [Study](general-attributes.html#study)
-* [Assay Type](general-attributes.html#assay-type)
-* [Technology Type](general-attributes.html#technology-type)
-* [Organisms](general-attributes.html#organisms)
-* [Creators](general-attributes.html#creators)
-* [Sharing](general-attributes.html#sharing)
-* [Tags](general-attributes.html#tags)
-* [Creators](general-attributes.html#creators)
-* [SOPs](general-attributes.html#sops)
-* [Data Files](general-attributes.html#data-files)
-* [Publications](general-attributes.html#publications)
+* [Title](general-attributes#title)
+* [Description](general-attributes#description)
+* [Study](general-attributes#study)
+* [Assay Type](general-attributes#assay-type)
+* [Technology Type](general-attributes#technology-type)
+* [Organisms](general-attributes#organisms)
+* [Creators](general-attributes#creators)
+* [Sharing](general-attributes#sharing)
+* [Tags](general-attributes#tags)
+* [Creators](general-attributes#creators)
+* [SOPs](general-attributes#sops)
+* [Data Files](general-attributes#data-files)
+* [Publications](general-attributes#publications)
 
 ## Creating a modelling analysis
 An assay is in general an experiment that converts either a material or data sample, into a new material or data sample, via a protocol. Multiple assays can be connected to a Study. Modelling analysis refer specifically to simulations (in silico experiments) of models. You can select to make an modelling analysis by selecting assay from the create menu at the top of the SEEK.
@@ -70,15 +70,15 @@ You can then choose an assay type. Select modelling analysis.
 
 A modelling assay is described and linked using the following fields:
 
-* [Title](general-attributes.html#title)
-* [Description](general-attributes.html#description)
-* [Study](general-attributes.html#study)
-* [Biological Problem Addressed](general-attributes.html#biological-problem-addressed)
-* [Organisms](general-attributes.html#organisms)
-* [Creators](general-attributes.html#creators)
-* [Sharing](general-attributes.html#sharing)
-* [Tags](general-attributes.html#tags)
-* [Creators](general-attributes.html#creators)
-* [SOPs](general-attributes.html#sops)
-* [Data Files](general-attributes.html#data-files)
-* [Publications](general-attributes.html#publications)
+* [Title](general-attributes#title)
+* [Description](general-attributes#description)
+* [Study](general-attributes#study)
+* [Biological Problem Addressed](general-attributes#biological-problem-addressed)
+* [Organisms](general-attributes#organisms)
+* [Creators](general-attributes#creators)
+* [Sharing](general-attributes#sharing)
+* [Tags](general-attributes#tags)
+* [Creators](general-attributes#creators)
+* [SOPs](general-attributes#sops)
+* [Data Files](general-attributes#data-files)
+* [Publications](general-attributes#publications)

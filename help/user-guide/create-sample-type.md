@@ -67,7 +67,7 @@ controlled vocabulary or reuse and existing one. In the future we will be adding
 
 The attribute type selected dictates the value would be accepted, and also influences how it is displayed for the Sample
 
-If you feel an attribute type is missing, it can usually be easily added so please [Contact Us]({{ "/contacting-us.html" | relative_url }})
+If you feel an attribute type is missing, it can usually be easily added so please [Contact Us]({{ "/contacting-us" | relative_url }})
 
 At least one of the attributes must be required and marked as the title. This is the attribute shown in certain views or lists within SEEK.
 Other attributes can be also be marked as required if need be.
@@ -86,10 +86,10 @@ When creating the sample type, first choose the tab _Use spreadsheet template_
 
 On the initial Sample Template page you can include the following metadata:
 
-* [Title](general-attributes.html#title)
-* [Description](general-attributes.html#description)
-* [Projects](general-attributes.html#projects)
-* [Tags](general-attributes.html#tags)
+* [Title](general-attributes#title)
+* [Description](general-attributes#description)
+* [Projects](general-attributes#projects)
+* [Tags](general-attributes#tags)
 
 and then also select Choose File to select a sample template to upload:
 
@@ -124,6 +124,4 @@ The Sample Type may be edited by the original creator, or somebody that can admi
 If no samples have yet been created, you can freely edit the Sample Type and its attributes. Once Samples have been created for a Sample Type, it is no longer possible to modify the attributes - however other details about the Sample Type can be changed.
 
 
-For details on how to create a Sample please go to [Creating a Sample](create-sample.html)
-
-
+For details on how to create a Sample please go to [Creating a Sample](create-sample)
