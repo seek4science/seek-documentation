@@ -4,6 +4,6 @@ subitems:
 - title: About
   url: /get-seek
 - title: User Guide
-  url: /help/user-guide/
+  url: /help/user-guide
 - title: Technical References
-  url: /tech/
+  url: /tech
