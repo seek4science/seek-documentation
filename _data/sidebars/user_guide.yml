@@ -6,7 +6,7 @@ subitems:
     - title: Definitions
       url: /help/user-guide/definitions
     - title: Browsing content
-      url: /help/user-guide/browsing 
+      url: /help/user-guide/browsing
   - title: Profile
     description: Registering and logging into FAIRDOM-SEEK, managing your account and identities, editing your profile.
     subitems:
@@ -40,7 +40,7 @@ subitems:
     #hr: true
     title: Yellow Pages/Directory
     description: Directory of common project tasks.
-    subitems: 
+    subitems:
       - title: "Programme"
         subitems:
         - title: Creating and managing your own Programmes
@@ -65,7 +65,7 @@ subitems:
     #hr: true
     title: Experiments
     description: Generating the ISA structure, designing an ISA-JSON compliant experiment, making items citable.
-    subitems: 
+    subitems:
     - title: Introduction to the ISA structure
       subitems:
       - title: Visualising ISA structure in FAIRDOM-SEEK
@@ -76,25 +76,25 @@ subitems:
       url: /help/user-guide/isa-json-compliant-experiment
     - hr: true
     - title: Investigations
-      subitems: 
+      subitems:
       - title: Creating an ISA-JSON compliant investigation
         url: /help/user-guide/investigations
       - title: Export experiments as ISA-JSON
         url: /help/user-guide/exporting-experiments-as-isajson
     - title: Studies
-      subitems: 
+      subitems:
       - title: Creating an ISA-JSON compliant study
         url: /help/user-guide/studies
       - title: Export experiments as ISA-JSON
         url: /help/user-guide/exporting-experiments-as-isajson
     - title: Assays
-      subitems: 
+      subitems:
       - title: Creating an ISA-JSON compliant assay
         url: /help/user-guide/assays
       - title: Export experiments as ISA-JSON
         url: /help/user-guide/exporting-experiments-as-isajson
     - title: Experiment Sample Templates
-      subitems: 
+      subitems:
       - title: Creating Experiment Sample Templates
         url: /help/user-guide/isajson-templates
       - title: Browse samples by Experiment Sample Template
@@ -106,21 +106,21 @@ subitems:
     subitems:
     - title: Adding assets (data, models, SOPs, publications)
       url: /help/user-guide/adding-assets
-    - title: Data files 
+    - title: Data files
       subitems:
       - title: Data file wizard
         url: /help/user-guide/data-file-upload-wizard
     - title: Models
       subitems:
 #     - title: Models
-#       url: 
+#       url:
       - title: Simulate a model on JWS Online
         url: /help/user-guide/simulate-on-jws-online
       - title: Comparing two versions of a Model
         url: /help/user-guide/model-comparison
     - title: SOPs
       url: /help/user-guide/sops
-    - title: Publications 
+    - title: Publications
       url: /help/user-guide/publications
     - title: Collections
       url: /help/user-guide/collections
@@ -153,7 +153,7 @@ subitems:
       subitems:
       - title: Create a Sample Type
         url: /help/user-guide/create-sample-type
-    - title: Samples 
+    - title: Samples
       subitems:
       - title: Create a Sample
         url: /help/user-guide/create-sample
@@ -164,7 +164,7 @@ subitems:
   -
     #hr: true
     title: General attributes and links
-    description: How to change the many attributes such as titles, types, attributions, licenses. 
+    description: How to change the many attributes such as titles, types, attributions, licenses.
     subitems:
     - title: General attributes and links
       url: /help/user-guide/general-attributes
@@ -176,7 +176,7 @@ subitems:
 
 #    - title: "[Extended metadata]"
 #      url: ""
-  - 
+  -
     #hr: true
     title: Integrations
     description: Using FAIRDOM-SEEK and openBIS or Copasi, compliance with ISA-JSON schemas.
