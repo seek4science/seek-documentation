@@ -28,12 +28,12 @@ defaults:
     scope:
       path: "help"
     values:
-      sidebar: userguide
+      sidebar: user_guide
   -
     scope:
       path: "tech"
     values:
-      sidebar: tech
+      sidebar: technical_references
 
 theme_variables: 
   #git_host: GitHub
