@@ -51,7 +51,7 @@ The Attributes table can be used to customise the Study Sources table. However, 
 ![create isastudy source 3](/images/user-guide/isajson-compliance/create_isastudy_source_3.png){:.screenshot}
 
 ### 1.2 Link the sampling Protocol 
-Select Protocols already registered in the platform that describe the used method or procedure (SOP) used to collect Samples from Sources in your Study (Samples collection protocol). See how to [create an SOP](adding-assets) in SEEK.
+Select Protocols already registered in the platform that describe the used method or procedure (SOP) used to collect Samples from Sources in your Study (Samples collection protocol). See how to [create an SOP](sops) in SEEK.
 
 ### 1.3 Design a Samples table for Study Samples
 
@@ -63,7 +63,7 @@ Upon creation, the newly designed ISA Study will appear in the tree view on the 
 ## 2. Adding Sources to ISA Study
 After you have designed the Sources table, you can then start by creating and describing your Study Sources according to the designed table.
 
-Follow the link to know how to [create samples in ISA-JSON compliant experiments](create-sample-isajson-compliant), including [Study Sources](create-sample-isa-json-compliant#create-study-sources).
+Follow the link to know how to [create samples in ISA-JSON compliant experiments](create-sample-isajson-compliant), including Study Sources.
 
 ## 3. Adding Samples to ISA Study
 
