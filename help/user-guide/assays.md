@@ -18,7 +18,7 @@ In the context of an ISA-JSON compliant experiment, we use the terms ISA Investi
 * Fill out the provided form as explained below.
 
 ### 2.1 Link the sampling Protocol 
-Select Protocols already registered in the platform that describe the used method or procedure (SOP) applied to the Assay. See how to [create an SOP](adding-assets) in SEEK.
+Select Protocols already registered in the platform that describe the used method or procedure (SOP) applied to the Assay. See how to [create an SOP](sops) in SEEK.
 
 ### 2.2 Design a Samples table for Assay
 
