@@ -14,6 +14,8 @@ In SEEK, an Investigation becomes an ISA-JSON compliant Investigation (or ISA In
 
 ![select isajson compliance]({{ "/images/user-guide/isajson-compliance/select_isajson_compliance.png" | relative_url }}){:.screenshot}
 
+For a step-by-step description on how to set up ISA-JSON compliant Investigation, see [Creating an ISA-JSON compliant Investigation](investigations).
+
 ## ISA Study
 
 ISA Study can only be associated to an ISA Investigation. It is not possible to associate an ISA Study to an Investigation which is not ISA-JSON compliant.
@@ -25,6 +27,8 @@ An ISA Study is a central unit that must contain the description (metadata) of:
 2. *Protocol* - samples collection protocol, SOP or materials and methods describing the sampling process from Source (e.g. leaves harvesting, biopsy procedure, aliquoting).
 
 3. *Sample(s)* - the physical material which results from the sampling protocol (e.g. leaves, biopsies, aliquotes).
+
+For a step-by-step description on how to set up ISA-JSON compliant Study, see [Creating an ISA-JSON compliant Study](studies).
 
 ## Assay Stream
 An Assay Stream constitutes a structured sequence of sequential assays, interconnected through the flow of samples. Within an Assay Stream, the sample output of one assay serves as the input for the subsequent one. Each Assay Stream aligns with a single Assay in the ISA metadata framework. It is typically associated with one specific technology or technique, such as Metabolomics or Sequencing.
@@ -49,6 +53,7 @@ The outputs of an Assay can only be used as inputs by the next Assay in the same
 * physical materials (e.g. nucleic acids extracts, RNA libraries) generated from an experimental step;
 * data files (e.g. files containing measurements, rawdata.fastq, processed data, reads.counts.txt).
 
+For a step-by-step description on how to set up ISA-JSON compliant Assay, see [Creating an ISA-JSON compliant Assay](assays).
 
 ## Experiment Sample Templates
 
