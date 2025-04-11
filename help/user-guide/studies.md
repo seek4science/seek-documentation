@@ -28,13 +28,13 @@ The Study Sources table is a Sample Type associated with the Study and can only 
 
 * Choose one Experiment Sample Templates by clicking on "Existing Experiment Sample Templates" button.
 
-![create isastudy source 1](/images/user-guide/isajson-compliance/create_isastudy_source_1.png){:.screenshot}
+![create isastudy source 1]({{ "/images/user-guide/isajson-compliance/create_isastudy_source_1.png" | relative_url }}){:.screenshot}
 
 * Filter existing Experiment Sample Templates based on:
   * the repository that will store metadata about your Study Sources (e.g. ENA, ArrayExpress or your institutional repository). Select "Project specific templates" if you want to use a template made for or by a specific Project
   * organism
 
-![create isastudy source 2](/images/user-guide/isajson-compliance/create_isastudy_source_2.png){:.screenshot}
+![create isastudy source 2]({{ "/images/user-guide/isajson-compliance/create_isastudy_source_2.png" | relative_url }}){:.screenshot}
 
 * Choose a template from the resulting dropdown menu.
 * Select "Apply".
@@ -48,9 +48,9 @@ The Attributes table can be used to customise the Study Sources table. However, 
 * Fill out the mandatory and optional fields. Note that for ISA-JSON compliant Experiments, the ISA Tag is a mandatory field.
 * For ISA tag, select "source_characteristic". Note that selecting "source" would generate an error since a "source" is already selected in the starting template.
 
-![create isastudy source 3](/images/user-guide/isajson-compliance/create_isastudy_source_3.png){:.screenshot}
+![create isastudy source 3]({{ "/images/user-guide/isajson-compliance/create_isastudy_source_3.png" | relative_url }}){:.screenshot}
 
-### 1.2 Link the sampling Protocol 
+### 1.2 Link the sampling Protocol
 Select Protocols already registered in the platform that describe the used method or procedure (SOP) used to collect Samples from Sources in your Study (Samples collection protocol). See how to [create an SOP](sops) in SEEK.
 
 ### 1.3 Design a Samples table for Study Samples
