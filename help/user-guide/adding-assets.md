@@ -31,7 +31,7 @@ Assets in SEEK can be described using a number of fields, for example:
 * [Tags](general-attributes#tags)
 * [Attributions](general-attributes#attributions)
 * [Creators](general-attributes#creators)
-* [SOPs](general-attributes#sops)
+* [SOPs](sops)
 * [Data files](general-attributes#data-files)
 * [Publications](publications)
 * [Experimental assays and Modelling analysis](general-attributes#experimental-assays-and-modelling-analysis)
