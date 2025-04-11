@@ -1,5 +1,5 @@
 ---
-title: Asssays
+title: Assays
 ---
 
 The [ISA metadata framework](https://isa-specs.readthedocs.io/en/latest/isamodel.html) requires the description (metadata) of different types of samples, namely Study Sources, Study Samples and Assay Samples. This description is based on customisable Experiment Sample Templates and includes the linking of applied Protocols. Follow the link for an overview about [ISA-JSON compliant experiments](isa-json-compliant-experiment.html).
@@ -17,8 +17,8 @@ In the context of an ISA-JSON compliant experiment, we use the terms ISA Investi
 * Select an Assay Stream, then click on "Design Assay" button at the top right corner of the page.
 * Fill out the provided form as explained below.
 
-### 2.1 Link the sampling Protocol 
-Select Protocols already registered in the platform that describe the used method or procedure (SOP) applied to the Assay. See how to [create an SOP](adding-assets) in SEEK.
+### 2.1 Link the sampling Protocol
+Select Protocols already registered in the platform that describe the used method or procedure (SOP) applied to the Assay. See how to [create an SOP](sops) in SEEK.
 
 ### 2.2 Design a Samples table for Assay
 
@@ -39,7 +39,7 @@ The Assay Samples table is a Sample Type associated with the Assay and can only 
     * assay - data file: if the output of the assays are digital data files
   * organism
 
-![create isaassay 2](/images/user-guide/isajson-compliance/create_isaassay_2.png){:.screenshot}
+![create isaassay 2]({{ "/images/user-guide/isajson-compliance/create_isaassay_2.png" | relative_url }}){:.screenshot}
 
 * Choose a template from the resulting dropdown menu.
 * Select "Apply".
@@ -51,17 +51,17 @@ The Attributes table can be used to customise the Assay Samples table. However, 
 
 * If you want to add new attributes of your choice to your Samples table, select “Add new attribute” button.
 * Fill out the mandatory and optional fields. Note that for ISA-JSON compliant Experiments, the ISA Tag is a mandatory field.
-* For ISA tag, select 
+* For ISA tag, select
   * in case of ISA Level "assay - material": "other_material_characteristic" or "parameter_value";
   * in case of ISA Level "assay - data file": "data_file_comment" or "parameter_value";
-  
+
   Note that selecting any other options would generate an error since other options are already selected in the starting template.
 
-![create isaassay 3](/images/user-guide/isajson-compliance/create_isaassay_3.png){:.screenshot}
+![create isaassay 3]({{ "/images/user-guide/isajson-compliance/create_isaassay_3.png" | relative_url }}){:.screenshot}
 
 ### 2.3 Visualise ISA Assay
 Upon creation, the newly designed ISA Assay will appear in the tree view on the left sidebar, in Experiment View. Follow the link to know more about [Experiment View](viewing-project-in-single-page).
-    
+
 ## 3. Adding samples to ISA Assay
 Follow the link to know how to [create samples in ISA-JSON compliant experiments](create-sample-isajson-compliant), including [Assay Samples](create-sample-isajson-compliant#create-assay-samples).
 
@@ -73,8 +73,8 @@ An assay can only be deleted if it has no samples associated with it. If the ass
 If the assay is the last one in the assay stream, it can be removed without affecting the structure of the stream. If it is a midway assay (i.e., not the last assay in the assay stream), the system will automatically update the sample linkage. The input sample of the following assay will always link to the output sample of the preceding assay without requiring manual intervention. To remove, select the assay and click “Actions -> Delete ISA Assay” in the top right corner.
 
 ### 4.2 Adding an Assay
-Adding a new assay is straightforward when it follows the last assay in the stream. This is permitted even if samples are associated with the assay. Select the last assay in the assay stream, and click the “Design the next Assay” button at the top right. 
-For adding a midway assay, the next assay in the stream cannot have samples associated with it. Sample linkage is updated automatically, and no manual re-establishment is needed. To add a midway assay, select the preceding assay where you want to add an additional assay, and select “Insert a new Assay”. The new assay will be added after the selected assay. 
+Adding a new assay is straightforward when it follows the last assay in the stream. This is permitted even if samples are associated with the assay. Select the last assay in the assay stream, and click the “Design the next Assay” button at the top right.
+For adding a midway assay, the next assay in the stream cannot have samples associated with it. Sample linkage is updated automatically, and no manual re-establishment is needed. To add a midway assay, select the preceding assay where you want to add an additional assay, and select “Insert a new Assay”. The new assay will be added after the selected assay.
 
 ### 4.3 Editing an Assay
-Editing an assay follows similar rules to deletion. If an assay has associated samples, certain modifications to the metadata attributes may be restricted. However, it possible to add metadata attributes, or edit the assay’s title, description, etc.  
+Editing an assay follows similar rules to deletion. If an assay has associated samples, certain modifications to the metadata attributes may be restricted. However, it possible to add metadata attributes, or edit the assay’s title, description, etc.
