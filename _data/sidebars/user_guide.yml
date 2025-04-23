@@ -85,14 +85,10 @@ subitems:
       subitems:
       - title: Creating an ISA-JSON compliant study
         url: /help/user-guide/studies
-      - title: Export experiments as ISA-JSON
-        url: /help/user-guide/exporting-experiments-as-isajson
     - title: Assays
       subitems:
       - title: Creating an ISA-JSON compliant assay
         url: /help/user-guide/assays
-      - title: Export experiments as ISA-JSON
-        url: /help/user-guide/exporting-experiments-as-isajson
     - title: Experiment Sample Templates
       subitems:
       - title: Creating Experiment Sample Templates
