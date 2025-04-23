@@ -2,6 +2,7 @@
 title: Get FAIRDOM-SEEK
 sidebar: about
 redirect_from: "/get_seek.html"
+redirect_to: "./index#get-fairdom-seek"
 ---
 
 <i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i> FAIRDOM-SEEK is open source software, and is distributed under a [BSD License](https://github.com/seek4science/seek/blob/main/BSD-LICENSE). The source code is all available on [GitHub](https://github.com/seek4science/seek).

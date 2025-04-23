@@ -1,8 +1,6 @@
 subitems:
 - title: Home
   url: /
-- title: About
-  url: /get-seek
 - title: User Guide
   url: /help/user-guide/
 - title: Technical References

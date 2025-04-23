@@ -1,7 +1,7 @@
 ---
 title: Contacting us
-sidebar: about
 redirect_from: "/contacting_us.html"
+redirect_to: "https://fair-dom.org/contact"
 ---
 
 <i class="fa-solid fa-envelopes-bulk fa-5x"></i>
