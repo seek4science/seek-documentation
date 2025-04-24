@@ -1,5 +1,6 @@
 ---
 title: Registering in FAIRDOM-SEEK
+layout: instance-specific
 ---
 
 In order to register yourself in SEEK, you need to click the Register button in the top right hand corner of SEEK.

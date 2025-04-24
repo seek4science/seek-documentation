@@ -1,13 +1,12 @@
 ---
 title: "Transcriptomics: Guidelines for FAIRDOM-SEEK templates"
+layout: instance-specific
 redirect_from: "/transcriptomics-guidelines.html"
 ---
 
 {% assign guide_url = site.baseurl | append: '/help/user-guide' %}
 {% assign callout_content = "This guide has been archived. Please see the [user guide](" | append: guide_url | append: ") for the latest help." %}
 {% include callout.html type="warning" content=callout_content %}
-
-{% include callout.html type="note" content="This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK." %}
 
 The MIAME standard and the associated MAGE-ML format are well established in the transcriptomics community and adherence to MAGE-ML is becoming increasingly important for publishing data.
 

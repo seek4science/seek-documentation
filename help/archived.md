@@ -2,7 +2,7 @@
 title: Archived help and guidelines
 ---
 
-The FAIRDOM-SEEK help and guidelines are written for users of any FAIRDOM-SEEK instance.
+The {{ site.instance_name | default: "FAIRDOM-SEEK" }} help and guidelines are written for users of any FAIRDOM-SEEK instance.
 
 {% assign guide_url = site.baseurl | append: '/help/user-guide' %}
 {% assign callout_content = "Please see the [user guide](" | append: guide_url | append: ") for the latest help." %}

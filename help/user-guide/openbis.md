@@ -1,5 +1,6 @@
 ---
 title: Using FAIRDOM-SEEK with openBIS
+layout: instance-specific
 ---
 
 ## Enabling openBIS in SEEK
