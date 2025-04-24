@@ -47,10 +47,3 @@ If you wish to practice using FARIDOM-SEEK without disturbing any real hubs or p
         </a>
     </div>
 </div>
-
-<script type="text/javascript">
-    var pagetitle = document.getElementById("intro").querySelector("h1");
-    if (pagetitle) {
-        pagetitle.textContent = "{{ site.instance_name }} Documentation";
-    }
-</script>
