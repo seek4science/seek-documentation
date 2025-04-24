@@ -10,6 +10,7 @@ plugins:
   - jekyll-redirect-from
 
 title: "FAIRDOM-SEEK Documentation"
+instance_name: "FAIRDOM-SEEK"
 
 exclude:
  - Gemfile*
@@ -35,10 +36,10 @@ defaults:
     values:
       sidebar: technical_guide
 
-theme_variables: 
+theme_variables:
   #git_host: GitHub
   #back_to_top: true
-  #github_buttons: 
+  #github_buttons:
   #  position: top
   #  edit_me: true
   #  open_issue: true
