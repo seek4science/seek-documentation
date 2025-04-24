@@ -9,7 +9,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 
-instance_name: "FAIRDOM-SEEK"
+seek_instance:
+  name: "FAIRDOM-SEEK"
+  url: "https://fairdomhub.org"
 
 exclude:
  - Gemfile*
