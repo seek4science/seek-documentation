@@ -5,8 +5,11 @@ layout: page
 {{ content }}
 
 <script type="text/javascript">
-    let pageTitle = document.getElementById("intro").querySelector("h1");
-    if (pageTitle) {
-        pageTitle.innerHTML = pageTitle.innerHTML.replace(/FAIRDOM-SEEK/g, "{{ site.seek_instance.name }}");
+    let introElement = document.getElementById("intro");
+    if (introElement) {
+        let pageTitle = introElement.querySelector("h1");
+        if (pageTitle) {
+            pageTitle.innerHTML = pageTitle.innerHTML.replace(/FAIRDOM-SEEK/g, "{{ site.seek_instance.name }}");
+        }
     }
 </script>
