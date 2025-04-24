@@ -381,7 +381,7 @@ To apply LifeMonitor algorithm to workflows.
 ### NeLS
 To enable linking of datasets stored in the Norwegian e-infrastructure for Life Sciences (NeLS), as well as upload and access of datasets to/from NeLS through SEEK
 ### OpenBIS
-To fetch and register OpnBIS elements in {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}.
+To fetch and register OpenBIS elements in {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}.
 ### Publish in Zenodo
 To publish a snapshot to Zenodo from {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}.
 <!--### Project folders
