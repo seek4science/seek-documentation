@@ -25,7 +25,7 @@ a general overview and walk through some typical scenarios. They can be found at
 
 The API supports [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication), OAuth and API Tokens.
 
-More details can be found in [{{ seek_instance.name }} API Docs]({{ site.seek_instance.url | default: "https://fairdomhub.org" }}/api#section/Authentication).
+More details can be found in [{{ site.seek_instance.name }} API Docs]({{ site.seek_instance.url | default: "https://fairdomhub.org" }}/api#section/Authentication)
 
 The API can also be used without any authentication,
 in which case only publicly viewable information will
