@@ -9,7 +9,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 
-title: "FAIRDOM-SEEK Documentation"
 instance_name: "FAIRDOM-SEEK"
 
 exclude:
