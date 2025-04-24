@@ -61,25 +61,25 @@ We also welcome contributions, so please visit our [<i class="fa-solid fa-truck-
 
 <div class="mt-1 row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 navigation-tiles">
     <div class="col d-grid">
-        <a role="button" class="btn py-3 fs-4 section-title" href="{{ site.baseurl }}/help/user-guide/api"><b>API Introduction</b></a>
+        <a role="button" class="btn py-3 fs-4 section-title" href="{{ '/help/user-guide/api' | relative_url }}"><b>API Introduction</b></a>
     </div>
     <div class="col d-grid">
-        <a role="button" class="btn py-3 fs-4 section-title" href="{{ site.baseurl }}/contacting-us"><b>Contacting us</b></a>
+        <a role="button" class="btn py-3 fs-4 section-title" href="{{ '/contacting-us' | relative_url }}"><b>Contacting us</b></a>
     </div>
     <div class="col d-grid">
-        <a role="button" class="btn py-3 fs-4 section-title" href="{{ site.baseurl }}/tech/contributing"><b>Contributing</b></a>
+        <a role="button" class="btn py-3 fs-4 section-title" href="{{ '/tech/contributing' | relative_url }}"><b>Contributing</b></a>
     </div>
     <div class="col d-grid">
-        <a role="button" class="btn py-3 fs-4 section-title" href="{{ site.baseurl }}/get-seek"><b>Get FAIRDOM-SEEK</b></a>
+        <a role="button" class="btn py-3 fs-4 section-title" href="{{ '/get-seek' | relative_url }}"><b>Get FAIRDOM-SEEK</b></a>
     </div>
     <div class="col d-grid">
-        <a role="button" class="btn py-3 fs-4 section-title" href="{{ site.baseurl }}/help/user-guide/"><b>FAIRDOM-SEEK User Guide</b></a>
+        <a role="button" class="btn py-3 fs-4 section-title" href="{{ '/help/user-guide/' | relative_url }}"><b>FAIRDOM-SEEK User Guide</b></a>
     </div>
     <div class="col d-grid">
-        <a role="button" class="btn py-3 fs-4 section-title" href="{{ site.baseurl }}/tech/roadmap"><b>Roadmap</b></a>
+        <a role="button" class="btn py-3 fs-4 section-title" href="{{ '/tech/roadmap' | relative_url }}"><b>Roadmap</b></a>
     </div>
     <div class="col d-grid">
-        <a role="button" class="btn py-3 fs-4 section-title" href="{{ site.baseurl }}/tech/useful-links"><b>Useful Links</b></a>
+        <a role="button" class="btn py-3 fs-4 section-title" href="{{ '/tech/useful-links' | relative_url }}"><b>Useful Links</b></a>
     </div>
 </div>
 
