@@ -46,7 +46,7 @@ _**10.**_ If you wish to link the Assay to an existing SOP, this should contain 
 ### * SEEK ID's
 
 The SEEK ID should be the full resolvable _persistent identifier_, including the host. This can be found for any item in SEEK, and generally matches
-the URL. This isn't always the case though, such as if a SEEK is running with different aliases. For example https://fairdomhub.org/projects/19.
+the URL. This isn't always the case though, such as if a SEEK is running with different aliases. For example {{ site.seek_instance.url | default: "https://fairdomhub.org" }}/projects/19.
 
 It can be found near the top of page, under the description.
 
