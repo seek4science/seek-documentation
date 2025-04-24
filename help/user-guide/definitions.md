@@ -352,8 +352,7 @@ Tab showing items related to the selected one.
 ### Search
 To search for a specific query. The search will attempt to find partial matches for the search term in all item categories. The search can be restricted to one specific item category (e.g. Documents), as for browsing.
 #### External
-The search can be extended to incude results from external online resources Linked? Integrated? with {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}.
-#### Advanced search with filtering
+The search can be extended to include results from external online resources Linked? Integrated? with {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}.
 To access the query and the faceted navigation option for one specific item category (e.g. Documents).
 
 ### Storage Usage
