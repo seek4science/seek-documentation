@@ -1,0 +1,13 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<script type="text/javascript">
+    let pagetitle = document.getElementById("intro").querySelector("h1");
+    if (pagetitle) {
+        let newContent = pagetitle.textContent.replace(/FAIRDOM-SEEK/g, "{{ site.instance_name }}");
+        pagetitle.textContent = newContent;
+    }
+</script>

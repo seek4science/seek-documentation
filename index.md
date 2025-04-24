@@ -83,10 +83,3 @@ We also welcome contributions, so please visit our [<i class="fa-solid fa-truck-
         <a role="button" class="btn py-3 fs-4 section-title" href="{{ '/tech/useful-links' | relative_url }}"><b>Useful Links</b></a>
     </div>
 </div>
-
-<script type="text/javascript">
-    var pagetitle = document.getElementById("intro").querySelector("h1");
-    if (pagetitle) {
-        pagetitle.textContent = "{{ site.instance_name }} Documentation";
-    }
-</script>
