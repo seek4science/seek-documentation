@@ -1,5 +1,6 @@
 ---
 title: Browsing content on FAIRDOM-SEEK
+layout: instance-specific
 ---
 
 

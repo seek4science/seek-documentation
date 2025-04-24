@@ -1,5 +1,6 @@
 ---
 title: Minimum metadata guidelines for FAIRDOM-SEEK
+layout: instance-specific
 redirect_from: "/metadata-guidelines.html"
 ---
 
@@ -7,8 +8,6 @@ redirect_from: "/metadata-guidelines.html"
 {% assign guide_url = site.baseurl | append: '/help/user-guide' %}
 {% assign callout_content = "This guide has been archived. Please see the [user guide](" | append: guide_url | append: ") for the latest help." %}
 {% include callout.html type="warning" content=callout_content %}
-
-{% include callout.html type="note" content="This guide refers to SEEK, but is also relevant for [FAIRDOMHUB](https://www.fairdomhub.org/), which is an instance of SEEK." %}
 
 The more metadata you provide for your assets in the SEEK, the easier it is to find them and to compare them with other assets. If you provide assets with very little metadata, these will also be displayed (in accordance with access control policies set by you), but they may be hard to interpret for other people.
 

@@ -1,5 +1,6 @@
 ---
 sidebar: false
+layout: instance-specific
 title: FAIRDOM-SEEK Documentation
 ---
 
