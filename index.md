@@ -2,6 +2,7 @@
 sidebar: false
 title: FAIRDOM-SEEK Documentation
 ---
+
 ![FAIRDOM-SEEK logo]({{ "/images/banner-plain.svg" | relative_url }})
 
 <h2>
@@ -83,3 +84,9 @@ We also welcome contributions, so please visit our [<i class="fa-solid fa-truck-
     </div>
 </div>
 
+<script type="text/javascript">
+    var pagetitle = document.getElementById("intro").querySelector("h1");
+    if (pagetitle) {
+        pagetitle.textContent = "{{ site.instance_name }} Documentation";
+    }
+</script>
