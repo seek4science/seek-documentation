@@ -358,7 +358,7 @@ To access the query and the faceted navigation option for one specific item cate
 ### Storage Usage
 Storage metrics, for Programmes and Projects, available to {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} administrator. It provides the total size of all Programme or Project assets.
 ### Change picture or avatar
-Custom graphic for a secific item.
+Custom graphic for a specific item.
 ### (number)
 Number of items of a category (e.g. Documents) visible to you.
 ### (number + number)
