@@ -6,16 +6,16 @@ title: FAIRDOM-SEEK Documentation
 
 ![FAIRDOM-SEEK logo]({{ "/images/banner-plain.svg" | relative_url }})
 
-{% assign instance_name = site.instance_name | default: "FAIRDOM-SEEK" %}
+{% assign seek_instance_name = site.seek_instance.name | default: "FAIRDOM-SEEK" %}
 
 <!--Complete the description of your own instance here or delete it.-->
 <div>
-{% unless instance_name == "FAIRDOM-SEEK" %}
+{% unless seek_instance_name == "FAIRDOM-SEEK" %}
     <h2>
         <i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i>
-        About {{ instance_name }}
+        About {{ seek_instance_name }}
     </h2>
-    The {{ site.instance_name }} platform is based on the FAIRDOM-SEEK software.
+    The {{ seek_instance_name }} platform is based on the FAIRDOM-SEEK software.
 {% endunless %}
 </div>
 
@@ -41,7 +41,7 @@ To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-
 
 ### Latest User Guide
 
-General documentation on how to use and administer {{ site.instance_name | default: "FAIRDOM-SEEK" }} can be found in our [<i class="fa-solid fa-user-group fa-1x"></i> <i class="fa-solid fa-book fa-1x"></i> User Guide]({{ "/help/user-guide/" | relative_url }}).
+General documentation on how to use and administer {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} can be found in our [<i class="fa-solid fa-user-group fa-1x"></i> <i class="fa-solid fa-book fa-1x"></i> User Guide]({{ "/help/user-guide/" | relative_url }}).
 
 ### API documentation
 
@@ -49,7 +49,7 @@ Details on how to get started using the Application Programme Interface (API) ca
 
 ### Archived help and guidelines
 
-We also have other information for topics related to {{ site.instance_name | default: "FAIRDOM-SEEK" }}, including Metadata, ISA, and controlled vocabularies, which can be found
+We also have other information for topics related to {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}, including Metadata, ISA, and controlled vocabularies, which can be found
 in our [archive of help and guidelines]({{ "/help/" | relative_url }}).
 
 ---
@@ -88,7 +88,7 @@ We also welcome contributions, so please visit our [<i class="fa-solid fa-truck-
         <a role="button" class="btn py-3 fs-4 section-title" href="{{ '/get-seek' | relative_url }}"><b>Get FAIRDOM-SEEK</b></a>
     </div>
     <div class="col d-grid">
-        <a role="button" class="btn py-3 fs-4 section-title" href="{{ '/help/user-guide/' | relative_url }}"><b>{{ site.instance_name | default: "FAIRDOM-SEEK" }} User Guide</b></a>
+        <a role="button" class="btn py-3 fs-4 section-title" href="{{ '/help/user-guide/' | relative_url }}"><b>{{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} User Guide</b></a>
     </div>
     <div class="col d-grid">
         <a role="button" class="btn py-3 fs-4 section-title" href="{{ '/tech/roadmap' | relative_url }}"><b>Roadmap</b></a>
