@@ -4,12 +4,12 @@ title: Logging into via LS Login
 
 
 {% include callout.html type="note" content="This section assumes you have an LS Login account (or your organization is connected to LS Login),
-and LS Login authentication is enabled on the SEEK instance you are using. For more information on LS Login, please
+and LS Login authentication is enabled on the FAIRDOM-SEEK instance you are using. For more information on LS Login, please
 see their [documentation](https://lifescience-ri.eu/ls-login/documentation/user-documentation/user-documentation.html){:target=\"_blank\"}." %}
 
 Already got a SEEK account? See how to [add LS Login to your account]({{ "/managing-identities#add-identity" | relative_url }}) instead.
 
-If enabled on the SEEK instance you are using, you will see a tab on the login form titled "LS Login"
+If enabled on the FAIRDOM-SEEK instance you are using, you will see a tab on the login form titled "LS Login"
 
 Clicking this will switch to the LS Login tab and present the LS Login login button.
 
@@ -29,7 +29,7 @@ Note: this will likely look different to the screenshot below.
 ![Institution login form]({{ "/images/user-guide/omniauth/inst_login.png" | relative_url }}){:.screenshot}
 
 After logging in through your institution, you may then be presented with a personal information consent page,
-which outlines what personal data will be provided by LS Login to the SEEK instance.
+which outlines what personal data will be provided by LS Login to the FAIRDOM-SEEK instance.
 
 At a minimum, the identifier must be provided, or login is not possible. Any other information is used solely to
 populate fields in your SEEK profile.
