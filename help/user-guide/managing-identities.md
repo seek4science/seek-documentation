@@ -2,7 +2,6 @@
 title: Managing Identities
 ---
 
-
 Depending on the configuration of the FAIRDOM-SEEK instance, in addition to the usual username/password method,
 you may be able to login through one of the following:
  * LDAP
