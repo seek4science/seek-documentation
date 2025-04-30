@@ -1,7 +1,6 @@
 ---
-title: Generic linking variables in FAIRDOM-SEEK
+title: Generic linking variables
 redirect_from: "/help/user-guide/generic-linking-variables.html"
-layout: instance-specific
 ---
 
 

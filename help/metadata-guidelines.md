@@ -1,6 +1,5 @@
 ---
-title: Minimum metadata guidelines for FAIRDOM-SEEK
-layout: instance-specific
+title: Minimum metadata guidelines
 redirect_from: "/metadata-guidelines.html"
 ---
 

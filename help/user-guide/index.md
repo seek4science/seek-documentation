@@ -1,8 +1,7 @@
 ---
-title: FAIRDOM-SEEK User Guide
+title: User Guide
 redirect_from:
   - /help
-layout: instance-specific
 ---
 
 The {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} user guide is written for users of any FAIRDOM-SEEK instance. The pages are organised by sections on the left. You can also search at the top-right of any page.

@@ -1,7 +1,6 @@
 ---
 sidebar: false
-layout: instance-specific
-title: FAIRDOM-SEEK Documentation
+title: FAIRDOM-SEEK Documentation # Replace with instance name
 ---
 
 ## About FAIRDOM-SEEK

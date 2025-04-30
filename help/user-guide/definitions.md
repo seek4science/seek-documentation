@@ -1,7 +1,6 @@
 ---
-title: FAIRDOM-SEEK Definitions
+title: Definitions
 redirect_from: /definitions
-layout: instance-specific
 ---
 
 Definition of terms used in {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}.

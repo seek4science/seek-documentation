@@ -1,7 +1,6 @@
 ---
-title: Backing up FAIRDOM-SEEK
+title: Backup and Restore
 redirect_from: "/backups.html"
-layout: instance-specific
 ---
 
 

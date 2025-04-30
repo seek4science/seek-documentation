@@ -1,6 +1,5 @@
 ---
-title: "Transcriptomics: Guidelines for FAIRDOM-SEEK templates"
-layout: instance-specific
+title: "Transcriptomics: Guidelines for metadata templates"
 redirect_from: "/transcriptomics-guidelines.html"
 ---
 
