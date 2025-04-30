@@ -402,7 +402,7 @@ This version includes:
 * **Collections** - the ability to bundle together items that are conceptually related into an ordered list, which can
   then be shared together as collection.
 * **New customisable front landing page** - a cleaner front page, with more useful information, that can be customized
-  and configured per SEEK instance.
+  and configured per FAIRDOM-SEEK instance.
 * **Sample attributes enhancements** - attributes can be provided a description, which provides more details when
   entering or viewing a sample. They can also be given a persistent identifier, to provide a semantic definition of the
   attributes meaning.
