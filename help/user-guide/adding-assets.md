@@ -1,6 +1,5 @@
 ---
-title: Adding assets (Data, Models, SOPs, Presentations, Documents) to FAIRDOM-SEEK
-layout: instance-specific
+title: Adding assets (Data, Models, SOPs, Presentations, Documents)
 ---
 
 To add a data file to SEEK, select Create from the menu bar, and select the appropriate asset from the drop down menu.

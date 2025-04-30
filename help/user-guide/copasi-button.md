@@ -1,6 +1,5 @@
 ---
-title: Using Copasi in FAIRDOM-SEEK
-layout: instance-specific
+title: Using Copasi
 ---
 
 You can download a public SBML format **model** to a locally installed Copasi application and start the simulation in Copasi.

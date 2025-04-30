@@ -1,7 +1,6 @@
 ---
-title: Administration of FAIRDOM-SEEK
+title: Admin documentation
 redirect_from: "/administration.html"
-layout: instance-specific
 ---
 
 
