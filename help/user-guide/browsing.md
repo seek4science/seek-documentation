@@ -1,5 +1,5 @@
 ---
-title: Browsing content on FAIRDOM-SEEK
+title: Browsing content
 ---
 
 

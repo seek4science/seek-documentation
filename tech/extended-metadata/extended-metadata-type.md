@@ -77,7 +77,7 @@ In this diagram:
 
 ## Creating and managing types
 
-As a SEEK instance administrator, you have the ability to create, manage (enable, disable), and delete extended metadata types. This guide will walk you through how to perform these actions efficiently by navigating to the "Manage Extended Metadata Types" section in the Admin area.
+As a FAIRDOM-SEEK instance administrator, you have the ability to create, manage (enable, disable), and delete extended metadata types. This guide will walk you through how to perform these actions efficiently by navigating to the "Manage Extended Metadata Types" section in the Admin area.
 
 
 ![emt-top-level-tab]({{ "/images/user-guide/extended-metadata/emt-management.png" | relative_url }})
