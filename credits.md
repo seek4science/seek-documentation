@@ -1,6 +1,6 @@
 ---
 title: Credits
-sidebar: about
+sidebar: false
 ---
 
 ## Related Projects
