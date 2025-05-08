@@ -3,11 +3,11 @@ title: Contributing
 redirect_from: /contributing
 ---
 
-We welcome many contributions to our [SEEK software](https://seek4science.org), these Documentation pages and our [FAIRDOM](https://fair-dom.org) project in general.
+We welcome many contributions to our [SEEK software](https://seek4science.org){:.external}, these Documentation pages and our [FAIRDOM](https://fair-dom.org){:.external} project in general.
 
 Below are some guides for how you contribute to the software or these pages.
 
-However, if there other ways you feel you can contribute, such as running a workshop or providing training material, then please contact us at <community@fair-dom.org>.
+However, if there other ways you feel you can contribute, such as running a workshop or providing training material, then please [contact us]({{"/contacting-us" | relative_url }}).
 
 ## Contributing to SEEK
 
