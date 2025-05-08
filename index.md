@@ -41,7 +41,7 @@ in our [archive of help and guidelines]({{ "/help/" | relative_url }}).
 
 <h2>
 <i class="fa-solid fa-wrench fa-1x"></i> <i class="fa-solid fa-book-atlas fa-1x"></i>
- Technical references</h2>
+ Technical guide</h2>
 
 For more detailed information about installation and upgrading, please see our [<i class="fa-solid fa-wrench fa-1x"></i> <i class="fa-solid fa-book-atlas fa-1x"></i> Technical and Reference documentation]({{ "/tech/" | relative_url }}).
 

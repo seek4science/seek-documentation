@@ -1,5 +1,5 @@
 ---
-title: FAIRDOM-SEEK Technical References
+title: FAIRDOM-SEEK Technical Guide
 ---
 
 Please see the menu to the left for technical and reference documentation, or use the search box at the top-right.
