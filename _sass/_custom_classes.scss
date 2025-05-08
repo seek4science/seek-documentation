@@ -73,6 +73,17 @@ main .navigation-tiles .btn:hover  .fa-solid {
     color: inherit;
 }
 
+/*-------Get SEEK tiles------*/
+#main .where-start {
+    .where-start-tile {
+        padding: 0 0.5rem;
+        h3 {
+            margin-top: 1rem;
+        }
+    }
+}
+
+
 /*-----Show external links with icon------*/
 //.external::after {
 //   content: "↗️";

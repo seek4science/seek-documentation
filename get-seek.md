@@ -11,19 +11,25 @@ FAIRDOM-SEEK is open source software, and is distributed under a [BSD License](h
 
 ## I want to install FAIRDOM-SEEK, where do I start?
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
-    <div class="col bg-light-subtle">
-        <h3>Installation</h3>
-        <p>For details on how to install FAIRDOM-SEEK please refer to our <a href="{{ "/tech/install" | relative_url }}">Installation Guide</a>.</p>
-        <p>For details on how to upgrade an existing FAIRDOM-SEEK installation please refer to our <a href="{{ "/tech/upgrading" | relative_url }}">Upgrade Guide</a>.</p>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 where-start">
+    <div class="col d-grid ">
+        <div class="where-start-tile  bg-light">
+            <h3>Installation</h3>
+            <p>For details on how to install FAIRDOM-SEEK please refer to our <a href="{{ "/tech/install" | relative_url }}">Installation Guide</a>.</p>
+            <p>For details on how to upgrade an existing FAIRDOM-SEEK installation please refer to our <a href="{{ "/tech/upgrading" | relative_url }}">Upgrade Guide</a>.</p>
+        </div>
     </div>
-    <div class="col bg-light">
-        <h3>Docker</h3>
-        <p>FAIRDOM-SEEK can also be deployed using <a href="https://docker.com" class="external">Docker</a>, for which we provide Docker images. Please read our <a href="{{ "/tech/docker" | relative_url }}">Docker guide</a>.</p>
+    <div class="col d-grid">
+        <div class="where-start-tile bg-light">
+           <h3>Docker</h3>
+            <p>FAIRDOM-SEEK can also be deployed using <a href="https://docker.com" class="external">Docker</a>, for which we provide Docker images. Please read our <a href="{{ "/tech/docker" | relative_url }}">Docker guide</a>.</p>
+        </div>
     </div>
-    <div class="col bg-light-subtle">
-        <h3>Changes</h3>
-        <p>To review changes and new features introduced between FAIRDOM-SEEK versions please visit our <a href="{{ "/tech/releases/" | relative_url }}">Change Log</a>.</p>
+    <div class="col d-grid">
+        <div class="where-start-tile bg-light">
+            <h3>Changes</h3>
+            <p>To review changes and new features introduced between FAIRDOM-SEEK versions please visit our <a href="{{ "/tech/releases/" | relative_url }}">Change Log</a>.</p>
+        </div>
     </div>
 </div>
 
