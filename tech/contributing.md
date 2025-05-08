@@ -3,9 +3,6 @@ title: Contributing
 redirect_from: /contributing
 ---
 
-<i class="fa-solid fa-truck-fast fa-5x"></i>
-
-
 We welcome many contributions to our [SEEK software](https://seek4science.org), these Documentation pages and our [FAIRDOM](https://fair-dom.org) project in general.
 
 Below are some guides for how you contribute to the software or these pages.

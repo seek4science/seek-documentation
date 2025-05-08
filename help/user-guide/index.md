@@ -6,8 +6,6 @@ redirect_from:
 
 The FAIRDOM-SEEK user guide is written for users of any FAIRDOM-SEEK instance. The pages are organised by sections on the left. You can also search at the top-right of any page.
 
-<i class="fa-solid fa-user-group fa-5x"></i> <i class="fa-solid fa-book fa-5x"></i>
-
 
 ## Aliases for names of features and functions
 The names of different features and functions may vary across FAIRDOM-SEEK instances. This general user guide includes the default or most common names. For examples of the most common aliases, see:
