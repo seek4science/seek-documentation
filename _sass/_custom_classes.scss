@@ -64,3 +64,11 @@ main .fa-solid {
     background-color: $primary;
     color: white;
 }
+
+
+/*-----Homepage tiles-----*/
+
+#main .navigation-tiles .btn:hover h3,
+main .navigation-tiles .btn:hover  .fa-solid {
+    color: inherit;
+}
