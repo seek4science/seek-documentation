@@ -1,6 +1,6 @@
 ---
 title: Cookies
-sidebar: about
+sidebar: false
 ---
 {% include callout.html type="warning" content="This page is out-of-date and may be removed." %}
 
