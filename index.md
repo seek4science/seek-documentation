@@ -1,6 +1,6 @@
 ---
 sidebar: false
-title: Welcome to the FAIRDOM-SEEK Documentation
+title: FAIRDOM-SEEK Documentation
 ---
 
 ## About FAIRDOM-SEEK
