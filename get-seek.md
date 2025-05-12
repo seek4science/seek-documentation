@@ -4,7 +4,7 @@ sidebar: false
 redirect_from: "/get_seek.html"
 ---
 
-FAIRDOM-SEEK is open source software, and is distributed under a [BSD License](https://github.com/seek4science/seek/blob/main/BSD-LICENSE){:.external}. The source code is all available on [GitHub](https://github.com/seek4science/seek){:.external}.
+FAIRDOM-SEEK is open source software, and is distributed under a [BSD License](https://github.com/seek4science/seek/blob/main/BSD-LICENSE). The source code is all available on [GitHub](https://github.com/seek4science/seek).
 
 
 
@@ -22,7 +22,7 @@ FAIRDOM-SEEK is open source software, and is distributed under a [BSD License](h
     <div class="col d-grid">
         <div class="where-start-tile bg-light">
            <h3>Docker</h3>
-            <p>FAIRDOM-SEEK can also be deployed using <a href="https://docker.com" class="external">Docker</a>, for which we provide Docker images. Please read our <a href="{{ "/tech/docker" | relative_url }}">Docker guide</a>.</p>
+            <p>FAIRDOM-SEEK can also be deployed using <a href="https://docker.com">Docker</a>, for which we provide Docker images. Please read our <a href="{{ "/tech/docker" | relative_url }}">Docker guide</a>.</p>
         </div>
     </div>
     <div class="col d-grid">
@@ -37,7 +37,7 @@ FAIRDOM-SEEK is open source software, and is distributed under a [BSD License](h
 
 ## Alternative: FAIRDOMHub public hub
 {% include callout.html type="tip" content="
-If you do not want to install your own version of FAIRDOM-SEEK, you can register to use the [FAIRDOMHub](https://fairdomhub.org){:.external}, a version of SEEK which is hosted by [FAIRDOM](https://fair-dom.org){:.external} for general community use.
+If you do not want to install your own version of FAIRDOM-SEEK, you can register to use the [FAIRDOMHub](https://fairdomhub.org), a version of SEEK which is hosted by [FAIRDOM](https://fair-dom.org) for general community use.
 " %}
 
 ### What are the differences?

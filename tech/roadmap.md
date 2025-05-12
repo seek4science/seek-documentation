@@ -88,7 +88,7 @@ You can find more details about each release in our [Change Logs]({{ "/tech/rele
 | Self management of projects and programmes                                           | 1.0          |
 | Self management of organisms                                                         | 1.0          |
 | Improved registration workflow                                                       | 1.0          |
-| Support for [Research Objects](http://www.researchobject.org/){:.external}                       | 1.0          |
+| Support for [Research Objects](http://www.researchobject.org/)                       | 1.0          |
 | DOI's for Investigation snapshots for citation                                       | 1.0          |
-| New user-interface based on [Bootstrap](http://getbootstrap.com){:.external}                     | 0.23         |
+| New user-interface based on [Bootstrap](http://getbootstrap.com)                     | 0.23         |
 

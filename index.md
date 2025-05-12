@@ -6,10 +6,10 @@ title: FAIRDOM-SEEK Documentation
 ## About FAIRDOM-SEEK
 
 The FAIRDOM-SEEK platform is a web-based resource for sharing heterogeneous scientific research datasets,
-models or simulations, processes and research outcomes. More details about FAIRDOM-SEEK can be found on the [FAIRDOM-SEEK Website](https://seek4science.org){:.external}.
+models or simulations, processes and research outcomes. More details about FAIRDOM-SEEK can be found on the [FAIRDOM-SEEK Website](https://seek4science.org).
 
-To see examples of FAIRDOM-SEEK being configured in hubs and projects, please visit the [FAIRDOM-SEEK In Use page](https://fair-dom.org/fairdom-in-use/){:.external} on the FAIRDOM website. 
-If you wish to practice using FARIDOM-SEEK without disturbing any real hubs or projects, please visit our [Demo](https://demo.seek4science.org){:.external}.
+To see examples of FAIRDOM-SEEK being configured in hubs and projects, please visit the [FAIRDOM-SEEK In Use page](https://fair-dom.org/fairdom-in-use/) on the FAIRDOM website. 
+If you wish to practice using FARIDOM-SEEK without disturbing any real hubs or projects, please visit our [Demo](https://demo.seek4science.org).
 
 
 ## Getting started

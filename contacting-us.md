@@ -9,7 +9,7 @@ We have a number of ways you can contact us.
 
 ## Contact the FAIRDOM community
 
-For any questions and suggestions related to FAIRDOM projects, tools, standards and events please visit the [FAIRDOM contact us page](https://fair-dom.org/contact){:.external}.
+For any questions and suggestions related to FAIRDOM projects, tools, standards and events please visit the [FAIRDOM contact us page](https://fair-dom.org/contact).
 
 
 ## Reporting bugs and feature requests

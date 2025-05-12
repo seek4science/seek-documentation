@@ -25,6 +25,6 @@ They are organised into sections for data and model annotations, controlled voca
 
 ## Contributing
 
-There are many ways in which you can contribute to the SEEK software, these documents or our [FAIRDOM](https://fair-dom.org){:.external} project.
+There are many ways in which you can contribute to the SEEK software, these documents or our [FAIRDOM](https://fair-dom.org) project.
 
 If you are interested in contributing please visit our [Contributors guide]({{ "/tech/contributing" | relative_url }}).
