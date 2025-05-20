@@ -1,7 +1,19 @@
+/*-----Locally hosted font-----*/
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url('/assets/fonts/Montserrat-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url('/assets/fonts/Montserrat-MediumItalic.woff') format('woff');
+    font-style: italic;
+}
+
 /*---Header---*/
 //header .navbar {
-    //background-color: #f0f5fd;
-    //border: thin solid #e7e7e7;
+//background-color: #f0f5fd;
+//border: thin solid #e7e7e7;
 //}
 
 .form-control::placeholder {
@@ -33,7 +45,8 @@
 
 #main h1, #main h2, #main h3 {
     color: $secondary;
-    font-weight: normal;
+    font-weight: 500;
+    font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*---screenshots----*/
@@ -78,7 +91,7 @@ main .navigation-tiles p {
     text-wrap: balance;
 }
 
-    /*-------Get SEEK tiles------*/
+/*-------Get SEEK tiles------*/
 #main .where-start {
     .where-start-tile {
         padding: 0 0.5rem;
