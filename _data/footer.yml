@@ -9,7 +9,7 @@ columns:
   - type: links
     width: 2
     children: 
-      - url_text: Home
+      - url_text: Documentation Home
         url: /
   - type: links
     width: 2
@@ -19,6 +19,6 @@ columns:
   - type: links
     width: 2
     children:
-      - url_text: Useful Links
-        url: /tech/useful-links.html
+      - url_text: FAIRDOM-SEEK Website
+        url: https://seek4science.org/
 
