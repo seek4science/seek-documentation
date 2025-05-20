@@ -65,9 +65,9 @@ controlled vocabulary or reuse and existing one. In the future we will be adding
 
 ![sample type attributes]({{ "/images/user-guide/samples/sample-type-attributes.png" | relative_url }}){:.screenshot}
 
-The attribute type selected dictates the value would be accepted, and also influences how it is displayed for the Sample
+The attribute type selected dictates the value would be accepted, and also influences how it is displayed for the Sample.
 
-If you feel an attribute type is missing, it can usually be easily added so please [Contact Us]({{ "/contacting-us" | relative_url }})
+If you feel an attribute type is missing, it can usually be easily added so please [Contact Us](https://fair-dom.org/contact).
 
 At least one of the attributes must be required and marked as the title. This is the attribute shown in certain views or lists within SEEK.
 Other attributes can be also be marked as required if need be.

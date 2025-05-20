@@ -7,7 +7,7 @@ We welcome many contributions to our [SEEK software](https://seek4science.org), 
 
 Below are some guides for how you contribute to the software or these pages.
 
-However, if there other ways you feel you can contribute, such as running a workshop or providing training material, then please [contact us]({{"/contacting-us" | relative_url }}).
+However, if there other ways you feel you can contribute, such as running a workshop or providing training material, then please [contact us](https://fair-dom.org/contact).
 
 ## Contributing to SEEK
 

@@ -4,7 +4,7 @@ redirect_from: /contributing-to-pages
 ---
 
 
-If you find a mistake or wish to make an improvement to these pages, you can do so. For a small mistake, just let us know by [contacting us](contacting-us). For other changes you can also access and edit the pages themself.
+If you find a mistake or wish to make an improvement to these pages, you can do so. For a small mistake, just let us know by [contacting us](https://fair-dom.org/contact). For other changes you can also access and edit the pages themself.
 
 {% include callout.html type="important" content="
 Note that FAIRDOM-SEEK instances are highly customisable.

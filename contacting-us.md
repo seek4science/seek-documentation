@@ -2,7 +2,9 @@
 title: Contacting us
 sidebar: false
 redirect_from: "/contacting_us.html"
+redirect_to: "https://fair-dom.org/contact"
 ---
+{% include callout.html type="warning" content="This page is out-of-date and may be removed." %}
 
 We have a number of ways you can contact us.
 

@@ -15,7 +15,7 @@ columns:
     width: 2
     children:
       - url_text: Contacting Us
-        url: /contacting-us
+        url: https://fair-dom.org/contact
   - type: links
     width: 2
     children:
