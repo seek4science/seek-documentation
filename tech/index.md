@@ -6,7 +6,7 @@ Please see the menu to the left for technical and reference documentation, or us
 
 ## Featured help: Installing FAIRDOM-SEEK
 
-- [Installing SEEK]({{ "/tech/install" | relative_url }})
+- [Installing FAIRDOM-SEEK]({{ "/tech/install" | relative_url }})
 
 
 ## Contributing

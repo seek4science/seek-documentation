@@ -73,7 +73,12 @@ main .navigation-tiles .btn:hover  .fa-solid {
     color: inherit;
 }
 
-/*-------Get SEEK tiles------*/
+#main .navigation-tiles p,
+main .navigation-tiles p {
+    text-wrap: balance;
+}
+
+    /*-------Get SEEK tiles------*/
 #main .where-start {
     .where-start-tile {
         padding: 0 0.5rem;

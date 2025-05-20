@@ -17,12 +17,12 @@ If you wish to practice using FARIDOM-SEEK without disturbing any real hubs or p
 <div class="mb-5 row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 navigation-tiles">
     <div class="col d-grid">
         <a role="button" class="btn py-3 fs-4 section-title" href="{{ site.baseurl }}/get-seek"><h3 class=""><i class="fa-solid fa-magnifying-glass-chart fa-1x"></i> Get FAIRDOM-SEEK</h3>
-        <p>Find out how to install FAIRDOM-SEEK on your own machine.</p>
+        <p>Find out how to install FAIRDOM-SEEK on your own machine or consider our public alternatives.</p>
         </a>
     </div>
     <div class="col d-grid">
         <a role="button" class="btn py-3 fs-4 section-title" href="{{ site.baseurl }}/help/user-guide"><h3><i class="fa-solid fa-user-group fa-1x"></i> <i class="fa-solid fa-book fa-1x"></i> User guide</h3>
-        <p>General documentation on how to use and administer FAIRDOM-SEEK.</p>
+        <p>General documentation on how to use, administer and troubleshoot FAIRDOM-SEEK.</p>
         </a>
     </div>
     <div class="col d-grid">
@@ -32,7 +32,7 @@ If you wish to practice using FARIDOM-SEEK without disturbing any real hubs or p
     </div>
     <div class="col d-grid">
         <a role="button" class="btn py-3 fs-4 section-title" href="{{ site.baseurl }}/tech/"><h3><i class="fa-solid fa-wrench fa-1x"></i> <i class="fa-solid fa-book-atlas fa-1x"></i> Technical guide</h3>
-        <p>More detailed information about installation and upgrading.</p>
+        <p>More detailed information about installation, upgrading and extended metadata.</p>
         </a>
     </div>
     <div class="col d-grid">
