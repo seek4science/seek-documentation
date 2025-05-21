@@ -11,6 +11,7 @@ models or simulations, processes and research outcomes. More details about FAIRD
 To see examples of FAIRDOM-SEEK being configured in hubs and projects, please visit the [FAIRDOM-SEEK In Use page](https://fair-dom.org/fairdom-in-use/) on the FAIRDOM website. 
 If you wish to practice using FARIDOM-SEEK without disturbing any real hubs or projects, please visit our [Demo](https://demo.seek4science.org).
 
+<br /><br />
 
 ## Getting started
 
