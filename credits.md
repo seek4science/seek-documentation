@@ -1,10 +1,7 @@
 ---
 title: Credits
-sidebar: about
+sidebar: false
 ---
-
-<i class="fa-solid fa-trophy fa-5x"></i>
-
 
 ## Related Projects
 

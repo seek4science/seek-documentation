@@ -33,7 +33,7 @@ defaults:
     scope:
       path: "tech"
     values:
-      sidebar: technical_references
+      sidebar: technical_guide
 
 theme_variables: 
   #git_host: GitHub

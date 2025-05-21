@@ -1,10 +1,10 @@
 subitems:
 - title: Home
   url: /
-- title: About
+- title: Get FAIRDOM-SEEK
   url: /get-seek
 - title: User Guide
   url: /help/user-guide/
-- title: Technical References
+- title: Technical Guide
   url: /tech/
   

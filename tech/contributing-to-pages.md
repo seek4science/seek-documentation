@@ -4,7 +4,7 @@ redirect_from: /contributing-to-pages
 ---
 
 
-If you find a mistake or wish to make an improvement to these pages, you can do so. For a small mistake, just let us know by [contacting us](contacting-us). For other changes you can also access and edit the pages themself.
+If you find a mistake or wish to make an improvement to these pages, you can do so. For a small mistake, just let us know by [contacting us](https://fair-dom.org/contact). For other changes you can also access and edit the pages themself.
 
 {% include callout.html type="important" content="
 Note that FAIRDOM-SEEK instances are highly customisable.
@@ -25,7 +25,7 @@ title: my lovely page
 
 For example, this page can be found at [https://raw.githubusercontent.com/seek4science/seek-documentation/main/tech/contributing-to-pages.md](https://raw.githubusercontent.com/seek4science/seek-documentation/main/tech/contributing-to-pages.md).
 
-The **home, about, user guide, and technical references pages** use a remote theme called [ELIXIR Toolkit Theme](https://elixir-belgium.github.io/elixir-toolkit-theme/) (ETT). The ETT theme provides additional support for styling and navigation, including the sidebar menus. The _title_ metadata is used to create a first-level heading at the top of the page. Do not include it again. Instead, use `##` and `###` for subheadings (second- and third-level, respectively).
+The **home, user guide, and technical guide pages** use a remote theme called [ELIXIR Toolkit Theme](https://elixir-belgium.github.io/elixir-toolkit-theme/) (ETT). The ETT theme provides additional support for styling and navigation, including the sidebar menus. The _title_ metadata is used to create a first-level heading at the top of the page. Do not include it again. Instead, use `##` and `###` for subheadings (second- and third-level, respectively).
 
 The site can be served from a root domain/sub-domain (for example, `docs.site.com`) or from a directory (for example, `site.com/docs`). To support sites that are served from a directory, all links to pages within the site must be given as relative paths, not absolute paths. We use a [Jekyll filter](https://jekyllrb.com/docs/liquid/filters/) to achieve this, for example:
 ```
@@ -38,13 +38,13 @@ All links to images within the site must also be given as relative paths (with a
 ```
 
 To add your new page to the sidebar, add a line to the data file:
-`_data` &#9658; `sidebars` &#9658; `userguide.yml`, `tech.yml` or  `about.yml`.
+`_data` &#9658; `sidebars` &#9658; `user_guide.yml` or `tech.yml`.
 More details are available from the [ETT theme documentation](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures).
 
-The **about pages** (top level) require additional lines at the top to display correctly:
+The **home pages** (top level) require additional lines at the top to display correctly:
 ```yaml
 ---
-sidebar: about
+sidebar: false
 ---
 ```
 ## Viewing your changes locally

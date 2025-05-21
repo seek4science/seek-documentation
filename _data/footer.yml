@@ -9,30 +9,18 @@ columns:
   - type: links
     width: 2
     children: 
-      - url_text: Home
+      - url_text: Documentation Home
         url: /
-      - url_text: "Get FAIRDOM-SEEK"
-        url: /get-seek
-      - url_text: Contacting Us
-        url: /contacting-us
-      - url_text: Credits
-        url: /credits
   - type: links
     width: 2
     children:
-      - url_text: User Guide
-        url: /help/user-guide/
-      - url_text: API Introduction
-        url: /help/user-guide/api
+      - url_text: FAIRDOM Website
+        url: https://fair-dom.org/
+      - url_text: Contacting Us
+        url: https://fair-dom.org/contact
   - type: links
     width: 2
-    children: 
-      - url_text: Technical References
-        url: /tech/
-      - url_text: Roadmap
-        url: /tech/roadmap
-      - url_text: Useful Links
-        url: /tech/useful-links.html
-      - url_text: Contributing
-        url: /tech/contributing
+    children:
+      - url_text: FAIRDOM-SEEK Website
+        url: https://seek4science.org/
 

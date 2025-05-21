@@ -19,14 +19,13 @@ For example, on the FAIRDOMHub it is [https://fairdomhub.org/api](https://fairdo
 or for a local running instance it would be [http://localhost:3000/api](http://localhost:3000/api)
 
 There are also some examples that are available as Jupyter notebook scripts. They were created for training events, and give
-a general overview and walk through some typical scenarios. They can be found at [https://github.com/FAIRdom/api-workshop](https://github.com/FAIRdom/api-workshop
-)
+a general overview and walk through some typical scenarios. They can be found at [https://github.com/FAIRdom/api-workshop](https://github.com/FAIRdom/api-workshop)
 
 ## Authentication
 
 The API supports [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication), OAuth and API Tokens.
 
-More details can be found in [FAIRDOMHub API Docs](https://fairdomhub.org/api#section/Authentication)
+More details can be found in [FAIRDOMHub API Docs](https://fairdomhub.org/api#section/Authentication).
 
 The API can also be used without any authentication,
 in which case only publicly viewable information will

@@ -22,6 +22,7 @@ $(document).ready(function () {
         if (b.getAttribute("href") && b.hostname !== location.hostname) {
             b.target = "_blank";
             b.rel = "noopener";
+            b.classList.add("external");
         }
     }
 });
