@@ -2,6 +2,15 @@
 sidebar: false
 title: FAIRDOM-SEEK Documentation # Replace with instance name
 ---
+{% assign seek_instance_name = site.seek_instance.name | default: "FAIRDOM-SEEK" %}
+
+<!--Complete the description of your own instance here or delete it.-->
+<div>
+{% unless seek_instance_name == "FAIRDOM-SEEK" %}
+    ## About {{ seek_instance_name }}
+    The {{ seek_instance_name }} platform is based on the FAIRDOM-SEEK software.
+{% endunless %}
+</div>
 
 ## About FAIRDOM-SEEK
 
@@ -23,7 +32,7 @@ If you wish to practice using FARIDOM-SEEK without disturbing any real hubs or p
     </div>
     <div class="col d-grid">
         <a role="button" class="btn py-3 fs-4 section-title" href="{{ '/help/user-guide' | relative_url }}"><h3><i class="fa-solid fa-user-group fa-1x"></i> <i class="fa-solid fa-book fa-1x"></i> User guide</h3>
-        <p>General documentation on how to use, administer and troubleshoot FAIRDOM-SEEK.</p>
+        <p>General documentation on how to use, administer and troubleshoot {{ seek_instance_name }}.</p>
         </a>
     </div>
     <div class="col d-grid">
