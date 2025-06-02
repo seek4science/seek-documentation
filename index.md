@@ -8,7 +8,7 @@ title: FAIRDOM-SEEK Documentation # Replace with instance name
 <div>
 {% unless seek_instance_name == "FAIRDOM-SEEK" %}
     ## About {{ seek_instance_name }}
-    The {{ seek_instance_name }} platform is based on the FAIRDOM-SEEK software.
+    The {{ seek_instance_name }} platform is based on the [FAIRDOM-SEEK](https://seek4science.org/) software.
 {% endunless %}
 </div>
 

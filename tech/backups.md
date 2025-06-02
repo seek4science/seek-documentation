@@ -1,5 +1,5 @@
 ---
-title: Backup and Restore
+title: Backup and restore
 redirect_from: "/backups.html"
 ---
 

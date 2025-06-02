@@ -155,7 +155,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
 * **Nested Extended metadata** has had some **UI improvements**, allowing sub sections to be expanded and collapsed and easier to differentiate.
 * **Extended Metadata read and write API** has been extended and documented, along with read API's for finding information about the Extended Metadata Types.
 * **Extended Metadata Type administration** has been added to the Admin pages, currently just allowing them to be disabled or enabled but with plans to extend this with other option in future releases.
-* **Wild cards in search queries** are now supported, supporting _'*'_ for a group of characters, and _'?'_ for a single character. e.g _'[?orwe*n]({{ site.seek_instance.url | default: "https://fairdomhub.org" }}/institutions?filter%5Bquery%5D=%3Forwe%2An)'_ to match Norwegian.
+* **Wild cards in search queries** are now supported, supporting _'*'_ for a group of characters, and _'?'_ for a single character. e.g _'[?orwe*n](https://fairdomhub.org/institutions?filter%5Bquery%5D=%3Forwe%2An)'_ to match Norwegian.
 * **Mysql 8 is now the recommended database** to use, and our default Docker compose files have been updated and tested, together with testing switching existing installations. Mysql 5.7 had an issue with reusing primary keys after a crash, causing some problems in certain scenarios.
 * **More control over Docker logging** is now available as an option with environment variables, with the default and comment added to the Docker compose files.
 * [DataHub](https://datahub.elixir-belgium.org/home/about) is now approaching its first production release, and this version includes two particular hightlights:
