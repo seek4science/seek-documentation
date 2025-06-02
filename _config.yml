@@ -9,6 +9,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 
+# Do not remove the site.title. It's part of the ETT configuration.
+title: "FAIRDOM-SEEK Documentation"
+
 seek_instance:
   name: "FAIRDOM-SEEK"
   url: "https://fairdomhub.org"
