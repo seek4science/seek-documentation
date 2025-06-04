@@ -10,7 +10,7 @@ info:
     url: http://groups.google.com/group/seek4science
     email: support@fair-dom.org
   description: |
-    <a name="api"></a>The JSON API to FAIRDOM SEEK is a [JSON API](http://jsonapi.org) specification describing how to read and write to a SEEK instance.
+    <a name="api"></a>The JSON API to FAIRDOM SEEK is a [JSON API](http://jsonapi.org) specification describing how to read and write to a FAIRDOM-SEEK instance.
 
     The API is defined in the [OpenAPI specification](https://swagger.io/specification) currently in [version 2](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md)
 
@@ -93,7 +93,7 @@ info:
 
     The creation of the resource will return a JSON document containing ContentBlobs corresponding to the remote ContentBlob and to the ContentBlob placeholder. The blobs contain a URI to their location.
 
-    A placeholder can then be satisfied by uploading a file to the location URI. For example by a placeholder such as 
+    A placeholder can then be satisfied by uploading a file to the location URI. For example by a placeholder such as
 
     ```
     "content_blobs": [

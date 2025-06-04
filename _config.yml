@@ -1,6 +1,6 @@
 #baseurl: /seek
 
-remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@4.1.0
+remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@4.2.0
 
 current_seek_version: "1.16.2"
 current_docker_tag: "1.16"
@@ -9,7 +9,12 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 
+# Do not remove the site.title. It's part of the ETT configuration.
 title: "FAIRDOM-SEEK Documentation"
+
+seek_instance:
+  name: "FAIRDOM-SEEK"
+  url: "https://fairdomhub.org"
 
 exclude:
  - Gemfile*
@@ -35,10 +40,10 @@ defaults:
     values:
       sidebar: technical_guide
 
-theme_variables: 
+theme_variables:
   #git_host: GitHub
   #back_to_top: true
-  #github_buttons: 
+  #github_buttons:
   #  position: top
   #  edit_me: true
   #  open_issue: true

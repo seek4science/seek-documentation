@@ -1,5 +1,5 @@
 ---
-title: Registering in FAIRDOM-SEEK
+title: User registration
 ---
 
 In order to register yourself in SEEK, you need to click the Register button in the top right hand corner of SEEK.

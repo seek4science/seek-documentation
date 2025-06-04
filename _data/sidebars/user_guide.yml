@@ -8,13 +8,13 @@ subitems:
     - title: Browsing content
       url: /help/user-guide/browsing
   - title: Profile
-    description: Registering and logging into FAIRDOM-SEEK, managing your account and identities, editing your profile.
+    description: Registering and logging in, managing your account and identities, editing your profile.
     subitems:
     - title: Registration and Login
       subitems:
-      - title: Registering in FAIRDOM-SEEK
+      - title: User registration
         url: /help/user-guide/registering
-      - title: Logging into FAIRDOM-SEEK via LS Login
+      - title: Logging in via LS Login
         url: /help/user-guide/aai
       - title: Managing your identities/alternative login methods
         url: /help/user-guide/managing-identities
@@ -68,7 +68,7 @@ subitems:
     subitems:
     - title: Introduction to the ISA structure
       subitems:
-      - title: Visualising ISA structure in FAIRDOM-SEEK
+      - title: Visualising the ISA structure
         url: /help/user-guide/isa-overview
       - title: Generating the ISA structure
         url: /help/user-guide/generating-the-isa-structure
@@ -98,7 +98,7 @@ subitems:
   -
     #hr: true
     title: Assets
-    description: Adding different types of assets to FAIRDOM-SEEK, creating new asset versions.
+    description: Adding different types of assets, creating new asset versions.
     subitems:
     - title: Adding assets (data, models, SOPs, publications)
       url: /help/user-guide/adding-assets
@@ -175,16 +175,16 @@ subitems:
   -
     #hr: true
     title: Integrations
-    description: Using FAIRDOM-SEEK and openBIS or Copasi, compliance with ISA-JSON schemas.
+    description: Integration with openBIS or Copasi, compliance with ISA-JSON schemas.
     subitems:
-    - title: Using FAIRDOM-SEEK with openBIS
+    - title: openBIS connections
       url: /help/user-guide/openbis
-    - title: Using Copasi with FAIRDOM-SEEK
+    - title: Using Copasi
       url: /help/user-guide/copasi-button
   -
     #hr: true
     title: User guide for API
-    description: Introduction to the FAIRDOM-SEEK API.
+    description: Introduction to the API.
     subitems:
     - title: API Introduction
       url: /help/user-guide/api
@@ -196,13 +196,13 @@ subitems:
         url: /help/archived
       - title: Data and model annotation
         subitems:
-         - title: Minimum metadata guidelines for FAIRDOM-SEEK
+         - title: Minimum metadata guidelines
            url: /help/metadata-guidelines
          - title: A Quick guide to using the ISA structure
            url: /help/isa-guide
          - title: ISA best practice
            url: /help/isa-best-practice
-         - title: "Transcriptomics: guidelines for FAIRDOM-SEEK templates"
+         - title: "Transcriptomics: guidelines for metadata templates"
            url: /help/transcriptomics-guidelines
          - title: Proteomics guidelines
            url: /help/proteomics-guidelines

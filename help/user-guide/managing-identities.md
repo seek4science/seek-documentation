@@ -2,8 +2,7 @@
 title: Managing Identities
 ---
 
-
-Depending on the configuration of the SEEK instance, in addition to the usual username/password method,
+Depending on the configuration of the FAIRDOM-SEEK instance, in addition to the usual username/password method,
 you may be able to login through one of the following:
  * LDAP
  * LS Login
@@ -14,7 +13,7 @@ Each different way you login is considered an "identity", and you can potentiall
 to your SEEK account.
 
 These can be managed on the "Manage Identities" page, which is found by clicking the user menu on the top-right.
-Note: This link will not appear if there are no alternative login methods enabled on the SEEK instance.
+Note: This link will not appear if there are no alternative login methods enabled on the FAIRDOM-SEEK instance.
 
 ![Manage Identities link]({{ "/images/user-guide/omniauth/manage_identities.png" | relative_url }}){:.screenshot}
 

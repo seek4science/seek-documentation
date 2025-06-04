@@ -1,5 +1,5 @@
 ---
-title: Backing up FAIRDOM-SEEK
+title: Backup and restore
 redirect_from: "/backups.html"
 ---
 
