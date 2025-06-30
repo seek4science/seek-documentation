@@ -21,18 +21,13 @@
 }
 
 
-@include media-breakpoint-up(md) {
-    header .input-group > .form-control {
-        width: 250px;
-    }
-}
-
 /*-----Sidebar-----*/
 .sidebar-title {
     font-weight: bolder;
 }
 
 @include media-breakpoint-up(lg) {
+
     /* Scroll bar on left sidebar */
     #sidebar {
         top: 3rem;
@@ -43,7 +38,9 @@
     }
 }
 
-#main h1, #main h2, #main h3 {
+#main h1,
+#main h2,
+#main h3 {
     color: $secondary;
     font-weight: 500;
     font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -52,12 +49,14 @@
 /*---screenshots----*/
 p:has(img.screenshot) {
     text-align: center;
+
     img.screenshot {
         border: 1px solid $border-color;
         border-radius: $border-radius;
         padding: 1em;
     }
 }
+
 @include media-breakpoint-up(md) {
     img.screenshot {
         max-width: 40em;
@@ -73,7 +72,7 @@ main .fa-solid {
 
 /*-----Top navigation-----*/
 
-.navbar-nav .nav-item > a.active {
+.navbar-nav .nav-item>a.active {
     background-color: $primary;
     color: white;
 }
@@ -82,7 +81,7 @@ main .fa-solid {
 /*-----Homepage tiles-----*/
 
 #main .navigation-tiles .btn:hover h3,
-main .navigation-tiles .btn:hover  .fa-solid {
+main .navigation-tiles .btn:hover .fa-solid {
     color: inherit;
 }
 
@@ -95,6 +94,7 @@ main .navigation-tiles p {
 #main .where-start {
     .where-start-tile {
         padding: 0 0.5rem;
+
         h3 {
             margin-top: 1rem;
         }
@@ -107,7 +107,8 @@ main .navigation-tiles p {
 //   content: "↗️";
 //}
 /* Add an indicator after external links that'll open in a new window. */
-#content .external::after, footer ul .external::after {
+#content .external::after,
+footer ul .external::after {
     /* &nearr;, but nicer. SVG adapted from Inter's rendition of "↗". */
     content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' version='1.1' id='svg1' width='12' height='12'%3E%3Cpath d='M 7.6490176,0 C 7.2259314,0 6.8841158,0.33671562 6.8841158,0.75348946 c 0,0.41677384 0.3418156,0.75348944 0.7649018,0.75348944 H 9.6258104 L 4.8141006,6.2492535 c -0.2987899,0.2943316 -0.2987899,0.7723267 0,1.0666587 0.2987896,0.2943318 0.7840244,0.2943318 1.0828141,0 L 10.708625,2.5736375 v 1.9472993 c 0,0.416774 0.341816,0.7534895 0.764901,0.7534895 0.423086,0 0.764902,-0.3367155 0.764902,-0.7534895 V 0.75348946 C 12.238428,0.33671562 11.896612,0 11.473526,0 Z M 1.9122544,0.75348946 C 0.85573386,0.75348946 0,1.5964559 0,2.6372133 v 7.5348947 c 0,1.040757 0.85573386,1.883724 1.9122544,1.883724 H 9.561272 c 1.05652,0 1.912254,-0.842967 1.912254,-1.883724 V 7.5348946 c 0,-0.4167736 -0.341816,-0.7534893 -0.764901,-0.7534893 -0.423086,0 -0.7649021,0.3367157 -0.7649021,0.7534893 v 2.6372134 c 0,0.207209 -0.1721028,0.376745 -0.3824509,0.376745 H 1.9122544 c -0.2103479,0 -0.3824509,-0.169536 -0.3824509,-0.376745 V 2.6372133 c 0,-0.2072096 0.172103,-0.3767448 0.3824509,-0.3767448 h 2.6771561 c 0.4230865,0 0.7649017,-0.3367156 0.7649017,-0.7534896 0,-0.4167738 -0.3418152,-0.75348944 -0.7649017,-0.75348944 z' id='path1' style='fill:%23999999;fill-opacity:1;stroke-width:0.0237243' /%3E%3C/svg%3E%0A");
     /* inline => inline-block, so that we can give it a height */
