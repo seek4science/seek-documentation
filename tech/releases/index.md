@@ -40,6 +40,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
   * Updates required to use the latest NeLS API.
 * WorkflowHub:
   * Git related api and documentation improvements.
+  * Updates to the EDAM controlled vocabularies to synchronise with their latest ontology - for topics, operations, data types and data formats.
 * DataHub
   * Dynamic table fixes and improvements.
   * Improve non-text attributes (e.g. related DataFiles, Samples) in Experiment view.
@@ -49,7 +50,6 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
 * A rework of exporting a list of publications, with a fix to correctly apply the visible filters applied.
 * A configurable maximum number of filters (default 5) that can be applied by anonymous users, to reduce overheads from AI bots.
 * Fixes related to deleting contributors.
-* Updates to the EDAM controlled vocabularies to synchronise with their latest ontology - for topics, operations, data types and data formats.
 * Fix to the Restart Background Workers feature available to administrators, as well as clearer indication of what are running and how many there should be.
 
 
