@@ -105,6 +105,18 @@ If you are not prompted you can install with the command:
 
     rvm install $(cat .ruby-version)
 
+### Doing the upgrade
+
+After updating the files, the following steps will update the database, gems,
+and other necessary changes. Note that seek:upgrade may take longer than usual if you have data stored that points to remote
+content.
+
+    cd . # this is to allow RVM to set the correct ruby version
+    gem install bundler
+    bundle install
+    bundle exec rake seek:upgrade
+    bundle exec rake assets:precompile # this task will take a while
+
 ### Update Cron Services
 
 SEEK requires some cron jobs for periodic background jobs to run. To update these run:
