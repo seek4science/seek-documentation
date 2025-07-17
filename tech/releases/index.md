@@ -9,6 +9,40 @@ Please see [Getting FAIRDOM-SEEK]({{ "/get-seek" | relative_url }}) for details 
 
 If you have any comments or feedback about a release, then please [Contact Us]({{ "/contacting-us" | relative_url }}).
 
+## Version 1.17.0
+
+Release date: _July 2025_
+
+A major release that contains a number of improvements, upgrades and bug fixes, the highlights including:
+
+* Maintenance
+  * Rails upgrade to 7.2
+  * Ruby upgrade to 3.3
+  * Updates of dependencies
+  * Code updates and cleaning up technical debt
+* Updates to NeLS integration
+* ROR, and also departments
+* Extended support for FDS
+  * creation of EMT's and Sample types
+  * asychronous imports and updates
+  * recognises disabled EMT's
+* Editable title and description for ISA snapshots
+* RDF sent to the triple store now correctly sets the data type, e.g. for datetime
+* Reworking of exporting a list of publications, with a fix to correctly apply the visible filters applied
+* Configurable maximum number of filters that can be applied by anonymous users, to reduce overheads from AI bots
+* Fixes related to deleted contributors
+* Updates to the EDAM controlled vocabularies to the latest ontologies - for topics, operations, data types and data formats
+* Fix to the Restart Workers feature from the admin pages, as well as clearer indication of what are running and how many there should be
+* Workflowhub git api improvements and documentation
+* DataHub
+  * Dynamic table fixes and improvements
+  * Improve non-text attributes (e.g related DataFiles, Samples) in Experiment view
+  * Fix to linking Sample types to Assay Streams
+
+For a full list, see [closed issues for 1.17.0](https://github.com/seek4science/seek/milestone/23?closed=1)
+
+---
+
 ## Version 1.16.2
 
 Release date: _3rd April 2025_
