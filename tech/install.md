@@ -43,7 +43,7 @@ troublesome and is not covered here.
 ## Installing packages
 
 These are the packages required to run SEEK with Ubuntu 24.04 (Desktop or
-Server). For other distributions or versions please visit our [Other
+Server). They will also work with Ubuntu 22.04. For other distributions or versions please visit our [Other
 Distributions](other-distributions) notes.
 
 First add a repo which contains python versions that may not be available in the default repositories
