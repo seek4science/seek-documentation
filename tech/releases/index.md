@@ -15,29 +15,43 @@ Release date: _July 2025_
 
 A major release that contains a number of improvements, upgrades and bug fixes, the highlights including:
 
-* Maintenance
+* A period of maintenance, doing various updates and spring cleaning, including:
   * Rails upgrade to 7.2
   * Ruby upgrade to 3.3
-  * Updates of dependencies
-  * Code updates and cleaning up technical debt
-* Updates to NeLS integration
-* ROR, and also departments
-* Extended support for FDS
-  * creation of EMT's and Sample types
-  * asychronous imports and updates
-  * recognises disabled EMT's
-* Editable title and description for ISA snapshots
-* RDF sent to the triple store now correctly sets the data type, e.g. for datetime
-* Reworking of exporting a list of publications, with a fix to correctly apply the visible filters applied
-* Configurable maximum number of filters that can be applied by anonymous users, to reduce overheads from AI bots
-* Fixes related to deleted contributors
-* Updates to the EDAM controlled vocabularies to the latest ontologies - for topics, operations, data types and data formats
-* Fix to the Restart Workers feature from the admin pages, as well as clearer indication of what are running and how many there should be
-* Workflowhub git api improvements and documentation
+  * Updates of dependencies.
+  * Addressing hard to maintain code and cleaning up technical debt.
+* Integrated Institutions with Research Organization Registry (ROR)
+  * When either editing or creating, Institutions can be searched via the ROR api and automatically populated.
+  * Linking an Institution to an ROR persistent identifier, either through searching or manually.
+  * Added a field for Department, for cases where more specific details are needed.
+  * Update the API to include ROR details.
+  * Institutions can still be registered manually, without ROR, for cases where it is missing from the registry.
+* Extended support for Fair Data Station (FDS)
+  * Extended Metadata types and Sample types can now be easily created from an example output from FDS.
+  * Asynchronous imports and updates using a background job, with current status displayed, to support large cases which would otherwise timeout.
+  * Retaining a history of the FDS files used to import or update.
+  * recognises disabled EMT's.
+* Updates to NeLS integration, to support more features that can be done directly in SEEK:
+  * Browsing datasets, subtypes, files and folders.
+  * Downloading files.
+  * Creating datasets.
+  * Creating folders.
+  * Uploading files.
+  * Updates required to use the latest NeLS API.
+* WorkflowHub:
+  * Git related api and documentation improvements.
 * DataHub
-  * Dynamic table fixes and improvements
-  * Improve non-text attributes (e.g related DataFiles, Samples) in Experiment view
-  * Fix to linking Sample types to Assay Streams
+  * Dynamic table fixes and improvements.
+  * Improve non-text attributes (e.g. related DataFiles, Samples) in Experiment view.
+  * Fix to linking Sample types to Assay Streams.
+* Added the ability to edit the title and description for ISA snapshots.
+* Where SEEK is used together with a triple store, the RDF registered now correctly sets the data type, e.g. for datetime.
+* A rework of exporting a list of publications, with a fix to correctly apply the visible filters applied.
+* A configurable maximum number of filters (default 5) that can be applied by anonymous users, to reduce overheads from AI bots.
+* Fixes related to deleting contributors.
+* Updates to the EDAM controlled vocabularies to synchronise with their latest ontology - for topics, operations, data types and data formats.
+* Fix to the Restart Background Workers feature available to administrators, as well as clearer indication of what are running and how many there should be.
+
 
 For a full list, see [closed issues for 1.17.0](https://github.com/seek4science/seek/milestone/23?closed=1)
 
