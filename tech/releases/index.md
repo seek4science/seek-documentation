@@ -11,7 +11,7 @@ If you have any comments or feedback about a release, then please [Contact Us]({
 
 ## Version 1.17.0
 
-Release date: _July 2025_
+Release date: _18th July 2025_
 
 A major release that contains a number of improvements, upgrades and bug fixes, the highlights including:
 

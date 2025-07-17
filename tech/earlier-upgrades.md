@@ -17,6 +17,120 @@ each released minor version in order incrementally (i.e. 0.13.x -> 0.14.x ->
 Each version has a tag, which has the format of *v* prefix
 followed by the version - e.g. v0.11.1, v0.13.2, v0.17.1
 
+## Steps to upgrade from 1.15.x to 1.16.x
+
+
+### Set RAILS_ENV
+
+**If upgrading a production instance of SEEK, remember to set the RAILS_ENV first**
+
+    export RAILS_ENV=production
+
+### Stopping services before upgrading
+
+    bundle exec rake seek:workers:stop 
+
+### Getting the upgrade
+
+The steps to fetch the upgrade will be different depending on whether it was originally installed directly
+from Github or via a downloaded tarball.
+
+#### Updating from GitHub
+
+If you have an existing installation linked to our GitHub, you can fetch the
+files with:
+
+    git fetch
+    git checkout v1.16.2
+
+#### Updating using the tarball
+
+You can download the file from
+<https://github.com/seek4science/seek/archive/v1.16.2.tar.gz> You can
+unpack this file using:
+
+    tar zxvf seek-1.16.2.tar.gz
+    mv seek seek-previous
+    mv seek-1.16.2 seek
+    cd seek/
+
+and then copy across your existing filestore and database configuration file
+from your previous installation and continue with the upgrade steps. The
+database configuration file you would need to copy is _config/database.yml_,
+and the filestore is simply _filestore/_
+
+### Install Python dependencies
+
+First, a specific version of `setuptools` needs to be installed to avoid an issue when installing dependencies
+
+    python3.9 -m pip install setuptools==58
+
+Then the other dependencies can be installed
+
+    python3.9 -m pip install -r requirements.txt
+
+### Upgrading Ruby
+
+It is necessary to upgrade to Ruby 3.1.7. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install) )you should be prompted to install during the standard installation steps that follow.
+If you are not prompted you can install with the command:
+
+    rvm install $(cat .ruby-version)
+
+### Apply new Apache Solr configuration
+
+If running Solr **via the docker scripts**, then you just need to stop, delete, pull the latest image, and restart:
+
+    sh ./script/stop-docker-solr.sh
+    sh ./script/delete-docker-solr.sh
+    docker pull fairdom/seek-solr:8.11
+    sh ./script/start-docker-solr.sh
+
+If running an **Apache Solr installed** using [Setting up Solr](setting-up-solr#installing-apache-solr), then replace with the new core configuration, and restart:
+
+    sudo su - solr -c "/opt/solr/bin/solr delete -c seek"
+    sudo su - solr -c "/opt/solr/bin/solr create -c seek -d $(pwd)/solr/seek/conf"
+    sudo service solr restart
+
+A full reindexing of SEEK content will be triggered during the upgrade.
+
+### Doing the upgrade
+
+After updating the files, the following steps will update the database, gems,
+and other necessary changes. Note that seek:upgrade may take longer than usual if you have data stored that points to remote
+content.
+
+    cd . # this is to allow RVM to set the correct ruby version
+    gem install bundler
+    bundle install
+    bundle exec rake seek:upgrade
+    bundle exec rake assets:precompile # this task will take a while
+
+### Update Cron Services
+
+SEEK requires some cron jobs for periodic background jobs to run. To update these run:
+
+    bundle exec whenever --update-crontab
+
+### Restarting background job services
+
+    bundle exec rake seek:workers:start
+
+### Final notes
+
+If you encounter any problems with loading gems (likely _stringio_ or _strscan_) when running with Passenger, add the following to your Apache configuration:
+
+     PassengerPreloadBundler on
+
+more details at [PassengerPreloadBundler](https://www.phusionpassenger.com/docs/references/config_reference/apache/#passengerpreloadbundler)
+
+If using Nginx, the setting is
+
+     passenger_preload_bundler on;
+
+more details at [passenger_preload_bundler](https://www.phusionpassenger.com/docs/references/config_reference/nginx/#passenger_preload_bundler)
+
+---
+
 ## Steps to upgrade from 1.14.x to 1.15.x
 
 
