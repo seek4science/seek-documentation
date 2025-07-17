@@ -196,3 +196,10 @@ start it up with:
 
     sudo /etc/init.d/delayed_job-seek start
 
+{% include callout.html type="tip" content="
+You can add '/etc/init.d/delayed_job-seek start' to your root user crontab to run periodically (say every hour). This will restart
+job workers that have unexpectedly stopped, but will skip over ones that are still currently running.
+
+You can also check the status of the job workers at '/statistics/application_status' and link this to a monitoring service (e.g https://uptimerobot.com/)
+" %}
+
