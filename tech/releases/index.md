@@ -989,7 +989,7 @@ This is the first public release that supports [openBIS](https://openbis.ch/) in
 
 Details on how to use openBIS with SEEK is available in our [User Guide]({{ "/help/user-guide/openbis.html" | relative_url }})
 
-A full list of changes included in this release can be found in the [SEEK v1.3.0 release notes]({{ "/release-notes-1.3.0.html" | relative_url }}).
+A full list of changes included in this release can be found in the [SEEK v1.3.0 release notes](release-notes-1.3.0.html).
 
 ## Version 1.2.2
 
@@ -1089,7 +1089,7 @@ Small fixes and minor improvements - for full details see [SEEK v1.1.1 release n
 Release date: _June 15th 2016_
 
   * New icons and front page changes - in particular
-      * New and improved SEEK logo - [https://goo.gl/NeALVA](https://goo.gl/NeALVA)
+      * New and improved SEEK logo
       * New default avatars for Project and Institution
       * New logos for Investigation, Study and Assays
       * New logos badges for the different roles
