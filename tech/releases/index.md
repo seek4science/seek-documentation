@@ -20,28 +20,28 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
   * Ruby upgrade to 3.3
   * Updates of dependencies.
   * Addressing hard to maintain code and cleaning up technical debt.
-* Integrated Institutions with Research Organization Registry (ROR)
+* Integrated Institutions with [Research Organization Registry (ROR)](https://ror.org/)
   * When either editing or creating, Institutions can be searched via the ROR api and automatically populated.
   * Linking an Institution to an ROR persistent identifier, either through searching or manually.
   * Added a field for Department, for cases where more specific details are needed.
   * Update the API to include ROR details.
   * Institutions can still be registered manually, without ROR, for cases where it is missing from the registry.
-* Extended support for Fair Data Station (FDS)
+* Extended support for [Fair Data Station (FDS)](https://fairds.fairbydesign.nl/)
   * Extended Metadata types and Sample types can now be easily created from an example output from FDS.
   * Asynchronous imports and updates using a background job, with current status displayed, to support large cases which would otherwise timeout.
   * Retaining a history of the FDS files used to import or update.
   * recognises disabled EMT's.
-* Updates to NeLS integration, to support more features that can be done directly in SEEK:
+* Further integration with the ELIXIR Norway [NeLS](https://elixir.no/Services-bak/nels) system, to support more features that can be done directly in SEEK:
   * Browsing datasets, subtypes, files and folders.
   * Downloading files.
   * Creating datasets.
   * Creating folders.
   * Uploading files.
   * Updates required to use the latest NeLS API.
-* WorkflowHub:
+* [WorkflowHub](https://about.workflowhub.eu/) enhancements:
   * Git related api and documentation improvements.
-  * Updates to the EDAM controlled vocabularies to synchronise with their latest ontology - for topics, operations, data types and data formats.
-* DataHub
+  * Updates to the [EDAM](https://edamontology.org/page) controlled vocabularies to synchronise with their latest ontology - for topics, operations, data types and data formats.
+* [DataHub](https://fair-dom.org/fairdom-in-use/Datahub) enhancements:
   * Dynamic table fixes and improvements.
   * Improve non-text attributes (e.g. related DataFiles, Samples) in Experiment view.
   * Fix to linking Sample types to Assay Streams.
