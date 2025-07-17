@@ -51,6 +51,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
 * A configurable maximum number of filters (default 5) that can be applied by anonymous users, to reduce overheads from AI bots.
 * Fixes related to deleting contributors.
 * Fix to the Restart Background Workers feature available to administrators, as well as clearer indication of what are running and how many there should be.
+* Admin feature to list all registered users with profiles.
 
 
 For a full list, see [closed issues for 1.17.0](https://github.com/seek4science/seek/milestone/23?closed=1)
