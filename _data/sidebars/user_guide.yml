@@ -85,10 +85,14 @@ subitems:
       subitems:
       - title: Creating an ISA-JSON compliant study
         url: /help/user-guide/studies
+      - title: Editing an ISA-JSON compliant study
+        url: /help/user-guide/edit-studies
     - title: Assays
       subitems:
       - title: Creating an ISA-JSON compliant assay
         url: /help/user-guide/assays
+      - title: Editing an ISA-JSON compliant assay
+        url: /help/user-guide/edit-assays
     - title: Experiment Sample Templates
       subitems:
       - title: Creating Experiment Sample Templates
@@ -147,16 +151,25 @@ subitems:
     - title: Sample types
       description: Creating and browsing samples, and samples in ISA-JSON compliant experiments.
       subitems:
-      - title: Create a Sample Type
+      - title: Creating a Sample Type
         url: /help/user-guide/create-sample-type
+      - title: Editing a Sample Type
+        url: /help/user-guide/edit-sample-type
+      - title: Sample Type permissions
+        url: /help/user-guide/sample-type-permissions
     - title: Samples
       subitems:
-      - title: Create a Sample
+      - title: Creating a Sample
         url: /help/user-guide/create-sample
-      - title: Working with samples in ISA-JSON compliant Experiments
-        url: /help/user-guide/create-sample-isajson-compliant
       - title: Legacy Biosamples
         url: /help/user-guide/legacy-biosamples
+    - title: ISA-JSON compliant Samples
+      subitems:
+      - title: Creating ISA-JSON compliant Samples
+        url: /help/user-guide/create-sample-isajson-compliant
+      - title: Managing ISA-JSON compliant Samples
+        url: /help/user-guide/isa-sample-permissions
+
   -
     #hr: true
     title: General attributes and links

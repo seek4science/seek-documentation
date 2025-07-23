@@ -4,11 +4,9 @@ title: Create a Sample Type
 
 Sample Types are templates that detail the key information that needs to be included to describe a given sample correctly.
 
-By default, any member of a Project may create a Sample Type and associate with that Project. By default the Sample Type will only be visible to members of that
- project until it has publicly accessible Samples associated with it. See [Sample Type Visibility](#sample-type-visibility) .
+By default, any member of a Project may create a Sample Type and associate with that Project. By default the Sample Type will only be visible to members of that project until it has publicly accessible Samples associated with it. See [Sample Type Visibility](#sample-type-visibility) .
 
 A SEEK Administrator can change the configuration such that Sample Types can only be created by the Project Administrator.
-
 
 To create a new sample type, select create from the drop down menu, and then select Sample Type from the list
 
@@ -16,13 +14,10 @@ To create a new sample type, select create from the drop down menu, and then sel
 
 A Sample Type can be made in two ways
 
-* By manually defining the attributes using a form
+* By manually defining the attributes using a form;
 * Uploading a spreadsheet that contains a Sample Template.
 
-
-
-
-## Creating a Sample Type manually using a Form
+## Creating a Sample Type manually using a form
 
 First we will show generating a Sample type through manually creating a sample type. To begin with ensure that the Form is selected.
 
@@ -30,38 +25,35 @@ First we will show generating a Sample type through manually creating a sample t
 
 Sample Type allows you to include:
 
-* [Title](general-attributes#title)
-* [Description](general-attributes#description)
-* [Projects](general-attributes#projects)
-* [Tags](general-attributes#tags)
+* [Title](general-attributes#title);
+* [Description](general-attributes#description);
+* [Projects](general-attributes#projects);
+* [Tags](general-attributes#tags).
 
 
 You can define your own attributes for the Sample Type.
 We would recommend using Minimum Information Checklists to assist in deciding the attributes you will need to include in your Sample Type.
 
-## Defining Attributes
+## Defining attributes
 
 All attributes must have a Name, and a selected Type.
 
-
 You can define the different types of data that the attributes should be:
 
-
-* **String**: a sequence of characters (e.g Blue)
-* **Text**: A longer alphanumerical entry (e.g. The 4th experiment in the batch, it was sampled late, so may not be as accurate).
-* **Integer**: a whole number; not a fraction (e.g. 1, 2, 3, 4)
-* **Date**: A selected date (e.g. 2nd December 2016)
-* **Date time**: a selected date and time (e.g. 2nd December 2016 at 14:00 GMT)
-* **Real number**: A number that can be a fraction and include a decimal place, e.g 1.25
-* **Web link**: a link to a specific web page (e.g. https://fair-dom.org)
-* **Email address**: e.g. support@fair-dom.org
-* **CHEBI ID**: An identification for a specific chemical structure registered in the ChEBI database (https://www.ebi.ac.uk/chebi/) (e.g. CHEBI:17234)
-* **Boolean**: a true/false declaration, 1 or 0 can also be accepted.
-* **SEEK strain**: an internal link to a strain registered within SEEK.
-* **SEEK sample**: an internal link to a sample registered within SEEK.
-* **URI**: A Uniform Resource Identifier, which for example may relate to an ontology term
-* **Controlled Vocabulary**: An attribute can be a set of predefined terms you have to select from, and any other term is invalid. You can either create a new
-controlled vocabulary or reuse and existing one. In the future we will be adding ontology support the the controlled vocabularies.
+* **String**: a sequence of characters (e.g Blue);
+* **Text**: A longer alphanumerical entry (e.g. The 4th experiment in the batch, it was sampled late, so may not be as accurate);
+* **Integer**: a whole number; not a fraction (e.g. 1, 2, 3, 4);
+* **Date**: A selected date (e.g. 2nd December 2016);
+* **Date time**: a selected date and time (e.g. 2nd December 2016 at 14:00 GMT);
+* **Real number**: A number that can be a fraction and include a decimal place, e.g 1.25;
+* **Web link**: a link to a specific web page (e.g. https://fair-dom.org);
+* **Email address**: e.g. support@fair-dom.org;
+* **CHEBI ID**: An identification for a specific chemical structure registered in the ChEBI database (https://www.ebi.ac.uk/chebi/) (e.g. CHEBI:17234);
+* **Boolean**: a true/false declaration, 1 or 0 can also be accepted;
+* **SEEK strain**: an internal link to a strain registered within SEEK;
+* **SEEK sample**: an internal link to a sample registered within SEEK;
+* **URI**: A Uniform Resource Identifier, which for example may relate to an ontology term;
+* **Controlled Vocabulary**: An attribute can be a set of predefined terms you have to select from, and any other term is invalid. You can either create a new controlled vocabulary or reuse and existing one. In the future we will be adding ontology support the the controlled vocabularies.
 
 ![sample type attributes]({{ "/images/user-guide/samples/sample-type-attributes.png" | relative_url }}){:.screenshot}
 
@@ -86,10 +78,10 @@ When creating the sample type, first choose the tab _Use spreadsheet template_
 
 On the initial Sample Template page you can include the following metadata:
 
-* [Title](general-attributes#title)
-* [Description](general-attributes#description)
-* [Projects](general-attributes#projects)
-* [Tags](general-attributes#tags)
+* [Title](general-attributes#title);
+* [Description](general-attributes#description);
+* [Projects](general-attributes#projects);
+* [Tags](general-attributes#tags);
 
 and then also select Choose File to select a sample template to upload:
 
@@ -117,11 +109,4 @@ When a Sample is shared outside of a Project, but is still not accessible public
 when accessed via a link. For example if a Sample is shared with another Project, a member of that other Project may view the Sample Type when clicking the link
 the link from the Sample description. However, in this case, the Sample Type won't appear in lists or search results.
 
-## Editing Sample Types
 
-The Sample Type may be edited by the original creator, or somebody that can administer the related projects.
-
-If no samples have yet been created, you can freely edit the Sample Type and its attributes. Once Samples have been created for a Sample Type, it is no longer possible to modify the attributes - however other details about the Sample Type can be changed.
-
-
-For details on how to create a Sample please go to [Creating a Sample](create-sample)
