@@ -2,7 +2,7 @@
 title: Edit an existing Sample Type
 ---
 
-To edit a Sample Type, the user must have Edit or Manage permissions (i.e. ST-policy ≥ Edit). For details on assigning permissions, see the [Sample Type Permissions](sample-type-permissions) page.
+To edit a Sample Type, the user must have Edit or Manage permissions. For details on assigning permissions, see the [Sample Type Permissions](sample-type-permissions) page.
 
 Steps to edit:
 

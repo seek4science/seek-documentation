@@ -36,9 +36,7 @@ subitems:
         url: /help/user-guide/bulk-change-sharing-permission
       - title: Making an Investigation, Study or Assay citable
         url: /help/user-guide/investigation-snapshots
-  -
-    #hr: true
-    title: Yellow Pages/Directory
+  - title: Yellow Pages/Directory
     description: Directory of common project tasks.
     subitems:
       - title: "Programme"
@@ -61,9 +59,7 @@ subitems:
 #       url: ""
 #     - title: "[People]"
 #       url: ""
-  -
-    #hr: true
-    title: Experiments
+  - title: Experiments
     description: Generating the ISA structure, designing an ISA-JSON compliant experiment, making items citable.
     subitems:
     - title: Introduction to the ISA structure
@@ -72,9 +68,8 @@ subitems:
         url: /help/user-guide/isa-overview
       - title: Generating the ISA structure
         url: /help/user-guide/generating-the-isa-structure
-    - title: ISA-JSON compliant experiments
-      url: /help/user-guide/isa-json-compliant-experiment
-    - hr: true
+      - title: ISA-JSON compliant experiments
+        url: /help/user-guide/isa-json-compliant-experiment
     - title: Investigations
       subitems:
       - title: Creating an ISA-JSON compliant investigation
@@ -143,20 +138,23 @@ subitems:
 #      url: /help/user-guide/general-attributes#events
   -
     #hr: true
+    title: Samples type
+    description: Creating and browsing samples, and samples in ISA-JSON compliant experiments.
+    subitems:
+    - title: Creating a Sample Type
+      url: /help/user-guide/create-sample-type
+    - title: Editing a Sample Type
+      url: /help/user-guide/edit-sample-type
+    - title: Sample Type permissions
+      url: /help/user-guide/sample-type-permissions
+  -
+    #hr: true
     title: Samples
     description: Creating and browsing samples, and samples in ISA-JSON compliant experiments.
     subitems:
     - title: Introduction to samples
       url: /help/user-guide/samples
-    - title: Sample types
-      description: Creating and browsing samples, and samples in ISA-JSON compliant experiments.
-      subitems:
-      - title: Creating a Sample Type
-        url: /help/user-guide/create-sample-type
-      - title: Editing a Sample Type
-        url: /help/user-guide/edit-sample-type
-      - title: Sample Type permissions
-        url: /help/user-guide/sample-type-permissions
+      
     - title: Samples
       subitems:
       - title: Creating a Sample

@@ -4,7 +4,7 @@ title: Create a Sample Type
 
 Sample Types are templates that detail the key information that needs to be included to describe a given sample correctly.
 
-By default, any member of a Project may create a Sample Type and associate with that Project. By default the Sample Type will only be visible to members of that project until it has publicly accessible Samples associated with it. See [Sample Type Visibility](#sample-type-visibility) .
+By default, any member of a Project may create a Sample Type and associate with that Project. See [Sample Type Permissions](#sample-type-permissions).
 
 A SEEK Administrator can change the configuration such that Sample Types can only be created by the Project Administrator.
 
@@ -98,15 +98,5 @@ At least one attribute must be required and set to the title, and other attribut
 
 Once completed click update. Your Sample Type can now be used to generate Samples.
 
-## Sample Type Visibility
-
-Initially, a Sample Type is only visible and accessible to members of the Project it is associated with.
-
-However, once a Sample Type has instances of Samples associated with them, and those Samples are shared publically (i.e. to logged out members), the Sample Type
-also becomes visible.
-
-When a Sample is shared outside of a Project, but is still not accessible publicly, then the Sample Type will adopt the visibility of the referring Sample
-when accessed via a link. For example if a Sample is shared with another Project, a member of that other Project may view the Sample Type when clicking the link
-the link from the Sample description. However, in this case, the Sample Type won't appear in lists or search results.
 
 

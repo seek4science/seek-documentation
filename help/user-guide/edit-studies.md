@@ -1,9 +1,9 @@
 ---
-title: Edit an Existing Study
+title: Edit an Existing ISA-JSON compliant Study
 ---
 
 
-To edit an existing Study, the user must have Edit or Manage permissions (i.e. policy ≥ Edit).
+To edit an existing ISA-JSON compliant Study, the user must have Edit or Manage permissions (i.e. policy ≥ Edit).
 
 ### Steps to edit
 
@@ -22,9 +22,9 @@ Users with appropriate permissions may update the following properties:
 
 Changes are applied immediately upon saving and do not affect existing samples or their metadata.
 
-## Modifying Study attributes
+## Modifying Study Sample Types' attributes
 
-Each Study contains two 'Sample Types', namely a Study Source and a Study Sample. Both consist of a list of metadata attributes used to describe its samples. Attributes may be:
+Each ISA-JSON compliant Study contains two 'Sample Types', namely a Study Source and a Study Sample. Both consist of a list of metadata attributes used to describe its samples. Attributes may be:
 
 - Inherited from an [Experiment Sample Template](isajson-templates);
 - Defined locally within the Study.

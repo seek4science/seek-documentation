@@ -1,5 +1,5 @@
 ---
-title: Edit an Existing Assay
+title: Edit an Existing ISA-JSON compliant Assay
 ---
 
 
@@ -22,9 +22,9 @@ Users with appropriate permissions may update the following properties:
 
 Changes are applied immediately upon saving and do not affect existing samples or their metadata.
 
-## Modifying Assay attributes
+## Modifying Assay Sample Type's attributes
 
-Each Assay contains a list of metadata attributes used to describe its samples. Attributes may be:
+Each ISA-JSON compliant Assay contains one Sample Type consiting of a list of metadata attributes used to describe its samples. Attributes may be:
 
 - Inherited from an [Experiment Sample Template](isajson-templates);
 - Defined locally within the Assay.
