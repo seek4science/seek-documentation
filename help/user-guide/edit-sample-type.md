@@ -6,8 +6,8 @@ To edit a Sample Type, the user must have Edit or Manage permissions. For detail
 
 Steps to edit:
 
-1. Navigate to Browse → Sample Types;
-2. Select the Sample Type to edit;
+1. Navigate to Browse → Sample Types
+2. Select the Sample Type to edit
 3. Click Actions → Edit Sample Type in the top-right corner.
 
 > {% include callout.html type="note" content="Users are not notified of changes made to the Sample Type — inform collaborators as needed." %}
@@ -17,9 +17,9 @@ Steps to edit:
 
 Users with appropriate permissions may modify the following properties:
 
-- Title: The name used to identify the Sample Type;
-- Description: A summary describing the purpose or scope;
-- Associated Projects: Determines visibility and access for project members;
+- Title: The name used to identify the Sample Type
+- Description: A summary describing the purpose or scope
+- Associated Projects: Determines visibility and access for project members
 - Tags: Labels used for categorization and filtering.
 
 Changes are applied immediately upon saving and do not affect existing samples or their (meta)data.
@@ -29,13 +29,13 @@ Changes are applied immediately upon saving and do not affect existing samples o
 Each Sample Type consists of a list of attributes that define the metadata fields for its samples.
 
 ### Adding an attribute
-1. Click the green 'Add new attribute' button at the bottom of the attributes table;
+1. Click the green 'Add new attribute' button at the bottom of the attributes table
 2. Provide the following:
-   - Name (must be unique);
-   - Required (toggle on/off);
-   - Title (toggle on/off);
-   - Attribute Type (e.g., Text, Number, Date, Controlled Vocabulary);
-   - Description, PID, Unit (optional);
+   - Name (must be unique)
+   - Required (toggle on/off)
+   - Title (toggle on/off)
+   - Attribute Type (e.g., Text, Number, Date, Controlled Vocabulary)
+   - Description, PID, Unit (optional)
 3. Click 'Update' to apply changes.
 
 Attributes can be added even after samples exist, except when the Sample Type was created via file-upload import. Any Sample Type that was populated via a file‐upload import carries an association back to the Data File, and that import record prevents further attribute additions. The idea is to preserve the 1:1 mapping between the columns in the Data File and the attributes on the Sample Type. Consequently, attributes cannot be added.
@@ -50,32 +50,32 @@ An attribute can be deleted only if no existing samples contain a value for it. 
 
 The following rules apply when modifying attributes:
 
-- Name, Description, and Unit can be changed at any time;
-- Title status can be toggled only if all samples contain a value for that attribute;
-- Attribute type can be changed only if no samples have a value for that attribute;
+- Name, Description, and Unit can be changed at any time
+- Title status can be toggled only if all samples contain a value for that attribute
+- Attribute type can be changed only if no samples have a value for that attribute
 - 'Required?' flag:
-  - Changing from mandatory to optional is always allowed;
+  - Changing from mandatory to optional is always allowed
   - Changing from optional to mandatory is allowed only if all samples already contain a non-empty value.
 
 ## Validation & best practices
 
-- Each Sample Type must have exactly one attribute marked as the title;
-- Attribute titles must be unique within the Sample Type;
-- The title attribute cannot be of type 'Registered Sample Multi';
+- Each Sample Type must have exactly one attribute marked as the title
+- Attribute titles must be unique within the Sample Type
+- The title attribute cannot be of type 'Registered Sample Multi'
 - The Sample Type must not be locked.
 
 ## Deleting a Sample Type
 
 To delete a Sample Type:
 
-1. Navigate to Browse → Sample Types;
-2. Select the Sample Type;
+1. Navigate to Browse → Sample Types
+2. Select the Sample Type
 3. Click Actions → Delete Sample Type in the top-right corner.
 
 Deletion is only permitted if:
 
-- The user has Manage permissions;
-- The Sample Type has no associated samples;
+- The user has Manage permissions
+- The Sample Type has no associated samples
 - The Sample Type is not referenced by another Sample Type, Study or Assay.
 
 If these conditions are not met, the 'Delete Sample Type' option will not be available.
@@ -100,6 +100,6 @@ If these conditions are not met, the 'Delete Sample Type' option will not be ava
 
 - “Delete Sample Type” action missing**  
   → Confirm that:  
-  1. You have 'Manage' permissions;
-  2. No samples exist for that type;
+  1. You have 'Manage' permissions
+  2. No samples exist for that type
   3. It isn’t referenced by any other Sample Type, Study or Assay.

@@ -17,9 +17,9 @@ ISA-JSON compliant Samples (referred to as *ISA-JSON Samples*) are created withi
 
 Each permission level defines what actions a user can perform on an ISA-JSON Sample:
 
-- No access: The sample is entirely hidden from the user;
-- View: The user can view the sample and its metadata but cannot make changes;
-- Edit: The user can update metadata fields but cannot delete the sample or modify its sharing policy;
+- No access: The sample is entirely hidden from the user
+- View: The user can view the sample and its metadata but cannot make changes
+- Edit: The user can update metadata fields but cannot delete the sample or modify its sharing policy
 - Manage: The user has full control, including editing, deleting, and changing permissions.
 
 ## Inheritance and sharing behavior
@@ -33,7 +33,7 @@ Each ISA-JSON has an associated sharing policy that determines which users or gr
 
 To create ISA-JSON Samples, a user must:
 
-- Be a member of **at least one** project (not necessarily the one linked to the Assay or Study).
+- Be a member of **at least one** project (not necessarily the one linked to the Assay or Study)
 - Have at least 'View' access to the parent Assay or Study.
 
 For instructions on creating ISA-JSON Samples, refer to the [Samples in ISA-JSON Compliant Experiments](create-sample-isajson-compliant#create-assay-samples) page.
@@ -41,14 +41,14 @@ For instructions on creating ISA-JSON Samples, refer to the [Samples in ISA-JSON
 ## Setting ISA-JSON Sample permissions
 ### Via the Sample browser
 
-- Navigate to Browse → Samples;
-- Use the filters to locate the desired ISA-JSON Sample;
+- Navigate to Browse → Samples
+- Use the filters to locate the desired ISA-JSON Sample
 - Click Actions → Manage Sample to update its permissions.
 
 ### From the Assay or Study experiment view
 
-- Open the [experiment view](viewing-project-in-single-page) of the relevant Assay or Study;
-- Select one or more ISA-JSON Samples using the checkboxes;
+- Open the [experiment view](viewing-project-in-single-page) of the relevant Assay or Study
+- Select one or more ISA-JSON Samples using the checkboxes
 - Click Batch sharing permissions at the bottom of the Dynamic Table.
 
 ### From the User profile
