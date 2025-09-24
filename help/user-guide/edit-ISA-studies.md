@@ -41,7 +41,7 @@ The 'Overview' tab of the Study displays the associated Experiment Sample Templa
    - Description, PID, Unit (optional)
 3. Click 'Update' to apply changes.
 
-> Note: If the Study Source or Study Sample already contains samples, new attributes must be created as optional. Once all samples have non-empty values for the attribute, it can be marked as mandatory.
+{% include callout.html type="note" content="If the Study Source or Study Sample already contains samples, new attributes must be created as optional. Once all samples have non-empty values for the attribute, it can be marked as mandatory." %}
 
 ### Removing an attribute
 
