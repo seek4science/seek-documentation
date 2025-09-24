@@ -21,7 +21,7 @@ In other words:
 - **No access**: The Sample Type is completely hidden, the user won’t even know it exists
 - **View**: The user can look at the Sample Type and its details, but can’t make any changes
 - **Edit**: The user can make changes to the Sample Type (like updating fields or units), but can’t delete it or change who else can see it
-- Manage: The user has full control — they can edit, delete, and change sharing settings.
+- **Manage**: The user has full control — they can edit, delete, and change sharing settings.
 
 > {% include callout.html type="note" content="Samples have their own, independent sharing policies that do not default to those of their Sample Type." %}
 
