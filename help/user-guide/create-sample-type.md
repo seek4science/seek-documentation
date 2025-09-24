@@ -4,7 +4,7 @@ title: Create a Sample Type
 
 Sample Types are templates that detail the key information that needs to be included to describe a given sample correctly.
 
-By default, any member of a Project may create a Sample Type and associate with that Project. See [Sample Type Permissions](#sample-type-permissions).
+By default, any member of a Project may create a Sample Type and associate with that Project. See [Sample Type Permissions](sample-type-permissions).
 
 A SEEK Administrator can change the configuration such that Sample Types can only be created by the Project Administrator.
 
