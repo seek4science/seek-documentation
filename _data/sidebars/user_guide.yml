@@ -138,7 +138,7 @@ subitems:
 #      url: /help/user-guide/general-attributes#events
   -
     #hr: true
-    title: Samples type
+    title: Sample Types
     description: Creating and browsing samples, and samples in ISA-JSON compliant experiments.
     subitems:
     - title: Creating a Sample Type
