@@ -28,7 +28,7 @@ In other words:
 Permissions assigned to a Sample Type do not automatically apply to the individual samples created under it. Each sample is governed by its own sharing policy, which is configured independently of the Sample Type.
 By default, newly created samples are private. 
 
-Note: Samples created within the context of an ISA-compliant Study or Assay **do** inherit the permissions of that ISA Study or Assay by default. 
+{% include callout.html type="note" content="Samples created within the context of an ISA-compliant Study or Assay **do** inherit the permissions of that ISA Study or Assay by default." %}
 
 ## Who can create Samples?
 
