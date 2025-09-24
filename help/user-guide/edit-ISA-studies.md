@@ -10,7 +10,7 @@ To edit an existing ISA-JSON compliant Study, the user must have Edit or Manage 
 1. Navigate to the Study;
 2. Click Actions → Edit ISA Study in the top-right corner.
 
-> {% include callout.html type="note" content="Users are not notified of changes made to the Study — inform collaborators as needed." %}
+{% include callout.html type="note" content="Users are not notified of changes made to the Study — inform collaborators as needed." %}
 
 ## Modifying Study properties
 
