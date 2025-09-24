@@ -32,7 +32,7 @@ By default, newly created samples are private.
 
 ## Who can create Samples?
 
-> {% include callout.html type="note" content="Upgrading from a lower to higher policy at the level of the Sample Type does **not** automatically grant sample‑creation rights." %}
+{% include callout.html type="note" content="Upgrading from a lower to higher policy at the level of the Sample Type does **not** automatically grant sample‑creation rights." %}
 
 To create samples, a user must:
 
