@@ -69,7 +69,7 @@ The following rules apply when modifying attributes:
   - Can be freely changed for non-inherited attributes if no samples exist
   - If samples exist, the ISA tag can only be changed if no sample contains a value for the attribute.
 
-> *Note: The ISA tag determines how SEEK labels the attribute when [exporting to ISA‑JSON](exporting-experiments-as-isajson). Setting the correct ISA tag ensures compatibility with downstream ISA-aware tools.
+{% include callout.html type="note" content="The ISA tag determines how SEEK labels the attribute when [exporting to ISA‑JSON](exporting-experiments-as-isajson). Setting the correct ISA tag ensures compatibility with downstream ISA-aware tools." %}
 
 ## Validation & best practices
 
