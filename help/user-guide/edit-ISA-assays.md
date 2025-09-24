@@ -10,7 +10,7 @@ To edit an existing Assay, the user must have Edit or Manage permissions (i.e. p
 1. Navigate to the Assay;
 2. Click Actions → Edit ISA Assay in the top-right corner.
 
-> {% include callout.html type="note" content="Users are not notified of changes made to the Assay — inform collaborators as needed." %}
+{% include callout.html type="note" content="Users are not notified of changes made to the Assay — inform collaborators as needed." %}
 
 ## Modifying Assay properties
 
