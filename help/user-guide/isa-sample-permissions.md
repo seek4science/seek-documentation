@@ -17,7 +17,7 @@ ISA-JSON compliant Samples (referred to as *ISA-JSON Samples*) are created withi
 
 Each permission level defines what actions a user can perform on an ISA-JSON Sample:
 
-- No access: The sample is entirely hidden from the user
+- **No access**: The sample is entirely hidden from the user
 - View: The user can view the sample and its metadata but cannot make changes
 - Edit: The user can update metadata fields but cannot delete the sample or modify its sharing policy
 - Manage: The user has full control, including editing, deleting, and changing permissions.
