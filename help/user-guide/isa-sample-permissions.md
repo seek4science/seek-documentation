@@ -20,7 +20,7 @@ Each permission level defines what actions a user can perform on an ISA-JSON Sam
 - **No access**: The sample is entirely hidden from the user
 - **View**: The user can view the sample and its metadata but cannot make changes
 - **Edit**: The user can update metadata fields but cannot delete the sample or modify its sharing policy
-- Manage: The user has full control, including editing, deleting, and changing permissions.
+- **Manage**: The user has full control, including editing, deleting, and changing permissions.
 
 ## Inheritance and sharing behavior
 Each ISA-JSON has an associated sharing policy that determines which users or groups can view, edit, or manage it. Though alligned by default, these permissions can be set independently of those assigned to the parent Assay or Study, which may have their own sharing settings.
