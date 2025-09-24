@@ -139,7 +139,7 @@ subitems:
   -
     #hr: true
     title: Sample Types
-    description: Creating and browsing samples, and samples in ISA-JSON compliant experiments.
+    description: Creating and editing sample types, and modifying sample type permissions.
     subitems:
     - title: Creating a Sample Type
       url: /help/user-guide/create-sample-type
