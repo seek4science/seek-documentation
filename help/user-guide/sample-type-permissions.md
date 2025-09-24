@@ -12,7 +12,7 @@ Each Sample Type has an associated sharing policy that determines which users or
 | **Permission level** | **View ST** | **Edit ST** | **Manage ST** | **What this means** |
 |----------------------|:-----------:|:-----------:|:-------------:|----------------------|
 | **No access**            | ❌         | ❌          | ❌            | The Sample Type is completely hidden. |
-| View                 | ✅         | ❌          | ❌            | Users can see the Sample Type, but not change it. |
+| **View**                 | ✅         | ❌          | ❌            | Users can see the Sample Type, but not change it. |
 | Edit                 | ✅         | ✅          | ❌            | Users can update fields, attributes, and units. |
 | Manage               | ✅         | ✅          | ✅            | Full control: delete, change policy, etc. |
 
