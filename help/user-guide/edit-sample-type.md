@@ -10,7 +10,7 @@ Steps to edit:
 2. Select the Sample Type to edit
 3. Click Actions → Edit Sample Type in the top-right corner.
 
-> {% include callout.html type="note" content="Users are not notified of changes made to the Sample Type — inform collaborators as needed." %}
+{% include callout.html type="note" content="Users are not notified of changes made to the Sample Type — inform collaborators as needed." %}
 
 
 ## Changing Sample Type properties
@@ -92,13 +92,13 @@ If these conditions are not met, the 'Delete Sample Type' option will not be ava
 - Cannot rename or change type/unit of an attribute  
   → Verify that no samples have populated values for that field.
 
-- Toggling “Title” status is greyed out**  
+- Toggling “Title” status is greyed out  
   → You can only switch the title flag if **every** existing sample has a non‑empty value for the new title attribute.
 
-- Toggling “Required?” status is greyed out**  
+- Toggling “Required?” status is greyed out  
   → You can only switch the required flag if **no** existing sample has a non‑empty value for the attribute.
 
-- “Delete Sample Type” action missing**  
+- “Delete Sample Type” action missing  
   → Confirm that:  
   1. You have 'Manage' permissions
   2. No samples exist for that type
