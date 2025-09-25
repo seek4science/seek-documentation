@@ -3,7 +3,7 @@ title: Edit an Existing ISA-JSON compliant Study
 ---
 
 
-To edit an existing ISA-JSON compliant Study, the user must have Edit or Manage permissions (i.e. policy ≥ Edit).
+To edit an existing ISA-JSON compliant Study, the user must have Edit or Manage permissions.
 
 ### Steps to edit
 
