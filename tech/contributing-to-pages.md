@@ -38,15 +38,10 @@ All links to images within the site must also be given as relative paths (with a
 ```
 
 To add your new page to the sidebar, add a line to the data file:
-`_data` &#9658; `sidebars` &#9658; `user_guide.yml` or `tech.yml`.
+`_data` &#9658; `sidebars` &#9658; `user_guide.yml` or `technical_guide.yml`.
 More details are available from the [ETT theme documentation](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures).
 
-The **home pages** (top level) require additional lines at the top to display correctly:
-```yaml
----
-sidebar: false
----
-```
+
 ## Viewing your changes locally
 
 If you want to view your changes as you edit them, with Ruby installed you can install and run Jekyll with:
