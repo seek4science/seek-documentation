@@ -1,5 +1,5 @@
 ---
-sidebar: homepage
+sidebar: home
 title: FAIRDOM-SEEK Documentation # Replace with instance name
 toc: false
 ---
