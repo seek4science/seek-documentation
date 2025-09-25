@@ -2,7 +2,7 @@
 title: Sample Type Permissions
 ---
 
-In FAIRDOM-SEEK, a Sample Type (ST) defines the structure and metadata schema for a group of related samples. It specifies the attributes, units, and validation rules that apply to samples created under it.
+In {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}, a Sample Type defines the structure and metadata schema for a group of related samples. It specifies the attributes, units, and validation rules that apply to samples created under it.
 
 Each Sample Type has an associated sharing policy that determines which users or groups can view, edit, or manage it. These permissions are distinct from those of the individual samples, which have their own independent sharing settings.
 
