@@ -1,6 +1,6 @@
 ---
 title: Get FAIRDOM-SEEK
-sidebar: false
+sidebar: get_fairdom-seek
 redirect_from: "/get_seek.html"
 ---
 
