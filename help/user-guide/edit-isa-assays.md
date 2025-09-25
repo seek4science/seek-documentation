@@ -3,7 +3,7 @@ title: Edit an Existing ISA-JSON compliant Assay
 ---
 
 
-To edit an existing Assay, the user must have Edit or Manage permissions (i.e. policy ≥ Edit).
+To edit an existing Assay, the user must have Edit or Manage permissions.
 
 ### Steps to edit
 
