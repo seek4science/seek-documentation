@@ -81,13 +81,13 @@ subitems:
       - title: Creating an ISA-JSON compliant study
         url: /help/user-guide/studies
       - title: Editing an ISA-JSON compliant study
-        url: /help/user-guide/edit-ISA-studies
+        url: /help/user-guide/edit-isa-studies
     - title: Assays
       subitems:
       - title: Creating an ISA-JSON compliant assay
         url: /help/user-guide/assays
       - title: Editing an ISA-JSON compliant assay
-        url: /help/user-guide/edit-ISA-assays
+        url: /help/user-guide/edit-isa-assays
     - title: Experiment Sample Templates
       subitems:
       - title: Creating Experiment Sample Templates
