@@ -67,11 +67,15 @@ Open the downloaded excel file and fill in the "Input" column by providing the *
 
 One input value:
 
-[{"id"=>343, "type"=>"Sample", "title"=>"yeast_wgs_02"}].
+```ruby
+[{"id"=>343, "type"=>"Sample", "title"=>"yeast_wgs_02"}]
+```
 
 Two input values:
 
+```ruby
 [{"id"=>343, "type"=>"Sample", "title"=>"yeast_wgs_02"}, {"id"=>342, "type"=>"Sample", "title"=>"yeast_wgs_01"}]
+```
 
 ![create study samples 6]({{ "/images/user-guide/isajson-compliance/create_samples_isastudy_samples_6.png" | relative_url }}){:.screenshot}
 
