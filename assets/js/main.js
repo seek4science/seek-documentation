@@ -13,19 +13,7 @@ $(document).ready(function () {
     anchors.add('h2:not(.no-anchor)');
 })
 
-/**
- * Function to open external links in separate tab
- */
-$(document).ready(function () {
-    for (var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) {
-        var b = c[a];
-        if (b.getAttribute("href") && b.hostname !== location.hostname) {
-            b.target = "_blank";
-            b.rel = "noopener";
-            b.classList.add("external");
-        }
-    }
-});
+
 
 /**
  * Settings for side navigation
