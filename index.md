@@ -1,6 +1,7 @@
 ---
-sidebar: false
+sidebar: home
 title: FAIRDOM-SEEK Documentation # Replace with instance name
+toc: false
 ---
 {% assign seek_instance_name = site.seek_instance.name | default: "FAIRDOM-SEEK" %}
 

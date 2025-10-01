@@ -101,3 +101,11 @@ main .navigation-tiles p {
     }
 }
 
+
+/*----------Differences FAIRDOMHub table--------*/
+/* Depends on the heading used immediately before the table on get-seek.md */
+#what-are-the-differences + div table > :not(caption) > * > *:nth-child(2) {
+    background-color: $light;
+}
+
+
