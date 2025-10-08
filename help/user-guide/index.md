@@ -1,5 +1,5 @@
 ---
-title: User Guide
+title: FAIRDOM-SEEK User Guide
 redirect_from:
   - /help
 ---

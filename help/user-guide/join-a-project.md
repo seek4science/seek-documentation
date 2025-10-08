@@ -1,5 +1,7 @@
 ---
 title: Request to join a project
+redirect_from:
+  - /help/user-guide/request-to-join-project.html
 ---
 
 For details about what a Project and Programme is, please see [Creating a Project](./create-a-project)
