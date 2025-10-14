@@ -9,6 +9,32 @@ Please see [Getting FAIRDOM-SEEK]({{ "/get-seek" | relative_url }}) for details 
 
 If you have any comments or feedback about a release, then please [Contact Us]({{ "/contacting-us" | relative_url }}).
 
+## Version 1.17.1
+
+Release date: _15th October 2025_
+
+A patch release that includes some important bug fixes and improvements, in particular:
+
+* Rails update
+* Ruby update
+* [ROR](https://ror.org/) updated to use version 2 of the API
+* Scientific disciplines
+* Validate creators are defined before minting a DOI
+* Fix to prevent an error when deleting an avatar for a Collection
+* UI improvement to allow multiline copyright text to be configured
+* UI improvement ot the registration page, when there are 3rd party authentication options (e.g. LS Login)
+* Licenses also show the short form when displayed, which is sometimes more familiar
+* Workflow RO-Crate fixes
+* Fix to correctly show the preview of the name of a Creator when typing
+* Fix incorrect date displayed when close to a timezone difference
+* Publication authors
+* DataHub fixes
+
+
+For a full list, see [closed issues for 1.17.1](https://github.com/seek4science/seek/milestone/30?closed=1)
+
+---
+
 ## Version 1.17.0
 
 Release date: _18th July 2025_
