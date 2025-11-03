@@ -123,4 +123,6 @@ Experiment overview table shows an overview of all Sources and Samples in a sear
 * In ISA Assay, Experiment overview shows Study Samples and Assay samples, up until that experimental step.
 
 ## Browsing samples by Experiment Sample templates
-[Browsing samples by experiment sample templates](browsing#browse-samples-by-experiment-sample-template)
+
+ISA-JSON compliant Assays are created based on [Experiment Sample Templates](isa-json-compliant-experiment). It is possible to browse Assay Samples according to Experimental Sample Template, its attributes and the attribute's values, irrespective of the specific Assay they are created in. 
+This allows users to explore and filter samples independently of the specific Assay in which they were created, enabling flexible querying across projects and making it easier to identify and compare samples with shared characteristics or lineage. For more information, see [browsing samples by Experiment Sample Templates](browsing#browse-samples-by-experiment-sample-template)
