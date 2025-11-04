@@ -90,13 +90,10 @@ Two input values:
 
 ![create study samples 6]({{ "/images/user-guide/isajson-compliance/create_samples_isastudy_samples_6.png" | relative_url }}){:.screenshot}
 
-<div class="alert alert-info">
-<b>ATTENTION:</b><br>
-The syntax shown above applies only when linking ISA-JSON compliant Samples within a Study or Assay.  
-If the Experiment Sample Template includes an attribute such as Registered Sample or Registered Sample List (or another attribute type that refers to SEEK Samples), the linkage might work differently:<br>  
-If the Sample type this is being referenced is non-ISA-JSON compliant, you do not need the full syntax structure. Simply provide the sample ID of the SEEK Sample in the Excel file. <br> 
+{% include callout.html type="warning" content="The syntax shown above applies only when linking ISA-JSON compliant Samples within a Study or Assay." %} 
+
+If the Experiment Sample Template includes an attribute such as Registered Sample or Registered Sample List, the linkage might work differently. If the Sample type that is being referenced is non-ISA-JSON compliant, you do not need the full syntax structure. Instead, simply provide the sample ID of the SEEK Sample in the Excel file. 
 Always check the Experiment Sample Template to confirm which attribute type (and Sample Type) is expected before filling in the spreadsheet.
-</div>
 
 ### Create Assay Samples
 In the Assay design tab in [experiment view](viewing-project-in-single-page), Samples can be created in two ways, similar to Study Samples (see above). The only difference is the mandatory column "Input" in the Assay Samples table.

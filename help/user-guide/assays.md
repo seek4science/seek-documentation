@@ -65,7 +65,7 @@ Upon creation, the newly designed ISA Assay will appear in the tree view on the 
 ## 3. Adding samples to ISA Assay
 Follow the link to know how to [create samples in ISA-JSON compliant experiments](create-sample-isajson-compliant), including [Assay Samples](create-sample-isajson-compliant#create-assay-samples).
 
-## 4. Managing assays in an assay stream
+## 4. Managing assays in an Assay Stream
 When editing or deleting an assay from an assay stream, different conditions apply depending on whether the assay has associated samples.
 
 ### 4.1 Deleting an Assay

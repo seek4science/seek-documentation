@@ -162,8 +162,6 @@ subitems:
       subitems:
       - title: Creating a Sample
         url: /help/user-guide/create-sample
-      - title: Samples in ISA-JSON compliant Experiments
-        url: /help/user-guide/create-sample-isajson-compliant
       - title: Legacy Biosamples
         url: /help/user-guide/legacy-biosamples
     - title: ISA-JSON compliant Samples
