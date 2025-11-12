@@ -200,7 +200,7 @@ subitems:
     title: User guide for API
     description: Introduction to the API.
     subitems:
-    - title: API Introduction
+    - title: API introduction
       url: /help/user-guide/api
   -
     hr: true

@@ -1,5 +1,5 @@
 ---
-title: ISA-JSON Compliant Sample Permissions
+title: ISA-JSON compliant Sample permissions
 ---
 
 ISA-JSON compliant Samples (referred to as *ISA-JSON Samples*) are created within an [Assay](assays) or [Study](studies) using an [Experiment Sample Template](isajson-templates). These samples are defined by metadata attributes, units, and validation rules specified in the template.

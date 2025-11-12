@@ -9,7 +9,7 @@ You should make titles as descriptive as possible.
 
 ## Description
 The description allows you to further expand important details.
-Descriptions can be formatted using [markdown](https://www.markdownguide.org/basic-syntax/), either via markup or using the various options above the text input (e.g. bold, italics, hyperlinks...).
+Descriptions can be formatted using [Markdown](https://www.markdownguide.org/basic-syntax/), either via markup or using the various options above the text input (e.g. bold, italics, hyperlinks).
 
 ![Markdown ribbon UI]({{ "/images/user-guide/description_markdown_ribbon.png" | relative_url }}){:.screenshot}
 
@@ -54,7 +54,7 @@ You can select an organism from the drop down menu.
 
 ## Sharing
 
-FAIRDOM-SEEK has fine grained sharing permissions. You can choose to set an item private (no access) or to share it with selected people, institutions, projects or programmes within SEEK, or to share it publicly.
+{{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} has fine grained sharing permissions. You can choose to set an item private (no access) or to share it with selected people, institutions, projects or programmes within {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}, or to share it publicly.
 
 There are different levels of sharing permissions:
 * "View" allows to see only the title and description of an item;
@@ -92,7 +92,7 @@ Tags are key words that are relevant in some way to the asset and its properties
 ![add tags 1]({{ "/images/user-guide/add_tags_1.png" | relative_url }}){:.screenshot}
 
 ## Attributions
-An attribution in SEEK allows you, where appropriate, to select the asset from which your asset was derived from (stored within SEEK). As you type in the attribution, related assets will appear in a drop down menu.
+An attribution in {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} allows you, where appropriate, to select the asset from which your asset was derived from (stored within {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}). As you type in the attribution, related assets will appear in a drop down menu.
 
 ![add tags 1]({{ "/images/user-guide/add_attribution_1.png" | relative_url }}){:.screenshot}
 
@@ -106,9 +106,9 @@ You can add multiple creators, either one by one. Start to type the name and mat
 ![add creator]({{ "/images/user-guide/add-creator.png" | relative_url }}){:.screenshot}
 
 
-You can also include non-SEEK creators.
+You can also include non-{{ site.seek_instance.name | default: "SEEK" }} creators.
 
-You can also add non-SEEK creators using free text.
+You can also add non-{{ site.seek_instance.name | default: "SEEK" }} creators using free text.
 
 ![add non-SEEK creator]({{ "/images/user-guide/add-non-seek-creator.png" | relative_url }}){:.screenshot}
 
@@ -130,17 +130,15 @@ It is best that assets are contextualised using the ISA graph (more later). This
 
 ![add assay 1]({{ "/images/user-guide/add_assay_1.png" | relative_url }}){:.screenshot}
 
-An assay preview will appear on the right hand side of SEEK once selected. The linking can be removed from the asset easily.
+An assay preview will appear on the right hand side of {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} once selected. The linking can be removed from the asset easily.
 
 ![add assay 2]({{ "/images/user-guide/add_assay_2.png" | relative_url }}){:.screenshot}
 
-## Experimental assays and modelling analysis
-
 ## Events
-If the asset was generated as part of an event that is registered in SEEK, you can link to the asset to the event using the drop down menu.
+If the asset was generated as part of an event that is registered in {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}, you can link to the asset to the event using the drop down menu.
 
 ![add event 1]({{ "/images/user-guide/add_event_1.png" | relative_url }}){:.screenshot}
 
-A preview of the event will appear on the right hand side of SEEK once selected. The link can be removed from the asset easily.
+A preview of the event will appear on the right hand side of {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} once selected. The link can be removed from the asset easily.
 
 ![add event 2]({{ "/images/user-guide/add_event_2.png" | relative_url }}){:.screenshot}

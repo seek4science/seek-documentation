@@ -4,7 +4,7 @@ title: Licenses
 
 
 
-We recommended giving a license to public resources in SEEK to clarify under what terms they may be used.
+We recommended giving a license to public resources in {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} to clarify under what terms they may be used.
 
 This short video gives a good introduction of the benefits of licensing your data:
 
@@ -49,7 +49,7 @@ for more information.
 
 ## Other
 
-These additional licenses are also available to be used in SEEK.
+These additional licenses are also available to be used in {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}.
 
 <table>
 <thead>

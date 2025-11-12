@@ -1,5 +1,5 @@
 ---
-title: API Introduction
+title: API introduction
 ---
 
 {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} includes a [JSON](https://www.json.org/) Application
