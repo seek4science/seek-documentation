@@ -47,7 +47,7 @@ subitems:
         subitems:
         - title: Creating a Project
           url: /help/user-guide/create-a-project
-        - title: Administer project members
+        - title: Administer Project members
           url: /help/user-guide/administer-project-members
         - title: Joining a Project
           url: /help/user-guide/join-a-project
@@ -68,26 +68,30 @@ subitems:
         url: /help/user-guide/isa-overview
       - title: Generating the ISA structure
         url: /help/user-guide/generating-the-isa-structure
-      - title: ISA-JSON compliant experiments
+      - title: ISA-JSON compliant Experiments
         url: /help/user-guide/isa-json-compliant-experiment
     - title: Investigations
       subitems:
-      - title: Creating an ISA-JSON compliant investigation
+      - title: Creating an ISA-JSON compliant Investigation
         url: /help/user-guide/investigations
       - title: Export experiments as ISA-JSON
         url: /help/user-guide/exporting-experiments-as-isajson
     - title: Studies
       subitems:
-      - title: Creating an ISA-JSON compliant study
+      - title: Creating an ISA-JSON compliant Study
         url: /help/user-guide/studies
-      - title: Editing an ISA-JSON compliant study
+      - title: Editing an ISA-JSON compliant Study
         url: /help/user-guide/edit-isa-studies
+      - title: Creating Samples in a ISA-JSON compliant Study
+        url: /help/user-guide/create-sample-isajson-compliant#create-study-sources
     - title: Assays
       subitems:
-      - title: Creating an ISA-JSON compliant assay
+      - title: Creating an ISA-JSON compliant Assay
         url: /help/user-guide/assays
-      - title: Editing an ISA-JSON compliant assay
+      - title: Editing an ISA-JSON compliant Assay
         url: /help/user-guide/edit-isa-assays
+      - title: Creating Samples in a ISA-JSON compliant Assay
+        url: /help/user-guide/create-sample-isajson-compliant#create-assay-samples
     - title: Experiment Sample Templates
       subitems:
       - title: Creating Experiment Sample Templates
@@ -196,7 +200,7 @@ subitems:
     title: User guide for API
     description: Introduction to the API.
     subitems:
-    - title: API Introduction
+    - title: API introduction
       url: /help/user-guide/api
   -
     hr: true

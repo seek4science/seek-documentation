@@ -3,18 +3,18 @@ title: Creating a Sample
 ---
 
 
-You can create a new sample directly in SEEK, or by uploading samples contained within a Sample Type Template.
+You can create a new sample directly in {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}, or by uploading samples contained within a Sample Type Template.
 
 
-## Creating a Sample Directly in SEEK
+## Creating a Sample directly in {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}
 
-To create a sample directly in SEEK, select Create and then Sample in the drop down menu.
+To create a sample directly in {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}, select Create and then Sample in the drop down menu.
 
 ![menu create sample]({{ "/images/user-guide/samples/menu-create-sample.png" | relative_url }}){:.screenshot}
 
 You will be taken to the collection of Sample Types that you can use to generate a Sample.
 The default is the projects you are part of, but you can also search through Sample Types that are generated,
-and publicly available, from other SEEK users.
+and publicly available, from other {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} users.
 
 ![select sample type]({{ "/images/user-guide/samples/select-sample-type.png" | relative_url }}){:.screenshot}
 

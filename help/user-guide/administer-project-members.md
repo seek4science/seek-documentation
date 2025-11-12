@@ -1,11 +1,11 @@
 ---
-title: Administer project members
+title: Administer Project members
 ---
 
 
 These are actions that can be carried out by a SEEK administrator, [Project Administrator](roles#project-administrator), or [Programme Administrator](roles.html#programme-administrator)
 
-## Add and remove people from a project
+## Add and remove people from a Project
 
 Part of administering a project will involve adding to or removing people from it. You can do this if you are a [Project Administrator](roles#project-administrator) or you are
 a [Programme Administrator](roles.html#programme-administrator) of a Programme that Project falls under.
@@ -18,13 +18,13 @@ institution in one action.
 Don't forget to confirm the changes with the Confirm button when finished.
 
 
-## Assign people to project roles
+## Assign people to Project roles
 
 As a [Project Administrator](roles.html#project-administrator) (or SEEK system administrator) you can assign people to roles. From the Administer menu on the project page select "Administer project member roles". To add to each role start to type the name of the person. You can remove by clicking the 'x' next to their name.
 
 The people must be first have been [added to the project](administer-project-members.html#add-and-remove-people-from-a-project) before they can be assigned to a role.
 
 
-## Flag when a person becomes inactive in a project
+## Flag when a person becomes inactive in a Project
 
 *Coming soon*

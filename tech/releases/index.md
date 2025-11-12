@@ -33,7 +33,7 @@ A patch release that includes some important bug fixes and improvements, in part
   * Workflow RO-Crate fixes to include datePublished, and removed WorkflowSketch as the type.
 * DataHub improvements including:
   * Dynamic Table improvements.
-  * JSON-ISA export fixes.
+  * ISA-JSON export fixes.
   * Units should be transferred from Templates to Sample Types.
   * Added ISA compliance as a filtering option.
   * Assay stream fixes.

@@ -1,5 +1,5 @@
 ---
-title: Edit an Existing ISA-JSON compliant Assay
+title: Edit an existing ISA-JSON compliant Assay
 ---
 
 

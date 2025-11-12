@@ -17,8 +17,8 @@ In the context of an ISA-JSON compliant experiment, we use the terms ISA Investi
 * Select an Assay Stream, then click on "Design Assay" button at the top right corner of the page.
 * Fill out the provided form as explained below.
 
-### 2.1 Link the sampling Protocol
-Select Protocols already registered in the platform that describe the used method or procedure (SOP) applied to the Assay. See how to [create an SOP](sops) in SEEK.
+### 2.1 Link the Protocol
+Select Protocols already registered in the platform that describe the used method or procedure (SOP) applied to the Assay. See how to [create an SOP](sops) in SEEK. You can later change the SOP when editing the Assay.
 
 ### 2.2 Design a Samples table for Assay
 
@@ -65,7 +65,7 @@ Upon creation, the newly designed ISA Assay will appear in the tree view on the 
 ## 3. Adding samples to ISA Assay
 Follow the link to know how to [create samples in ISA-JSON compliant experiments](create-sample-isajson-compliant), including [Assay Samples](create-sample-isajson-compliant#create-assay-samples).
 
-## 4. Managing assays in an assay stream
+## 4. Managing assays in an Assay Stream
 When editing or deleting an assay from an assay stream, different conditions apply depending on whether the assay has associated samples.
 
 ### 4.1 Deleting an Assay

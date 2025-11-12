@@ -51,7 +51,7 @@ The Attributes table can be used to customise the Study Sources table. However, 
 ![create isastudy source 3]({{ "/images/user-guide/isajson-compliance/create_isastudy_source_3.png" | relative_url }}){:.screenshot}
 
 ### 1.2 Link the sampling Protocol
-Select Protocols already registered in the platform that describe the used method or procedure (SOP) used to collect Samples from Sources in your Study (Samples collection protocol). See how to [create an SOP](sops) in SEEK.
+Select Protocols already registered in the platform that describe the used method or procedure (SOP) used to collect Samples from Sources in your Study (Samples collection protocol). See how to [create an SOP](sops) in SEEK. You can later change the SOP when editing the Study.
 
 ### 1.3 Design a Samples table for Study Samples
 

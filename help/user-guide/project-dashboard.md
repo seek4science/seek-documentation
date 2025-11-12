@@ -21,7 +21,7 @@ The submissions graph shows all project assets that have been created over the t
 
 ![dashboard contributions]({{ "/images/user-guide/dashboard/dashboard-contributions.png" | relative_url }}){:.screenshot}
 
-## Asset Accessibility
+## Asset accessibility
 
 The asset accessibility pie chart indicates the accessibility of assets created in the time period. The "Type" dropdown lets you optionally filter by a specific asset type.
 
