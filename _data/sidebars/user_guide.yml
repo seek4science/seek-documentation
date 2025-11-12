@@ -47,7 +47,7 @@ subitems:
         subitems:
         - title: Creating a Project
           url: /help/user-guide/create-a-project
-        - title: Administer project members
+        - title: Administer Project members
           url: /help/user-guide/administer-project-members
         - title: Joining a Project
           url: /help/user-guide/join-a-project
@@ -68,7 +68,7 @@ subitems:
         url: /help/user-guide/isa-overview
       - title: Generating the ISA structure
         url: /help/user-guide/generating-the-isa-structure
-      - title: ISA-JSON compliant experiments
+      - title: ISA-JSON compliant Experiments
         url: /help/user-guide/isa-json-compliant-experiment
     - title: Investigations
       subitems:

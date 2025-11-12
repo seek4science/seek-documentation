@@ -1,5 +1,5 @@
 ---
-title: Creating a project
+title: Creating a Project
 ---
 
 ## What is a Project

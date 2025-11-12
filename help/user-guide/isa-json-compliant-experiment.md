@@ -1,5 +1,5 @@
 ---
-title: ISA-JSON compliant Experiment
+title: ISA-JSON compliant Experiments
 ---
 
 

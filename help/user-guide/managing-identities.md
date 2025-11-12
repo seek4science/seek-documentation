@@ -1,5 +1,5 @@
 ---
-title: Managing Identities
+title: Managing identities
 ---
 
 Depending on the configuration of the FAIRDOM-SEEK instance, in addition to the usual username/password method,

@@ -49,7 +49,7 @@ To create samples, a user must:
 7. Click 'Update' — your changes apply immediately.
 
 
-## Troubleshooting & Tips
+## Troubleshooting & tips
 
 - Can't see the “Create Sample” button?  
   → Make sure you have View access and belong to a project.
