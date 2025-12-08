@@ -9,6 +9,34 @@ Please see [Getting FAIRDOM-SEEK]({{ "/get-seek" | relative_url }}) for details 
 
 If you have any comments or feedback about a release, then please [Contact Us]({{ "/contacting-us" | relative_url }}).
 
+## Version 1.17.2
+
+Release date: _9th December 2025_
+
+A patch release that includes some important bug fixes and improvements, in particular:
+
+* A new SPARQL view, that allows SPARQL queries to be made over the public graph directly in SEEK, if running together 
+with the Virtuoso triple store.
+  * Ability to execute queries and store the URL of queries for later re-use.
+  * Configurable set of predefined example queries.
+* Added support for registering DataCite based DOI's, in addition to CrossRef based DOI's. Alongside this the list of Publication
+types have been expanded to include those supported by DataCite.
+* Fixes related to registering publications as Bibtex files.
+* Fix to the rendering of Publication abstracts.
+* Expanded the list of Model types, execution environments and formats to support Machine Learning models.
+* Enhanced the schema.org metadata support
+  * to include identifiers for DOI, ROR and ORCID
+  * added LabProtocol (from [Bioschemas](https://bioschemas.org/types/LabProtocol/0.5-DRAFT)) as a type for SOPs.
+  * fixed the JSONLD endpoint to be available for all items to support schema.org markdown.
+* Reduced the batchsize when reindexing all items from 250 to 50, and make configurable through `Seek::Config.reindex_all_batch_size`.
+* Fix to handling invalid citation styles. Previously and invalid style would become the default style, leading to subsequent errors. 
+* DataHub specific:
+  * Return to the single page view when cancelling from an items Manage page.
+  * Fix propagating permissions to child Assays and Sample types.
+
+
+For a full list, see [closed issues for 1.17.2](https://github.com/seek4science/seek/milestone/31?closed=1)
+
 ## Version 1.17.1
 
 Release date: _15th October 2025_
