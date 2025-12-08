@@ -2,7 +2,7 @@
 
 remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@5.0.0
 
-current_seek_version: "1.17.1"
+current_seek_version: "1.17.2"
 current_docker_tag: "1.17"
 
 plugins:
