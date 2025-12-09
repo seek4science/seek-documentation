@@ -1,5 +1,6 @@
 ---
 title: FAIRDOM-SEEK releases
+description: Information about the latest FAIRDOM-SEEK releases, including new features, improvements and bug fixes.
 ---
 
 {% capture latest_version_long %}Latest version - {{ site.current_seek_version }}{% endcapture %}
