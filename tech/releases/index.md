@@ -27,9 +27,9 @@ types have been expanded to include those supported by DataCite.
 * Enhanced the schema.org metadata support
   * to include identifiers for DOI, ROR and ORCID
   * added LabProtocol (from [Bioschemas](https://bioschemas.org/types/LabProtocol/0.5-DRAFT)) as a type for SOPs.
-  * fixed the JSONLD endpoint to be available for all items to support schema.org markdown.
-* Reduced the batchsize when reindexing all items from 250 to 50, and make configurable through `Seek::Config.reindex_all_batch_size`.
-* Fix to handling invalid citation styles. Previously and invalid style would become the default style, leading to subsequent errors. 
+  * fixed the JSONLD endpoint to be available for all items that support schema.org markdown.
+* Reduced the batchsize when reindexing all items from 250 to 50, and made configurable through `Seek::Config.reindex_all_batch_size`.
+* Fix to better handle requesting invalid citation styles. Previously and invalid style would become the default style, leading to subsequent errors. 
 * DataHub specific:
   * Return to the single page view when cancelling from an items Manage page.
   * Fix propagating permissions to child Assays and Sample types.
