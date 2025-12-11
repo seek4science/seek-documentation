@@ -49,6 +49,8 @@ Start to type the name of your institution, and existing options will be display
 
 If describing a new Institution only the title is required, but you can also provide details about its website, city and country. You will also be able to edit and add additional information afterwards.
 
+There is also support for the [Research Organization Registry (ROR)](https://ror.org/). Use the ROR search field to find your Institution and select the matching entry to auto-populate the organization details and capture the ROR identifier. If you already know the identifier you can add it directly. When the organization is not listed in ROR you can leave the field empty and continue manually.
+
 ![Define Institution]({{ "/images/user-guide/create-project-define-institution.png" | relative_url }}){:.screenshot}
 
 ### Approval step
@@ -56,4 +58,3 @@ If describing a new Institution only the title is required, but you can also pro
 If you are creating a Project within a Programme you administer, then there is no approval step. You will be shown a page to review the details and then create straight away.
 
 Otherwise, an appropriate administrator will be notified by email about your request. They will also be notified directly when using {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}. The administrator will be shown a page that allows them to quickly review the details and either accept or reject the request, and in either case you will be notified by email.
-
