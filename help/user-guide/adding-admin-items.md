@@ -23,5 +23,24 @@ To create a profile, choose Profile from the Create menu at the top of the page.
 To create an Institution, choose Institution from the Create menu at the top of the page.
 
 The title and country are required, and the title must be unique to SEEK. It is recommended that you provide as much detail as you can. Once created you can also provide a logo or picture by clicking change picture under the picture on the right of the Institution page.
+You can also add a department to an institution.
 
-Institutions can also be linked to the [Research Organization Registry (ROR)](https://ror.org/). Use the ROR search box to look up the organization while creating it and select the correct entry to automatically populate the basic details and store the ROR identifier. If you already know the ROR identifier you can enter it directly. When the organization is not listed in ROR you can leave the field blank and continue with the standard manual fields.
+Institutions can also be linked to the [Research Organization Registry (ROR)](https://ror.org/). 
+
+Three Ways to Add Institutions:
+
+1. **Use the name search field when creating a new institution.**  
+   Search for the organization and select the correct match to automatically populate its basic details and store its ROR identifier.
+
+![Institution name search](images/user-guide/ror/ror_institution_name.png)
+
+
+2. **Enter a known ROR ID directly.**  
+   If you already know the institution’s ROR ID, you can enter it to automatically retrieve and fill in the associated details.
+
+![Institution id search](images/user-guide/ror/ror_institution_id.png)
+
+
+3. **Add an institution without a ROR entry.**  
+   If the organization does not appear in ROR (and therefore has no ROR ID), simply leave the ROR field blank and complete the standard manual fields.
+
