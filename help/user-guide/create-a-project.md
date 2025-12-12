@@ -40,7 +40,7 @@ You next need to define the Project. At a minimum a title is required, but you c
 
 ![Define Project]({{ "/images/user-guide/create-project-define-project.png" | relative_url }}){:.screenshot}
 
-## Defining your Institution
+### Defining your Institution
 
 When the Project is created, you will automatically become a member along with its administrator.
 To become a member you also have to describe the institution (or affiliation) that you are associated with in relation to this Project. It doesn't have to be the same Institution as other Projects, and it is not unusual for it to be different.
@@ -49,11 +49,14 @@ Start to type the name of your institution, and existing options will be display
 
 If describing a new Institution only the title is required, but you can also provide details about its website, city and country. You will also be able to edit and add additional information afterwards.
 
-![Define Institution]({{ "/images/user-guide/create-project-define-institution.png" | relative_url }}){:.screenshot}
+There is also support for the [Research Organization Registry (ROR)](https://ror.org/). Use the ROR search field to find your institution and select the matching entry to automatically populate the organization details and capture the ROR identifier. If you already know the identifier, you can enter it directly. When the organization is not listed in ROR, you can leave the field empty and continue manually.
+
+If the institution you searched for already exists locally, it will appear under **Institutions saved locally**. Otherwise, it will be listed as a new **institutions fetched from ROR**.
+
+![define_institution]({{ "/images/user-guide/ror/ror_project.png" | relative_url }}){:.screenshot}
 
 ### Approval step
 
 If you are creating a Project within a Programme you administer, then there is no approval step. You will be shown a page to review the details and then create straight away.
 
 Otherwise, an appropriate administrator will be notified by email about your request. They will also be notified directly when using {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}. The administrator will be shown a page that allows them to quickly review the details and either accept or reject the request, and in either case you will be notified by email.
-
