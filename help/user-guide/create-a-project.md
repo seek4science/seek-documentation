@@ -53,7 +53,7 @@ There is also support for the [Research Organization Registry (ROR)](https://ror
 
 If the institution you searched for already exists locally, it will appear under **Institutions saved locally**. Otherwise, it will be listed as a new **institutions fetched from ROR**.
 
-![define_institution](images/user-guide/ror/ror_project.png)
+![define_institution]({{ "/images/user-guide/ror/ror_project.png" | relative_url }}){:.screenshot}
 
 ### Approval step
 
