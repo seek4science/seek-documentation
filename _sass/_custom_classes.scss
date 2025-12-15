@@ -16,8 +16,8 @@
 //border: thin solid #e7e7e7;
 //}
 
-.form-control::placeholder {
-    color: $white;
+.form-control::placeholder, #search-label, #search-input {
+    color: $primary;
 }
 
 
@@ -26,17 +26,6 @@
     font-weight: bolder;
 }
 
-@include media-breakpoint-up(lg) {
-
-    /* Scroll bar on left sidebar */
-    #sidebar {
-        top: 3rem;
-        z-index: 2;
-        height: calc(100vh - 10rem);
-        overflow-y: auto;
-        position: sticky;
-    }
-}
 
 #main h1,
 #main h2,
