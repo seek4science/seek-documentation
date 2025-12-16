@@ -1,5 +1,6 @@
 ---
 title: Samples in ISA-JSON compliant Experiments
+description: You can create, view and browse samples in ISA-JSON compliant Experiments. 
 ---
 
 ## Types of samples in ISA-JSON compliant Experiments

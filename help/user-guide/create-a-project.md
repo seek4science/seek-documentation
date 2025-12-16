@@ -1,5 +1,6 @@
 ---
 title: Creating a Project
+description: A Project represents a group of one or more people collaborating together on a particular activity. The Project provides the ability to describe and promote the activity, and also give credit back to the team. 
 ---
 
 ## What is a Project

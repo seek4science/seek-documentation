@@ -1,5 +1,6 @@
 ---
 title: Creating a Sample
+description: You can create a new sample directly or by uploading samples contained within a Sample Type Template.
 ---
 
 
