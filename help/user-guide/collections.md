@@ -1,20 +1,27 @@
 ---
 title: Collections
+description: A collection is a group of items that are conceptually related to each other. Items within a collection can be ordered.
 ---
 
-A collection is a group of SEEK items that are conceptually related to each other. Items within a collection can be ordered.
+A collection is a group of {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} items that are conceptually related to each other. Items within a collection can be ordered.
 
-SEEK items that can be part of a collection are:
+<div class="alert alert-success" role="alert">
+<i class="fa-solid fa-check-square"></i> SEEK items that can be part of a collection are:
+<ul>
+<li>Assets (except other collections)</li>
+<li>Activities</li>
+<li>Samples</li>
+</ul>
+</div>
 
-    Assets (except other collections)
-    Activities
-    Samples
-
-SEEK items that cannot be part of a collection are:
-
-    Yellow pages
-    Experiments
-    Other collections
+<div class="alert alert-danger" role="alert">
+<i class="fa-solid fa-exclamation-circle"></i>️ SEEK items that cannot be part of a collection are:
+<ul>
+<li>Yellow pages</li>
+<li>Experiments</li>
+<li>Other collections</li>
+</ul>
+</div>
 
 ## Creating a Collection
 

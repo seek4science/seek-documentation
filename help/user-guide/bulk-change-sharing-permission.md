@@ -1,5 +1,6 @@
 ---
 title: Bulk changing of sharing permissions
+description: You can change the sharing policy and permissions for your assets in batch.
 ---
 
 
