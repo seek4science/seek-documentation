@@ -1,5 +1,6 @@
 ---
 title: FAIRDOM-SEEK User Guide
+description: The user guide for users of any FAIRDOM-SEEK instance. 
 redirect_from:
   - /help
 ---

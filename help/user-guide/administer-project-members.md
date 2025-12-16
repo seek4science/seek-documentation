@@ -1,5 +1,6 @@
 ---
 title: Administer Project members
+description: An administrator can add or remove people to Projects, and assign people to Project roles.
 ---
 
 

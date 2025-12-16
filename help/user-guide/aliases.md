@@ -1,5 +1,6 @@
 ---
 title: Aliases across FAIRDOM-SEEK instances
+description: Look up some of the aliases where a feature has a different name between FAIRDOM-SEEK instances.
 ---
 
 FAIRDOM-SEEK instances are highly customisable. Functionality such as e.g. the ISA structure, ISA-JSON compliant experiments and the different asset types need to be enabled by an instance admin. Therefore, some functionality described in this general user guide might not be available on your local instance.

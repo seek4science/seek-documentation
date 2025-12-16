@@ -1,5 +1,6 @@
 ---
 title: Adding assets (Data, Models, SOPs, Presentations, Documents)
+description: How to add different kind of assets such as data files, models, SOPs and publications.
 ---
 
 To add a data file to {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}, select Create from the menu bar, and select the appropriate asset from the drop down menu.
@@ -19,7 +20,7 @@ SEEK will show a preview of the link
 ![add data 4]({{ "/images/user-guide/add_data_4.png" | relative_url }}){:.screenshot}
 
 
-If adding a Data file, you will now be presented with a series of steps. Please read the [Data file upload wizard](data-file-upload-wizard)
+If adding a Data file, you will now be presented with a series of steps. Please read the [Data file upload wizard](data-file-upload-wizard).
 
 Assets in SEEK can be described using a number of fields, for example:
 

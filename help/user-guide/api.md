@@ -1,5 +1,6 @@
 ---
 title: API introduction
+description: The JSON API that allows the searching, listing, reading, updating and creating of many items, along with their attributes. 
 ---
 
 {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} includes a [JSON](https://www.json.org/) Application

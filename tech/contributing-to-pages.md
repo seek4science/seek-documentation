@@ -20,10 +20,15 @@ New pages require a formatter at the top, that looks like:
 ```yaml
 ---
 title: my lovely page
+description: this page is about something lovely and useful, recommend 110-160 characters
 ---
 ```
 
 For example, this page can be found at [https://raw.githubusercontent.com/seek4science/seek-documentation/main/tech/contributing-to-pages.md](https://raw.githubusercontent.com/seek4science/seek-documentation/main/tech/contributing-to-pages.md).
+
+The `title` will be used as the page title, in the HTML head `<title>` and body `<h1>` tags. The `description` will be used in the page metadata, visible as a preview when sharing a link to that page. 
+If you omit the `description`, one will be generated for you from the first 30 words on the page. 
+Note, if the page contains any Jekyll/Liquid code in the first 30 words, the code will not be processed, instead you will see the raw code as part of the description text.
 
 The **home, user guide, and technical guide pages** use a remote theme called [ELIXIR Toolkit Theme](https://elixir-belgium.github.io/elixir-toolkit-theme/) (ETT). The ETT theme provides additional support for styling and navigation, including the sidebar menus. The _title_ metadata is used to create a first-level heading at the top of the page. Do not include it again. Instead, use `##` and `###` for subheadings (second- and third-level, respectively).
 
