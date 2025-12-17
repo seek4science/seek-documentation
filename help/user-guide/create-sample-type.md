@@ -1,6 +1,6 @@
 ---
 title: Create a Sample Type
-description: Sample Types are templates that detail the key information that needs to be included to describe a given sample correctly. By default, any member of a Project may create a Sample Type and associate with that Project. 
+description: Create Sample Type templates with key metadata attributes to describe samples correctly in FAIRDOM-SEEK projects.
 ---
 
 Sample Types are templates that detail the key information that needs to be included to describe a given sample correctly.

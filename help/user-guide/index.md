@@ -1,6 +1,6 @@
 ---
 title: FAIRDOM-SEEK User Guide
-description: The user guide for users of any FAIRDOM-SEEK instance. 
+description: Comprehensive user guide for FAIRDOM-SEEK covering features, workflows and best practices for managing research data and metadata. 
 redirect_from:
   - /help
 ---
