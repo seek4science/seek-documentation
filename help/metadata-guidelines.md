@@ -1,5 +1,6 @@
 ---
 title: Minimum metadata guidelines
+description: Guidelines for providing metadata in FAIRDOM-SEEK to ensure assets are findable, comparable and meet publication requirements.
 redirect_from: "/metadata-guidelines.html"
 ---
 

@@ -1,6 +1,7 @@
 ---
 sidebar: home
 title: FAIRDOM-SEEK Documentation # Replace with instance name
+description: FAIRDOM-SEEK is a web-based platform for sharing scientific research datasets, models, processes and outcomes following FAIR principles.
 toc: false
 ---
 {% assign seek_instance_name = site.seek_instance.name | default: "FAIRDOM-SEEK" %}

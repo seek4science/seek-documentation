@@ -1,5 +1,6 @@
 ---
 title: Contacting us
+description: Contact the FAIRDOM community for questions, suggestions, bug reports and feature requests related to FAIRDOM-SEEK.
 sidebar: false
 redirect_from: "/contacting_us.html"
 redirect_to: "https://fair-dom.org/contact"

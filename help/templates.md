@@ -1,5 +1,6 @@
 ---
 title: JERM templates
+description: JERM templates for sharing data in standard formats, including templates for metabolomics, transcriptomics, proteomics and SOPs.
 redirect_from: "/templates.html"
 ---
 
