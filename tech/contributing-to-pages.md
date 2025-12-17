@@ -1,6 +1,6 @@
 ---
 title: Contributing to these pages
-description: this page is about something lovely and useful, recommend 110-160 characters
+description: Guidelines for contributing to these documentation pages.
 redirect_from: /contributing-to-pages
 ---
 
