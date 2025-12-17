@@ -1,5 +1,6 @@
 ---
 title: Style guide
+description: Writing style guide for FAIRDOM-SEEK documentation following EC Web Writing guidelines for tone, formatting and language.
 redirect_from: /style-guide
 ---
 

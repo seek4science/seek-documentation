@@ -1,5 +1,6 @@
 ---
 title: Docker
+description: Introduction to running FAIRDOM-SEEK with Docker containers for isolated application deployment and management.
 ---
 
 ## Introduction to Docker

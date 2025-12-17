@@ -1,5 +1,6 @@
 ---
 title: Extended Metadata Technical Overview
+description: Technical overview of Extended Metadata feature in FAIRDOM-SEEK for defining additional metadata attributes to support standards.
 redirect_from: '/tech/extended-metadata'
 ---
 

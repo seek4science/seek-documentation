@@ -1,5 +1,6 @@
 ---
 title: Upgrading SEEK
+description: Step-by-step guide to upgrading FAIRDOM-SEEK between versions incrementally with backup recommendations.
 redirect_from: "/upgrading.html"
 ---
 

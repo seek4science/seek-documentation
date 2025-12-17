@@ -1,5 +1,6 @@
 ---
 title: Reporting Bugs and raising Feature Requests
+description: Report bugs and request features for FAIRDOM-SEEK via GitHub issues or contact methods with contribution guidelines.
 ---
 
 

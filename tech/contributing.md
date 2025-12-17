@@ -1,5 +1,6 @@
 ---
 title: Contributing
+description: How to contribute to FAIRDOM-SEEK software, documentation pages and the FAIRDOM project through various channels.
 redirect_from: /contributing
 ---
 

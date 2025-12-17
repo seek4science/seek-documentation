@@ -1,5 +1,6 @@
 ---
 title: Useful Links
+description: Collection of useful FAIRDOM-SEEK links including GitHub, documentation, issue tracking, website and JERM ontology.
 ---
 
 FAIRDOM Website: [https://fair-dom.org](https://fair-dom.org)

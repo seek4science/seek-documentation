@@ -1,5 +1,6 @@
 ---
 title: Backup and restore
+description: Backup and restore FAIRDOM-SEEK databases and filestore using mysqldump and file system backups.
 redirect_from: "/backups.html"
 ---
 

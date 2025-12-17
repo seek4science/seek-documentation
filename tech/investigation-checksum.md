@@ -1,5 +1,6 @@
 ---
 title: Checksum fingerprints
+description: Verify downloaded FAIRDOM-SEEK Research Object snapshots using MD5 and SHA1 checksums to detect tampering or modifications.
 redirect_from:
     - /investigation_checksum.html
     - /tech/investigation_checksum.html

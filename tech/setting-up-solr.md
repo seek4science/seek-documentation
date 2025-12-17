@@ -1,5 +1,6 @@
 ---
 title: "Setting up the Apache Solr Search Engine"
+description: Configure Apache Solr for FAIRDOM-SEEK search using Docker image or direct installation for bare metal setups.
 ---
 
 Since version _1.12_ of FAIRDOM-SEEK [Apache Solr](https://solr.apache.org/) now needs to be setup separately rather than using the built in _Sunspot Solr_ .

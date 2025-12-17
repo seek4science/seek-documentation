@@ -1,5 +1,6 @@
 ---
 title: Contributing to FAIRDOM-SEEK
+description: Guidelines for contributing to FAIRDOM-SEEK including non-developer and developer contributions, bug fixes and new features.
 redirect_from: "/contributing-to-seek.html"
 ---
 

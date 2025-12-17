@@ -1,5 +1,6 @@
 ---
 title: upgrading to 0.18
+description: Specific upgrade guide for FAIRDOM-SEEK version 0.18 with backup recommendations and production environment steps.
 redirect_from: "/upgrading-to-0.18.html"
 ---
 

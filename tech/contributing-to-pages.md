@@ -1,5 +1,6 @@
 ---
 title: Contributing to these pages
+description: this page is about something lovely and useful, recommend 110-160 characters
 redirect_from: /contributing-to-pages
 ---
 
