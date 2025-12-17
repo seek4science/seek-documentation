@@ -1,5 +1,6 @@
 ---
 title: Licenses
+description: Recommended open licenses for public resources in FAIRDOM-SEEK to clarify usage terms and ensure data compatibility.
 ---
 
 

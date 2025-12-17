@@ -1,5 +1,6 @@
 ---
 title: ISA-JSON compliant Experiments
+description: Structure research according to the ISA metadata framework for export as ISA-JSON using ISA Investigations, Studies and Assays.
 ---
 
 

@@ -1,5 +1,6 @@
 ---
 title: Comparing two versions of a Model
+description: Compare different versions of a model in FAIRDOM-SEEK to see changes in a list and diagram format.
 ---
 
 

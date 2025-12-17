@@ -1,5 +1,6 @@
 ---
 title: Edit an existing Sample Type
+description: Modify Sample Type properties, attributes, and associated projects with Edit or Manage permissions in FAIRDOM-SEEK.
 ---
 
 To edit a Sample Type, the user must have Edit or Manage permissions. For details on assigning permissions, see the [Sample Type Permissions](sample-type-permissions) page.

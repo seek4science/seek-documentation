@@ -1,5 +1,6 @@
 ---
 title: Creating and managing Programmes
+description: Create and manage Programmes as umbrella groups for FAIRDOM-SEEK Projects, typically associated with funded research.
 ---
 
 

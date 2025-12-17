@@ -1,5 +1,6 @@
 ---
 title: Exporting experiments as ISA-JSON
+description: Export ISA-JSON compliant Investigations, Studies, Assays, SOPs and Samples in ISA-JSON format from FAIRDOM-SEEK.
 ---
 
 An ISA-JSON compliant Investigation containing Studies, Assays, SOPs and Samples can be exported using the ISA-JSON format.

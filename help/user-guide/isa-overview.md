@@ -1,5 +1,6 @@
 ---
 title: "ISA overview: visualising the ISA structure"
+description: Graphical representation of ISA relationships in FAIRDOM-SEEK with navigation, layout modification and image export capabilities.
 ---
 
 

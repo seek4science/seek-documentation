@@ -1,5 +1,6 @@
 ---
 title: Viewing Project in Experiment View
+description: View all project information, members, assets and ISA structure in a comprehensive single-page view in FAIRDOM-SEEK.
 ---
 
 

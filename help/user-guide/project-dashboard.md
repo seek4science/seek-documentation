@@ -1,5 +1,6 @@
 ---
 title: Project Dashboard
+description: View charts and metrics on project activity including submissions, contributions and asset types over time in FAIRDOM-SEEK.
 ---
 
 

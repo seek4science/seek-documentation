@@ -1,5 +1,6 @@
 ---
 title: Logging into SEEK
+description: How to log into FAIRDOM-SEEK using your username and password to access your account and projects.
 ---
 
 

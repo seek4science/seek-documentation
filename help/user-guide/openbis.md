@@ -1,5 +1,6 @@
 ---
 title: openBIS connections
+description: Connect FAIRDOM-SEEK projects to openBIS spaces to enable integration with openBIS data management systems.
 ---
 
 ## Enabling openBIS in SEEK
