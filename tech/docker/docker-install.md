@@ -1,5 +1,6 @@
 ---
 title: Docker - Installing Docker
+description: Installation guide for Docker Engine and Docker Compose for running in containers on various platforms.
 ---
 
 

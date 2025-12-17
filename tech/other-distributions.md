@@ -1,5 +1,6 @@
 ---
 title: Installing FAIRDOM-SEEK for other Linux distributions
+description: Distribution-specific packages and installation differences for Linux Mint, CentOS, macOS and other systems.
 redirect_from: "/other-distributions.html"
 ---
 

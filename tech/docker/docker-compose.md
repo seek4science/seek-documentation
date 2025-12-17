@@ -1,5 +1,6 @@
 ---
 title: Docker - Using Docker compose
+description: Run with MySQL and Solr as microservices using Docker Compose for production deployments.
 ---
 
 

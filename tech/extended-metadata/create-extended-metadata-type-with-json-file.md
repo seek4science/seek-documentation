@@ -1,5 +1,6 @@
 ---
 title: Create Extended Metadata Types by Uploading a JSON File
+description: Define and upload Extended Metadata types using JSON schema for simple and complex attribute types.
 ---
 
 

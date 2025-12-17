@@ -1,5 +1,6 @@
 ---
 title: Experiment Sample Templates
+description: Blueprints for creating Sample Types in ISA Studies and Assays that conform to community metadata standards.
 ---
 
 Experiment Sample Templates act as blueprints to create Sample Types within ISA Studies and ISA Assays and ensure that

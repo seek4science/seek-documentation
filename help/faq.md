@@ -1,5 +1,6 @@
 ---
 title: Frequently Asked Questions
+description: Archived FAQ page redirecting to the Seek4Science FAQ for frequently asked questions about features and usage.
 redirect_from: "/faq.html"
 ---
 

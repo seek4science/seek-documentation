@@ -1,5 +1,6 @@
 ---
 title: Sample Type Permissions
+description: Understand Sample Type permission levels including View, Edit and Manage access for controlling metadata schema visibility.
 ---
 
 In {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }}, a Sample Type defines the structure and metadata schema for a group of related samples. It specifies the attributes, units, and validation rules that apply to samples created under it.

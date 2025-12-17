@@ -1,5 +1,6 @@
 ---
 title: Definitions
+description: Glossary of key terms used including profiles, accounts, identities, institutions and project-related concepts.
 redirect_from: /definitions
 ---
 

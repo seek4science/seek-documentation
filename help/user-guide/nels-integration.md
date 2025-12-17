@@ -1,5 +1,6 @@
 ---
 title: Registering NeLS data
+description: Register and browse NeLS data files in assays for NeLS-enabled projects with authentication integration.
 ---
 
 Pre-requisites:

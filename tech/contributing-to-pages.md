@@ -1,5 +1,6 @@
 ---
 title: Contributing to these pages
+description: Guidelines for contributing to these documentation pages.
 redirect_from: /contributing-to-pages
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: FAIRDOM-SEEK Technical Guide
+description: Technical and reference documentation for installing, administering, developing and contributing.
 ---
 
 Please see the menu to the left for technical and reference documentation, or use the search box at the top-right.

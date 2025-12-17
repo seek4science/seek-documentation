@@ -1,5 +1,6 @@
 ---
 title: ISA best practice guide
+description: Best practices for using the ISA framework (Investigation, Study, Assay) to describe experiment relationships.
 redirect_from: "/isa-best-practice.html"
 ---
 

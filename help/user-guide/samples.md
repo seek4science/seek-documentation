@@ -1,5 +1,6 @@
 ---
 title: Samples
+description: Create and manage material and data samples, including Sample Types, processes, and browsing by Experiment Sample Template.
 ---
 
 ## Introduction

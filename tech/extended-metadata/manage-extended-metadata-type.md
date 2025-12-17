@@ -1,5 +1,6 @@
 ---
 title: Manage Extended Metadata Type
+description: Manage Extended Metadata types, nested types, controlled vocabularies and attribute types in admin interface.
 ---
 
 On the "Manage Extended Metadata Types" page, you will see a list of existing extended metadata types along with relevant resources for creating new ones. The page is divided into four tabs:

@@ -1,5 +1,6 @@
 ---
 title: Editing your profile
+description: Update your profile including personal information, ORCID, contact details, expertise and project positions.
 ---
 
 To edit your profile, you must be logged in. When logged in you can click your name in the top right hand corner of SEEK.

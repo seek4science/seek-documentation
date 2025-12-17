@@ -1,5 +1,6 @@
 ---
 title: Admin documentation
+description: Basic administration tasks including creating projects, institutions and configuring server settings.
 redirect_from: "/administration.html"
 ---
 
