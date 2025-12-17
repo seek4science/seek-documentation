@@ -1,6 +1,6 @@
 ---
 title: Specialist user roles
-description: Programme administrators, project administrators, asset housekeepers and gatekeepers: specialist roles and capabilities in FAIRDOM-SEEK.
+description: Programme administrators, project administrators, asset housekeepers and gatekeepers: specialist roles and capabilities.
 ---
 
 

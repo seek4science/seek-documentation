@@ -1,6 +1,6 @@
 ---
 title: Simulating Models with JWS Online
-description: Run SBML models in FAIRDOM-SEEK using JWS Online for steady state, control analysis and flux balance analysis.
+description: Run SBML models using JWS Online for steady state, control analysis and flux balance analysis.
 ---
 
 Models uploaded to SEEK in SBML format can be simulated in SEEK using [JWS Online](http://jjj.mib.ac.uk/).

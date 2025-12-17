@@ -1,6 +1,6 @@
 ---
 title: Publications
-description: Link publications to assets in FAIRDOM-SEEK to associate research outputs with their corresponding data, models and protocols.
+description: Link publications to assets to associate research outputs with their corresponding data, models and protocols.
 ---
 
 ## Publications

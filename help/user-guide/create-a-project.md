@@ -1,6 +1,6 @@
 ---
 title: Creating a Project
-description: Create projects in FAIRDOM-SEEK to group collaborators, describe research activities and give credit to team members.
+description: Create projects to group collaborators, describe research activities and give credit to team members.
 ---
 
 ## What is a Project

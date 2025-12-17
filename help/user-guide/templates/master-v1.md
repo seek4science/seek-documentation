@@ -1,6 +1,6 @@
 ---
 title: SEEK User Guide - RightField template v1
-description: RightField metadata template using the JERM Ontology for collecting experimental information in FAIRDOM-SEEK.
+description: RightField metadata template using the JERM Ontology for collecting experimental information.
 ---
 
 # Metadata Template

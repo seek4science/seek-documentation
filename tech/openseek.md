@@ -1,6 +1,6 @@
 ---
 title: openSEEK
-description: Information about using FAIRDOM-SEEK with openBIS data management systems (combined Docker package no longer supported).
+description: Information about using with openBIS data management systems (combined Docker package no longer supported).
 ---
 
 {% include callout.html type="warning" content="This page is out-of-date and may be removed." %}

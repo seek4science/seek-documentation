@@ -1,6 +1,6 @@
 ---
 title: Investigations
-description: Create ISA-JSON compliant Investigations to structure and describe research metadata using the ISA framework in FAIRDOM-SEEK.
+description: Create ISA-JSON compliant Investigations to structure and describe research metadata using the ISA framework.
 ---
 
 The [ISA metadata framework](https://isa-specs.readthedocs.io/en/latest/isamodel.html) requires the description (metadata) of different types of samples, namely Study Sources, Study Samples and Assay Samples. This description is based on customisable Experiment Sample Templates and includes the linking of applied Protocols. Follow the link for an overview about [ISA-JSON compliant experiments](isa-json-compliant-experiment.html).

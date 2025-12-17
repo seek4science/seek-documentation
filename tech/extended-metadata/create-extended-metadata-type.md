@@ -1,6 +1,6 @@
 ---
 title: Create Extended Metadata Type
-description: Create Extended Metadata types in FAIRDOM-SEEK using SEED files or uploading JSON files through the Admin interface.
+description: Create Extended Metadata types using SEED files or uploading JSON files through the Admin interface.
 ---
 
 There are two ways to create an Extended Metadata type:

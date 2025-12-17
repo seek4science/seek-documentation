@@ -1,6 +1,6 @@
 ---
 title: User registration
-description: Register for a FAIRDOM-SEEK account by providing login credentials, personal information, and optional ORCID identifier.
+description: Register for an account by providing login credentials, personal information, and optional ORCID identifier.
 ---
 
 In order to register yourself in SEEK, you need to click the Register button in the top right hand corner of SEEK.

@@ -1,6 +1,6 @@
 ---
 title: Managing your account
-description: Manage your FAIRDOM-SEEK account settings including login details, password and authentication credentials.
+description: Manage your account settings including login details, password and authentication credentials.
 ---
 
 

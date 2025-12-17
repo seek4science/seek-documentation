@@ -1,6 +1,6 @@
 ---
 title: Upgrades between earlier versions
-description: Step-by-step upgrade guides for FAIRDOM-SEEK versions from v0.11.x onwards with incremental version migration instructions.
+description: Step-by-step upgrade guides for versions from v0.11.x onwards with incremental version migration instructions.
 redirect_from: "/earlier-upgrades.html"
 ---
 

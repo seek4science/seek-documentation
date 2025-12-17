@@ -1,6 +1,6 @@
 ---
 title: Roadmap
-description: FAIRDOM-SEEK development roadmap with upcoming features, priorities and milestone dates for future releases.
+description: Development roadmap with upcoming features, priorities and milestone dates for future releases.
 redirect_from: "/roadmap.html"
 ---
 

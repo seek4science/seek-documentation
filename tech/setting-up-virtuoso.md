@@ -1,6 +1,6 @@
 ---
 title: Configuring FAIRDOM-SEEK for Virtuoso
-description: Configure FAIRDOM-SEEK to send RDF triples to a Virtuoso triple store repository for semantic web integration.
+description: Configure to send RDF triples to a Virtuoso triple store repository for semantic web integration.
 redirect_from: "/setting-up-virtuoso.html"
 ---
 

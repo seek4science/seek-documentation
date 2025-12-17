@@ -1,6 +1,6 @@
 ---
 title: "Transcriptomics: Guidelines for metadata templates"
-description: Guidelines for using MIAME-compliant MAGE-TAB templates for transcriptomics data in FAIRDOM-SEEK following established standards.
+description: Guidelines for using MIAME-compliant MAGE-TAB templates for transcriptomics data following established standards.
 redirect_from: "/transcriptomics-guidelines.html"
 ---
 

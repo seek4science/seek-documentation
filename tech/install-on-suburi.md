@@ -1,6 +1,6 @@
 ---
 title: Installing FAIRDOM-SEEK under a sub URI
-description: Configure FAIRDOM-SEEK to run under a subdirectory path with Apache and Passenger for production environments.
+description: Configure to run under a subdirectory path with Apache and Passenger for production environments.
 redirect_from: "/install-on-suburi.html"
 ---
 

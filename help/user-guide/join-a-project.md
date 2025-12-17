@@ -1,6 +1,6 @@
 ---
 title: Request to join a project
-description: Request membership to join a FAIRDOM-SEEK Project by selecting from available projects and contacting administrators.
+description: Request membership to join a Project by selecting from available projects and contacting administrators.
 redirect_from:
   - /help/user-guide/request-to-join-project.html
 ---

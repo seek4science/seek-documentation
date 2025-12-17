@@ -1,6 +1,6 @@
 ---
 title: A Quick guide to using ISA in SEEK
-description: Overview of the ISA framework (Investigations, Studies, Assays) in FAIRDOM-SEEK for structuring and describing research data and experiments.
+description: Overview of the ISA framework (Investigations, Studies, Assays) for structuring and describing research data and experiments.
 redirect_from: "/isa-guide.html"
 ---
 

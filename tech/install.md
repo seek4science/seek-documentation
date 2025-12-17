@@ -1,6 +1,6 @@
 ---
 title: Installing FAIRDOM-SEEK
-description: Complete guide to installing FAIRDOM-SEEK on Ubuntu Linux using Ruby on Rails, including prerequisites and configuration.
+description: Complete guide to installing on Ubuntu Linux using Ruby on Rails, including prerequisites and configuration.
 redirect_from: "/install.html"
 ---
 

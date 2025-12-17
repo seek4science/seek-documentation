@@ -1,6 +1,6 @@
 ---
 title: JERM (Just Enough Results Model)
-description: The Just Enough Results Model (JERM) allows exchange, interpretation and comparison of different data and results files across FAIRDOM-SEEK.
+description: The Just Enough Results Model (JERM) allows exchange, interpretation and comparison of different data and results files.
 redirect_from: "/jerm.html"
 ---
 

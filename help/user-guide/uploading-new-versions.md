@@ -1,6 +1,6 @@
 ---
 title: Creating a new version of an asset
-description: Upload new versions of data files, models, SOPs or presentations for minor modifications and improvements in FAIRDOM-SEEK.
+description: Upload new versions of data files, models, SOPs or presentations for minor modifications and improvements.
 ---
 
 

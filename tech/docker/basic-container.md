@@ -1,6 +1,6 @@
 ---
 title: Docker - Running a basic container
-description: Quick start guide for running FAIRDOM-SEEK in a single Docker container with SQLite3 for testing and evaluation.
+description: Quick start guide for running in a single Docker container with SQLite3 for testing and evaluation.
 ---
 
 

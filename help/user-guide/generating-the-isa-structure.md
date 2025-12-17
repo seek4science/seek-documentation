@@ -1,6 +1,6 @@
 ---
 title: Generating the ISA structure
-description: Create Investigations, Studies and Assays using the ISA framework to structure and link experiments in FAIRDOM-SEEK.
+description: Create Investigations, Studies and Assays using the ISA framework to structure and link experiments.
 ---
 
 The ISA (Investigation, Study, Assay) is a general purpose framework for describing how experiments relate to one another. For more information you can look at our ISA best practice guide.

@@ -1,6 +1,6 @@
 ---
 title: Cookies
-description: Information about how FAIRDOM-SEEK uses cookies and Google Analytics to measure site usage with anonymous visitor data.
+description: Information about how cookies and Google Analytics are used to measure site usage with anonymous visitor data.
 sidebar: false
 ---
 {% include callout.html type="warning" content="This page is out-of-date and may be removed." %}

@@ -1,6 +1,6 @@
 ---
 title: Generic linking variables
-description: Common attributes for assets in FAIRDOM-SEEK including titles, descriptions, projects, investigations and markdown formatting.
+description: Common attributes for assets including titles, descriptions, projects, investigations and markdown formatting.
 redirect_from: "/help/user-guide/generic-linking-variables.html"
 ---
 

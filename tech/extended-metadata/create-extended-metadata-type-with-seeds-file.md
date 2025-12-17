@@ -1,6 +1,6 @@
 ---
 title: Define your own Extended Metadata Type with SEEDs File
-description: Define project-specific Extended Metadata types in FAIRDOM-SEEK using database seed files with supported attribute types.
+description: Define project-specific Extended Metadata types using database seed files with supported attribute types.
 ---
 
 If you are managing your own FAIRDOM-SEEK instance, you have the flexibility to define your project-specific Extended Metadata Types by populating the database with a seed file.

@@ -1,6 +1,6 @@
 ---
 title: Standard Operating Procedures (SOPs)
-description: Create, upload and link Standard Operating Procedures to Studies and Assays to document experimental workflows in FAIRDOM-SEEK.
+description: Create, upload and link Standard Operating Procedures to Studies and Assays to document experimental workflows.
 ---
 
 ## What are SOPs?

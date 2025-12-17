@@ -1,6 +1,6 @@
 ---
 title: Data file upload wizard
-description: Step-by-step wizard for uploading data files to FAIRDOM-SEEK with template processing and metadata extraction capabilities.
+description: Step-by-step wizard for uploading data files with template processing and metadata extraction capabilities.
 ---
 
 
