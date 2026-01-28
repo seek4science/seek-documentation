@@ -1,5 +1,6 @@
 ---
 title: Legacy Biosamples
+description: Information about the original SysMO Biosample template, the legacy sample type available.
 ---
 
 

@@ -1,5 +1,6 @@
 ---
-title: Logging into via LS Login
+title: Logging in via LS Login
+description: If enabled, log in via LS Login to be connected to your academic institution.  
 ---
 
 
@@ -7,7 +8,7 @@ title: Logging into via LS Login
 and LS Login authentication is enabled on the FAIRDOM-SEEK instance you are using. For more information on LS Login, please
 see their [documentation](https://lifescience-ri.eu/ls-login/documentation/user-documentation/user-documentation.html){:target=\"_blank\"}." %}
 
-Already got a SEEK account? See how to [add LS Login to your account]({{ "/managing-identities#add-identity" | relative_url }}) instead.
+Already got a SEEK account? See how to [add LS Login to your account]({{ "/help/user-guide/managing-identities#add-identity" | relative_url }}) instead.
 
 If enabled on the FAIRDOM-SEEK instance you are using, you will see a tab on the login form titled "LS Login"
 

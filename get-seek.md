@@ -1,5 +1,6 @@
 ---
 title: Get FAIRDOM-SEEK
+description: Installation guide, where to start, and alternative public instances available for use. 
 sidebar: get_fairdom-seek
 redirect_from: "/get_seek.html"
 ---

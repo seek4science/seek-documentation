@@ -1,5 +1,6 @@
 ---
 title: Using Teaspoon
+description: JavaScript testing framework using Teaspoon with Selenium WebDriver, Mocha, Chai and Sinon (archived guide).
 redirect_from: "/using-teaspoon.html"
 ---
 

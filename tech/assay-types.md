@@ -1,5 +1,6 @@
 ---
 title: Providing your own Assay and Technology types
+description: Customize Assay and Technology types using ontologies defined in RDFXML format.
 redirect_from: "/assay-types.html"
 ---
 

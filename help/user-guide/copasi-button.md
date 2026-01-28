@@ -1,5 +1,6 @@
 ---
 title: Using Copasi
+description: You can download a public SBML format model to a locally installed Copasi application and start the simulation in Copasi.
 ---
 
 You can download a public SBML format **model** to a locally installed Copasi application and start the simulation in Copasi.

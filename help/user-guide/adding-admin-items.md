@@ -1,5 +1,6 @@
 ---
 title: Adding admin items
+description: These are items that cannot be created by a general user, but can be created by an administrator. 
 ---
 
 These are items that cannot be created by a general user, but can be created by a {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} administrator, [Project Administrator](roles#project-administrator), or [Programme Administrator](roles.html#programme-administrator)

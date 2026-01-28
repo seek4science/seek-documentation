@@ -1,5 +1,6 @@
 ---
 title: Archived help and guidelines
+description: Archive of older help pages covering metadata guidelines, ISA framework and controlled vocabularies.
 ---
 
 The {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} help and guidelines are written for users of any FAIRDOM-SEEK instance.

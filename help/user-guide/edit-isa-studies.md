@@ -1,5 +1,6 @@
 ---
 title: Edit an Existing ISA-JSON compliant Study
+description: Modify ISA Study properties, attributes and associated assets with Edit or Manage permissions.
 ---
 
 

@@ -1,5 +1,6 @@
 ---
 title: Managing identities
+description: Connect and manage multiple login identities including LDAP, LS Login, GitHub and OIDC providers.
 ---
 
 Depending on the configuration of the FAIRDOM-SEEK instance, in addition to the usual username/password method,

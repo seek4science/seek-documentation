@@ -1,5 +1,6 @@
 ---
 title: Proteomics guidelines
+description: Guidelines for MIAPE-compliant proteomics data, covering mass spectrometry, gel electrophoresis and chromatography.
 redirect_from: "/proteomics-guidelines.html"
 ---
 

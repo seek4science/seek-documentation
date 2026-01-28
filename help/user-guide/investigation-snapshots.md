@@ -1,5 +1,6 @@
 ---
 title: Making an Investigation, Study or Assay citable
+description: Publish Investigations, Studies or Assays with DOI assignment for persistent citation and research object creation.
 ---
 
 SEEK allows you to publish investigations, studies and assays, replete with the structure and assets that comprise it. You can then assign a DOI to the investigation, which provides a persistent link with which you and others can use to cite them with.

@@ -1,5 +1,6 @@
 ---
 title: Generic linking variables
+description: Common attributes for assets including titles, descriptions, projects, investigations and Markdown formatting.
 redirect_from: "/help/user-guide/generic-linking-variables.html"
 ---
 

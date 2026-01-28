@@ -1,5 +1,6 @@
 ---
 title: Managing your account
+description: Manage your account settings including login details, password and authentication credentials.
 ---
 
 

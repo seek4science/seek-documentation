@@ -1,5 +1,6 @@
 ---
 title: Credits
+description: Related projects, external services, JavaScript tools, icons and themes used, with acknowledgments to contributors.
 sidebar: false
 ---
 

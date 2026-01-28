@@ -1,5 +1,6 @@
 ---
 title: Installing FAIRDOM-SEEK in a production environment
+description: Production installation notes including performance optimization and maintenance setup with Apache.
 redirect_from: "/install-production.html"
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Roadmap
+description: Development roadmap with upcoming features, priorities and milestone dates for future releases.
 redirect_from: "/roadmap.html"
 ---
 

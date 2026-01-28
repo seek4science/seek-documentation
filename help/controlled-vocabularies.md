@@ -1,5 +1,6 @@
 ---
 title: Controlled vocabularies and ontologies
+description: Recommended controlled vocabularies and ontologies for annotating data and models by biological object category.
 redirect_from: "/controlled-vocabularies.html"
 ---
 

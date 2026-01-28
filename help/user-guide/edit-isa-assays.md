@@ -1,5 +1,6 @@
 ---
 title: Edit an existing ISA-JSON compliant Assay
+description: Update ISA Assay properties, Sample Type attributes and associated assets with appropriate permissions.
 ---
 
 
