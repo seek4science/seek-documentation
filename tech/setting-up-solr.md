@@ -40,14 +40,14 @@ that can be used to delete both the container and volume.
 
 ## Installing Apache Solr
 
-The following describes the steps for installing and setting up Solr on Ubuntu 20.04, but the process should be the same for
+The following describes the steps for installing and setting up Solr on Ubuntu 24.04, but the process should be the same for
 all Debian based distributions, and very similar for others. It is based on the guide found at [https://tecadmin.net/install-apache-solr-on-ubuntu-20-04/](https://tecadmin.net/install-apache-solr-on-ubuntu-20-04/) 
-but the follwoing steps have been updated for solr 8.11.2.
+but the following steps have been updated for solr 8.11.4.
 
-First you should make sure Java 11 is installed. OpenJDK is fine
+First you should make sure Java 21 is installed. OpenJDK is fine
 
     sudo apt update
-    sudo apt install openjdk-11-jdk
+    sudo apt install openjdk-21-jdk
 
 Double check this with
 
@@ -60,19 +60,21 @@ If an different version is shown, use the following command and select the numbe
 The next step is to download and install Solr into _/opt/_, and set it up as a service
 
     cd /opt
-    sudo wget https://downloads.apache.org/lucene/solr/8.11.2/solr-8.11.2.tgz
-    sudo tar xzf solr-8.11.2.tgz solr-8.11.2/bin/install_solr_service.sh --strip-components=2
-    sudo bash ./install_solr_service.sh solr-8.11.2.tgz
+    sudo wget https://downloads.apache.org/lucene/solr/8.11.2/solr-8.11.4.tgz
+    sudo tar xzf solr-8.11.4.tgz solr-8.11.2/bin/install_solr_service.sh --strip-components=2
+    sudo bash ./install_solr_service.sh solr-8.11.4.tgz
 
 The services can be stopped and started the usual way with
 
     sudo service solr stop
     sudo service solr start
 
-You now need to set up the core configured for SEEK. Move to the root directory of the SEEK installation (in this example /srv/rails/seek)
+You now need to set up the core configured for SEEK. Move to the root directory of the SEEK installation (in this example /srv/rails/seek), 
+and to avoid file permission issue copy the `solr` directory to a location where the `solr` user can access it, and then run the command to create the core with the configuration from SEEK.
 
     cd /srv/rails/seek
-    sudo su - solr -c "/opt/solr/bin/solr create -c seek -d $(pwd)/solr/seek/conf"
+    cp -r solr /tmp/seek-solr
+    sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr/seek/conf"
 
 The configuration and data for the SEEK core can be found in _/var/solr/data/seek_ .
 
