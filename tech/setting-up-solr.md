@@ -60,8 +60,8 @@ If an different version is shown, use the following command and select the numbe
 The next step is to download and install Solr into _/opt/_, and set it up as a service
 
     cd /opt
-    sudo wget https://downloads.apache.org/lucene/solr/8.11.2/solr-8.11.4.tgz
-    sudo tar xzf solr-8.11.4.tgz solr-8.11.2/bin/install_solr_service.sh --strip-components=2
+    sudo wget https://downloads.apache.org/lucene/solr/8.11.4/solr-8.11.4.tgz
+    sudo tar xzf solr-8.11.4.tgz solr-8.11.4/bin/install_solr_service.sh --strip-components=2
     sudo bash ./install_solr_service.sh solr-8.11.4.tgz
 
 The services can be stopped and started the usual way with
