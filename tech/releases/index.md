@@ -17,8 +17,8 @@ Release date: _5th February 2026_
 A small patch release that fixes a couple of bugs:
 
 * Fix error handling and reporting when trying to export Pubmed based publications without the email used to access the Pubmed API configured.
-* In DataHub, all the ISA spreadsheet to be downloaded from the default view (in addition to the single page view).
-* Fix handing uploading content to an empty content blob when using the API.
+* In DataHub, the ISA spreadsheet can now be downloaded from the default view (in addition to the single page view).
+* Fix to an error when uploading content to an empty content blob when using the API.
 
 For a full list, see [closed issues for 1.17.3](https://github.com/seek4science/seek/milestone/32?closed=1)
 
