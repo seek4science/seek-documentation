@@ -22,7 +22,9 @@ There shoudn't be any problems once SEEK is installed and
 running. The only difference we have found is that MySql doesn't ask for a root password when installing the packages.
 To initially connect to mysql to setup permissions you may need to do the following:
 
-    sudo mysql -u root
+```bash
+sudo mysql -u root
+```
 
 ## Fedora 20 / RHEL / CentOS
 
@@ -38,18 +40,22 @@ experiences installing SEEK on RHEL.
 The package names are quite different for Red Hat and are installed using
 *Yum*. The packages you need to install are
 
-    sudo yum install mysql-server
+```bash
+sudo yum install mysql-server
+```
 
 This actually installed *MariaDB*, but it is compatible and not a problem. The
 rest of the packages (included those for running SEEK with Apache) are
 installed as follows
 
-    sudo yum groupinstall "Development Tools" "Development Libraries"
-    sudo yum install wget curl mercurial ruby openssl-devel  openssh-server git readline-devel
-    sudo yum install libxml2-devel libxml++-devel java-1.7.0-openjdk-devel sqlite-devel
-    sudo yum install poppler-utils libreoffice mysql-devel mysql-libs ImageMagick-c++-devel libxslt-devel
-    sudo yum install libtool gawk libyaml-devel autoconf gdbm-devel ncurses-devel automake bison libffi-devel
-    sudo yum install httpd-itk httpd-devel
+```bash
+sudo yum groupinstall "Development Tools" "Development Libraries"
+sudo yum install wget curl mercurial ruby openssl-devel  openssh-server git readline-devel
+sudo yum install libxml2-devel libxml++-devel java-1.7.0-openjdk-devel sqlite-devel
+sudo yum install poppler-utils libreoffice mysql-devel mysql-libs ImageMagick-c++-devel libxslt-devel
+sudo yum install libtool gawk libyaml-devel autoconf gdbm-devel ncurses-devel automake bison libffi-devel
+sudo yum install httpd-itk httpd-devel
+```
 
 ### Installing RVM
 
@@ -63,23 +69,31 @@ As with Linux Mint and Ubuntu 14.04, you should run the following command
 before running *bundle install* to make sure *Nokogiri* is compiled using the
 installed version of *LibXML*
 
-    bundle config build.nokogiri --use-system-libraries
+```bash
+bundle config build.nokogiri --use-system-libraries
+```
 
 ### Setting up the database
 
 Fedora installs *MariaDB* instead of *Mysql*. You may need to start up the
 database with:
 
-    sudo service mariadb start
+```bash
+sudo service mariadb start
+```
 
 To make it start at boot-time (this wasn't enabled by default for me) you
 should run:
 
-    sudo chkconfig mariadb on
+```bash
+sudo chkconfig mariadb on
+```
 
 To connect to the database to setup the user for SEEK do:
 
-    sudo mariadb
+```bash
+sudo mariadb
+```
 
 Otherwise everything else is the same.
 
@@ -87,27 +101,35 @@ Otherwise everything else is the same.
 
 To start and stop *Apache* you need to use
 
-    sudo apachectl start
-    sudo apachectl stop
+```bash
+sudo apachectl start
+sudo apachectl stop
+```
 
 Also, as with MariaDB, it wasn't set to start at boot-time, so to fix this
 run:
 
-    sudo chkconfig httpd on
+```bash
+sudo chkconfig httpd on
+```
 
 The user apache runs under is *apache* rather than *www-data* so to create a
 home directory for that user do:
 
-    sudo apachectl stop
-    sudo usermod -d /home/apache apache
-    sudo usermod -s /bin/bash apache
-    sudo mkdir /home/apache
-    sudo chown apache /home/apache
-    sudo apachectl start
+```bash
+sudo apachectl stop
+sudo usermod -d /home/apache apache
+sudo usermod -s /bin/bash apache
+sudo mkdir /home/apache
+sudo chown apache /home/apache
+sudo apachectl start
+```
 
 and instead of using www-data, to switch to that user use:
 
-    sudo su - apache
+```bash
+sudo su - apache
+```
 
 and then proceed with the normal installation, along with the differences to
 installing the gems and setting up the database described earlier, until you
@@ -116,11 +138,15 @@ get to install and setup Passenger Phusion.
 Before creating the Passenger module, I first need to set the following
 variable to ensure it was built using a 64bit architecture
 
-    export ARCHFLAGS="-arch x86_64"
+```bash
+export ARCHFLAGS="-arch x86_64"
+```
 
 and then proceed to run
 
-    bundle exec passenger-install-apache2-module
+```bash
+bundle exec passenger-install-apache2-module
+```
 
 I got some warnings about *FORTIFY_SOURCE requires compiling with
 optimization* which I ignored and didn't seem to cause any problems.
@@ -133,33 +159,39 @@ that are put there by default. The contents of this file ended up looking like
 the following, although yours may differ slightly in terms of the versions
 used.
 
-    LoadModule passenger_module "/home/apache/.rvm/gems/ruby-2.1.2@seek/gems/passenger-4.0.45/buildout/apache2/mod_passenger.so"
-    <IfModule mod_passenger.c>
-       PassengerRoot /home/apache/.rvm/gems/ruby-2.1.2@seek/gems/passenger-4.0.45
-       PassengerDefaultRuby /home/apache/.rvm/gems/ruby-2.1.2@seek/wrappers/ruby
-    </IfModule>
+```apache
+LoadModule passenger_module "/home/apache/.rvm/gems/ruby-2.1.2@seek/gems/passenger-4.0.45/buildout/apache2/mod_passenger.so"
+<IfModule mod_passenger.c>
+   PassengerRoot /home/apache/.rvm/gems/ruby-2.1.2@seek/gems/passenger-4.0.45
+   PassengerDefaultRuby /home/apache/.rvm/gems/ruby-2.1.2@seek/wrappers/ruby
+</IfModule>
 
-    <VirtualHost *:80>
-        # !!! Be sure to point DocumentRoot to 'public'!
-        DocumentRoot /srv/rails/seek/public
-        <Directory /srv/rails/seek/public>
-           # This relaxes Apache security settings.
-           AllowOverride all
-           # MultiViews must be turned off.
-           Options -MultiViews
-           # Uncomment this if you're on Apache >= 2.4:
-           Require all granted
-        </Directory>
-    </VirtualHost>
+<VirtualHost *:80>
+    # !!! Be sure to point DocumentRoot to 'public'!
+    DocumentRoot /srv/rails/seek/public
+    <Directory /srv/rails/seek/public>
+       # This relaxes Apache security settings.
+       AllowOverride all
+       # MultiViews must be turned off.
+       Options -MultiViews
+       # Uncomment this if you're on Apache >= 2.4:
+       Require all granted
+    </Directory>
+</VirtualHost>
+```
 
 Afterwards, apache should be restarted with
 
-    sudo apachectl restart
+```bash
+sudo apachectl restart
+```
 
 Now, I encountered a permission error with loading the module, which I tracked
 down as being related to SELinux. To get around this I turned off SELinux with
 
-    sudo setenforce 0
+```bash
+sudo setenforce 0
+```
 
 There is a description of how to be able to re-enable this at
 http://sergiy.kyrylkov.name/2012/02/26/phusion-passenger-with-apache-on-rhel-6
@@ -173,33 +205,43 @@ find details about how to contact us at https://seek4science.org/contact
 
 The general packages:
 
-    sudo apt-get install wget curl mercurial ruby rdoc ri libopenssl-ruby ruby-dev mysql-server libssl-dev build-essential openssh-server git-core
-    sudo apt-get install libmysqlclient16-dev libmagick++-dev libxslt-dev libxml++2.6-dev openjdk-6-jdk libsqlite3-dev sqlite3
-    sudo apt-get install poppler-utils openoffice.org openoffice.org-java-common
+```bash
+sudo apt-get install wget curl mercurial ruby rdoc ri libopenssl-ruby ruby-dev mysql-server libssl-dev build-essential openssh-server git-core
+sudo apt-get install libmysqlclient16-dev libmagick++-dev libxslt-dev libxml++2.6-dev openjdk-6-jdk libsqlite3-dev sqlite3
+sudo apt-get install poppler-utils openoffice.org openoffice.org-java-common
+```
 
 To avoid being prompted during the Ruby 1.9.3 installation with RVM:
 
-    sudo apt-get install libreadline6-dev libyaml-dev autoconf libgdbm-dev libncurses5-dev automake bison libffi-dev
+```bash
+sudo apt-get install libreadline6-dev libyaml-dev autoconf libgdbm-dev libncurses5-dev automake bison libffi-dev
+```
 
 To install the Passenger Phusion module to run SEEK with Apache:
 
-    sudo apt-get install apache2-mpm-prefork apache2-prefork-dev libapr1-dev libaprutil1-dev libcurl4-openssl-dev
+```bash
+sudo apt-get install apache2-mpm-prefork apache2-prefork-dev libapr1-dev libaprutil1-dev libcurl4-openssl-dev
+```
 
 The command to start soffice is also slightly different, using just single
 rather than double hyphens for the arguments:
 
-    soffice -headless -accept="socket,host=127.0.0.1,port=8100;urp;" -nofirststartwizard > /dev/null 2>&1 &
+```bash
+soffice -headless -accept="socket,host=127.0.0.1,port=8100;urp;" -nofirststartwizard > /dev/null 2>&1 &
+```
 
 If you find the conversion of documents to PDF (for View Content in the
 browser) is slow, you can install a more recent LibreOffice 3.5 from a
 separate repository - although this may affect future Operating System
 upgrades:
 
-    sudo apt-get purge openoffice* libreoffice*
-    sudo apt-get install python-software-properties
-    sudo add-apt-repository ppa:libreoffice/libreoffice-3-5
-    sudo apt-get update
-    sudo apt-get install libreoffice
+```bash
+sudo apt-get purge openoffice* libreoffice*
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:libreoffice/libreoffice-3-5
+sudo apt-get update
+sudo apt-get install libreoffice
+```
 
 ## Debian
 
@@ -207,7 +249,9 @@ By default, the user you create for Debian during the installation is not
 added to the sudoers list. You may want to add your user to the *sudo* group
 e.g
 
-    adduser fred sudo
+```bash
+adduser fred sudo
+```
 
 more details can be found at https://wiki.debian.org/sudo
 
@@ -239,12 +283,14 @@ https://www.macports.org/install.php
 
 ### Installing packages
 
-    sudo fink install wget curl openssl100-dev git readline6
-    sudo fink install libxml++2 sqlite3-dev sqlite3
-    sudo fink install poppler-bin mysql-unified-dev
+```bash
+sudo fink install wget curl openssl100-dev git readline6
+sudo fink install libxml++2 sqlite3-dev sqlite3
+sudo fink install poppler-bin mysql-unified-dev
 
-    sudo port install mysql8-server
-    sudo port install openssh ImageMagick libxslt
+sudo port install mysql8-server
+sudo port install openssh ImageMagick libxslt
+```
 
 For the following packages, you download the dmg image and install manually:
 
@@ -261,48 +307,70 @@ Important steps after installation:
 
 Select mysql8 at the default mysql:
 
-    sudo port select mysql mysql8
+```bash
+sudo port select mysql mysql8
+```
     
 Start the server:
 
-    sudo port load mysql8-server     
+```bash
+sudo port load mysql8-server
+```     
     
 Initialize the database.
 
 Doing so will give you a temporary root password. You **need** to write it down as it will be (very) difficult to reset it afterwards. At the first actual use of mysql (using the mysql command), you will need to change the root password (see below).
-    
-    sudo /opt/local/lib/mysql8/bin/mysqld --initialize --user=_mysql
+
+```bash
+sudo /opt/local/lib/mysql8/bin/mysqld --initialize --user=_mysql
+```
 
 First start of mysql:
 
-    mysql -uroot -p
+```bash
+mysql -uroot -p
+```
 -> use given password
 
 You cannot do anything before you set up a new password for root:
 
-    ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
+```bash
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
+```
 
 MySql has a new authentication method by default. To ensure that Seek can connect to it, you need to specify that the Seek DB user (set in Database.yml) can use the old "native password" method:
 
-    ALTER USER 'seekmainuser'@'localhost' IDENTIFIED WITH mysql_native_password
+```bash
+ALTER USER 'seekmainuser'@'localhost' IDENTIFIED WITH mysql_native_password
+```
 
 Then activate the new privileges:
 
-    flush privileges;
+```bash
+flush privileges;
+```
 
 ### PostGres Gem install
 
 To install PostGres support using Gem, it needs the path to the binaries of it:
-    sudo PATH=$PATH:/Library/PostgreSQL/x.y/bin gem install pg
+
+```bash
+sudo PATH=$PATH:/Library/PostgreSQL/x.y/bin gem install pg
+```
 
 for PostGres 10 for instance, it would be:
-    sudo PATH=$PATH:/Library/PostgreSQL/10/bin gem install pg
+
+```bash
+sudo PATH=$PATH:/Library/PostgreSQL/10/bin gem install pg
+```
 
 ### Puma Gem install
 
 Puma needs an option to compile with the new Xcode:
 
-    gem install puma:4.3.5 -- --with-cflags="-Wno-error=implicit-function-declaration"
+```bash
+gem install puma:4.3.5 -- --with-cflags="-Wno-error=implicit-function-declaration"
+```
 
 ### Other notes
 
@@ -311,7 +379,9 @@ By default, mysql client connects to mysql server through socket at
 /opt/local/var/run/mysql8/mysqld.sock. Therefore, the .sock file needs to be
 re-configured in database.yml
 
-    socket: /opt/local/var/run/mysql8/mysqld.sock
+```yaml
+socket: /opt/local/var/run/mysql8/mysqld.sock
+```
 
 And also when you want to run mysql client, you need to give the .sock file
 path under option -S
@@ -319,16 +389,20 @@ path under option -S
 You might need to specify the installed location of Libreoffice before running
 soffice command. E.g. you might add the following line into ~/.bashrc
 
-    export PATH="$PATH:/Applications/LibreOffice.app/Contents/MacOS/"
+```bash
+export PATH="$PATH:/Applications/LibreOffice.app/Contents/MacOS/"
+```
 
 
 ### Connect to MySQL from a client
 
 By default MacPorts deactivates fully remote connections, which are needed for most SQL clients. To activate it, you can edit the my.cnf:
 
-    sudo vim /opt/local/etc/mysql8/my.cnf
+```bash
+sudo vim /opt/local/etc/mysql8/my.cnf
+```
 
-```shell
+```bash
 # Use default MacPorts settings
 # !include /opt/local/etc/mysql8/macports-default.cnf
 
@@ -357,13 +431,19 @@ default-character-set  =  utf8
     
 Then restart MySQL (you might need to kill the process):
 
-    sudo port unload mysql8-server 
-    
-    ps -ax | grep mysql
+```bash
+sudo port unload mysql8-server 
+
+ps -ax | grep mysql
+```
 -> if mysqld still there, using the listed PID:
 
-    sudo kill PID
-   
+```bash
+sudo kill PID
+```
+
 then
 
-    sudo port load mysql8-server 
+```bash
+sudo port load mysql8-server
+``` 

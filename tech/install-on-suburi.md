@@ -21,11 +21,13 @@ The Apache configuration requires a small change to pass an additional couple
 of parameters to Passenger. Please add the following to your virtual host
 settings, just before the Directory definition.
 
-    Alias /seek /srv/rails/seek/public
-    <Location /seek>
-      PassengerBaseURI /seek
-      PassengerAppRoot /srv/rails/seek
-    </Location>
+```apache
+Alias /seek /srv/rails/seek/public
+<Location /seek>
+  PassengerBaseURI /seek
+  PassengerAppRoot /srv/rails/seek
+</Location>
+```
 
 You can find out more about this configuration at
 
@@ -36,7 +38,9 @@ You can find out more about this configuration at
 In the file *config/application.rb* towards the end withing the inner block,
 either uncomment or add the line:
 
-    config.relative_url_root = '/seek'
+```ruby
+config.relative_url_root = '/seek'
+```
 
 This setting is necessary to create the correct paths when compiling the
 assets, and also for the delayed-job background tasks. An alternative to this
@@ -45,11 +49,15 @@ starting/stopping the seek:workers or compiling assets.
 
 Now re-compile the assets
 
-    rm -rf public/assets
-    bundle exec rake assets:precompile
+```bash
+rm -rf public/assets
+bundle exec rake assets:precompile
+```
 
 Now restart Apache, and if you have already ran seek clear the cache with:
 
-    bundle exec rake tmp:clear
+```bash
+bundle exec rake tmp:clear
+```
 
 You should now be able to visit and use seek at [http://localhost/seek](http://localhost/seek)

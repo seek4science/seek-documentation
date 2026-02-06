@@ -26,14 +26,18 @@ stopping the Solr service:
     * As is suggests, this will stop the service. The container and volume will remain, ready to be restarted.
 
 These scripts should be run from the root directory of your SEEK installation, e.g:
-    
-    sh ./script/start-docker-solr.sh
+
+```bash
+sh ./script/start-docker-solr.sh
+```
 
 The Docker container will be named _seek-solr_ and the volume named _seek-solr-data-volume_ .
 
 Once running, and with search enabled, you can trigger jobs to reindex all searchable content with
 
-    bundle exec rake seek:reindex_all
+```bash
+bundle exec rake seek:reindex_all
+```
 
 There is an additional script, [script/delete-docker-solr.sh](https://github.com/seek4science/seek/blob/v{{ site.current_seek_version }}/script/delete-docker-solr.sh), 
 that can be used to delete both the container and volume.
@@ -46,35 +50,47 @@ but the following steps have been updated for solr 8.11.4.
 
 First you should make sure Java 21 is installed. OpenJDK is fine
 
-    sudo apt update
-    sudo apt install openjdk-21-jdk
+```bash
+sudo apt update
+sudo apt install openjdk-21-jdk
+```
 
 Double check this with
 
-    java -version
+```bash
+java -version
+```
 
 If an different version is shown, use the following command and select the number for the correct version
 
-    sudo update-alternatives --config java
+```bash
+sudo update-alternatives --config java
+```
 
 The next step is to download and install Solr into _/opt/_, and set it up as a service
 
-    cd /opt
-    sudo wget https://downloads.apache.org/lucene/solr/8.11.4/solr-8.11.4.tgz
-    sudo tar xzf solr-8.11.4.tgz solr-8.11.4/bin/install_solr_service.sh --strip-components=2
-    sudo bash ./install_solr_service.sh solr-8.11.4.tgz
+```bash
+cd /opt
+sudo wget https://downloads.apache.org/lucene/solr/8.11.4/solr-8.11.4.tgz
+sudo tar xzf solr-8.11.4.tgz solr-8.11.4/bin/install_solr_service.sh --strip-components=2
+sudo bash ./install_solr_service.sh solr-8.11.4.tgz
+```
 
 The services can be stopped and started the usual way with
 
-    sudo service solr stop
-    sudo service solr start
+```bash
+sudo service solr stop
+sudo service solr start
+```
 
 You now need to set up the core configured for SEEK. Move to the root directory of the SEEK installation (in this example /srv/rails/seek), 
 and to avoid file permission issue copy the `solr` directory to a location where the `solr` user can access it, and then run the command to create the core with the configuration from SEEK.
 
-    cd /srv/rails/seek
-    cp -r solr /tmp/seek-solr
-    sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr/seek/conf"
+```bash
+cd /srv/rails/seek
+cp -r solr /tmp/seek-solr
+sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr/seek/conf"
+```
 
 The configuration and data for the SEEK core can be found in _/var/solr/data/seek_ .
 
@@ -82,7 +98,9 @@ You should be able to confirm the service is running and the core setup by visit
 
 Solr is now setup, and you can trigger jobs to reindex the content with
 
-    bundle exec rake seek:reindex_all
+```bash
+bundle exec rake seek:reindex_all
+```
 
 
 
