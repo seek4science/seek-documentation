@@ -159,7 +159,7 @@ that are put there by default. The contents of this file ended up looking like
 the following, although yours may differ slightly in terms of the versions
 used.
 
-```apache
+```apacheconf
 LoadModule passenger_module "/home/apache/.rvm/gems/ruby-2.1.2@seek/gems/passenger-4.0.45/buildout/apache2/mod_passenger.so"
 <IfModule mod_passenger.c>
    PassengerRoot /home/apache/.rvm/gems/ruby-2.1.2@seek/gems/passenger-4.0.45

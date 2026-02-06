@@ -81,7 +81,7 @@ server {
 
 for Apache the virtual host would include:
 
-```apache
+```apacheconf
 UseCanonicalName on
 ProxyPreserveHost on
 <Location />
