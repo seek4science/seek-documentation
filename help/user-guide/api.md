@@ -14,7 +14,9 @@ describes a standard way of representing APIs in JSON.
 Technical details about the JSON structures and available endpoints
  comes bundled with {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} and can be found served from:
 
-    http://<host>:<port>/api
+```bash
+http://<host>:<port>/api
+```
 
 For example, on the FAIRDOMHub it is [{{ site.seek_instance.url | default: "https://fairdomhub.org" }}/api]({{ site.seek_instance.url | default: "https://fairdomhub.org" }}/api),
 or for a local running instance it would be [http://localhost:3000/api](http://localhost:3000/api)

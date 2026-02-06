@@ -83,7 +83,7 @@ The creation of the resource will return a JSON document containing ContentBlobs
 
 A placeholder can then be satisfied by uploading a file to the location URI. For example by a placeholder such as
 
-```
+```json
 "content_blobs": [
   {
     "original_filename": "a_pdf_file.pdf",
