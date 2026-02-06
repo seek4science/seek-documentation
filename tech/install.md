@@ -49,29 +49,39 @@ Distributions](other-distributions) notes.
 
 First add a repo which contains python versions that may not be available in the default repositories
 
-    sudo apt install software-properties-common
-    sudo add-apt-repository ppa:deadsnakes/ppa
+```bash
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+```
 
 Then ensure everything is up-to-date
 
-    sudo apt update
-    sudo apt upgrade
+```bash
+sudo apt update
+sudo apt upgrade
+```
 
 Now install the packages:
 
-    sudo apt install build-essential cmake git graphviz imagemagick libcurl4-gnutls-dev libgmp-dev \
-        libmagick++-dev libmysqlclient-dev libpq-dev libreadline-dev libreoffice libssl-dev \
-        libxml++2.6-dev libxslt1-dev mysql-server nodejs openjdk-11-jdk openssh-server poppler-utils zip \
-        python3.9-dev python3.9-distutils python3-pip
+```bash
+sudo apt install build-essential cmake git graphviz imagemagick libcurl4-gnutls-dev libgmp-dev \
+    libmagick++-dev libmysqlclient-dev libpq-dev libreadline-dev libreoffice libssl-dev \
+    libxml++2.6-dev libxslt1-dev mysql-server nodejs openjdk-11-jdk openssh-server poppler-utils zip \
+    python3.9-dev python3.9-distutils python3-pip
+```
 
 Installing these packages now will make installing Ruby easier later on:
 
-    sudo apt install autoconf automake bison curl gawk libffi-dev libgdbm-dev \
-        libncurses5-dev libsqlite3-dev libyaml-dev sqlite3
+```bash
+sudo apt install autoconf automake bison curl gawk libffi-dev libgdbm-dev \
+    libncurses5-dev libsqlite3-dev libyaml-dev sqlite3
+```
 
 SEEK's Solr implementation currently requires Java 11, so you may need to switch the system's default Java runtime:
 
-    sudo update-alternatives --config java
+```bash
+sudo update-alternatives --config java
+```
 
 ...and select the version named `/usr/lib/jvm/java-11-openjdk-amd64/bin/java` or similar.
 
@@ -91,22 +101,28 @@ Now you are ready for installing SEEK. You can either install directly from Gith
 If you wish to install directly from GitHub, the latest version of SEEK is
 tagged as *v{{ site.current_seek_version }}*. To fetch this run:
 
-    git clone https://github.com/seek4science/seek.git
-    cd seek/
-    git checkout v{{ site.current_seek_version }}
+```bash
+git clone https://github.com/seek4science/seek.git
+cd seek/
+git checkout v{{ site.current_seek_version }}
+```
 
 ### Download to install
 
 Alternatively, you can download SEEK from
 <https://github.com/seek4science/seek/archive/v{{ site.current_seek_version }}.tar.gz>
 
-    wget -O seek-{{ site.current_seek_version }}.tar.gz https://github.com/seek4science/seek/archive/v{{ site.current_seek_version }}.tar.gz
+```bash
+wget -O seek-{{ site.current_seek_version }}.tar.gz https://github.com/seek4science/seek/archive/v{{ site.current_seek_version }}.tar.gz
+```
 
 then unpack the file with:
 
-    tar zxfv seek-{{ site.current_seek_version }}.tar.gz
-    mv seek-{{ site.current_seek_version }} seek
-    cd seek/
+```bash
+tar zxfv seek-{{ site.current_seek_version }}.tar.gz
+mv seek-{{ site.current_seek_version }} seek
+cd seek/
+```
 
 ## Setting up Ruby and RubyGems with RVM
 
@@ -117,10 +133,12 @@ and keep up to date.
 
 To install RVM on Ubuntu there is package available described at <https://github.com/rvm/ubuntu_rvm>, the steps being
 
-    sudo apt-add-repository -y ppa:rael-gc/rvm
-    sudo apt-get update
-    sudo apt-get install rvm
-    sudo usermod -a -G rvm $USER
+```bash
+sudo apt-add-repository -y ppa:rael-gc/rvm
+sudo apt-get update
+sudo apt-get install rvm
+sudo usermod -a -G rvm $USER
+```
 
 ... the guide recommends rebooting here, but logging in and out again usually works.
 
@@ -128,28 +146,38 @@ Other ways to install RVM can be found at <https://rvm.io/rvm/install> .
 
 now install the appropriate version of Ruby
 
-    rvm install $(cat .ruby-version)
+```bash
+rvm install $(cat .ruby-version)
+```
 
 
 ## Installing Gems
 
 First install bundler, which is used to manage gem versions
 
-    gem install bundler
+```bash
+gem install bundler
+```
 
 Next install the ruby gems SEEK needs ( for production see [Bundler Configuration](install-production.html#bundler-configuration) )
 
-    bundle install
+```bash
+bundle install
+```
 
 ## Install Python dependencies
 
 First, a specific version of `setuptools` needs to be installed to avoid an issue when installing dependencies
 
-    python3.9 -m pip install setuptools==58
+```bash
+python3.9 -m pip install setuptools==58
+```
 
 Then the other dependencies can be installed
 
-    python3.9 -m pip install -r requirements.txt
+```bash
+python3.9 -m pip install -r requirements.txt
+```
 
 
 ## Setting up the Database
@@ -157,8 +185,10 @@ Then the other dependencies can be installed
 You first need to setup the database configuration file. You need to copy a
 default version of this and then edit it:
 
-    cp config/database.default.yml config/database.yml
-    nano config/database.yml
+```bash
+cp config/database.default.yml config/database.yml
+nano config/database.yml
+```
 
 **IMPORTANT:** you should at least change the default username and password.
 Change this for each environment (development,production,test).
@@ -166,24 +196,26 @@ Change this for each environment (development,production,test).
 Now you need to grant permissions for the user and password you just used
 (changing the example below appropriately).
 
-    > sudo mysql
-    Enter password:
-    Welcome to the MySQL monitor.  Commands end with ; or \g.
-    Your MySQL connection id is 1522
-    Server version: 5.5.32-0ubuntu0.12.04.1 (Ubuntu)
+```bash
+sudo mysql
+```
 
-    Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-    mysql> CREATE USER 'mysqluser'@'localhost' IDENTIFIED BY 'mysqlpassword';
-    mysql> GRANT ALL PRIVILEGES ON *.* TO 'mysqluser'@'localhost' WITH GRANT OPTION;
+```sql
+CREATE USER 'mysqluser'@'localhost' IDENTIFIED BY 'mysqlpassword';
+GRANT ALL PRIVILEGES ON *.* TO 'mysqluser'@'localhost' WITH GRANT OPTION;
+```
 
 Now to create the database for SEEK and seed it with the default data, run:
 
-    bundle exec rake db:setup
+```bash
+bundle exec rake db:setup
+```
 
 You can now start SEEK for the first time, just to test things are working
 
-    bundle exec rails server
+```bash
+bundle exec rails server
+```
 
 ... and visit http://localhost:3000 and a SEEK page should load.
 
@@ -208,21 +240,29 @@ process various asynchronous jobs. It is important this service is running.
 
 To start delayed job run:
 
-    bundle exec rake seek:workers:start
+```bash
+bundle exec rake seek:workers:start
+```
 
 and to stop run:
 
-    bundle exec rake seek:workers:stop
+```bash
+bundle exec rake seek:workers:stop
+```
 
 you can also restart with
 
-    bundle exec rake seek:workers:restart
+```bash
+bundle exec rake seek:workers:restart
+```
 
 ## Starting SEEK
 
 You can now start up SEEK again running:
 
-    bundle exec rails server
+```bash
+bundle exec rails server
+```
 
 ## Creating an Administrator
 
