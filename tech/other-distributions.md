@@ -159,7 +159,7 @@ that are put there by default. The contents of this file ended up looking like
 the following, although yours may differ slightly in terms of the versions
 used.
 
-```apacheconf
+```apache
 LoadModule passenger_module "/home/apache/.rvm/gems/ruby-2.1.2@seek/gems/passenger-4.0.45/buildout/apache2/mod_passenger.so"
 <IfModule mod_passenger.c>
    PassengerRoot /home/apache/.rvm/gems/ruby-2.1.2@seek/gems/passenger-4.0.45
@@ -334,19 +334,19 @@ mysql -uroot -p
 
 You cannot do anything before you set up a new password for root:
 
-```bash
+```sql
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
 ```
 
 MySql has a new authentication method by default. To ensure that Seek can connect to it, you need to specify that the Seek DB user (set in Database.yml) can use the old "native password" method:
 
-```bash
+```sql
 ALTER USER 'seekmainuser'@'localhost' IDENTIFIED WITH mysql_native_password
 ```
 
 Then activate the new privileges:
 
-```bash
+```sql
 flush privileges;
 ```
 
