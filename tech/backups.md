@@ -36,7 +36,7 @@ mysql -umysqluser -pmysqlpassword
 and creating the database (assuming it no longer exists), connecting to it,
 and importing the dump:
 
-```bash
+```sql
 >create database seek_production;
 >\r seek_production
 >\. ./seek_production.sql

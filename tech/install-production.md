@@ -144,7 +144,7 @@ sudo nano /etc/apache2/sites-available/seek.conf
 which looks like (if you have registered a DNS for your site, then set
 ServerName appropriately):
 
-```apacheconf
+```apache
 <VirtualHost *:80>
   ServerName www.yourhost.com
 

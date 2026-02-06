@@ -55,9 +55,9 @@ In general, we follow the European Commission's [Web Writing Style Guide](https:
 
  * **Always use fenced code blocks** (triple backticks) instead of indented code blocks (4-space indentation).
  * **Always specify a language identifier** after the opening backticks for syntax highlighting.
- * **Use supported language identifiers** from the [GitHub supported languages list](https://github.com/jincheng9/markdown_supported_languages). Common examples:
+ * **Use supported language identifiers** from the [Jekyll supported languages list](https://www.fabriziomusacchio.com/blog/2021-08-11-Syntax_Highlighting_in_Jekyll/). Common examples:
     * `bash` - for shell commands and scripts
-    * `apacheconf` - for Apache configuration files
+    * `apache` - for Apache configuration files
     * `nginx` - for Nginx configuration files
     * `ruby` - for Ruby code
     * `python` - for Python code

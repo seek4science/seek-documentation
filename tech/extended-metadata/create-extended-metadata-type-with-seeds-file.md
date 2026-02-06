@@ -197,9 +197,7 @@ end
 {:.screenshot}
 
 You can find the [complete example here](https://github.com/seek4science/seek/blob/main/db/seeds/extended_metadata_drafts/family_example.seeds.rb), you need to move the file under the `db/seeds` folder, then run the seed file using the command
-```bash
-bundle exec rake db:seed:family_example
-``` 
+`bundle exec rake db:seed:family_example`
 from the FAIRDOM-SEEK instance root path.
 
 ## How to run the seed file
@@ -207,7 +205,5 @@ from the FAIRDOM-SEEK instance root path.
 Here is a seed file named **[extended_study_metadata_example.seeds.rb](https://github.com/seek4science/seek/blob/main/db/seeds/extended_metadata_drafts/extended_study_metadata_example.seeds.rb)**, which creates an Extended Metadata type named **"My study metadata"** for study.
 
 You can place it under the `db/seeds` folder, then run the seed file using the command
-```bash
-bundle exec rake db:seed:extended_study_metadata_example
-``` 
+`bundle exec rake db:seed:extended_study_metadata_example` 
 from the FAIRDOM-SEEK instance root path.

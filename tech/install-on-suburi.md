@@ -21,7 +21,7 @@ The Apache configuration requires a small change to pass an additional couple
 of parameters to Passenger. Please add the following to your virtual host
 settings, just before the Directory definition.
 
-```apacheconf
+```apache
 Alias /seek /srv/rails/seek/public
 <Location /seek>
   PassengerBaseURI /seek
