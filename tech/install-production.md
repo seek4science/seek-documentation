@@ -22,27 +22,37 @@ This will make sure some of the rake tasks affect the appropriate database.
 
 To save time later there are also some additional packages to install:
 
-    sudo apt-get install libapr1-dev libaprutil1-dev
+```bash
+sudo apt-get install libapr1-dev libaprutil1-dev
+```
 
 First create a user to own the SEEK application:
 
-    sudo useradd -m seek
+```bash
+sudo useradd -m seek
+```
 
 We recommend installing SEEK in /srv/rails/seek - first you need to create
 this and grant permissions to `seek`
 
-    sudo mkdir -p /srv/rails
-    sudo chown seek:seek /srv/rails
+```bash
+sudo mkdir -p /srv/rails
+sudo chown seek:seek /srv/rails
+```
 
 Now switch to the `seek` user
 
-    sudo su - seek
-    cd /srv/rails
+```bash
+sudo su - seek
+cd /srv/rails
+```
 
 Before following the standard INSTALL guide you need to set an environment
 variable to indicate that you intend to setup and run SEEK as production.
 
-    export RAILS_ENV=production
+```bash
+export RAILS_ENV=production
+```
 
 you will need to reset this variable if you close your shell and start a new
 session
@@ -61,8 +71,10 @@ installed. At the time of writing this guide this shouldn't be necessary.
 
 When installing gems with Bundler, first configure with
 
-    bundle config set deployment 'true'
-    bundle config set without 'development test'
+```bash
+bundle config set deployment 'true'
+bundle config set without 'development test'
+```
 
 this will prevent gems being accidentally changed, and also avoid unnecessary gems being installed.
 
@@ -75,7 +87,9 @@ which means minifying them, grouping some together into a single file, and
 compressing. These then get placed into *public/assets*. To compile them run
 the following command. This can take some time, so be patient
 
-    bundle exec rake assets:precompile
+```bash
+bundle exec rake assets:precompile
+```
 
 ### Serving SEEK through Apache
 
@@ -87,59 +101,73 @@ The following steps are taken from the above guide:
 
 Install PGP key:
 
-    sudo apt-get install -y dirmngr gnupg
-    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
-    sudo apt-get install -y apt-transport-https ca-certificates
+```bash
+sudo apt-get install -y dirmngr gnupg
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
+sudo apt-get install -y apt-transport-https ca-certificates
+```
 
 Add apt repository:
 
-    sudo sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger bionic main > /etc/apt/sources.list.d/passenger.list'
-    sudo apt-get update
+```bash
+sudo sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger bionic main > /etc/apt/sources.list.d/passenger.list'
+sudo apt-get update
+```
 
 Install Apache module:
 
-    sudo apt-get install -y libapache2-mod-passenger
+```bash
+sudo apt-get install -y libapache2-mod-passenger
+```
 
 Enable the module:
 
-    sudo a2enmod passenger
-    sudo apache2ctl restart
+```bash
+sudo a2enmod passenger
+sudo apache2ctl restart
+```
 
 Check everything worked:
 
-    sudo /usr/bin/passenger-config validate-install
+```bash
+sudo /usr/bin/passenger-config validate-install
+```
 
 #### Apache configuration
 
 Now create a virtual host definition for SEEK:
 
-    sudo nano /etc/apache2/sites-available/seek.conf
+```bash
+sudo nano /etc/apache2/sites-available/seek.conf
+```
 
 which looks like (if you have registered a DNS for your site, then set
 ServerName appropriately):
 
-    <VirtualHost *:80>
-      ServerName www.yourhost.com
+```apache
+<VirtualHost *:80>
+  ServerName www.yourhost.com
 
-      PassengerRuby /usr/share/rvm/gems/ruby-3.1.4/wrappers/ruby
-      PassengerPreloadBundler on  
+  PassengerRuby /usr/share/rvm/gems/ruby-3.1.4/wrappers/ruby
+  PassengerPreloadBundler on  
 
-      DocumentRoot /srv/rails/seek/public
-       <Directory /srv/rails/seek/public>
-          # This relaxes Apache security settings.
-          Allow from all
-          # MultiViews must be turned off.
-          Options -MultiViews
-          Require all granted
-       </Directory>
-       <LocationMatch "^/assets/.*$">
-          Header unset ETag
-          FileETag None
-          # RFC says only cache for 1 year
-          ExpiresActive On
-          ExpiresDefault "access plus 1 year"
-       </LocationMatch>
-    </VirtualHost>
+  DocumentRoot /srv/rails/seek/public
+   <Directory /srv/rails/seek/public>
+      # This relaxes Apache security settings.
+      Allow from all
+      # MultiViews must be turned off.
+      Options -MultiViews
+      Require all granted
+   </Directory>
+   <LocationMatch "^/assets/.*$">
+      Header unset ETag
+      FileETag None
+      # RFC says only cache for 1 year
+      ExpiresActive On
+      ExpiresDefault "access plus 1 year"
+   </LocationMatch>
+</VirtualHost>
+```
 
 (The path to the ruby in _PassengerRuby_ directive may different, and the version of ruby to use can be found in the `.ruby-version` file)
 
@@ -148,15 +176,19 @@ Javascript) with a long expiry time, leading to better performance since these
 items will be cached. You may need to enable the *headers* and *expires*
 modules for Apache, so run:
 
-    sudo a2enmod headers
-    sudo a2enmod expires
+```bash
+sudo a2enmod headers
+sudo a2enmod expires
+```
 
 Now enable the SEEK site, and disable the default that is installed with
 Apache, and restart:
 
-    sudo a2ensite seek
-    sudo a2dissite 000-default
-    sudo service apache2 restart
+```bash
+sudo a2ensite seek
+sudo a2dissite 000-default
+sudo service apache2 restart
+```
 
 If you now visit http://localhost (note there is no 3000 port) - you should
 see SEEK.
@@ -164,7 +196,9 @@ see SEEK.
 If you wish to restart SEEK, maybe after an upgrade, without restarting Apache
 you can do so by running (as the `seek` user)
 
-    touch /srv/rails/seek/tmp/restart.txt
+```bash
+touch /srv/rails/seek/tmp/restart.txt
+```
     
 ### Configuring for HTTPS
 
@@ -174,7 +208,9 @@ We would strongly recommend using [Lets Encrypt](https://letsencrypt.org/) for f
 
 SEEK requires some cron jobs for periodic background jobs to run. To create these run:
 
-    bundle exec whenever --update-crontab
+```bash
+bundle exec whenever --update-crontab
+```
 
 ### Setting up the services
 
@@ -190,12 +226,16 @@ Create the file /etc/init.d/delayed_job-seek and copy the contents of
 
 The run:
 
-    sudo chmod +x /etc/init.d/delayed_job-seek
-    sudo update-rc.d delayed_job-seek defaults
+```bash
+sudo chmod +x /etc/init.d/delayed_job-seek
+sudo update-rc.d delayed_job-seek defaults
+```
 
 start it up with:
 
-    sudo /etc/init.d/delayed_job-seek start
+```bash
+sudo /etc/init.d/delayed_job-seek start
+```
 
 {% include callout.html type="tip" content="
 You can add '/etc/init.d/delayed_job-seek start' to your root user crontab to run periodically (say every hour). This will restart

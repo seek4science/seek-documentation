@@ -21,7 +21,9 @@ install it.
 For other distributions, or for the latest version, please follow the online
 documentation using the link at the end of this section.
 
-    sudo apt-get install virtuoso-opensource
+```bash
+sudo apt-get install virtuoso-opensource
+```
 
 Note that during the installation process, you will be asked for a password
 for the DBA and DAV users. We find this doesn't change the password and it
@@ -35,9 +37,11 @@ the default passwords.
 You may also need to set additional privileges for deleting triples. You can
 do this using isql-vt:
 
-    > isql-vt -U dba
-    SQL> grant execute on SPARQL_DELETE_DICT_CONTENT to "SPARQL";
-    SQL> grant execute on SPARQL_DELETE_DICT_CONTENT to SPARQL_UPDATE;
+```bash
+> isql-vt -U dba
+SQL> grant execute on SPARQL_DELETE_DICT_CONTENT to "SPARQL";
+SQL> grant execute on SPARQL_DELETE_DICT_CONTENT to SPARQL_UPDATE;
+```
 
 For more information about setting up and configuring Virtuoso please visit
 http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/
@@ -63,7 +67,9 @@ If you don't wish to create a private graph - remove the configuration
 
 Finally, to start generating and sending triples run the command
 
-    bundle exec rake seek_rdf:generate RAILS_ENV=production
+```bash
+bundle exec rake seek_rdf:generate RAILS_ENV=production
+```
 
 setting the appropriate environment for RAILS_ENV. This will generated a set
 of background jobs, which will start generated and sending the RDF.

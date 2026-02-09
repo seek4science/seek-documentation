@@ -13,7 +13,9 @@ following syntax. The database name, username and password follows that which
 was used in the install guide - however the username and password should be
 different for you if you'd changed them as suggested.
 
-    mysqldump -umysqluser -pmysqlpassword seek_production > seek_production.sql
+```bash
+mysqldump -umysqluser -pmysqlpassword seek_production > seek_production.sql
+```
 
 ## Backing up files
 
@@ -27,14 +29,18 @@ files.
 Should you ever need to restore the database you can do so by logging into
 mysql
 
-    mysql -umysqluser -pmysqlpassword
+```bash
+mysql -umysqluser -pmysqlpassword
+```
 
 and creating the database (assuming it no longer exists), connecting to it,
 and importing the dump:
 
-    >create database seek_production;
-    >\r seek_production
-    >\. ./seek_production.sql
+```sql
+>create database seek_production;
+>\r seek_production
+>\. ./seek_production.sql
+```
 
 The files can be restored simply by copying the *filestore/* directory back
 into the SEEK root directory.
@@ -50,17 +56,19 @@ For our own SEEK deployments, we use
 within a simple script that is run nightly using
 [crontab](http://crontab.org/). e.g.
 
-    #!/bin/sh
+```bash
+#!/bin/sh
 
-    logger "Local Rdiff backup started"
+logger "Local Rdiff backup started"
 
-    BACKUPDIR=/var/backups/seek
-    INCLUDE=/etc/rdiff-backup/backup.include
-    EXCLUDE=/etc/rdiff-backup/backup.exclude
+BACKUPDIR=/var/backups/seek
+INCLUDE=/etc/rdiff-backup/backup.include
+EXCLUDE=/etc/rdiff-backup/backup.exclude
 
-    /usr/bin/rdiff-backup --terminal-verbosity 9 --print-statistics --terminal-verbosity 2  --exclude-globbing-filelist $EXCLUDE  --include-globbing-filelist $INCLUDE  --exclude / / $BACKUPDIR
+/usr/bin/rdiff-backup --terminal-verbosity 9 --print-statistics --terminal-verbosity 2  --exclude-globbing-filelist $EXCLUDE  --include-globbing-filelist $INCLUDE  --exclude / / $BACKUPDIR
 
-    logger "Local Rdiff backup complete"
+logger "Local Rdiff backup complete"
+```
 
 where *backup.include* is a file that includes a list of paths (files or
 directories) to be backed up, and *backup.exclude* is a list of paths that
