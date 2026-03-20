@@ -21,6 +21,7 @@ A small patch release that fixes a couple of bugs:
 * Fix to permissions to download Sample type templates, they are now always available if the Sample type is visible.
 * Institution departments are now shown when adding a new member to a Project.
 * Fix to apply selected attributions when creating a new Data file.
+* Fix SPDX license information being correctly import from Workflow RO-Crates.
 * Fix to an unexpected nil error during batch delete when using DataHub's dynamic table.
 * Fix to include the latest instance name when downloading a spreadsheet from DataHub's single page view.
 * Registered mode has been added to the Publications API - indicating if manual, or from a DOI or Pubmed identifier.
