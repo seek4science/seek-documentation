@@ -10,6 +10,23 @@ Please see [Getting FAIRDOM-SEEK]({{ "/get-seek" | relative_url }}) for details 
 
 If you have any comments or feedback about a release, then please [Contact Us]({{ "/contacting-us" | relative_url }}).
 
+## Version 1.17.4
+
+Release date: _20th March 2026_
+
+A small patch release that fixes a couple of bugs:
+
+* Fix to BioModels external search throwing a 404 error in some cases.
+* Fix to search indexing of markdown content, to correctly strip out HTML tags.
+* Fix to permissions to download Sample type templates, they are now always available if the Sample type is visible.
+* Institution departments are now shown when adding a new member to a Project.
+* Fix to apply selected attributions when creating a new Data file.
+* Fix to an unexpected nil error during batch delete when using DataHub's dynamic table.
+* Fix to include the latest instance name when downloading a spreadsheet from DataHub's single page view.
+* Registered mode has been added to the Publications API - indicating if manual, or from a DOI or Pubmed identifier.
+
+For a full list, see [closed issues for 1.17.4](https://github.com/seek4science/seek/milestone/33?closed=1)
+
 ## Version 1.17.3
 
 Release date: _5th February 2026_
