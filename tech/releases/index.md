@@ -24,7 +24,6 @@ A small patch release that fixes a couple of bugs:
 * Fix SPDX license information being correctly imported from Workflow RO-Crates.
 * Fix to an unexpected nil error during batch delete when using DataHub's dynamic table.
 * Fix to include the latest instance name when downloading a spreadsheet from DataHub's single page view.
-* Registered mode has been added to the Publications API - indicating if manual, or from a DOI or Pubmed identifier.
 
 For a full list, see [closed issues for 1.17.4](https://github.com/seek4science/seek/milestone/33?closed=1)
 
