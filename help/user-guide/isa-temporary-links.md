@@ -1,4 +1,7 @@
-# ISA Temporary Links - User Documentation
+---
+title: ISA Temporary Links
+description: ISA Temporary Links allow you to share private Investigations, Studies, and Assays with external collaborators or reviewers by creating time-limited access links. These links enable viewing and downloading without requiring user accounts in SEEK.
+---
 
 ## Overview
 
