@@ -70,7 +70,7 @@ subitems:
         url: /help/user-guide/generating-the-isa-structure
       - title: ISA-JSON compliant Experiments
         url: /help/user-guide/isa-json-compliant-experiment
-      - title: ISA Temporary Links
+      - title: ISA temporary links
         url: /help/user-guide/isa-temporary-links
     - title: Investigations
       subitems:
