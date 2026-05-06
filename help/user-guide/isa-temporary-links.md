@@ -1,6 +1,63 @@
 ---
 title: ISA temporary links
 description: ISA temporary links allow you to share private Investigations, Studies, and Assays with external collaborators or reviewers by creating time-limited access links. These links enable viewing and downloading without requiring user accounts in SEEK.
+accordion:
+   - title: "1. Peer review"
+     content: |-
+       **Scenario**: Your manuscript is under review, and reviewers need to see your private data.
+
+       **Solution**:
+       1. Create an Investigation temporary link.
+       2. Set expiration for 3 months (typical review period).
+       3. Share the link in your manuscript submission.
+       
+       **Result**: Reviewers can access all data without FAIRDOM-SEEK accounts.
+   - title: 2. Collaboration preview
+     content: |-
+       **Scenario**: A potential collaborator wants to see your unpublished work before committing.
+       
+       **Solution**:
+       1. Create a Study temporary link for the relevant study.
+       2. Set expiration for 2 weeks.
+       3. Share via email.
+      
+       **Result**: They can review the study and its assays, but not other studies in the investigation.
+   - title: 3. Data embargo with selective sharing
+     content: |-
+       **Scenario**: Your study design is public, but raw data is embargoed. You want to share with specific people.
+       
+       **Solution**:
+       1. Make the Study **public**.
+       2. Keep Assays and DataFiles **private**.
+       3. Create a Study temporary link (e.g., `/studies/123?code=STU_CODE`).
+       4. Share selectively with reviewers or collaborators.
+       
+       **Result**:
+       - **General public** (visiting without code): Sees the study design only
+       - **Link recipients** (using the code): See everything including private Assays and DataFiles
+       
+       This leverages the ability of public items to create temporary links that grant access to their private children.
+   - title: 4. Conference presentation
+     content: |-
+       **Scenario**: You're presenting preliminary results and want to share detailed data with attendees.
+       
+       **Solution**:
+       1. Create an Assay temporary link.
+       2. Set expiration for 1 week after conference.
+       3. Display QR code on your final slide.
+       
+       **Result**: Attendees can access the specific dataset, not your entire investigation.
+   - title: 5. External validator
+     content: |-
+       **Scenario**: An external service needs to validate your data format.
+       
+       **Solution**:
+       1. Create an Assay temporary link.
+       2. Set expiration for 24 hours.
+       3. Provide to the validation service.
+       
+       **Result**: Limited time access to just what they need to validate.
+
 ---
 
 ## Overview
@@ -143,71 +200,7 @@ The same URL continues to work with the new expiration.
 ---
 
 ## Use cases
-
-### 1. Peer review
-**Scenario**: Your manuscript is under review, and reviewers need to see your private data.
-
-**Solution**:
-1. Create an Investigation temporary link.
-2. Set expiration for 3 months (typical review period).
-3. Share the link in your manuscript submission.
-
-**Result**: Reviewers can access all data without {{ site.seek_instance.name | default: "FAIRDOM-SEEK" }} accounts.
-
-
-
-### 2. Collaboration preview
-**Scenario**: A potential collaborator wants to see your unpublished work before committing.
-
-**Solution**:
-1. Create a Study temporary link for the relevant study.
-2. Set expiration for 2 weeks.
-3. Share via email.
-
-**Result**: They can review the study and its assays, but not other studies in the investigation.
-
-
-
-### 3. Data embargo with selective sharing
-**Scenario**: Your study design is public, but raw data is embargoed. You want to share with specific people.
-
-**Solution**:
-1. Make the Study **public**.
-2. Keep Assays and DataFiles **private**.
-3. Create a Study temporary link (e.g., `/studies/123?code=STU_CODE`).
-4. Share selectively with reviewers or collaborators.
-
-**Result**: 
-- **General public** (visiting without code): Sees the study design only
-- **Link recipients** (using the code): See everything including private Assays and DataFiles
-
-This leverages the ability of public items to create temporary links that grant access to their private children.
-
-
-
-### 4. Conference presentation
-**Scenario**: You're presenting preliminary results and want to share detailed data with attendees.
-
-**Solution**:
-1. Create an Assay temporary link.
-2. Set expiration for 1 week after conference.
-3. Display QR code on your final slide.
-
-**Result**: Attendees can access the specific dataset, not your entire investigation.
-
-
-
-### 5. External validator
-**Scenario**: An external service needs to validate your data format.
-
-**Solution**:
-1. Create an Assay temporary link.
-2. Set expiration for 24 hours.
-3. Provide to the validation service.
-
-**Result**: Limited time access to just what they need to validate.
-
----
+{% include accordion.html %}
 
 
 ## Technical details
