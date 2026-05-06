@@ -3,8 +3,6 @@ title: Backup and restore
 description: Backup and restore databases and filestore using mysqldump and file system backups.
 redirect_from: "/backups.html"
 ---
-
-
 ## Backing up the database
 
 You can backup the database using
@@ -15,6 +13,17 @@ different for you if you'd changed them as suggested.
 
 ```bash
 mysqldump -umysqluser -pmysqlpassword seek_production > seek_production.sql
+```
+
+To create portable, production-safe logical backups and prevent huge mysqldump files, consider passing the following flags:
+
+- *--ignore-table=seek_production.sessions*: Ignores the sessions table, which is considered ephemeral cache.
+- *--no-tablespaces*: Prevents dumping tablespace definitions. Makes it more portable across different MySQL installations.
+- *--single-transaction*: Takes consistent snapshots without locking the tables. The makes it safe to run on live production systems.
+- *--column-statistics=0*: Disables dumping the optimizer column statistics. This will shrink the mysqldump file even more. **Note:** This will exclude any manual optimizations!!!
+
+```bash
+mysqldump -umysqluser -pmysqlpassword --ignore-table=seek_production.sessions --no-tablespaces --single-transaction --column-statistics=0 seek_production > seek_production.sql
 ```
 
 ## Backing up files
