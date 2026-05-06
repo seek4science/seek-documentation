@@ -46,32 +46,6 @@ All links to images within the site must also be given as relative paths (with a
 To add your new page to the sidebar, add a line to the data file:
 `_data` &#9658; `sidebars` &#9658; `user_guide.yml` or `technical_guide.yml`.
 More details are available from the [ETT theme documentation](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures).
-New pages require a formatter at the top, that looks like:
-```yaml
----
-title: my lovely page
-description: this page is about something lovely and useful, recommend 110-160 characters
----
-```
-
-### Accordions
-
-Sometimes you have a lot of information you want to disclose gradually. 
-This is often the case with Frequently Asked Questions. 
-An accordion is a solution for this. 
-Clicking on the title of the accordion expands the content area. See the [ISA temporary links 'use cases']({{ "/help/user-guide/isa-temporary-links#use-cases" | relative_url }}) for an example. 
-
-You can use one accordion per page by adding code to the front matter.
-See the [Jekyll Accordion plugin](https://jekyllcodex.org/without-plugin/accordion/) page for details.
-```yaml
----
-accordion:
-  - title: this is item 1
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  - title: this is item 2
-    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
----
-```
 
 ## Viewing your changes locally
 

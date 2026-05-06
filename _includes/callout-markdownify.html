@@ -1,0 +1,9 @@
+{%- if include.type == "tip" %}
+<div class="alert alert-success" role="alert"><p class="alert-head"><i class="fa-solid fa-check-square"></i>  <b>{{ include.title }}</b></p> {{include.content| markdownify }}</div>
+{%- elsif include.type == "important" %}
+<div class="alert alert-warning" role="alert"><p class="alert-head"><i class="fa-solid fa-exclamation-triangle"></i> <b>{{ include.title }}</b></p> {{include.content| markdownify }}</div>
+{%- elsif include.type == "note" %}
+<div class="alert alert-info" role="alert"><p class="alert-head"><i class="fa-solid fa-info-circle"></i> <b>{{ include.title }}</b></p> {{include.content| markdownify }}</div>
+{%- elsif include.type == "warning" %}
+<div class="alert alert-danger" role="alert"><p class="alert-head"><i class="fa-solid fa-exclamation-circle"></i> <b>{{ include.title }}</b></p> {{include.content| markdownify }}</div>
+{%- endif %}

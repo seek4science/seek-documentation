@@ -1,7 +1,7 @@
 ---
 title: ISA temporary links
 description: ISA temporary links allow you to share private Investigations, Studies, and Assays with external collaborators or reviewers by creating time-limited access links. These links enable viewing and downloading without requiring user accounts in SEEK.
-accordion:
+usecases:
    - title: "1. Peer review"
      content: |-
        **Scenario**: Your manuscript is under review, and reviewers need to see your private data.
@@ -200,8 +200,9 @@ The same URL continues to work with the new expiration.
 ---
 
 ## Use cases
-{% include accordion.html %}
-
+{% for usecase in page.usecases %}
+  {% include callout-markdownify.html type="tip" title=usecase.title content=usecase.content %}
+{% endfor %}
 
 ## Technical details
 
