@@ -47,7 +47,6 @@ To add your new page to the sidebar, add a line to the data file:
 `_data` &#9658; `sidebars` &#9658; `user_guide.yml` or `technical_guide.yml`.
 More details are available from the [ETT theme documentation](https://elixir-belgium.github.io/elixir-toolkit-theme/navigation_structures).
 
-
 ## Viewing your changes locally
 
 If you want to view your changes as you edit them, with Ruby installed you can install and run Jekyll with:
