@@ -101,7 +101,6 @@ subitems:
       - title: Browse samples by Experiment Sample Template
         url: /help/user-guide/browsing#browse-samples-by-experiment-sample-template
   -
-    #hr: true
     title: Assets
     description: Adding different types of assets, creating new asset versions.
     subitems:
@@ -134,7 +133,6 @@ subitems:
     - title: Creating new asset versions
       url: /help/user-guide/uploading-new-versions
 #  -
-#    #hr: true
 #    title: Activities
 #    description: How to change the events and presentations.
 #    subitems:
@@ -143,7 +141,6 @@ subitems:
 #    - title: Events
 #      url: /help/user-guide/general-attributes#events
   -
-    #hr: true
     title: Sample Types
     description: Creating and editing sample types, and modifying sample type permissions.
     subitems:
@@ -154,7 +151,6 @@ subitems:
     - title: Sample Type permissions
       url: /help/user-guide/sample-type-permissions
   -
-    #hr: true
     title: Samples
     description: Creating and browsing samples, and samples in ISA-JSON compliant experiments.
     subitems:
@@ -174,7 +170,6 @@ subitems:
         url: /help/user-guide/isa-sample-permissions
 
   -
-    #hr: true
     title: General attributes and links
     description: How to change the many attributes such as titles, types, attributions, licenses.
     subitems:
@@ -189,7 +184,6 @@ subitems:
 #    - title: "[Extended metadata]"
 #      url: ""
   -
-    #hr: true
     title: Integrations
     description: Integration with openBIS or Copasi, compliance with ISA-JSON schemas.
     subitems:
@@ -198,7 +192,6 @@ subitems:
     - title: Using Copasi
       url: /help/user-guide/copasi-button
   -
-    #hr: true
     title: User guide for API
     description: Introduction to the API.
     subitems:
