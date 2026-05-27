@@ -474,7 +474,7 @@ services:
       --collation-server=utf8mb4_unicode_ci
       --log-error-verbosity=1
       # Optional: Enable mysql_native_password if needed for legacy apps
-      # --mysql_native_password=ON
+      # --mysql-native-password=ON
       # Optional: restrict foreign keys if needed
       # --restrict_fk_on_non_standard_key=OFF
     restart: always
@@ -553,7 +553,7 @@ volumes:
 - The `image: mysql:8.4` pulls the latest MySQL 8.4 image
 - Environment variables configure initial database, user, and password
 - The `command` section passes server startup options
-- `--mysql_native_password=ON` enables the deprecated plugin if needed
+- `--mysql-native-password=ON` enables the deprecated plugin if needed
 - `healthcheck` ensures the container is ready before starting dependent services
 
 **Alternative: Create a custom my.cnf configuration file:**
@@ -779,7 +779,7 @@ Docker:
 
 ```bash
 # Update docker-compose.yml to include in the command section:
-# --mysql_native_password=ON
+# --mysql-native-password=ON
 
 docker compose restart db
 ```
