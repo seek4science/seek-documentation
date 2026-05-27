@@ -57,10 +57,8 @@ subitems:
             url: /tech/upgrading
           - title: Upgrades between earlier versions
             url: /tech/earlier-upgrades
-          - title: Upgrade guides
-            subitems:
-              - title: Upgrade MySQL 8.0 to 8.4
-                url: /tech/upgrade-mysql-8.0-to-8.4
+          - title: Upgrade MySQL 8.0 to 8.4
+            url: /tech/upgrade-mysql-8.0-to-8.4
       - title: Checksum fingerprints
         url: /tech/investigation-checksum
 #      - title: openSEEK
