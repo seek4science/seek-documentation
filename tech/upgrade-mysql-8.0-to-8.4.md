@@ -5,7 +5,7 @@ Starting from SEEK 1.18.0, we highly recommend upgrading the MySQL database from
 
 ## Critical Breaking Changes in MySQL 8.4
 
-The new LTS release has a couple of breaking changes, cited here below. The First two will apply to all older databases (prior to V 8.0) and should be read carefully! The remaining changes could impact you, depending on your setup / usage of MySQL or are simply less impactful.
+The new LTS release has a couple of breaking changes, cited here below. The first two will apply to all older databases (prior to v8.0) and should be read carefully! The remaining changes could impact you, depending on your setup and usage of MySQL, or are simply less impactful.
 
 ### 1. **Removal of `default_authentication_plugin` Variable** (CRITICAL)
 
@@ -33,7 +33,7 @@ The new LTS release has a couple of breaking changes, cited here below. The Firs
 
 - The `mysql_native_password` authentication plugin is deprecated
 - To enable it (for backward compatibility), you must explicitly configure it during MySQL startup
--  should migrate users to `caching_sha2_password`
+- New installations should migrate users to `caching_sha2_password`
 
 ### 3. **Restrictions on Foreign Key Constraints**
 
@@ -277,7 +277,7 @@ mysql -u root -p -e "SELECT VERSION();"
 
 After updating the MySQL server, you might experience issues trying to connect to it.
 
-If you get this error message, it means some users are still using the old `mysql_native_password` plugin to authenticate, while it is diabled by default in MySQL 8.4.
+If you get this error message, it means some users are still using the old `mysql_native_password` plugin to authenticate, while it is disabled by default in MySQL 8.4.
 
 ```
 ERROR 1524 (HY000): Plugin 'mysql_native_password' is not loaded
@@ -285,13 +285,13 @@ ERROR 1524 (HY000): Plugin 'mysql_native_password' is not loaded
 
 If you **do not** experience any problems, proceed with [step 7](#step-7-verify-application-connectivity)!
 
-In order to be able to login to the MySQL server, you need to explicitly enable it. Therefor, you should at the following line to the `[mysqld]` section of `/etc/mysql/my.cnf` or in `/etc/mysql/conf.d/` if you have a multi-file config:
+In order to be able to login to the MySQL server, you need to explicitly enable it. Therefore, you should add the following line to the `[mysqld]` section of `/etc/mysql/my.cnf` or in `/etc/mysql/conf.d/` if you have a multi-file config:
 
 ```ini
 mysql_native_password=ON
 ```
 
-And restart MySQL
+Then restart MySQL:
 
 ```sh
 sudo systemctl restart mysql
@@ -363,7 +363,7 @@ Confirm that MySQL 8.4 is running correctly:
 mysql -u root -p -e "SELECT VERSION();"
 ```
 
-Output should similar to:
+Output should look similar to:
 
 ```
 +-----------+
@@ -380,7 +380,7 @@ Test that your applications can connect with the new authentication setup:
 mysql -u seek_user -p -h <host> database_name -e "SHOW TABLES;"
 ```
 
-If connection fails, check the error log
+If the connection fails, check the error log:
 
 ```sh
 sudo tail -50 /var/log/mysql/error.log
@@ -636,7 +636,7 @@ mysql -u root -p<YOUR_SECURE_PASSWORD>
 ERROR 1524 (HY000): Plugin 'mysql_native_password' is not loaded
 ```
 
-If you have no trouble connecting to the MySQL server, without encountering any errors, no need to do the rest of this step and proceed with Step 7.
+If you do not encounter any errors when connecting to the MySQL server, skip the rest of this step and proceed with Step 7.
 
 To be able to log in, you need to explicitly enable the `mysql_native_password` plugin. You can easily do that by uncommenting the `--mysql-native-password=ON` flag in the docker-compose file and restart the container.
 
@@ -731,7 +731,7 @@ This indicates that some users are still using the legacy authentication plugin.
 
 #### Solution
 
-The preferred solution would be to migrate the authentication plugin to use the more modern and secure `caching_sha2_password` plugin. If migrating is not possible, you can still use the legacy plugin but you will need to explicitly enable it.
+The preferred solution would be to migrate the authentication plugin to use the more modern and secure `caching_sha2_password` plugin. We encourage you follow the instructions in Step 6 again. If migrating is not possible, you can still use the legacy plugin but you will need to explicitly enable it.
 
 ##### Bare-metal
 
@@ -747,10 +747,13 @@ sudo systemctl restart mysql
 
 ##### Docker
 
-```bash
-# Update docker-compose.yml to include in the command section:
-# --mysql-native-password=ON
+Update docker-compose.yml to include in the command section:
 
+```
+# --mysql-native-password=ON
+```
+
+```sh
 docker compose restart db
 ```
 
