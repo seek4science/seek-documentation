@@ -5,6 +5,8 @@ Starting from SEEK 1.18.0, we highly recommend upgrading the MySQL database from
 
 ## Critical Breaking Changes in MySQL 8.4
 
+The new LTS release has a couple of breaking changes, cited here below. The First two will apply to all older databases (prior to V 8.0) and should be read carefully! The remaining changes could impact you, depending on your setup / usage of MySQL or are simply less impactful.
+
 ### 1. **Removal of `default_authentication_plugin` Variable** (CRITICAL)
 
 **What Changed:**
@@ -15,7 +17,7 @@ Starting from SEEK 1.18.0, we highly recommend upgrading the MySQL database from
 
 **Impact:**
 
-- Any configuration files (my.cnf or Docker env vars) containing `default_authentication_plugin` will cause errors during startup
+- Any configuration files (my.cnf or Docker env vars) containing `default_authentication_plugin` will cause errors during startup (especially for older databases)
 - Existing applications using `mysql_native_password` authentication will fail to connect
 - The `authentication_policy` variable replaces the old plugin configuration
 
@@ -31,7 +33,7 @@ Starting from SEEK 1.18.0, we highly recommend upgrading the MySQL database from
 
 - The `mysql_native_password` authentication plugin is deprecated
 - To enable it (for backward compatibility), you must explicitly configure it during MySQL startup
-- New installations should migrate users to `caching_sha2_password`
+-  should migrate users to `caching_sha2_password`
 
 ### 3. **Restrictions on Foreign Key Constraints**
 
@@ -113,32 +115,6 @@ mysqldump \
   --user=root \
   --password \
   > mysql_8.0_full_backup.sql
-
-# Verify the backup file size and contents
-ls -lh mysql_8.0_full_backup.sql
-head -20 mysql_8.0_full_backup.sql
-```
-
-**Explanation:**
-
-- `--all-databases`: Backs up every database on the server
-- `--single-transaction`: Creates a consistent snapshot without locking tables
-- The backup is saved to a SQL file that can be restored if needed
-
-Alternatively, perform a physical backup of the data directory:
-
-```bash
-# Stop MySQL first (see Step 2)
-sudo systemctl stop mysql
-
-# Create a backup copy of the data directory
-sudo cp -r /var/lib/mysql /backups/mysql/mysql_8.0_datadir_backup
-
-# Verify the backup
-ls -la /backups/mysql/mysql_8.0_datadir_backup/
-
-# Restart MySQL
-sudo systemctl start mysql
 ```
 
 ### Step 2: Stop the MySQL Service
@@ -221,10 +197,10 @@ The installation process depends on your Linux distribution.
 **On Debian/Ubuntu:**
 
 ```bash
-# Download the MySQL repository package
+# Optional: Download the MySQL repository package
 wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
 
-# Install the repository configuration
+# Optional: Install the repository configuration
 sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
 
 # Update package index
@@ -239,10 +215,10 @@ sudo apt-get install -y mysql-server=8.4.*
 **On CentOS/RHEL:**
 
 ```bash
-# Download the MySQL repository RPM
+# Optional: Download the MySQL repository RPM
 wget https://dev.mysql.com/get/mysql80-community-release-el8-x.noarch.rpm
 
-# Install the repository
+# Optional: Install the repository
 sudo yum install mysql80-community-release-el8-x.noarch.rpm
 
 # Install MySQL 8.4
@@ -297,82 +273,117 @@ If you see any warnings or errors, address them before continuing:
 mysql -u root -p -e "SELECT VERSION();"
 ```
 
-### Step 6: Verify the Upgrade
+### Step 6: Migration of the authentication plugin (bare-metal)
+
+After updating the MySQL server, you might experience issues trying to connect to it.
+
+If you get this error message, it means some users are still using the old `mysql_native_password` plugin to authenticate, while it is diabled by default in MySQL 8.4.
+
+```
+ERROR 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+```
+
+If you **do not** experience any problems, proceed with [step 7](#step-7-verify-application-connectivity)!
+
+In order to be able to login to the MySQL server, you need to explicitly enable it. Therefor, you should at the following line to the `[mysqld]` section of `/etc/mysql/my.cnf` or in `/etc/mysql/conf.d/` if you have a multi-file config:
+
+```ini
+mysql_native_password=ON
+```
+
+And restart MySQL
+
+```sh
+sudo systemctl restart mysql
+```
+
+This should allow you to connect to the MySQL server again. Confirm some users are still using the legacy plugin for authentication by running:
+
+```sh
+mysql -u root -p -e "SELECT user, host, plugin FROM mysql.user ORDER BY plugin, user, host;"
+```
+
+The output should look something like:
+
+```
++------------------+-----------+-----------------------+
+| user             | host      | plugin                |
++------------------+-----------+-----------------------+
+| mysql.infoschema | localhost | caching_sha2_password |
+| mysql.session    | localhost | caching_sha2_password |
+| mysql.sys        | localhost | caching_sha2_password |
+| root             | %         | mysql_native_password |
+| root             | localhost | mysql_native_password |
+| seek_user        | %         | mysql_native_password |
++------------------+-----------+-----------------------+
+6 rows in set (0.00 sec)
+```
+
+Locate your Seek DB user (seek_user in this case) and root user. If the plugin column mentions `mysql_native_password`, it means that user is still using the legacy authentication system and needs to be migrated to `caching_sha2_password`.
+
+For every user, alter the user record from mysql.user:
+
+```sh
+mysql -u root -p -e "ALTER USER 'seek_user'@'%' IDENTIFIED WITH caching_sha2_password BY 'REPLACE_WITH_THE_CURRENT_OR_NEW_PASSWORD';"
+```
+
+Confirm the changes by running this command again:
+
+```sh
+mysql -u root -p -e "SELECT user, host, plugin FROM mysql.user ORDER BY plugin, user, host;"
+
+```
+
+The output should look like this now:
+
+```
++------------------+-----------+-----------------------+
+| user             | host      | plugin                |
++------------------+-----------+-----------------------+
+| mysql.infoschema | localhost | caching_sha2_password |
+| mysql.session    | localhost | caching_sha2_password |
+| mysql.sys        | localhost | caching_sha2_password |
+| root             | %         | caching_sha2_password |
+| root             | localhost | caching_sha2_password |
+| seek_user        | %         | caching_sha2_password |
++------------------+-----------+-----------------------+
+6 rows in set (0.00 sec)
+```
+
+Remove the `mysql_native_password=ON` from the MySQL config again and restart MySQL.
+
+Now you should be able to connect to the MySQL server without having to explicitly enable the `mysql_native_password` plugin.
+
+### Step 7: Verify Application Connectivity
 
 Confirm that MySQL 8.4 is running correctly:
 
 ```bash
 # Check the MySQL version
 mysql -u root -p -e "SELECT VERSION();"
-
-# Output should show: 8.4.x
-
-# Check authentication plugins
-mysql -u root -p -e "SELECT * FROM INFORMATION_SCHEMA.PLUGINS WHERE PLUGIN_NAME LIKE '%password%';"
-
-# Verify system variable changes
-mysql -u root -p -e "SHOW VARIABLES LIKE 'default_authentication%';"
-# Should return: no rows in set (expected, as the variable is removed)
-
-# Check if mysql_native_password is available
-mysql -u root -p -e "SHOW VARIABLES LIKE 'mysql_native_password';"
 ```
 
-### Step 7: Verify Application Connectivity
+Output should similar to:
+
+```
++-----------+
+| VERSION() |
++-----------+
+| 8.4.7     |
++-----------+
+```
 
 Test that your applications can connect with the new authentication setup:
 
 ```bash
 # Test connection with a database user
-mysql -u appuser -p -h localhost database_name -e "SELECT 1;"
+mysql -u seek_user -p -h <host> database_name -e "SHOW TABLES;"
+```
 
-# If connection fails, check the error log
+If connection fails, check the error log
+
+```sh
 sudo tail -50 /var/log/mysql/error.log
-
-# Look for authentication-related errors
-```
-
-If applications fail to connect due to `mysql_native_password` not being available:
-
-```bash
-# Edit the configuration file again
-sudo nano /etc/mysql/my.cnf
-
-# Add or verify this setting:
-# [mysqld]
-# mysql_native_password=ON
-
-# Restart MySQL
-sudo systemctl restart mysql
-
-# Verify the setting took effect
-mysql -u root -p -e "SHOW VARIABLES LIKE 'mysql_native_password';"
-# Output should show: ON
-```
-
-### Step 8: Post-Upgrade Validation
-
-Run a comprehensive validation:
-
-```bash
-# Check database integrity
-mysql -u root -p -e "CHECK TABLE \`mysql\`.\`user\`;"
-
-# Verify all databases are accessible
-mysql -u root -p -e "SHOW DATABASES;"
-
-# Check replication status (if applicable)
-mysql -u root -p -e "SHOW REPLICA STATUS\G"
-
-# Verify no deprecated features are in use
-mysql -u root -p -e "SHOW WARNINGS;"
-
-# Restart the MySQL service one final time
-sudo systemctl restart mysql
-
-# Verify it starts cleanly
-sleep 5
-sudo systemctl status mysql
 ```
 
 ---
@@ -388,52 +399,7 @@ sudo systemctl status mysql
 
 ### Step 1: Backup the Database Container Volume
 
-Create a backup of the MySQL data volume before upgrading:
-
-```bash
-# Stop the current MySQL container gracefully
-docker compose stop db
-
-# Or if using plain Docker:
-docker stop seek-mysql
-
-# Create a backup of the volume
-# First, identify the volume name
-docker volume ls | grep seek-mysql-db
-
-# Create a backup container that mounts the volume
-docker run --rm \
-  -v <mysql_volume_name>:/data \
-  -v $(pwd)/backups:/backup \
-  alpine tar czf /backup/mysql_8.0_volume_backup.tar.gz -C /data .
-
-# Verify the backup was created
-ls -lh backups/mysql_8.0_volume_backup.tar.gz
-
-# The backup file size should be close to your MySQL data size
-```
-
-**Explanation:**
-
-- We stop the container to ensure data consistency
-- A temporary container mounts the volume and creates a compressed archive
-- The backup is stored on the host machine in the `backups` directory
-- `tar.gz` compression preserves file permissions and compresses the data
-
-Alternatively, use `mysqldump` from within the running container:
-
-```bash
-# While the container is still running
-docker compose exec db mysqldump \
-  --all-databases \
-  --single-transaction \
-  -u root \
-  -p$(grep MYSQL_ROOT_PASSWORD docker-compose.yml | cut -d'=' -f2) \
-  > backups/mysql_8.0_dump.sql
-
-# Verify the backup
-ls -lh backups/mysql_8.0_dump.sql
-```
+Create a backup of the MySQL data volume before upgrading. Follow the instructions on the [docker compose section]({{ "/tech/docker/docker-compose" | relative_url }}) of the technical guide.
 
 ### Step 2: Prepare the Configuration
 
@@ -551,10 +517,8 @@ volumes:
 **Explanation:**
 
 - The `image: mysql:8.4` pulls the latest MySQL 8.4 image
-- Environment variables configure initial database, user, and password
-- The `command` section passes server startup options
 - `--mysql-native-password=ON` enables the deprecated plugin if needed
-- `healthcheck` ensures the container is ready before starting dependent services
+- `--restrict_fk_on_non_standard_key=OFF` allows the usage of non-standard foreign keys if needed
 
 **Alternative: Create a custom my.cnf configuration file:**
 
@@ -603,7 +567,7 @@ Download the MySQL 8.4 Docker image:
 docker pull mysql:8.4
 
 # Or pull a specific version (recommended for production)
-docker pull mysql:8.4.2
+docker pull mysql:8.4.7
 
 # Verify the image was downloaded
 docker images | grep mysql
@@ -612,7 +576,7 @@ docker images | grep mysql
 **Explanation:**
 
 - `docker pull` downloads the image from Docker Hub
-- Using specific versions (`8.4.2`) ensures reproducibility across environments
+- Using specific versions (`8.4.7`) ensures reproducibility across environments
 
 ### Step 4: Update the Container Image in docker-compose.yml
 
@@ -628,7 +592,7 @@ nano docker-compose.yml
 # image: mysql:8.4
 
 # Or for a specific version:
-# image: mysql:8.4.2
+# image: mysql:8.4.7
 ```
 
 ### Step 5: Perform the Upgrade
@@ -655,101 +619,99 @@ docker logs -f seek-mysql
 - System tables are automatically created/upgraded
 - The database is ready for connections
 
-### Step 6: Run mysql_upgrade in the Container
+### Step 6: Migration of the authentication plugin inside the container
 
-For a more explicit upgrade of system tables:
+The easiest way to proceed is to open a terminal session in the container itself.
 
-```bash
-# Execute mysql_upgrade inside the container
-docker exec seek-mysql mysql_upgrade \
-  -u root \
-  -p$(grep MYSQL_ROOT_PASSWORD docker-compose.yml | cut -d'=' -f2)
 
-# Expected output:
-# Checking mysql database
-# Checking all databases
-# Upgrading the system database structures
-# OK
+```sh
+docker exec -it seek-mysql /bin/bash
 ```
 
-### Step 7: Verify the Upgrade Inside the Container
+If you try to connect to the MySQL server in the container, you might see the following error:
 
-Check that MySQL 8.4 is running correctly:
+```sh
+mysql -u root -p<YOUR_SECURE_PASSWORD>
 
-```bash
-# Get the version
-docker exec seek-mysql \
-  -u root \
-  -p$(grep MYSQL_ROOT_PASSWORD docker-compose.yml | cut -d'=' -f2) \
-  -e "SELECT VERSION();"
-
-# Output should show: 8.4.x
-
-# Check authentication plugins
-docker exec seek-mysql mysql \
-  -u root \
-  -p$(grep MYSQL_ROOT_PASSWORD docker-compose.yml | cut -d'=' -f2) \
-  -e "SELECT * FROM INFORMATION_SCHEMA.PLUGINS WHERE PLUGIN_NAME LIKE '%password%';"
-
-# Verify system variable (should show nothing, as it's been removed)
-docker exec seek-mysql mysql \
-  -u root \
-  -p$(grep MYSQL_ROOT_PASSWORD docker-compose.yml | cut -d'=' -f2) \
-  -e "SHOW VARIABLES LIKE 'default_authentication%';"
-
-# Verify mysql_native_password setting
-docker exec seek-mysql mysql \
-  -u root \
-  -p$(grep MYSQL_ROOT_PASSWORD docker-compose.yml | cut -d'=' -f2) \
-  -e "SHOW VARIABLES LIKE 'mysql_native_password';"
+ERROR 1524 (HY000): Plugin 'mysql_native_password' is not loaded
 ```
 
-### Step 8: Test Application Connectivity
+If you have no trouble connecting to the MySQL server, without encountering any errors, no need to do the rest of this step and proceed with Step 7.
 
-Verify that applications can connect to the upgraded MySQL:
+To be able to log in, you need to explicitly enable the `mysql_native_password` plugin. You can easily do that by uncommenting the `--mysql-native-password=ON` flag in the docker-compose file and restart the container.
 
-```bash
-# Test connection from a linked container or the host
-docker exec seek-mysql mysql \
-  -h mysql \
-  -u your_app_user \
-  -p<password> \
-  -e "SELECT 1;"
-
-# Or test from the host (if port 3306 is exposed)
-mysql -h 127.0.0.1 -u your_app_user -p -e "SELECT 1;"
-
-# Check container logs for any errors
-docker logs seek-mysql | tail -50
-
-# If there are authentication errors:
-# Verify that mysql_native_password=ON is set in docker-compose.yml
-# Restart the container: docker compose restart db
+```sh
+docker compose up --detach --force-recreate db
 ```
 
-### Step 9: Verify and Validate
+This will enable you to connect to the MySQL server. So, open a terminal session in the database container again.
 
-Perform a comprehensive validation:
-
-```bash
-# Check if all databases are accessible
-docker exec seek-mysql mysql \
-  -u root \
-  -p$(grep MYSQL_ROOT_PASSWORD docker-compose.yml | cut -d'=' -f2) \
-  -e "SHOW DATABASES;"
-
-# Check database integrity
-docker exec seek-mysql mysql \
-  -u root \
-  -p$(grep MYSQL_ROOT_PASSWORD docker-compose.yml | cut -d'=' -f2) \
-  -e "CHECK TABLE \`mysql\`.\`user\`;"
-
-# View error log for any issues
-docker logs seek-mysql | grep -i "error"
-
-# If everything looks good, clean up the backup
-rm /tmp/mysql_migration.sql
+```sh
+docker exec -it seek-mysql /bin/bash
 ```
+
+Confirm some users are still using the legacy plugin for authentication by running:
+
+```sh
+mysql -u root -p -e "SELECT user, host, plugin FROM mysql.user ORDER BY plugin, user, host;"
+```
+
+The output should look something like:
+
+```
++------------------+-----------+-----------------------+
+| user             | host      | plugin                |
++------------------+-----------+-----------------------+
+| mysql.infoschema | localhost | caching_sha2_password |
+| mysql.session    | localhost | caching_sha2_password |
+| mysql.sys        | localhost | caching_sha2_password |
+| root             | %         | mysql_native_password |
+| root             | localhost | mysql_native_password |
+| seek_user        | %         | mysql_native_password |
++------------------+-----------+-----------------------+
+6 rows in set (0.00 sec)
+```
+
+Locate your Seek DB user (seek_user in this case) and root user. If the plugin column mentions `mysql_native_password`, it means that user is still using the legacy authentication system and needs to be migrated to `caching_sha2_password`.
+
+For every user, alter the user record from mysql.user:
+
+```sh
+mysql -u root -p -e "ALTER USER 'seek_user'@'%' IDENTIFIED WITH caching_sha2_password BY 'REPLACE_WITH_THE_CURRENT_OR_NEW_PASSWORD';"
+```
+
+Confirm the changes by running this command again:
+
+```sh
+mysql -u root -p -e "SELECT user, host, plugin FROM mysql.user ORDER BY plugin, user, host;"
+
+```
+
+The output should look like this now:
+
+```
++------------------+-----------+-----------------------+
+| user             | host      | plugin                |
++------------------+-----------+-----------------------+
+| mysql.infoschema | localhost | caching_sha2_password |
+| mysql.session    | localhost | caching_sha2_password |
+| mysql.sys        | localhost | caching_sha2_password |
+| root             | %         | caching_sha2_password |
+| root             | localhost | caching_sha2_password |
+| seek_user        | %         | caching_sha2_password |
++------------------+-----------+-----------------------+
+6 rows in set (0.00 sec)
+```
+
+Log out of the MySQL DB container and comment out the `--mysql-native-password=ON` flag.
+
+Restart the docker compose deployment:
+
+```sh
+docker compose up --force-recreate
+```
+
+The SEEK deployment should start as expected again and be completely operational now.
 
 ---
 
@@ -757,15 +719,23 @@ rm /tmp/mysql_migration.sql
 
 ### Issue 1: "Plugin 'mysql_native_password' is not loaded"
 
-**Symptoms:**
+#### Symptoms
+
+Trying to log into the MySQL server returns this error:
 
 ```
 ERROR 1524 (HY000): Plugin 'mysql_native_password' is not loaded
 ```
 
-**Solution:**
+This indicates that some users are still using the legacy authentication plugin. 
 
-Bare-metal:
+#### Solution
+
+The preferred solution would be to migrate the authentication plugin to use the more modern and secure `caching_sha2_password` plugin. If migrating is not possible, you can still use the legacy plugin but you will need to explicitly enable it.
+
+##### Bare-metal
+
+
 
 ```bash
 sudo nano /etc/mysql/my.cnf
@@ -775,7 +745,7 @@ sudo nano /etc/mysql/my.cnf
 sudo systemctl restart mysql
 ```
 
-Docker:
+##### Docker
 
 ```bash
 # Update docker-compose.yml to include in the command section:
@@ -786,13 +756,13 @@ docker compose restart db
 
 ### Issue 2: "Unknown variable 'default_authentication_plugin'"
 
-**Symptoms:**
+#### Symptoms
 
 ```
 ERROR 1193 (HY000): Unknown variable 'default_authentication_plugin'
 ```
+#### Solution
 
-**Solution:**
 
 Remove all instances of `default_authentication_plugin` from:
 
@@ -802,14 +772,14 @@ Remove all instances of `default_authentication_plugin` from:
 
 ### Issue 3: "Foreign key constraint fails" After Upgrade
 
-**Symptoms:**
+#### Symptoms
 
 ```
 ERROR 1217 (23000): Cannot delete or update a parent row:
 a foreign key constraint fails
 ```
+#### Solution
 
-**Solution:**
 
 This occurs when non-standard foreign keys are used. Check your schema:
 
@@ -840,13 +810,13 @@ sudo nano /etc/mysql/my.cnf
 
 ### Issue 4: Container Fails to Start
 
-**Symptoms:**
+#### Symptoms
 
 ```
 docker: Error response from daemon: container exited with code 1
 ```
+#### Solution
 
-**Solution:**
 
 ```bash
 # Check the logs for detailed error information
@@ -914,32 +884,6 @@ nano docker-compose.yml
 
 # Restart with the old image
 docker compose up -d db
-```
-
----
-
-## Performance Considerations Post-Upgrade
-
-After upgrading to MySQL 8.4, consider these optimizations:
-
-```bash
-# 1. Analyze all tables to update statistics
-mysql -u root -p -e "
-SELECT CONCAT('ANALYZE TABLE ', TABLE_SCHEMA, '.', TABLE_NAME, ';')
-FROM INFORMATION_SCHEMA.TABLES
-WHERE TABLE_SCHEMA NOT IN ('mysql', 'performance_schema', 'information_schema')
-INTO OUTFILE '/tmp/analyze_tables.sql';
-"
-
-mysql -u root -p < /tmp/analyze_tables.sql
-
-# 2. Review slow query log for queries that may be affected
-mysql -u root -p -e "SET GLOBAL slow_query_log = 'ON';"
-mysql -u root -p -e "SET GLOBAL long_query_time = 2;"
-
-# 3. Monitor performance for the first 24-48 hours
-# Check: SHOW PROCESSLIST;
-# Watch: SHOW STATUS;
 ```
 
 ---
