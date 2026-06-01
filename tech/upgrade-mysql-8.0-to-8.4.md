@@ -442,7 +442,7 @@ services:
       # Optional: Enable mysql_native_password if needed for legacy apps
       # --mysql-native-password=ON
       # Optional: restrict foreign keys if needed
-      # --restrict_fk_on_non_standard_key=OFF
+      # --restrict-fk-on-non-standard-key=OFF
     restart: always
     stop_grace_period: 1m30s
     env_file:
@@ -518,7 +518,7 @@ volumes:
 
 - The `image: mysql:8.4` pulls the latest MySQL 8.4 image
 - `--mysql-native-password=ON` enables the deprecated plugin if needed
-- `--restrict_fk_on_non_standard_key=OFF` allows the usage of non-standard foreign keys if needed
+- `--restrict-fk-on-non-standard-key=OFF` allows the usage of non-standard foreign keys if needed
 
 **Alternative: Create a custom my.cnf configuration file:**
 
@@ -808,7 +808,7 @@ sudo nano /etc/mysql/my.cnf
 # Add: restrict_fk_on_non_standard_key=OFF
 
 # Docker
-# Add to command: --restrict_fk_on_non_standard_key=OFF
+# Add to command: --restrict-fk-on-non-standard-key=OFF
 ```
 
 ### Issue 4: Container Fails to Start
