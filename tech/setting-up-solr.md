@@ -102,6 +102,25 @@ Solr is now setup, and you can trigger jobs to reindex the content with
 bundle exec rake seek:reindex_all
 ```
 
+## Updating the Solr Configuration
+
+When the Solr configuration changes between SEEK versions, the existing index data must be cleared and rebuilt to remain consistent with the new configuration.
+
+Copy the updated configuration from your SEEK installation into the Solr data directory, clear the existing index data, then restart the service. Run the following from the root of your SEEK installation (in this example /srv/rails/seek):
+
+```bash
+sudo service solr stop
+sudo cp -r solr/seek/conf/ /var/solr/data/seek/conf/
+sudo rm -rf /var/solr/data/seek/data/
+sudo service solr start
+```
+
+Once running, trigger a full reindex:
+
+```bash
+bundle exec rake seek:reindex_all
+```
+
 
 
 

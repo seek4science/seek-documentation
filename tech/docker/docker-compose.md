@@ -149,6 +149,19 @@ docker compose down
 docker compose up -d
 ```
 
+## Updating the Solr Configuration
+
+When the Solr schema changes between SEEK versions, the existing index data must be cleared and rebuilt. Pull the updated `fairdom/seek-solr:8.11` image, remove and recreate the Solr data volume, then restart and reindex:
+
+```bash
+docker compose pull solr
+docker compose down
+docker volume rm seek-solr-data
+docker volume create --name=seek-solr-data
+docker compose up -d
+docker exec seek bundle exec rake seek:reindex_all
+```
+
 ## Moving from a standalone installation to Docker Compose
 
 If you have an existing SEEK installation running on "Bare Metal" and would like to move to using Docker compose, we have a script that can help migrate the data. The script was created to help move some of our own services, but hasn't been heavily tested beyond that so please use with care. Please feel free to [Contribute](../contributing-to-seek) any improvements.
