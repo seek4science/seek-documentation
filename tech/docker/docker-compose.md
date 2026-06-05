@@ -151,10 +151,9 @@ docker compose up -d
 
 ## Updating the Solr Configuration
 
-When the Solr schema changes between SEEK versions, the existing index data must be cleared and rebuilt. Pull the updated `fairdom/seek-solr:8.11` image, remove and recreate the Solr data volume, then restart and reindex:
+When the Solr configuration changes between SEEK versions, the existing index data must be cleared and rebuilt. Since the configuration is mounted directly from the SEEK repository, no image update is needed. Bring the stack down, remove and recreate the Solr data volume, then restart and reindex:
 
 ```bash
-docker compose pull solr
 docker compose down
 docker volume rm seek-solr-data
 docker volume create --name=seek-solr-data

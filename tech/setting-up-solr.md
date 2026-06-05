@@ -13,34 +13,32 @@ image. If this is not possible, there are also some instructions below on direct
 
 ## Using the Docker Image
 
-Using Docker provides the easiest solution to running Solr, pre-configured for SEEK, using the same _fairdom/seek-solr:8.11_
-image that we use with Docker compose.
+Using Docker provides the easiest solution to running Solr for SEEK, using the official _solr:8.11.4_ image. The SEEK-specific configuration is mounted directly from your installation directory, so any configuration updates are automatically picked up when the container is restarted.
 
-You first need to have [Docker installed](docker/docker-install). We provide example scripts for setting up and starting, as well as 
-stopping the Solr service: 
+You first need to have [Docker installed](docker/docker-install). We provide example scripts for managing the Solr service, which should be run from the root directory of your SEEK installation:
 
   * [script/start-docker-solr.sh](https://github.com/seek4science/seek/blob/v{{ site.current_seek_version }}/script/start-docker-solr.sh)
-    * When first executed this will fetch the image, and create a volume to persist the indexed data, and start the service. It is set to automatically restart
-      unless explicitly stopped. On subsequent runs it will restart the service.
+    * Creates and starts the container, mounting the SEEK configuration from your installation directory. Creates the data volume if it does not already exist. Waits until Solr is ready before returning.
   * [script/stop-docker-solr.sh](https://github.com/seek4science/seek/blob/v{{ site.current_seek_version }}/script/stop-docker-solr.sh)
-    * As is suggests, this will stop the service. The container and volume will remain, ready to be restarted.
+    * Stops and removes the container. The data volume is preserved, so the index persists.
+  * [script/reset-docker-solr.sh](https://github.com/seek4science/seek/blob/v{{ site.current_seek_version }}/script/reset-docker-solr.sh)
+    * Stops and removes the container, deletes and recreates the data volume, starts Solr, and runs a full reindex. Use this when the Solr configuration has changed and the index needs to be rebuilt.
+  * [script/delete-docker-solr.sh](https://github.com/seek4science/seek/blob/v{{ site.current_seek_version }}/script/delete-docker-solr.sh)
+    * Removes both the container and the data volume entirely.
 
-These scripts should be run from the root directory of your SEEK installation, e.g:
+e.g. to start:
 
 ```bash
 sh ./script/start-docker-solr.sh
 ```
 
-The Docker container will be named _seek-solr_ and the volume named _seek-solr-data-volume_ .
+The Docker container will be named _seek-search_ and the volume named _seek-solr-data-volume_.
 
 Once running, and with search enabled, you can trigger jobs to reindex all searchable content with
 
 ```bash
 bundle exec rake seek:reindex_all
 ```
-
-There is an additional script, [script/delete-docker-solr.sh](https://github.com/seek4science/seek/blob/v{{ site.current_seek_version }}/script/delete-docker-solr.sh), 
-that can be used to delete both the container and volume.
 
 ## Installing Apache Solr
 
@@ -105,6 +103,18 @@ bundle exec rake seek:reindex_all
 ## Updating the Solr Configuration
 
 When the Solr configuration changes between SEEK versions, the existing index data must be cleared and rebuilt to remain consistent with the new configuration.
+
+### Using the Docker Image
+
+Since the configuration is mounted directly from your SEEK installation, no image update is required. Run the following from the root of your SEEK installation:
+
+```bash
+sh ./script/reset-docker-solr.sh
+```
+
+This will stop and remove the existing container, clear the index data, start a fresh container with the updated configuration, and trigger a full reindex automatically.
+
+### Direct Installation
 
 Copy the updated configuration from your SEEK installation into the Solr data directory, clear the existing index data, then restart the service. Run the following from the root of your SEEK installation (in this example /srv/rails/seek):
 
