@@ -10,7 +10,7 @@ You will first need [Docker installed](docker-install.html)
 
 See the [Docker Compose Installation Guide](https://docs.docker.com/compose/install/) for how to install Docker Compose.
 
-Once installed, all that is needed are the [docker-compose.yml](https://raw.githubusercontent.com/seek4science/seek/seek-{{ site.current_docker_tag }}/docker-compose.yml) and the [docker/db.env](https://raw.githubusercontent.com/seek4science/seek/seek-{{ site.current_docker_tag }}/docker/db.env) files,
+Once installed, all that is needed are the [docker-compose.yml](https://raw.githubusercontent.com/seek4science/seek/seek-{{ site.current_docker_tag }}/docker-compose.yml) and the [docker/db.env](https://raw.githubusercontent.com/seek4science/seek/seek-{{ site.current_docker_tag }}/docker/db.env) files, along with the [solr/seek/conf/](https://github.com/seek4science/seek/tree/seek-{{ site.current_docker_tag }}/solr/seek/conf) directory,
 although you can simply check out the SEEK source from GitHub - see [Getting SEEK](../install.html#getting-seek). You would be advised to change the passwords in the *db.env* file.
 
 First you need to create 4 volumes
@@ -150,6 +150,8 @@ docker compose up -d
 ```
 
 ## Updating the Solr Configuration
+
+{% include callout.html type="warning" content="From version 1.18.0, the `solr/seek/conf/` directory from the SEEK source is required alongside `docker-compose.yml`. If you are upgrading from an earlier version, ensure this directory is present before restarting." %}
 
 When the Solr configuration changes between SEEK versions, the existing index data must be cleared and rebuilt. Since the configuration is mounted directly from the SEEK repository, no image update is needed. Bring the stack down, remove and recreate the Solr data volume, then restart and reindex:
 
