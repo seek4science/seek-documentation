@@ -116,21 +116,17 @@ This will stop and remove the existing container, clear the index data, start a 
 
 ### Direct Installation
 
-Copy the updated configuration from your SEEK installation into the Solr data directory, clear the existing index data, then restart the service. Run the following from the root of your SEEK installation (in this example /srv/rails/seek):
+Delete and recreate the core using the Solr CLI, then trigger a full reindex. Run the following from the root of your SEEK installation (in this example /srv/rails/seek):
 
 ```bash
-sudo service solr stop
-sudo cp -r solr/seek/conf/ /var/solr/data/seek/conf/
-sudo chown -R solr:solr /var/solr/data/seek/conf/
-sudo rm -rf /var/solr/data/seek/data/
-sudo service solr start
-```
-
-Once running, trigger a full reindex:
-
-```bash
+cp -r solr/seek/conf /tmp/seek-solr-conf
+sudo su - solr -c "/opt/solr/bin/solr delete -c seek"
+sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr-conf"
 bundle exec rake seek:reindex_all
+rm -rf /tmp/seek-solr-conf
 ```
+
+The config is copied to `/tmp` first so that the `solr` user can read it. Deleting the core also removes the existing index data, so a full reindex is required afterwards.
 
 
 
