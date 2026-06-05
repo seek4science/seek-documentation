@@ -121,6 +121,7 @@ Copy the updated configuration from your SEEK installation into the Solr data di
 ```bash
 sudo service solr stop
 sudo cp -r solr/seek/conf/ /var/solr/data/seek/conf/
+sudo chown -R solr:solr /var/solr/data/seek/conf/
 sudo rm -rf /var/solr/data/seek/data/
 sudo service solr start
 ```
