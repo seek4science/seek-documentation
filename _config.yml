@@ -2,8 +2,8 @@
 
 remote_theme: ELIXIR-Belgium/elixir-toolkit-theme@6.0.0
 
-current_seek_version: "1.17.4"
-current_docker_tag: "1.17"
+current_seek_version: "1.18.0"
+current_docker_tag: "1.18"
 
 plugins:
   - jekyll-sitemap
