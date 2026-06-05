@@ -88,6 +88,7 @@ and to avoid file permission issue copy the `solr` directory to a location where
 cd /srv/rails/seek
 cp -r solr /tmp/seek-solr
 sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr/seek/conf"
+rm -rf /tmp/seek-solr
 ```
 
 The configuration and data for the SEEK core can be found in _/var/solr/data/seek_ .
