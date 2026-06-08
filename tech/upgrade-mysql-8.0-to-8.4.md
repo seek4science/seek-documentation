@@ -1,11 +1,13 @@
 ---
 title: Upgrade guide MySQL 8.0 to 8.4
 ---
-Starting from SEEK 1.18.0, we highly recommend upgrading the MySQL database from version 8.0 to the next LTS version, 8.4. MySQL 8.0 reached end-of-life status April 30th 2026 and will not receive security fixes anymore. This guide provides detailed instructions for upgrading MySQL from version 8.0 to 8.4, covering both bare-metal installations and containerized deployments using Docker.
+Starting from SEEK 1.18.0, we highly recommend upgrading the MySQL database from version 8.0 to the next LTS version, 8.4. MySQL 8.0 reached end-of-life status April 21st 2026, with the last released version being 8.0.46 (see [release notes](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/)). MySQL server will not receive security fixes anymore. This guide provides detailed instructions for upgrading MySQL from version 8.0 to 8.4, covering both bare-metal installations and containerized deployments using Docker.
+
+For **Ubuntu 24.04 Pro** users: Ubuntu might backport some security updates to MySQL 8.0 as part of the Pro subscription. Nevertheless, we still encourage you to upgrade to MySQL 8.4.
 
 ## Critical Breaking Changes in MySQL 8.4
 
-The new LTS release has a couple of breaking changes, cited here below. The first two will apply to all older databases (prior to v8.0) and should be read carefully! The remaining changes could impact you, depending on your setup and usage of MySQL, or are simply less impactful.
+The new LTS release has a couple of breaking changes, cited here below. The first two will apply to all older databases (created in MySQL < v8.0) and should be read carefully! The remaining changes could impact you, depending on your setup and usage of MySQL, or are simply less impactful.
 
 ### 1. **Removal of `default_authentication_plugin` Variable** (CRITICAL)
 
@@ -239,7 +241,7 @@ sudo systemctl start mysql
 This critical step upgrades the system tables to MySQL 8.4 format:
 
 ```bash
-# Start MySQL in skip-grant-tables mode to allow the upgrade
+# Start MySQL
 sudo systemctl start mysql
 
 # Run the upgrade tool
@@ -411,7 +413,7 @@ Update your Docker configuration to handle the breaking changes or download it f
 x-shared:
   seek_base: &seek_base
     # build: .
-    image: fairdom/seek:main
+    image: fairdom/seek:1.18
 
     restart: always
     environment: &seek_base_env
@@ -428,21 +430,21 @@ x-shared:
       db:
         condition: service_healthy
       solr:
-        condition: service_started
+        condition: service_healthy
 
 services:
   db:
     # Database implementation, in this case MySQL
     image: mysql:8.4
     container_name: seek-mysql
-    command: >
-      --character-set-server=utf8mb4
-      --collation-server=utf8mb4_unicode_ci
-      --log-error-verbosity=1
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --log-error-verbosity=1
       # Optional: Enable mysql_native_password if needed for legacy apps
-      # --mysql-native-password=ON
+      # - --mysql-native-password=ON
       # Optional: restrict foreign keys if needed
-      # --restrict-fk-on-non-standard-key=OFF
+      # - --restrict-fk-on-non-standard-key=OFF
     restart: always
     stop_grace_period: 1m30s
     env_file:
@@ -490,13 +492,20 @@ services:
       retries: 5
 
   solr:
-    image: fairdom/seek-solr:8.11
+    image: solr:8.11.4
     container_name: seek-solr
     restart: always
     environment:
       SOLR_JAVA_MEM: -Xms512m -Xmx1024m
     volumes:
       - seek-solr-data:/var/solr/
+      - ./solr/seek/conf:/opt/solr/server/solr/configsets/seek_config/conf
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://localhost:8983/solr/seek/admin/ping"]
+      interval: 30s
+      timeout: 5s
+      retries: 6
+      start_period: 30s
     entrypoint:
       - docker-entrypoint.sh
       - solr-precreate
