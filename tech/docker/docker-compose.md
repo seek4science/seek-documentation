@@ -153,14 +153,19 @@ docker compose up -d
 
 {% include callout.html type="warning" content="From version 1.18.0, the `solr/seek/conf/` directory from the SEEK source is required alongside `docker-compose.yml`. If you are upgrading from an earlier version, ensure this directory is present before restarting." %}
 
-When the Solr configuration changes between SEEK versions, the existing index data must be cleared and rebuilt. Since the configuration is mounted directly from the SEEK repository, no image update is needed. Bring the stack down, remove and recreate the Solr data volume, then restart and reindex:
+When the Solr configuration changes between SEEK versions, the existing index data must be cleared and rebuilt. Since the configuration is mounted directly from the SEEK repository, no image update is needed — you just need an up-to-date copy of the `solr/seek/conf/` directory for the version you are updating to. Bring the stack down, remove and recreate the Solr data volume, then restart and reindex:
 
 ```bash
 docker compose down
 docker volume rm seek-solr-data
 docker volume create --name=seek-solr-data
 docker compose up -d
-docker exec seek bundle exec rake seek:reindex_all
+```
+
+Wait for the seek container to finish starting (you can monitor with `docker compose logs seek`), then reindex:
+
+```bash
+docker compose exec seek bundle exec rake seek:reindex_all
 ```
 
 ## Moving from a standalone installation to Docker Compose

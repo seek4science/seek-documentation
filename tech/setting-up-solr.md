@@ -117,7 +117,7 @@ This will stop and remove the existing container, clear the index data, start a 
 
 ### Direct Installation
 
-Delete and recreate the core using the Solr CLI, then trigger a full reindex. Run the following from the root of your SEEK installation (in this example /srv/rails/seek):
+Ensure the Solr service is running, then delete and recreate the core using the Solr CLI and trigger a full reindex. The `solr delete` and `solr create` commands require a running Solr instance. Run the following from the root of your SEEK installation (in this example /srv/rails/seek):
 
 ```bash
 cp -r solr/seek/conf /tmp/seek-solr-conf
