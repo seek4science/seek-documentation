@@ -97,7 +97,7 @@ ProxyPreserveHost on
 **Note:** The `Header` directives require `mod_headers` to be enabled (`a2enmod headers`).
 
 {% capture cookie_security_warning %}
-You should also configure HTTPS (port 443) — we strongly recommend [Let's Encrypt](https://letsencrypt.org/) for free SSL certificates.
+You should also configure HTTPS (port 443) — we strongly recommend [Let's Encrypt](https://letsencrypt.org/) for free SSL certificates. Certbot, the Let's Encrypt client, will automatically add the SSL certificate configuration to your Nginx or Apache virtual host during setup.
 
 You should also uncomment the security-related lines in the Nginx or Apache config above before going live:
 
