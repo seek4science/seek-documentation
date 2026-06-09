@@ -17,56 +17,85 @@ Release date: _June 2026_
 A major release that contains a number of improvements, upgrades and bug fixes, the highlights including:
 
 * DOI & Publications:
-  * **DOI support for Presentations** — Presentations can now have DOIs minted and retracted, bringing them in line with other asset types
-  * **Retract/delete resources with DOIs** — Resources with DOIs can now be deleted; the system handles DOI retraction as part of the process, storing the Datacite metadata and displaying a citation on the retraction record
-  * **Automatic publication type detection** — The publication type is automatically set when a DOI is queried during publication registration
-  * **BibTeX import UI** — The BibTeX import interface has been clarified to make the two import options (file upload vs. paste) more obvious
-  * **`registered_mode` exposed in Publications API** — The `registered_mode` field is now included in the Publications JSON API response
+    * **DOI support for Presentations** — Presentations can now have DOIs minted and retracted, bringing them in line
+      with other asset types.
+    * **Retract/delete resources with DOIs** — Resources with DOIs can now be deleted; the system handles DOI retraction
+      as part of the process, storing the Datacite metadata and displaying a citation on the retraction record.
+    * **Automatic publication type detection** — The publication type is automatically set when a DOI is queried during
+      publication registration.
+    * **BibTeX import UI** — The BibTeX import interface has been clarified to make the two import options (file upload
+      vs. paste) more obvious.
+    * **`registered_mode` exposed in Publications API** — The `registered_mode` field is now included in the
+      Publications JSON API response.
 * Sharing & Access Control:
-  * **Temporary sharing links for ISA assets** — Investigations, Studies, Assays, and Observation Units can now be shared via temporary links without requiring a login
-  * **Block local file uploads** — Admins can now configure SEEK to prevent users from uploading local files, requiring remote URLs instead. The UI updates dynamically to reflect the restriction
-  * **Option to disable SEEK local login** — Administrators can now disable the built-in username/password login to enforce SSO-only access
-  * **Fix: related items view broken with temporary auth codes** — The related items panel now correctly propagates the temporary auth code, so linked assets remain accessible when viewing a resource via a sharing link
+    * **Temporary sharing links for ISA assets** — Investigations, Studies, Assays, and Observation Units can now be
+      shared via temporary links with a time limited authorization code, allowing them and content within to be viewed
+      without requiring a login.
+    * **Block local file uploads** — Admins can now configure SEEK to prevent users from uploading local files,
+      requiring remote URLs instead. This is for cases where the internal filestore needs to be kept low, and all assets
+      should be stored externally (e.g. in S3).
+    * **Option to disable SEEK local login** — Administrators can now disable the built-in username/password login to
+      enforce SSO-only access.
+* Search:
+    * **Samples included in API search results** — Samples are now fully supported in API-based searches and are
+      returned in search results.
+    * **External search adapters toggleable via settings** — External search adapters (e.g. BioPortal) can now be
+      individually enabled/disabled through the admin settings UI rather than via config files.
+    * **Punctuation-proof search** — Search indexing and queries now handle punctuation such as hyphens correctly, so
+      e.g. searching "UPC", or "(UPC)" finds results containing "1234-(UPC)".
 * Extended Metadata:
-  * **Free text allowed for controlled vocabulary Extended Metadata attributes** — Admins can configure Extended Metadata Type controlled vocabulary attributes to also accept free text
-  * **Extended metadata in DataHub spreadsheet** — Extended metadata fields are now included in spreadsheet exports
-  * **RDF export for nested Extended Metadata attributes** — Nested (Linked) Extended Metadata attributes are now exported as blank nodes in the RDF output, with correct `RDF::XSD` type mappings
-  * **Nested Extended Metadata attribute labels** — Label rendering for nested EMT attributes now prioritises the configured label over a generic humanised fallback
-  * **Fix: Fair Data Station (FDS) import required attribute matching** — Sample types and Extended Metadata types with required fields that are absent from the FDS import RDF are now correctly rejected as candidates, preventing incorrect type matches
-  * **Fix: FDS import core annotation handling** — Core RDF annotations (e.g. `rdf:type`, `rdfs:label`) are now ignored when matching sample types during FDS import
-  * **Fix: FDS import false duplicate sample type detection** — Fixed an incorrect "sample type already exists" error caused by matching solely on property count rather than property identity
+    * **Free text allowed for controlled vocabulary Extended Metadata attributes** — Admins can configure Extended
+      Metadata Type controlled vocabulary attributes to also accept free text.
+    * **RDF export for nested Extended Metadata attributes** — Nested (Linked) Extended Metadata attributes are now
+      exported as blank nodes in the RDF output.
+    * **Nested Extended Metadata attribute labels** — Label rendering for nested EMT attributes now prioritises the
+      configured label.
+    * **Fair Data Station (FDS) import recognises required attributes when matching** — Sample types and Extended
+      Metadata types with required fields that are absent from the FDS import RDF are now correctly rejected as
+      candidates, preventing incorrect type matches and validation failures.
+    * **Fixed FDS import false duplicate sample type detection** — Fixed an incorrect "sample type already exists" error
+      caused by matching solely on property count rather than property identity.
 * Events:
-  * **Event types and hybrid/online/offline location** — Events now support typed categories and a hybrid/online/offline location option
-  * **Event end date auto-set** — When selecting an event start date/time, the end date is automatically set 1 hour later
+    * **Event types and hybrid/online/offline location** — Events now support typed categories and a
+      hybrid/online/offline location option.
+    * **Event end date auto-set** — When selecting an event start date/time, the end date is automatically set 1 hour
+      later.
 * Workflows:
-  * **Register new Workflow version via RO-Crate upload** — A new version of an existing workflow can now be created by uploading an RO-Crate directly through the UI
-  * **Bioschemas/schema.org enhancements for Workflows** — Added `creativeWorkStatus`, `contributor`, `citation`, `datePublished`, and other properties to the schema.org/Bioschemas output for workflows and other creative works
+    * **Register new Workflow version via RO-Crate upload** — A new version of an existing workflow can now be created
+      by uploading an RO-Crate directly through the UI.
+    * **Bioschemas/schema.org enhancements for Workflows** — Added `creativeWorkStatus`, `contributor`, `citation`,
+      `datePublished`, and other properties to the schema.org/Bioschemas output for workflows and other creative works.
 * ISA & DataHub:
-  * **Input ISA tag** — A new "input" ISA tag is available, exposed through the API
-  * **Registered assets in global ISA templates** — Global sample type templates can now reference registered assets
-  * **Minimal ISA template removed from create step** — The minimal ISA template is no longer presented as an option during the study/assay creation wizard
-  * **Spreadsheet renamed for clarity** — The DataHub spreadsheet tab has been given a clearer name to avoid confusion
-  * **Fix: spreadsheet download from default view** — Fixed downloading the DataHub spreadsheet when accessed from the default view
-  * **Fix: ISATag results causing error in HTML search** — ISATag results are now excluded from HTML search result rendering, preventing a crash when browsing search results
-* Samples:
-  * **Units preserved from sample type templates** — Units defined in sample type templates are now correctly carried over when creating sample types
-  * **Samples included in API search results** — Samples are now fully supported in API-based searches and are returned in search results
-  * **Fix: registered sample attribute validation** — Sample attributes of type "Registered sample" no longer incorrectly turn red/invalid for IDs over 100
+    * **Input ISA tag** — A new "input" ISA tag is available, exposed through the API.
+    * **Registered assets in global ISA templates** — Global sample type templates can now reference registered assets.
+    * **Minimal ISA template removed from create step** — The minimal ISA template is no longer presented as an option
+      during the study/assay creation wizard.
+    * **Spreadsheet renamed for clarity** — The DataHub spreadsheet tab has been given a clearer name to avoid confusion.
+    * **Extended metadata in DataHub spreadsheet** — Extended metadata fields are now included in spreadsheet exports.
+    * **Fixed spreadsheet download from default view** — Fixed downloading the DataHub spreadsheet when accessed from
+      the default view.
+    * **Fixed registered sample attribute validation** — Sample attributes of type "Registered sample" no longer
+      incorrectly turn red/invalid for IDs over 100.
+    * **Units preserved from sample type templates** — Units defined in sample type templates are now correctly carried
+      over when creating sample types.
+    * **Fixed batch delete nil error** — Fixed an error that could occur when batch-deleting assets with missing
+      associations.
 * Other improvements and fixes:
-  * **SOP type field** — SOPs now have a type field, exposed in both the UI and JSON API
-  * **External search adapters toggleable via settings** — External search adapters (e.g. BioPortal) can now be individually enabled/disabled through the admin settings UI rather than via config files
-  * **Hyphen-proof search** — Search indexing and queries now handle punctuation such as hyphens correctly, so e.g. searching "UPC" finds results containing "UPC-1234"
-  * **Terms & Conditions checkbox placement** — The T&C checkbox now appears above the Register button on the registration form
-  * **Metadata license shown in footer** — The metadata license is now mentioned in the site footer; blank/nil/"notspecified" values are suppressed
-  * **Remove Skype name from user profile** — The Skype name field has been removed from user profiles
-  * **Session table trimming in batches** — The sessions cleanup rake task now trims in batches to avoid timeouts on large tables
-  * **Fix: PDF preview rendering** — Upgraded PDF.js from v0.7.55 to v2.16.105, fixing incomplete PDF rendering in the browser
-  * **Fix: Docker image missing LibreOffice** — Added missing LibreOffice dependency to the Docker image
-  * **Fix: notebook HTML generation Python version error** — Fixed an error in `generate_notebook_html` caused by an incorrect Python version
-  * **Fix: XSS security vulnerabilities** — Multiple cross-site scripting vulnerabilities addressed
-  * **Fix: sample RDF incorrect XSD types** — Fixed the RDF generated for samples to use correct XSD types; nil and blank attribute values are now skipped
-  * **Fix: model files lost after validation error** — Files attached to a model are no longer lost when a validation error occurs during creation
-  * **Fix: batch delete nil error** — Fixed an error that could occur when batch-deleting assets with missing associations
+    * **Improved PDF preview rendering** — Upgraded PDF.js from v0.7.55 to v2.16.105, fixing incomplete PDF rendering in
+      the browser.
+    * **SOP type field** — SOPs now have a type field, exposed in both the UI and JSON API.
+    * **Terms & Conditions checkbox placement** — The T&C checkbox now appears above the Register button on the
+      registration form.
+    * **Metadata license shown in footer** — The metadata license is now mentioned in the site footer.
+    * **Remove Skype name from user profile** — The Skype name field has been removed from user profiles.
+    * **Session table trimming in batches** — The sessions cleanup rake task now trims in batches to avoid timeouts on
+      large tables.
+    * **Fixed XSS security vulnerabilities** — Multiple cross-site scripting vulnerabilities have been addressed.
+    * **Sample RDF corrected XSD types** — Fixed the RDF generated for samples to use correct XSD types; nil and
+      blank attribute values are now skipped.
+    * **Fixed model files lost after validation error** — Files attached to a model are no longer lost when a validation
+      error occurs during creation.
+    
 
 For a full list, see [closed issues for 1.18.0](https://github.com/seek4science/seek/milestone/29?closed=1)
 
