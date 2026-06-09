@@ -39,7 +39,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
 * Search:
     * **Samples included in API search results** — Samples are now fully supported in API-based searches and are
       returned in search results.
-    * **External search adapters toggleable via settings** — External search adapters (e.g. BioPortal) can now be
+    * **External search adapters toggleable via settings** — External search adapters (e.g. [BioModels](https://www.ebi.ac.uk/biomodels/)) can now be
       individually enabled/disabled through the admin settings UI rather than via config files.
     * **Punctuation-proof search** — Search indexing and queries now handle punctuation such as hyphens correctly, so
       e.g. searching "UPC", or "(UPC)" finds results containing "1234-(UPC)".
@@ -50,7 +50,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
       exported as blank nodes in the RDF output.
     * **Nested Extended Metadata attribute labels** — Label rendering for nested EMT attributes now prioritises the
       configured label.
-    * **Fair Data Station (FDS) import recognises required attributes when matching** — Sample types and Extended
+    * **[Fair Data Station (FDS)](https://fairds.fairbydesign.nl/) import recognises required attributes when matching** — Sample types and Extended
       Metadata types with required fields that are absent from the FDS import RDF are now correctly rejected as
       candidates, preventing incorrect type matches and validation failures.
     * **Fixed FDS import false duplicate sample type detection** — Fixed an incorrect "sample type already exists" error
@@ -62,10 +62,10 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
       later.
 * Workflows:
     * **Register new Workflow version via RO-Crate upload** — A new version of an existing workflow can now be created
-      by uploading an RO-Crate directly through the UI.
-    * **Bioschemas/schema.org enhancements for Workflows** — Added `creativeWorkStatus`, `contributor`, `citation`,
+      by uploading an [RO-Crate](https://www.researchobject.org/ro-crate/) directly through the UI.
+    * **[Bioschemas](https://bioschemas.org)/[schema.org](https://schema.org) enhancements for Workflows** — Added `creativeWorkStatus`, `contributor`, `citation`,
       `datePublished`, and other properties to the schema.org/Bioschemas output for workflows and other creative works.
-* ISA & DataHub:
+* ISA & [DataHub](https://fair-dom.org/fairdom-in-use/Datahub):
     * **Input ISA tag** — A new "input" ISA tag is available, exposed through the API.
     * **Registered assets in global ISA templates** — Global sample type templates can now reference registered assets.
     * **Minimal ISA template removed from create step** — The minimal ISA template is no longer presented as an option
