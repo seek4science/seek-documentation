@@ -47,7 +47,7 @@ When upgrading between patch versions, it should only be necessary to run
     bundle install
     bundle exec rake seek:upgrade 
 
-## Steps to upgrade from 1.16.x to 1.17.x
+## Steps to upgrade from 1.17.x to 1.18.x
 
 
 ### Set RAILS_ENV
@@ -71,17 +71,17 @@ If you have an existing installation linked to our GitHub, you can fetch the
 files with:
 
     git fetch
-    git checkout v1.17.4
+    git checkout v1.18.0
 
 #### Updating using the tarball
 
 You can download the file from
-<https://github.com/seek4science/seek/archive/v1.17.4.tar.gz> You can
+<https://github.com/seek4science/seek/archive/v1.18.0.tar.gz> You can
 unpack this file using:
 
-    tar zxvf seek-1.17.4.tar.gz
+    tar zxvf seek-1.18.0.tar.gz
     mv seek seek-previous
-    mv seek-1.17.4 seek
+    mv seek-1.18.0 seek
     cd seek/
 
 and then copy across your existing filestore and database configuration file
@@ -89,15 +89,20 @@ from your previous installation and continue with the upgrade steps. The
 database configuration file you would need to copy is _config/database.yml_,
 and the filestore is simply _filestore/_
 
-### Install Python dependencies
+### Update Python version
 
-First, a specific version of `setuptools` needs to be installed to avoid an issue when installing dependencies
+First, read and store the current required Python version in an environment variable
 
-    python3.9 -m pip install setuptools==58
+    export PYTHON_VERSION=$(cat .python-version)
 
-Then the other dependencies can be installed
+Then install that Python version and other required packages
 
-    python3.9 -m pip install -r requirements.txt
+    sudo apt install python${PYTHON_VERSION}-dev python3-pip python${PYTHON_VERSION}-venv 
+
+Then ensure pip is up-to-date, and install the Python dependencies
+
+    python${PYTHON_VERSION} -m ensurepip --upgrade --default-pip && \
+    python${PYTHON_VERSION} -m pip install -r requirements.txt
 
 ### Upgrading Ruby
 

@@ -66,8 +66,7 @@ Now install the packages:
 ```bash
 sudo apt install build-essential cmake git graphviz imagemagick libcurl4-gnutls-dev libgmp-dev \
     libmagick++-dev libmysqlclient-dev libpq-dev libreadline-dev libreoffice libssl-dev \
-    libxml++2.6-dev libxslt1-dev mysql-server nodejs openjdk-11-jdk openssh-server poppler-utils zip \
-    python3.9-dev python3.9-distutils python3-pip
+    libxml++2.6-dev libxslt1-dev mysql-server nodejs openjdk-11-jdk openssh-server poppler-utils zip
 ```
 
 Installing these packages now will make installing Ruby easier later on:
@@ -165,18 +164,25 @@ Next install the ruby gems SEEK needs ( for production see [Bundler Configuratio
 bundle install
 ```
 
-## Install Python dependencies
+## Install Python & dependencies
 
-First, a specific version of `setuptools` needs to be installed to avoid an issue when installing dependencies
+First, read and store the current required Python version in an environment variable
 
 ```bash
-python3.9 -m pip install setuptools==58
+export PYTHON_VERSION=$(cat .python-version)
 ```
 
-Then the other dependencies can be installed
+Then install that Python version and other required packages
 
 ```bash
-python3.9 -m pip install -r requirements.txt
+sudo apt install python${PYTHON_VERSION}-dev python3-pip python${PYTHON_VERSION}-venv 
+```
+
+Then ensure pip is up-to-date, and install the Python dependencies
+
+```bash
+python${PYTHON_VERSION} -m ensurepip --upgrade --default-pip && \
+python${PYTHON_VERSION} -m pip install -r requirements.txt
 ```
 
 
