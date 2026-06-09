@@ -90,7 +90,7 @@ ProxyPreserveHost on
      # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 
      # Apply Secure and HttpOnly flags to all cookies
-     # Header always edit Set-Cookie ^(.*)$ "$1; Secure; HttpOnly; SameSite=Lax"
+     # Header always edit Set-Cookie ^(.*)$ "$1; Secure; HttpOnly"
 </Location>
 ```
 
@@ -102,10 +102,10 @@ You should also configure HTTPS (port 443) — we strongly recommend [Let's Encr
 You should also uncomment the security-related lines in the Nginx or Apache config above before going live:
 
 - **HSTS** (`Strict-Transport-Security`): Forces browsers to use HTTPS for all future requests, protecting against protocol downgrade attacks.
-- **Secure cookie flag**: Ensures session cookies are only transmitted over HTTPS, preventing exposure over plain HTTP connections.
-- **HttpOnly cookie flag**: Blocks JavaScript from reading session cookies, mitigating cross-site scripting (XSS) attacks that attempt cookie theft.
+- **Secure cookie flag**: Ensures all cookies are only transmitted over HTTPS, preventing exposure over plain HTTP connections.
+- **HttpOnly cookie flag**: Blocks JavaScript from reading cookies, mitigating cross-site scripting (XSS) attacks that attempt cookie theft.
 
-Without these settings, session cookies can be intercepted over unencrypted connections or stolen by malicious scripts, putting user credentials at risk.
+Without these settings, cookies can be intercepted over unencrypted connections or stolen by malicious scripts, putting user credentials at risk.
 {% endcapture %}
 {% include callout-markdownify.html type="warning" title="Secure your cookies for production" content=cookie_security_warning %}
 
