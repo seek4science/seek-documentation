@@ -77,8 +77,6 @@ server {
 }
 ```
 
-**Important:** In a production environment, it is advised to enforce HSTS, secure and HttpOnly flags on cookies, and include SameSite. To enforce these directives, uncomment the relevant lines.
-
 for Apache the virtual host would include:
 
 ```apache
@@ -87,10 +85,30 @@ ProxyPreserveHost on
 <Location />
      ProxyPass   http://127.0.0.1:3000/ Keepalive=On
      ProxyPassReverse http://127.0.0.1:3000/
+
+     # Enforce HTTP Strict Transport Security (HSTS)
+     # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+     # Apply Secure and HttpOnly flags to all cookies
+     # Header always edit Set-Cookie ^(.*)$ "$1; Secure; HttpOnly; SameSite=Lax"
 </Location>
 ```
 
-You would also want to configure for HTTPS (port 443), and would strongly recommend using [Lets Encrypt](https://letsencrypt.org/) for free SSL certificates.
+**Note:** The `Header` directives require `mod_headers` to be enabled (`a2enmod headers`).
+
+{% capture cookie_security_warning %}
+You should also configure HTTPS (port 443) — we strongly recommend [Let's Encrypt](https://letsencrypt.org/) for free SSL certificates.
+
+You should also uncomment the security-related lines in the Nginx or Apache config above before going live:
+
+- **HSTS** (`Strict-Transport-Security`): Forces browsers to use HTTPS for all future requests, protecting against protocol downgrade attacks.
+- **Secure cookie flag**: Ensures session cookies are only transmitted over HTTPS, preventing exposure over plain HTTP connections.
+- **HttpOnly cookie flag**: Blocks JavaScript from reading session cookies, mitigating cross-site scripting (XSS) attacks that attempt cookie theft.
+
+Without these settings, session cookies can be intercepted over unencrypted connections or stolen by malicious scripts, putting user credentials at risk.
+{% endcapture %}
+{% include callout-markdownify.html type="warning" title="Secure your cookies for production" content=cookie_security_warning %}
+
 
 ## Backup and Restore
 
