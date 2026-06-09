@@ -111,6 +111,12 @@ If you are not prompted you can install with the command:
 
     rvm install $(cat .ruby-version)
 
+### Apply an updated Apache Solr configuration
+
+This version includes an improved Solr configuration for either running a direct Solr installation or via Docker.
+
+To benefit from the improvements see [Updating the Solr Configuration](setting-up-solr#updating-the-solr-configuration) for details.
+
 ### Doing the upgrade
 
 After updating the files, the following steps will update the database, gems,
