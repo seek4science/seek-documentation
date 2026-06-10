@@ -81,6 +81,8 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
     * **Fixed batch delete nil error** — Fixed an error that could occur when batch-deleting assets with missing
       associations.
 * Other improvements and fixes:
+    * **Updated Docker base image** — The Docker base image has been updated to the latest Debian Trixie base.
+    * **Updated Docker Compose files** — The Docker Compose configuration files have been updated and improved.
     * **Improved PDF preview rendering** — Upgraded PDF.js from v0.7.55 to v2.16.105, fixing incomplete PDF rendering in
       the browser.
     * **SOP type field** — SOPs now have a type field, exposed in both the UI and JSON API.
@@ -88,8 +90,6 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
       registration form.
     * **Metadata license shown in footer** — The metadata license is now mentioned in the site footer.
     * **Remove Skype name from user profile** — The Skype name field has been removed from user profiles.
-    * **Session table trimming in batches** — The sessions cleanup rake task now trims in batches to avoid timeouts on
-      large tables.
     * **Fixed XSS security vulnerabilities** — Multiple cross-site scripting vulnerabilities have been addressed.
     * **Sample RDF corrected XSD types** — Fixed the RDF generated for samples to use correct XSD types; nil and
       blank attribute values are now skipped.
