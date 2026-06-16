@@ -65,6 +65,8 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
       by uploading an [RO-Crate](https://www.researchobject.org/ro-crate/) directly through the UI.
     * **[Bioschemas](https://bioschemas.org)/[schema.org](https://schema.org) enhancements for Workflows** — Added `creativeWorkStatus`, `contributor`, `citation`,
       `datePublished`, and other properties to the schema.org/Bioschemas output for workflows and other creative works.
+    * **Workflow scraper stability fixes** — Git repositories are now properly closed after scraping; all tags are fetched
+      even when pointing to orphaned commits; and invalid RO-Crates no longer abort the entire scrape.
 * ISA & [DataHub](https://fair-dom.org/fairdom-in-use/Datahub):
     * **Input ISA tag** — A new "input" ISA tag is available, exposed through the API.
     * **Registered assets in global ISA templates** — Global sample type templates can now reference registered assets.
@@ -80,9 +82,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
       over when creating sample types.
     * **Fixed batch delete nil error** — Fixed an error that could occur when batch-deleting assets with missing
       associations.
-* Other improvements and fixes:
-    * **Updated Docker base image** — The Docker base image has been updated to the latest Debian Trixie base.
-    * **Updated Docker Compose files** — The Docker Compose configuration files have been updated and improved.
+* Other improvements and fixes: 
     * **Improved PDF preview rendering** — Upgraded PDF.js from v0.7.55 to v2.16.105, fixing incomplete PDF rendering in
       the browser.
     * **SOP type field** — SOPs now have a type field, exposed in both the UI and JSON API.
@@ -95,6 +95,8 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
       blank attribute values are now skipped.
     * **Fixed model files lost after validation error** — Files attached to a model are no longer lost when a validation
       error occurs during creation.
+    * **Updated Docker base image** — The Docker base image has been updated to the latest Debian Trixie base.
+    * **Updated Docker Compose files** — The Docker Compose configuration files have been updated and improved.
     
 
 For a full list, see [closed issues for 1.18.0](https://github.com/seek4science/seek/milestone/29?closed=1)
