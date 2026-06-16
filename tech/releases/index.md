@@ -12,7 +12,7 @@ If you have any comments or feedback about a release, then please [Contact Us]({
 
 ## Version 1.18.0
 
-Release date: _June 2026_
+Release date: _16th June 2026_
 
 A major release that contains a number of improvements, upgrades and bug fixes, the highlights including:
 
