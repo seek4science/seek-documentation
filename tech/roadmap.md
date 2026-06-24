@@ -4,13 +4,14 @@ description: Development roadmap with current and upcoming FAIRDOM-SEEK prioriti
 redirect_from: "/roadmap.html"
 ---
 
-## Now
 
 This is an outline of plans the core FAIRDOM-SEEK development team will be working on in the near future.
 
 FAIRDOM-SEEK is developed following an Agile development process, meaning priorities may change - however, these items are currently high priorities.
 
 They are expected to be added to FAIRDOM-SEEK in roughly the order they are presented here.
+
+## Now
 
 - Ability to merge accounts
 - UI improvements to the admin area
