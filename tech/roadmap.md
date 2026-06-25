@@ -33,3 +33,9 @@ They are expected to be added to FAIRDOM-SEEK in roughly the order they are pres
 
 Please also see the [WorkflowHub Roadmap](https://about.workflowhub.eu/roadmap/),
 which is being built on and in conjunction with FAIRDOM-SEEK.
+
+---
+
+## Completed
+
+For a full history of completed features, please see the [Change Logs]({{ "/tech/releases/" | relative_url }}).
