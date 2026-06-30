@@ -154,6 +154,12 @@ sudo rm -f /etc/init.d/solr
 sudo rm -rf /opt/solr /opt/solr-8.11.4 /opt/solr-8.11.4.tgz
 ```
 
+Remove the existing seek core data. The Solr 9 installer starts the service immediately on completion, and Solr 9 cannot read a Solr 8 index, so the old data must be gone before installation:
+
+```bash
+sudo rm -rf /var/solr/data/seek
+```
+
 Download and install Solr 9.10.1. Note that the download URL path changed in Solr 9 from `lucene/solr/` to `solr/solr/`:
 
 ```bash
@@ -163,11 +169,10 @@ sudo tar xzf solr-9.10.1.tgz solr-9.10.1/bin/install_solr_service.sh --strip-com
 sudo bash ./install_solr_service.sh solr-9.10.1.tgz
 ```
 
-Delete the old seek core and recreate it using the updated SEEK configuration. Run the following from the root of your SEEK installation (in this example `/srv/rails/seek`):
+Recreate the seek core using the updated SEEK configuration. Run the following from the root of your SEEK installation (in this example `/srv/rails/seek`):
 
 ```bash
 cd /srv/rails/seek
-sudo su - solr -c "/opt/solr/bin/solr delete -c seek"
 cp -r solr/seek/conf /tmp/seek-solr-conf
 sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr-conf"
 rm -rf /tmp/seek-solr-conf
