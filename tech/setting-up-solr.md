@@ -88,7 +88,7 @@ cd /srv/rails/seek
 cp -r solr/seek /tmp/seek-solr-conf
 sudo chown -R solr:solr /tmp/seek-solr-conf
 sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr-conf"
-rm -rf /tmp/seek-solr-conf
+sudo rm -rf /tmp/seek-solr-conf
 ```
 
 The configuration and data for the SEEK core can be found in _/var/solr/data/seek_ .
@@ -124,7 +124,7 @@ cp -r solr/seek /tmp/seek-solr-conf
 sudo chown -R solr:solr /tmp/seek-solr-conf
 sudo su - solr -c "/opt/solr/bin/solr delete -c seek"
 sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr-conf"
-rm -rf /tmp/seek-solr-conf
+sudo rm -rf /tmp/seek-solr-conf
 bundle exec rake seek:reindex_all
 ```
 
@@ -177,7 +177,7 @@ cd /srv/rails/seek
 cp -r solr/seek /tmp/seek-solr-conf
 sudo chown -R solr:solr /tmp/seek-solr-conf
 sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr-conf"
-rm -rf /tmp/seek-solr-conf
+sudo rm -rf /tmp/seek-solr-conf
 bundle exec rake seek:reindex_all
 ```
 
