@@ -81,14 +81,14 @@ sudo service solr stop
 sudo service solr start
 ```
 
-You now need to set up the core configured for SEEK. Move to the root directory of the SEEK installation (in this example /srv/rails/seek), 
-and to avoid file permission issue copy the `solr` directory to a location where the `solr` user can access it, and then run the command to create the core with the configuration from SEEK.
+You now need to set up the core configured for SEEK. Move to the root directory of the SEEK installation (in this example /srv/rails/seek), copy the configuration into the Solr data directory, and register the core via the API.
 
 ```bash
 cd /srv/rails/seek
-cp -r solr /tmp/seek-solr
-sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr/seek/conf"
-rm -rf /tmp/seek-solr
+sudo mkdir -p /var/solr/data/seek/conf
+sudo cp -r solr/seek/conf/. /var/solr/data/seek/conf/
+sudo chown -R solr:solr /var/solr/data/seek
+curl "http://localhost:8983/solr/admin/cores?action=CREATE&name=seek&instanceDir=seek"
 ```
 
 The configuration and data for the SEEK core can be found in _/var/solr/data/seek_ .
@@ -117,17 +117,18 @@ This will stop and remove the existing container, clear the index data, start a 
 
 ### Direct Installation
 
-Ensure the Solr service is running, then delete and recreate the core using the Solr CLI and trigger a full reindex. Run the following from the root of your SEEK installation (in this example /srv/rails/seek):
+Ensure the Solr service is running, then delete the core, copy the updated configuration into place, recreate the core, and reindex. Run the following from the root of your SEEK installation (in this example /srv/rails/seek):
 
 ```bash
-cp -r solr/seek /tmp/seek-solr-conf
 sudo su - solr -c "/opt/solr/bin/solr delete -c seek"
-sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr-conf"
+sudo mkdir -p /var/solr/data/seek/conf
+sudo cp -r solr/seek/conf/. /var/solr/data/seek/conf/
+sudo chown -R solr:solr /var/solr/data/seek
+curl "http://localhost:8983/solr/admin/cores?action=CREATE&name=seek&instanceDir=seek"
 bundle exec rake seek:reindex_all
-rm -rf /tmp/seek-solr-conf
 ```
 
-The config is copied to `/tmp` first so that the `solr` user can read it. Deleting the core also removes the existing index data, so a full reindex is required afterwards.
+Deleting the core removes the existing index data, so a full reindex is required afterwards.
 
 ## Upgrading from Solr 8 to Solr 9
 
@@ -169,13 +170,14 @@ sudo tar xzf solr-9.10.1.tgz solr-9.10.1/bin/install_solr_service.sh --strip-com
 sudo bash ./install_solr_service.sh solr-9.10.1.tgz
 ```
 
-Recreate the seek core using the updated SEEK configuration. Run the following from the root of your SEEK installation (in this example `/srv/rails/seek`):
+Create the seek core using the updated SEEK configuration. Run the following from the root of your SEEK installation (in this example `/srv/rails/seek`):
 
 ```bash
 cd /srv/rails/seek
-cp -r solr/seek /tmp/seek-solr-conf
-sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr-conf"
-rm -rf /tmp/seek-solr-conf
+sudo mkdir -p /var/solr/data/seek/conf
+sudo cp -r solr/seek/conf/. /var/solr/data/seek/conf/
+sudo chown -R solr:solr /var/solr/data/seek
+curl "http://localhost:8983/solr/admin/cores?action=CREATE&name=seek&instanceDir=seek"
 bundle exec rake seek:reindex_all
 ```
 
