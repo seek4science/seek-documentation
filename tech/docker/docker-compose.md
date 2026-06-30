@@ -184,6 +184,26 @@ Wait for the seek container to finish starting (you can monitor with `docker com
 docker compose exec seek bundle exec rake seek:reindex_all
 ```
 
+## Upgrading from Solr 8 to Solr 9
+
+SEEK 1.19 and later uses Solr 9. Unlike a routine configuration update, this upgrade also requires pulling a new Docker image. The Solr 9 index format is incompatible with Solr 8, so the data volume must be wiped and the index rebuilt.
+
+Bring the stack down, pull the new images, remove and recreate the Solr data volume, then restart and reindex:
+
+```bash
+docker compose down
+docker compose pull
+docker volume rm seek-solr-data
+docker volume create --name=seek-solr-data
+docker compose up -d
+```
+
+Wait for the seek container to finish starting (you can monitor with `docker compose logs seek`), then reindex:
+
+```bash
+docker compose exec seek bundle exec rake seek:reindex_all
+```
+
 ## Moving from a standalone installation to Docker Compose
 
 If you have an existing SEEK installation running on "Bare Metal" and would like to move to using Docker compose, we have a script that can help migrate the data. The script was created to help move some of our own services, but hasn't been heavily tested beyond that so please use with care. Please feel free to [Contribute](../contributing-to-seek) any improvements.
