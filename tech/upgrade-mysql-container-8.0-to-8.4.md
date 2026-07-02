@@ -2,7 +2,9 @@
 title: Upgrade guide MySQL 8.0 to 8.4 for docker compose deployments
 ---
 
-Starting from SEEK 1.18.0, we highly recommend upgrading the MySQL database from version 8.0 to the next LTS version, 8.4. MySQL 8.0 reached end-of-life status April 21st 2026, with the last released version being 8.0.46 (see [release notes](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/)). MySQL server will not receive security fixes anymore. This guide provides detailed instructions for upgrading MySQL from version 8.0 to 8.4 in a docker-compose deployment. Bare-metal installations on ubuntu will still get security fixes backported as part of the Extended Security Maintenance programme. Allthough most of the docker-compose procedure can be followed for bare-metal deployments, it will not be covered in detail in this guide.
+Starting from SEEK 1.18.0, we highly recommend upgrading the MySQL database from version 8.0 to the next LTS version, 8.4. MySQL 8.0 reached end-of-life status April 21st 2026, with the last released version being 8.0.46 (see [release notes](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/)). MySQL server will not receive security fixes anymore. This guide provides detailed instructions for upgrading MySQL from version 8.0 to 8.4 in a docker-compose deployment.
+
+Bare-metal installations on ubuntu will still get security fixes backported as part of the Extended Security Maintenance programme. Although most of the docker-compose procedure can be translated to bare-metal deployments, it will not be covered in detail in this guide.
 
 ## Critical Breaking Changes in MySQL 8.4
 
@@ -227,44 +229,6 @@ volumes:
 - The `image: mysql:8.4` pulls the latest MySQL 8.4 image
 - `--mysql-native-password=ON` enables the deprecated plugin if needed
 - `--restrict-fk-on-non-standard-key=OFF` allows the usage of non-standard foreign keys if needed
-
-**Alternative: Create a custom my.cnf configuration file:**
-
-```bash
-# Create a custom configuration directory
-mkdir -p ./mysql-config
-
-# Create my.cnf
-cat > ./mysql-config/my.cnf << 'EOF'
-[mysqld]
-# MySQL 8.4 Configuration
-
-# Default storage engine
-default_storage_engine=InnoDB
-
-# Character set
-character_set_server=utf8mb4
-collation_server=utf8mb4_unicode_ci
-
-# Enable mysql_native_password if needed
-# mysql_native_password=ON
-
-# Optional: disable strict foreign key restrictions if needed
-# restrict_fk_on_non_standard_key=OFF
-
-# Performance tuning
-max_connections=1000
-innodb_buffer_pool_size=2G
-innodb_log_file_size=512M
-EOF
-```
-
-Then reference it in docker-compose.yml:
-
-```yaml
-volumes:
-  - ./mysql-config:/etc/mysql/conf.d:ro
-```
 
 ### Step 3: Pull the New MySQL 8.4 Image
 
