@@ -1,9 +1,8 @@
 ---
-title: Upgrade guide MySQL 8.0 to 8.4
+title: Upgrade guide MySQL 8.0 to 8.4 for docker compose deployments
 ---
-Starting from SEEK 1.18.0, we highly recommend upgrading the MySQL database from version 8.0 to the next LTS version, 8.4. MySQL 8.0 reached end-of-life status April 21st 2026, with the last released version being 8.0.46 (see [release notes](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/)). MySQL server will not receive security fixes anymore. This guide provides detailed instructions for upgrading MySQL from version 8.0 to 8.4, covering both [(option 1) bare-metal installations](#option-1-bare-metal-installation-upgrade) and [(option 2) containerized deployments using Docker](#option-2-dockercontainerized-upgrade).
 
-For **Ubuntu 24.04 Pro** users: Ubuntu might backport some security updates to MySQL 8.0 as part of the Pro subscription. Nevertheless, we still encourage you to upgrade to MySQL 8.4.
+Starting from SEEK 1.18.0, we highly recommend upgrading the MySQL database from version 8.0 to the next LTS version, 8.4. MySQL 8.0 reached end-of-life status April 21st 2026, with the last released version being 8.0.46 (see [release notes](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/)). MySQL server will not receive security fixes anymore. This guide provides detailed instructions for upgrading MySQL from version 8.0 to 8.4 in a docker-compose deployment. Bare-metal installations on ubuntu will still get security fixes backported as part of the Extended Security Maintenance programme. Allthough most of the docker-compose procedure can be followed for bare-metal deployments, it will not be covered in detail in this guide.
 
 ## Critical Breaking Changes in MySQL 8.4
 
@@ -90,307 +89,7 @@ Before beginning the upgrade process:
 
 ---
 
-## Option 1: Bare-Metal Installation Upgrade
-
-### Prerequisites
-
-Ensure you have:
-
-- Administrative/root access to the server
-- At least 2GB of free disk space
-- A backup of the current MySQL data directory
-- The MySQL 8.4 installation package for your operating system
-
-### Step 1: Backup Your Data
-
-Create a full backup before proceeding with the upgrade:
-
-```bash
-# Create a backup directory
-mkdir -p /backups/mysql
-cd /backups/mysql
-
-# Perform a logical backup using mysqldump
-mysqldump \
-  --all-databases \
-  --single-transaction \
-  --user=root \
-  --password \
-  > mysql_8.0_full_backup.sql
-```
-
-### Step 2: Stop the MySQL Service
-
-Stop the running MySQL server gracefully:
-
-```bash
-# On systemd systems (most modern Linux distributions)
-sudo systemctl stop mysql
-
-# Verify MySQL has stopped
-sudo systemctl status mysql
-
-# Alternative: if using init.d
-sudo service mysql stop
-
-# Verify no MySQL processes are running
-ps aux | grep mysqld | grep -v grep
-```
-
-**Explanation:**
-
-- `systemctl stop` sends a SIGTERM signal, allowing MySQL to shut down gracefully
-- Graceful shutdown ensures data integrity and avoids corruption
-- The `ps aux` command verifies that all MySQL processes have terminated
-
-### Step 3: Update Configuration File
-
-Edit the MySQL configuration file to prepare for version 8.4:
-
-```bash
-# Find the MySQL configuration file
-sudo find /etc -name "my.cnf" -o -name "mysql.cnf" 2>/dev/null
-
-# Typically located at:
-# /etc/mysql/my.cnf
-# /etc/my.cnf
-# /usr/local/mysql/etc/my.cnf
-
-# Open the configuration file with sudo
-sudo nano /etc/mysql/my.cnf
-```
-
-**Critical Changes Required:**
-
-1. **Remove `default_authentication_plugin` if it exists:**
-
-```ini
-# DELETE THIS LINE if present:
-# default_authentication_plugin=mysql_native_password
-```
-
-2. **If your applications require `mysql_native_password`, add this instead:**
-
-```ini
-[mysqld]
-# Enable mysql_native_password for backward compatibility
-mysql_native_password=ON
-```
-
-3. **If using non-standard foreign keys, optionally add:**
-
-```ini
-[mysqld]
-# Allow non-unique/partial keys as foreign keys (if needed)
-restrict_fk_on_non_standard_key=OFF
-```
-
-4. **Review and verify other settings for compatibility:**
-
-```bash
-# After saving, validate the configuration
-sudo mysql --help | grep "my.cnf"
-```
-
-### Step 4: Install MySQL 8.4
-
-The installation process depends on your Linux distribution.
-
-**On Debian/Ubuntu:**
-
-```bash
-# Optional: Download the MySQL repository package
-wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
-
-# Optional: Install the repository configuration
-sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
-
-# Update package index
-sudo apt-get update
-
-# Install MySQL 8.4 (the specific version)
-sudo apt-get install -y mysql-server=8.4.*
-
-# You will be prompted for a root password - enter it securely
-```
-
-**On CentOS/RHEL:**
-
-```bash
-# Optional: Download the MySQL repository RPM
-wget https://dev.mysql.com/get/mysql80-community-release-el8-x.noarch.rpm
-
-# Optional: Install the repository
-sudo yum install mysql80-community-release-el8-x.noarch.rpm
-
-# Install MySQL 8.4
-sudo yum install -y mysql-community-server-8.4.*
-
-# Start the MySQL service
-sudo systemctl start mysql
-```
-
-**Explanation:**
-
-- The repository configuration allows your package manager to find MySQL 8.4
-- Installation automatically handles file placement and basic configuration
-- The `=8.4.*` ensures you get version 8.4.x (the latest in the 8.4 series)
-
-### Step 5: Run the MySQL Upgrade Utility
-
-This critical step upgrades the system tables to MySQL 8.4 format:
-
-```bash
-# Start MySQL
-sudo systemctl start mysql
-
-# Run the upgrade tool
-sudo mysql_upgrade --user=root --password
-
-# You'll be prompted for the MySQL root password
-# Enter it when requested
-```
-
-**What `mysql_upgrade` does:**
-
-- Checks all tables in all databases for compatibility
-- Updates system tables (`mysql.user`, `mysql.db`, etc.) to the new format
-- Refreshes the privilege tables
-- Rebuilds information schema files
-- Checks for deprecated features
-
-**Expected output:**
-
-```
-Checking mysql database
-Checking all databases
-Upgrading the system database structures
-OK
-```
-
-If you see any warnings or errors, address them before continuing:
-
-```bash
-# For detailed information about the upgrade process
-mysql -u root -p -e "SELECT VERSION();"
-```
-
-### Step 6: Migration of the authentication plugin (bare-metal)
-
-After updating the MySQL server, you might experience issues trying to connect to it.
-
-If you get this error message, it means some users are still using the old `mysql_native_password` plugin to authenticate, while it is disabled by default in MySQL 8.4.
-
-```
-ERROR 1524 (HY000): Plugin 'mysql_native_password' is not loaded
-```
-
-If you **do not** experience any problems, proceed with [step 7](#step-7-verify-application-connectivity)!
-
-In order to be able to login to the MySQL server, you need to explicitly enable it. Therefore, you should add the following line to the `[mysqld]` section of `/etc/mysql/my.cnf` or in `/etc/mysql/conf.d/` if you have a multi-file config:
-
-```ini
-mysql_native_password=ON
-```
-
-Then restart MySQL:
-
-```sh
-sudo systemctl restart mysql
-```
-
-This should allow you to connect to the MySQL server again. Confirm some users are still using the legacy plugin for authentication by running:
-
-```sh
-mysql -u root -p -e "SELECT user, host, plugin FROM mysql.user ORDER BY plugin, user, host;"
-```
-
-The output should look something like:
-
-```
-+------------------+-----------+-----------------------+
-| user             | host      | plugin                |
-+------------------+-----------+-----------------------+
-| mysql.infoschema | localhost | caching_sha2_password |
-| mysql.session    | localhost | caching_sha2_password |
-| mysql.sys        | localhost | caching_sha2_password |
-| root             | %         | mysql_native_password |
-| root             | localhost | mysql_native_password |
-| seek_user        | %         | mysql_native_password |
-+------------------+-----------+-----------------------+
-6 rows in set (0.00 sec)
-```
-
-Locate your Seek DB user (seek_user in this case) and root user. If the plugin column mentions `mysql_native_password`, it means that user is still using the legacy authentication system and needs to be migrated to `caching_sha2_password`.
-
-For every user, alter the user record from mysql.user:
-
-```sh
-mysql -u root -p -e "ALTER USER 'seek_user'@'%' IDENTIFIED WITH caching_sha2_password BY 'REPLACE_WITH_THE_CURRENT_OR_NEW_PASSWORD';"
-```
-
-Confirm the changes by running this command again:
-
-```sh
-mysql -u root -p -e "SELECT user, host, plugin FROM mysql.user ORDER BY plugin, user, host;"
-
-```
-
-The output should look like this now:
-
-```
-+------------------+-----------+-----------------------+
-| user             | host      | plugin                |
-+------------------+-----------+-----------------------+
-| mysql.infoschema | localhost | caching_sha2_password |
-| mysql.session    | localhost | caching_sha2_password |
-| mysql.sys        | localhost | caching_sha2_password |
-| root             | %         | caching_sha2_password |
-| root             | localhost | caching_sha2_password |
-| seek_user        | %         | caching_sha2_password |
-+------------------+-----------+-----------------------+
-6 rows in set (0.00 sec)
-```
-
-Remove the `mysql_native_password=ON` from the MySQL config again and restart MySQL.
-
-Now you should be able to connect to the MySQL server without having to explicitly enable the `mysql_native_password` plugin.
-
-### Step 7: Verify Application Connectivity
-
-Confirm that MySQL 8.4 is running correctly:
-
-```bash
-# Check the MySQL version
-mysql -u root -p -e "SELECT VERSION();"
-```
-
-Output should look similar to:
-
-```
-+-----------+
-| VERSION() |
-+-----------+
-| 8.4.7     |
-+-----------+
-```
-
-Test that your applications can connect with the new authentication setup:
-
-```bash
-# Test connection with a database user
-mysql -u seek_user -p -h <host> database_name -e "SHOW TABLES;"
-```
-
-If the connection fails, check the error log:
-
-```sh
-sudo tail -50 /var/log/mysql/error.log
-```
-
----
-
-## Option 2: Docker/Containerized Upgrade
+## Procedure
 
 ### Prerequisites
 
@@ -726,7 +425,7 @@ The SEEK deployment should start as expected again and be completely operational
 
 ## Troubleshooting Common Issues
 
-### Issue 1: "Plugin 'mysql_native_password' is not loaded"
+### "Plugin 'mysql_native_password' is not loaded"
 
 #### Symptoms
 
@@ -742,20 +441,6 @@ This indicates that some users are still using the legacy authentication plugin.
 
 The preferred solution would be to migrate the authentication plugin to use the more modern and secure `caching_sha2_password` plugin. We encourage you follow the instructions in Step 6 again. If migrating is not possible, you can still use the legacy plugin but you will need to explicitly enable it.
 
-##### Bare-metal
-
-
-
-```bash
-sudo nano /etc/mysql/my.cnf
-# Add or verify this in the [mysqld] section:
-# mysql_native_password=ON
-
-sudo systemctl restart mysql
-```
-
-##### Docker
-
 Update docker-compose.yml to include in the command section:
 
 ```
@@ -766,23 +451,7 @@ Update docker-compose.yml to include in the command section:
 docker compose restart db
 ```
 
-### Issue 2: "Unknown variable 'default_authentication_plugin'"
-
-#### Symptoms
-
-```
-ERROR 1193 (HY000): Unknown variable 'default_authentication_plugin'
-```
-#### Solution
-
-
-Remove all instances of `default_authentication_plugin` from:
-
-- `/etc/mysql/my.cnf` or `/etc/my.cnf` (bare-metal)
-- Docker environment variables in `docker-compose.yml`
-- Docker command arguments
-
-### Issue 3: "Foreign key constraint fails" After Upgrade
+### "Foreign key constraint fails" After Upgrade
 
 #### Symptoms
 
@@ -792,8 +461,11 @@ a foreign key constraint fails
 ```
 #### Solution
 
-
 This occurs when non-standard foreign keys are used. Check your schema:
+
+```bash
+docker exec -it seek-mysql /bin/sh
+```
 
 ```bash
 # Identify problematic foreign keys
@@ -811,71 +483,17 @@ Then either:
 1. Fix the foreign key constraints to use unique keys
 2. Disable the restriction (not recommended for new deployments):
 
-```bash
-# Bare-metal
-sudo nano /etc/mysql/my.cnf
-# Add: restrict_fk_on_non_standard_key=OFF
+  Add this flag to the command in the `db` service:
 
-# Docker
-# Add to command: --restrict-fk-on-non-standard-key=OFF
-```
-
-### Issue 4: Container Fails to Start
-
-#### Symptoms
-
-```
-docker: Error response from daemon: container exited with code 1
-```
-#### Solution
-
-
-```bash
-# Check the logs for detailed error information
-docker logs <container_name>
-
-# Common issues:
-# 1. Invalid my.cnf syntax - validate the configuration file
-# 2. Insufficient disk space - check: df -h
-# 3. Port already in use - check: sudo netstat -tlnp | grep 3306
-
-# Restart with verbose logging
-docker compose logs -f db
-```
+  ```bash
+  --restrict-fk-on-non-standard-key=OFF
+  ```
 
 ---
 
 ## Rollback Procedure
 
 If you need to rollback to MySQL 8.0:
-
-### Bare-Metal Rollback
-
-```bash
-# Stop MySQL 8.4
-sudo systemctl stop mysql
-
-# Uninstall MySQL 8.4
-sudo apt-get remove mysql-server  # On Debian/Ubuntu
-# or
-sudo yum remove mysql-community-server  # On CentOS/RHEL
-
-# Restore the backup of the data directory
-sudo rm -rf /var/lib/mysql
-sudo cp -r /backups/mysql/mysql_8.0_datadir_backup /var/lib/mysql
-sudo chown -R mysql:mysql /var/lib/mysql
-
-# Reinstall MySQL 8.0
-sudo apt-get install mysql-server=8.0.*  # On Debian/Ubuntu
-
-# Start MySQL
-sudo systemctl start mysql
-
-# Verify
-mysql -u root -p -e "SELECT VERSION();"
-```
-
-### Docker Rollback
 
 ```bash
 # Stop and remove the 8.4 container
@@ -906,4 +524,3 @@ docker compose up -d db
 - [MySQL 8.4 Reference Manual - Authentication Plugins](https://dev.mysql.com/doc/refman/8.4/en/authentication-plugins.html)
 - [Upgrading to MySQL 8.0: Default Authentication Plugin Considerations](https://dev.mysql.com/blog-archive/upgrading-to-mysql-8-0-default-authentication-plugin-considerations/)
 - [MySQL Upgrade Documentation](https://dev.mysql.com/doc/refman/8.4/en/upgrading.html)
-
