@@ -2,7 +2,7 @@
 title: Upgrade guide MySQL 8.0 to 8.4 for docker compose deployments
 ---
 
-Starting from SEEK 1.18.0, we highly recommend upgrading the MySQL database from version 8.0 to the next LTS version, 8.4. MySQL 8.0 reached end-of-life status April 21st 2026, with the last released version being 8.0.46 (see [release notes](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/)). MySQL server will not receive security fixes anymore. This guide provides detailed instructions for upgrading MySQL from version 8.0 to 8.4 in a docker-compose deployment.
+Starting from [SEEK 1.18.0](https://docs.seek4science.org/tech/releases/#version-1180), we highly recommend upgrading the MySQL database from version 8.0 to the next LTS version, 8.4. MySQL 8.0 reached end-of-life status April 21st 2026, with the last released version being 8.0.46 (see [release notes](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/)). MySQL server will not receive security fixes anymore. This guide provides detailed instructions for upgrading MySQL from version 8.0 to 8.4 in a docker-compose deployment.
 
 Bare-metal installations on ubuntu will still get security fixes backported as part of the Extended Security Maintenance programme. Although most of the docker-compose procedure can be translated to bare-metal deployments, it will not be covered in detail in this guide.
 
