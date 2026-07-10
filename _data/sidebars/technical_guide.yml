@@ -29,8 +29,8 @@ subitems:
         url: /tech/install-on-suburi
       - title: Setting up the Apache Solr Search Engine
         url: /tech/setting-up-solr
-#      - title: Installing Ruby 2.7 on Ubuntu 22.04
-#        url: /tech/ruby-2.7-ubuntu-22.04
+  #      - title: Installing Ruby 2.7 on Ubuntu 22.04
+  #        url: /tech/ruby-2.7-ubuntu-22.04
   - title: Docker
     subitems:
       - title: Introduction to Docker
@@ -57,14 +57,16 @@ subitems:
             url: /tech/upgrading
           - title: Upgrades between earlier versions
             url: /tech/earlier-upgrades
+          - title: Upgrade MySQL container 8.0 to 8.4
+            url: /tech/upgrade-mysql-container-8.0-to-8.4
       - title: Checksum fingerprints
         url: /tech/investigation-checksum
-#      - title: openSEEK
-#        url: /tech/openseek
+      #      - title: openSEEK
+      #        url: /tech/openseek
       - title: Configuring FAIRDOM-SEEK for Virtuoso
         url: /tech/setting-up-virtuoso
-#      - title: Using Teaspoon
-#        url: /tech/using-teaspoon
+  #      - title: Using Teaspoon
+  #        url: /tech/using-teaspoon
   - title: Extended Metadata
     subitems:
       - title: Extended Metadata Technical Overview
@@ -81,7 +83,6 @@ subitems:
         url: /tech/extended-metadata/a-complete-example
   - title: FAIRDOM-SEEK releases
     url: /tech/releases/
-  -
-    hr: true
+  - hr: true
     title: API Introduction
     url: /help/user-guide/api
