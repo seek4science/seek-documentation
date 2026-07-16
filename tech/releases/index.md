@@ -67,7 +67,7 @@ A major release that contains a number of improvements, upgrades and bug fixes, 
 * Search:
     * **Samples included in API search results** - Samples are now fully supported in API-based searches and are
       returned in search results.
-    * **External search adapters toggleable via settings** - External search adapters (e.g. [BioModels](https://www.ebi.ac.uk/biomodels/)) can now be
+    * **External search adaptors toggleable via settings** - External search adaptors (e.g. [BioModels](https://www.ebi.ac.uk/biomodels/)) can now be
       individually enabled/disabled through the admin settings UI rather than via config files.
     * **Punctuation-proof search** - Search indexing and queries now handle punctuation such as hyphens correctly, so
       e.g. searching "UPC", or "(UPC)" finds results containing "1234-(UPC)".
