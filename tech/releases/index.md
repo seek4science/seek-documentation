@@ -16,26 +16,26 @@ Release date: _16th July 2026_
 
 A small patch release with some bug fixes and small improvements:
 
-* **Content & Documents:**
+* Content & Documents:
     * Inline document preview, previously only available on Presentation pages, is now also available for SOPs, Documents, Data files and File templates.
     * Fixed errors from the SlideShare renderer that could cause a page to break.
     * CSV files with non-UTF-8 encodings are now handled gracefully instead of causing an error when exploring.
-* **Search:**
+* Search:
     * Fixed the features enabled page incorrectly showing a search adaptor as active after it had been disabled.
-* **Institutions:**
+* Institutions:
     * Institution pages now show a link to the full ROR profile, rather than just the ROR ID.
-* **DataHub:**
+* DataHub:
     * Units can now be set on attributes in global ISA sample type templates, and can also be locked to prevent them being changed by users.
     * Fixed inconsistent behaviour when applying an Extended Study Template during assay creation in DataHub.
     * Fixed registered Data files, Strains and SOPs not appearing correctly in the DataHub experiment view.
     * Restored the ISA tag title that had gone missing from the creation wizard.
-* **WorkflowHub:**
+* WorkflowHub:
     * Updated support for the RO-Crate 1.3 specification.
     * Improved validation and error handling when adding files to Git-backed workflow versions.
     * Fixed an error that could prevent submitting a new version of a workflow, caused by a version lock being applied too early.
     * CITATION.cff files are now validated before attempting to convert to BibTeX, giving a clearer error instead of a cryptic failure.
     * Fixed a crash when a CITATION.cff file has no authors listed.
-* **Other fixes:**
+* Other fixes:
     * SEEK now fails fast with a clear error if the database is unreachable at startup, rather than silently falling back to defaults and causing confusing behaviour.
     * Improved database performance for samples through additional indexes.
     * Fixed a crash in the background job that updates linked samples.
