@@ -10,6 +10,34 @@ Please see [Getting FAIRDOM-SEEK]({{ "/get-seek" | relative_url }}) for details 
 
 If you have any comments or feedback about a release, then please [Contact Us]({{ "/contacting-us" | relative_url }}).
 
+## Version 1.18.1
+
+Release date: _16th July 2026_
+
+A small patch release with some bug fixes and small improvements:
+
+* Inline document preview, previously only available on Presentation pages, is now also available for SOPs, Documents, Data files and File templates.
+* CITATION.cff files are now validated before attempting to convert to BibTeX, giving a clearer error instead of a cryptic failure.
+* Improved validation and error handling when adding files to Git-backed workflow versions.
+* Updated support for the RO-Crate 1.3 specification.
+* Units can now be set on attributes in global ISA sample type templates, and can also be locked to prevent them being changed by users.
+* Institution pages now show a link to the full ROR profile, rather than just the ROR ID.
+* SEEK now fails fast with a clear error if the database is unreachable at startup, rather than silently falling back to defaults and causing confusing behaviour.
+* Improved database performance for samples through additional indexes.
+* Fixed an error that could prevent submitting a new version of a workflow, caused by a version lock being applied too early.
+* Fixed errors from the SlideShare renderer that could cause a page to break.
+* Fixed the features enabled page incorrectly showing a search adaptor as active after it had been disabled.
+* Fixed inconsistent behaviour when applying an Extended Study Template during assay creation in DataHub.
+* Fixed a crash in the background job that updates linked samples.
+* CSV files with non-UTF-8 encodings are now handled gracefully instead of causing an error when exploring.
+* Fixed a crash when a CITATION.cff file has no authors listed.
+* Fixed registered Data files, Strains and SOPs not appearing correctly in the DataHub experiment view.
+* Fixed an error on asset preview pages when the underlying file is missing from disk.
+* Restored the ISA tag title that had gone missing from the creation wizard.
+* Various minor library and security updates, including to concurrent-ruby, oauth2, zlib and supercronic.
+
+For a full list, see [closed issues for 1.18.1](https://github.com/seek4science/seek/milestone/35?closed=1)
+
 ## Version 1.18.0
 
 Release date: _16th June 2026_
