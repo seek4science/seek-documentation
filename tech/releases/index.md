@@ -18,7 +18,7 @@ A patch release, mostly focused on performance, privacy and bug fixes:
 
 * Performance:
     * JavaScript is now minified when assets are precompiled for production.
-    * COPASI and Plotly assets are now loaded only on the model simulation page, reducing the bundle downloaded on all other pages from about 5.95 MB to 1.71 MB gzipped.
+    * [COPASI](https://copasi.org) and [Plotly](https://plotly.com/javascript/) assets are now loaded only on the model simulation page, reducing the bundle downloaded on all other pages from about 5.95 MB to 1.71 MB gzipped.
     * A new `obfuscate_filters` setting changes how filter links are rendered. This deters crawlers from following the huge number of possible
       filter combinations, which can be a significant source of wasted traffic.
 * Sharing links & privacy:
@@ -34,7 +34,7 @@ A patch release, mostly focused on performance, privacy and bug fixes:
     * Roles are now listed in the same order on the project roles administration page as on the project overview page,
       making it less easy to assign somebody the wrong role.
     * Removed the unused project coordinators code, which could no longer be reached.
-* DataHub:
+* [DataHub](https://fair-dom.org/fairdom-in-use/Datahub):
     * Fixed an error in the experiment view whilst not logged in.
 * Other:
     * Rails has been updated to 7.2.3.2, along with an update to rubyzip, picking up the latest security and bug fixes.
