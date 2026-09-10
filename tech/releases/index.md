@@ -10,6 +10,37 @@ Please see [Getting FAIRDOM-SEEK]({{ "/get-seek" | relative_url }}) for details 
 
 If you have any comments or feedback about a release, then please [Contact Us]({{ "/contacting-us" | relative_url }}).
 
+## Version 1.18.2
+
+Release date: _10th September 2026_
+
+A patch release, mostly focused on performance, privacy and bug fixes:
+
+* Performance:
+    * JavaScript is now minified when assets are precompiled for production.
+    * COPASI and Plotly assets are now loaded only on the model simulation page, reducing the bundle downloaded on all other pages from about 5.95 MB to 1.71 MB gzipped.
+    * A new `obfuscate_filters` setting changes how filter links are rendered. This deters crawlers from following the huge number of possible
+      filter combinations, which can be a significant source of wasted traffic.
+* Sharing links & privacy:
+    * Pages opened through a temporary sharing link are no longer indexable by search engines.
+    * Authorization codes, such as those contained in sharing links, are now redacted from the logs and from exception
+      notification emails.
+* Search:
+    * Fixed search on fresh Docker and Docker Compose deployments, where it always returned every item the user can
+      view, rather than just the matches.
+    * Fixed a database error that could be triggered by out of range years reaching the year filter. A filter mixing
+      valid and invalid years now ignores just the invalid ones, rather than returning nothing.
+* Projects:
+    * Roles are now listed in the same order on the project roles administration page as on the project overview page,
+      making it less easy to assign somebody the wrong role.
+    * Removed the unused project coordinators code, which could no longer be reached.
+* DataHub:
+    * Fixed an error in the experiment view when not logged in, for example when viewing in a private browsing window.
+* Other:
+    * Rails has been updated to 7.2.3.2, along with an update to rubyzip, picking up the latest security and bug fixes.
+
+For a full list, see [closed issues for 1.18.2](https://github.com/seek4science/seek/milestone/36?closed=1)
+
 ## Version 1.18.1
 
 Release date: _16th July 2026_
