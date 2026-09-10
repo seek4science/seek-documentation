@@ -35,7 +35,7 @@ A patch release, mostly focused on performance, privacy and bug fixes:
       making it less easy to assign somebody the wrong role.
     * Removed the unused project coordinators code, which could no longer be reached.
 * DataHub:
-    * Fixed an error in the experiment view when not logged in, for example when viewing in a private browsing window.
+    * Fixed an error in the experiment view whilst not logged in.
 * Other:
     * Rails has been updated to 7.2.3.2, along with an update to rubyzip, picking up the latest security and bug fixes.
 
