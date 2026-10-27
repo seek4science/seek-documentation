@@ -154,6 +154,8 @@ You will be able to tell the version from the image tag - e.g for {{ site.curren
 image: fairdom/seek:{{ site.current_docker_tag }}
 ```
 
+{% include callout.html type="warning" content="From version 1.19.0, the docker-compose.yml includes a Redis service, which SEEK now requires. Before upgrading, you also need the new [docker/redis.env](https://github.com/seek4science/seek/blob/main/docker/redis.env) file alongside docker-compose.yml, with the password changed from the default, and to create the volume for the Redis data with `docker volume create --name=seek-redis-data`. See [Setting up Redis](../setting-up-redis#docker-compose) for details, and [Configuration options](../setting-up-redis#configuration-options) for the settings in docker/redis.env." %}
+
 using the new docker-compose.yml do:
 
 ```bash

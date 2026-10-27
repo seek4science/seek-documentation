@@ -216,7 +216,8 @@ bundle exec whenever --update-crontab
 
 The following steps show how to setup delayed_job and
 soffice to run as a service, and automatically start and shutdown when you
-restart the server. Apache Solr should already be setup from following the [Setting up Solr](setting-up-solr) instructions.
+restart the server. Apache Solr should already be setup from following the [Setting up Solr](setting-up-solr) instructions,
+and Redis from following the [Setting up Redis](setting-up-redis) instructions.
 
 
 #### Delayed Job Background Service
