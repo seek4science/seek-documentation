@@ -15,12 +15,13 @@ SEEK is tested with Redis 8.6, which is the version used by the Docker scripts a
 ## Docker Compose
 
 If you run SEEK with [Docker Compose](docker/docker-compose), the
-[docker-compose.yml](https://github.com/seek4science/seek/blob/seek-{{ site.current_docker_tag }}/docker-compose.yml) has been updated to include a
-`redis_store` service, so you don't need to install Redis separately. When installing or upgrading, you need:
+[docker-compose.yml](https://github.com/seek4science/seek/blob/seek-{{ site.current_docker_tag }}/docker-compose.yml)
+has been updated to include a `redis_store` service, so you don't need to install Redis separately. When installing or
+upgrading, you need:
 
 * the updated _docker-compose.yml_
-* the new [docker/redis.env](https://github.com/seek4science/seek/blob/seek-{{ site.current_docker_tag }}/docker/redis.env) file. Change the
-  `REDIS_PASSWORD` value from the default before starting.
+* the new [docker/redis.env](https://github.com/seek4science/seek/blob/seek-{{ site.current_docker_tag }}/docker/redis.env)
+  file. Change the `REDIS_PASSWORD` value from the default before starting.
 * a new volume for the Redis data:
 
 ```bash
@@ -54,7 +55,7 @@ sh ./script/start-docker-redis.sh
 ```
 
 The Docker container is named _seek-redis_ and the volume is named _seek-redis-data-volume_. The container is
-restarted automatically when Docker restarts, unless you stopped it.
+restarted automatically when Docker restarts.
 
 The memory limit defaults to 256 MB. You can change it by setting `REDIS_MAXMEMORY` when starting the container:
 
@@ -82,7 +83,7 @@ container on the same machine.
 
 The following steps are for Ubuntu 24.04 but should be the same for other Debian-based distributions.
 
-SEEK needs Redis 7.0 or later. You can either use the version provided by your distribution, or install the latest
+SEEK needs Redis 7.0 or later. You can either use the version provided by your distribution, or install a newer
 version from the official Redis apt repository.
 
 ### Using the distribution's package
@@ -182,7 +183,7 @@ password works with `redis-cli -a your-redis-password ping`.
 
 ## Configuration options
 
-SEEK connects to Redis using the following environment variables, which are all optional:
+The following environment variables are used, and are all optional:
 
 | Variable | Default | Description |
 |---|---|---|
