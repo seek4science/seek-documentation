@@ -18,7 +18,7 @@ support SEEK and the associated tools.
 **If you are upgrading to version 1.19.0 or later**, SEEK now requires Redis, which needs to be set up and running
 before upgrading - see [Setting up Redis](setting-up-redis). If you use Docker Compose, the updated
 _docker-compose.yml_ includes Redis, but you need the new _docker/redis.env_ file and a new volume - see
-[Docker Compose](setting-up-redis#docker-compose).
+[Upgrading between versions](docker/docker-compose#upgrading-between-versions).
 
 **You should always upgrade between minor (1.X) versions incrementally**, i.e:
 

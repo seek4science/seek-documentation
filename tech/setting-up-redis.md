@@ -12,26 +12,8 @@ a single Redis instance for:
 
 SEEK is tested with Redis 8.6, which is the version used by the Docker scripts and Docker Compose.
 
-## Docker Compose
-
-If you run SEEK with [Docker Compose](docker/docker-compose), the
-[docker-compose.yml](https://github.com/seek4science/seek/blob/seek-{{ site.current_docker_tag }}/docker-compose.yml)
-has been updated to include a `redis_store` service, so you don't need to install Redis separately. When installing or
-upgrading, you need:
-
-* the updated _docker-compose.yml_
-* the new [docker/redis.env](https://github.com/seek4science/seek/blob/seek-{{ site.current_docker_tag }}/docker/redis.env)
-  file. Change the `REDIS_PASSWORD` value from the default before starting.
-* a new volume for the Redis data:
-
-```bash
-docker volume create --name=seek-redis-data
-```
-
-The settings in _docker/redis.env_ are used by both the Redis container and the SEEK containers, so the password only
-needs setting in that one place. See [Configuration options](#configuration-options) for what each setting does.
-
-The rest of this page covers installations that don't use Docker Compose.
+For a bare-metal installation, Redis can be run using our Docker scripts or installed through apt. If you run SEEK with
+Docker Compose, Redis is already included - see [Docker Compose](#docker-compose).
 
 ## Using the Docker scripts
 
@@ -180,6 +162,16 @@ sudo systemctl restart redis-server
 
 If you set a password, you also need to give it to SEEK with `REDIS_PASSWORD`, as described below. You can check the
 password works with `redis-cli -a your-redis-password ping`.
+
+## Docker Compose
+
+If you run SEEK with [Docker Compose](docker/docker-compose), Redis is included as the `redis_store` service, so it
+doesn't need setting up separately. Its settings are in _docker/redis.env_, which is used by both the Redis and SEEK
+containers, so you only need to change the `REDIS_PASSWORD` from the default there before starting. See
+[Configuration options](#configuration-options) for what each setting does.
+
+For the files and volumes needed, see [Using Docker compose](docker/docker-compose), and if you are upgrading from an
+earlier version, see [Upgrading between versions](docker/docker-compose#upgrading-between-versions).
 
 ## Configuration options
 
