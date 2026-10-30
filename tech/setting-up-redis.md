@@ -161,7 +161,7 @@ sudo systemctl restart redis-server
 ```
 
 If you set a password, you also need to give it to SEEK with `REDIS_PASSWORD`, as described below. You can check the
-password works with `redis-cli -a your-redis-password ping`.
+password works with `redis-cli --askpass ping`, which prompts for the password.
 
 ## Docker Compose
 
