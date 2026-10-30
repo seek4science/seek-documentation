@@ -52,7 +52,7 @@ REDIS_PASSWORD=your-redis-password sh ./script/start-docker-redis.sh
 ```
 
 SEEK also needs to be given the same password, as described in [Configuration options](#configuration-options). The
-password is set when the container is created, so it also needs to be given when running
+script doesn't read _.env.local_, so `REDIS_PASSWORD` must also be set when running it. The password is set when the container is created, so it also needs to be given when running
 _script/reset-docker-redis.sh_, which recreates the container. To change the password, stop the container and start it
 again with the new one.
 
