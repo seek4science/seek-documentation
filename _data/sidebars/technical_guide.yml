@@ -29,6 +29,8 @@ subitems:
         url: /tech/install-on-suburi
       - title: Setting up the Apache Solr Search Engine
         url: /tech/setting-up-solr
+      - title: Setting up Redis
+        url: /tech/setting-up-redis
   #      - title: Installing Ruby 2.7 on Ubuntu 22.04
   #        url: /tech/ruby-2.7-ubuntu-22.04
   - title: Docker

@@ -239,6 +239,12 @@ Production](install-production) guide for automating these services.
 SEEK uses the [Apache Solr Search Engine](https://solr.apache.org/) which since SEEK v1.12 needs setting up
 separately. It is relatively straightforward and there are instructions on how to do this in [Setting Up Solr](setting-up-solr).
 
+### Setting up and starting Redis
+
+From version 1.19.0, SEEK uses [Redis](https://redis.io/) for caching, user sessions and request throttling, which
+needs setting up separately. It can either be run with Docker or installed through apt, and there are instructions on
+how to do this in [Setting up Redis](setting-up-redis).
+
 ### Starting and Stopping the Background Service
 
 SEEK uses [Delayed Job](https://github.com/collectiveidea/delayed_job) to

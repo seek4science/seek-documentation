@@ -1,23 +1,24 @@
 ---
 title: Docker - Using Docker compose
-description: Run with MySQL and Solr as microservices using Docker Compose for production deployments.
+description: Run with MySQL, Solr and Redis as microservices using Docker Compose for production deployments.
 ---
 
 
-You can run SEEK in Docker together with MySQL and SOLR running in its own containers as micro-services, using Docker Compose.
+You can run SEEK in Docker together with MySQL, SOLR and Redis running in their own containers as micro-services, using Docker Compose.
 
 You will first need [Docker installed](docker-install.html)
 
-Once installed, all that is needed are the [docker-compose.yml](https://raw.githubusercontent.com/seek4science/seek/seek-{{ site.current_docker_tag }}/docker-compose.yml) and the [docker/db.env](https://raw.githubusercontent.com/seek4science/seek/seek-{{ site.current_docker_tag }}/docker/db.env) files, along with the [solr/seek/conf/](https://github.com/seek4science/seek/tree/seek-{{ site.current_docker_tag }}/solr/seek/conf) directory,
-although you can simply check out the SEEK source from GitHub - see [Getting SEEK](../install.html#getting-seek). You would be advised to change the passwords in the *db.env* file.
+Once installed, all that is needed are the [docker-compose.yml](https://raw.githubusercontent.com/seek4science/seek/seek-{{ site.current_docker_tag }}/docker-compose.yml), [docker/db.env](https://raw.githubusercontent.com/seek4science/seek/seek-{{ site.current_docker_tag }}/docker/db.env) and [docker/redis.env](https://raw.githubusercontent.com/seek4science/seek/seek-{{ site.current_docker_tag }}/docker/redis.env) files, along with the [solr/seek/conf/](https://github.com/seek4science/seek/tree/seek-{{ site.current_docker_tag }}/solr/seek/conf) directory,
+although you can simply check out the SEEK source from GitHub - see [Getting SEEK](../install.html#getting-seek). You would be advised to change the passwords in the *db.env* and *redis.env* files. See [Setting up Redis](../setting-up-redis#configuration-options) for the settings in *redis.env*.
 
-First you need to create 4 volumes
+First you need to create 5 volumes
 
 ```bash
 docker volume create --name=seek-filestore
 docker volume create --name=seek-mysql-db
 docker volume create --name=seek-solr-data
 docker volume create --name=seek-cache
+docker volume create --name=seek-redis-data
 ```
 
 and then to start up, with the docker-compose.yml in your currently directory run
@@ -137,7 +138,7 @@ docker compose up -d
 
 **Note** that when rolling back a version, for example from an unsuccessful upgrade, it is particularly important to remove and recreate the *seek-filestore* and *seek-mysql-db* volumes - otherwise additional files may be left around when the backup is restored over the top.
 
-The cache and solr index don't need backing up. Once up and running, if necessary the solr index can be regenerated with:
+The cache, Redis data and solr index don't need backing up. Redis only holds cached items and user sessions, so the only effect of losing it is that users will need to log in again. Once up and running, if necessary the solr index can be regenerated with:
 
 ```bash
 docker exec seek bundle exec rake seek:reindex_all
@@ -153,6 +154,9 @@ You will be able to tell the version from the image tag - e.g for {{ site.curren
 ```bash
 image: fairdom/seek:{{ site.current_docker_tag }}
 ```
+
+{% capture redis_upgrade_note %}From version 1.19.0, the docker-compose.yml includes a Redis service, which SEEK now requires. Before upgrading, you also need the new [docker/redis.env](https://github.com/seek4science/seek/blob/seek-{{ site.current_docker_tag }}/docker/redis.env) file alongside docker-compose.yml, with the password changed from the default, and to create the volume for the Redis data with `docker volume create --name=seek-redis-data`. See [Configuration options](../setting-up-redis#configuration-options) for the settings in docker/redis.env.{% endcapture %}
+{% include callout.html type="warning" content=redis_upgrade_note %}
 
 using the new docker-compose.yml do:
 
