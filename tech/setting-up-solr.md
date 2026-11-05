@@ -6,14 +6,16 @@ description: Configure Apache Solr for search using Docker image or direct insta
 Since version _1.12_ of FAIRDOM-SEEK [Apache Solr](https://solr.apache.org/) now needs to be setup separately rather than using the built in _Sunspot Solr_ .
 
 This guide only relates to bare metal installations of FAIRDOM-SEEK. It doesn't affect using a 
-[Docker](docker/docker-compose) based installation, where the changes are already handled for you.
+[Docker Compose](docker/docker-compose) based installation, where Solr is provided by the `fairdom/seek-solr` image and the changes are already handled for you.
+
+From version _1.19_, SEEK requires **Solr 9**. If you are upgrading from an earlier version running Solr 8, see [Upgrading from Solr 8 to Solr 9](#upgrading-from-solr-8-to-solr-9).
 
 There are two alternatives to installing and running Apache Solr. If possible, the simplest is to use our Docker
 image. If this is not possible, there are also some instructions below on directly installing Apache Solr.
 
 ## Using the Docker Image
 
-Using Docker provides the easiest solution to running Solr for SEEK, using the official _solr:9.10.1_ image. The SEEK-specific configuration is mounted directly from your installation directory, so any configuration updates are automatically picked up when the container is restarted.
+Using Docker provides the easiest solution to running Solr for SEEK, using the official _solr:9.10.1_ image. The SEEK-specific configuration is mounted directly from your installation directory, and the configuration of the existing _seek_ core is refreshed from it each time the container is started, so any configuration updates are picked up when the container is restarted.
 
 You first need to have [Docker installed](docker/docker-install). We provide example scripts for managing the Solr service, which should be run from the root directory of your SEEK installation:
 
@@ -95,6 +97,8 @@ The configuration and data for the SEEK core can be found in _/var/solr/data/see
 
 You should be able to confirm the service is running and the core setup by visiting [http://localhost:8983/solr](http://localhost:8983/solr)
 
+{% include callout.html type="note" content="Solr 9 only listens on localhost by default. If Solr is running on a different machine to SEEK, set `SOLR_JETTY_HOST` in _/etc/default/solr.in.sh_ to the address it should listen on, restart the service, and make sure the port is not open to the public." %}
+
 Solr is now setup, and you can trigger jobs to reindex the content with
 
 ```bash
@@ -107,7 +111,7 @@ When the Solr configuration changes between SEEK versions, the existing index da
 
 ### Using the Docker Image
 
-Since the configuration is mounted directly from your SEEK installation, no image update is required. Run the following from the root of your SEEK installation:
+Since the configuration is mounted directly from your SEEK installation, no image update is required, and simply restarting the container will apply the new configuration. However, to be sure the index is consistent with it, it is recommended to clear and rebuild the index. Run the following from the root of your SEEK installation:
 
 ```bash
 sh ./script/reset-docker-solr.sh
@@ -133,7 +137,9 @@ The config is copied to `/tmp` and ownership set to the `solr` user before runni
 
 ## Upgrading from Solr 8 to Solr 9
 
-SEEK 1.19 and later requires Solr 9. The Solr 9 index format is incompatible with Solr 8, so the existing index must be deleted and rebuilt after upgrading.
+SEEK 1.19 and later requires Solr 9.10.1. The SEEK configuration has changed substantially for Solr 9, and an index created with Solr 8 cannot be reused, so the existing index must be deleted and rebuilt after upgrading.
+
+If you are using [Docker Compose](docker/docker-compose) see [Upgrading from Solr 8 to Solr 9](docker/docker-compose#upgrading-from-solr-8-to-solr-9) in the Docker Compose guide instead.
 
 ### Using the Docker Image
 
@@ -143,11 +149,11 @@ After updating your SEEK installation, run:
 sh ./script/reset-docker-solr.sh
 ```
 
-This will stop the existing container, remove the old data volume, start a fresh container using the new Solr 9 image, and trigger a full reindex automatically.
+This will stop the existing container, remove the old data volume, start a fresh container using the new _solr:9.10.1_ image, and trigger a full reindex automatically.
 
 ### Direct Installation
 
-First, remove the existing Solr 8 installation. Leave `/var/solr` in place — the `solr` user and data directory will be reused by Solr 9.
+First make sure Java 21 is installed, as described in [Installing Apache Solr](#installing-apache-solr). Then remove the existing Solr 8 installation. Leave `/var/solr` in place — the `solr` user and data directory will be reused by Solr 9.
 
 ```bash
 sudo service solr stop

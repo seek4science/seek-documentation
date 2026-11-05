@@ -8,7 +8,7 @@ You can run SEEK in Docker together with MySQL and SOLR running in its own conta
 
 You will first need [Docker installed](docker-install.html)
 
-Once installed, all that is needed are the [docker-compose.yml](https://raw.githubusercontent.com/seek4science/seek/seek-{{ site.current_docker_tag }}/docker-compose.yml) and the [docker/db.env](https://raw.githubusercontent.com/seek4science/seek/seek-{{ site.current_docker_tag }}/docker/db.env) files, along with the [solr/seek/conf/](https://github.com/seek4science/seek/tree/seek-{{ site.current_docker_tag }}/solr/seek/conf) directory,
+Once installed, all that is needed are the [docker-compose.yml](https://raw.githubusercontent.com/seek4science/seek/seek-{{ site.current_docker_tag }}/docker-compose.yml) and the [docker/db.env](https://raw.githubusercontent.com/seek4science/seek/seek-{{ site.current_docker_tag }}/docker/db.env) files,
 although you can simply check out the SEEK source from GitHub - see [Getting SEEK](../install.html#getting-seek). You would be advised to change the passwords in the *db.env* file.
 
 First you need to create 4 volumes
@@ -167,9 +167,20 @@ docker compose up -d
 
 ## Updating the Solr Configuration
 
-{% include callout.html type="warning" content="From version 1.18.0, the `solr/seek/conf/` directory from the SEEK source is required alongside `docker-compose.yml`. If you are upgrading from an earlier version, ensure this directory is present before restarting." %}
+{% include callout.html type="note" content="From version 1.19.0, the SEEK Solr configuration is built into the `fairdom/seek-solr` image, and the `solr/seek/conf/` directory is no longer needed alongside `docker-compose.yml`. If you added it for 1.18, it can be removed." %}
 
-When the Solr configuration changes between SEEK versions, the existing index data must be cleared and rebuilt. Since the configuration is mounted directly from the SEEK repository, no image update is needed — you just need an up-to-date copy of the `solr/seek/conf/` directory for the version you are updating to. Bring the stack down, remove and recreate the Solr data volume, then restart and reindex:
+The Solr service uses the `fairdom/seek-solr` image, which is the official Solr image with the SEEK configuration built in. Its tag
+matches the SEEK version, e.g:
+
+```bash
+image: fairdom/seek-solr:{{ site.current_docker_tag }}
+```
+
+Each time the container starts, the configuration of the existing _seek_ core is replaced with the one built into the image,
+while the index data is left in place. This means that configuration changes between SEEK versions are picked up when the new
+image is pulled as part of [Upgrading between versions](#upgrading-between-versions), and the reindex triggered by `docker/upgrade.sh` brings the index into line with it.
+
+If the index ever needs to be cleared and rebuilt from scratch, bring the stack down, remove and recreate the Solr data volume, then restart and reindex:
 
 ```bash
 docker compose down
@@ -186,23 +197,37 @@ docker compose exec seek bundle exec rake seek:reindex_all
 
 ## Upgrading from Solr 8 to Solr 9
 
-SEEK 1.19 and later uses Solr 9. Unlike a routine configuration update, this upgrade also requires pulling a new Docker image. The Solr 9 index format is incompatible with Solr 8, so the data volume must be wiped and the index rebuilt.
+SEEK 1.19 moves from Solr 8 to Solr 9, with a substantially changed configuration, so the existing Solr 8 index cannot be reused and the Solr data volume needs to be cleared as part of the upgrade.
 
-Bring the stack down, pull the new images, remove and recreate the Solr data volume, then restart and reindex:
+Update to the new [docker-compose.yml](https://github.com/seek4science/seek/blob/seek-{{ site.current_docker_tag }}/docker-compose.yml) as usual. If you
+maintain your own copy, make sure the `solr` service uses the `fairdom/seek-solr` image, and that the old `./solr/seek/conf` volume mount and the
+`healthcheck` and `entrypoint` sections are removed from it, as these are now provided by the image. It should look like:
+
+```yaml
+  solr:
+    image: fairdom/seek-solr:{{ site.current_docker_tag }}
+    container_name: seek-solr
+    restart: always
+    environment:
+      SOLR_JAVA_MEM: -Xms512m -Xmx1024m
+    volumes:
+      - seek-solr-data:/var/solr/
+```
+
+Then follow the normal [Upgrading between versions](#upgrading-between-versions) steps, but remove and recreate the Solr data volume after bringing the stack down:
 
 ```bash
 docker compose down
-docker compose pull
 docker volume rm seek-solr-data
 docker volume create --name=seek-solr-data
+docker compose pull
+docker compose up -d seek db solr      # avoiding the seek-workers, which will interfere
+docker exec -it seek docker/upgrade.sh
+docker compose down
 docker compose up -d
 ```
 
-Wait for the seek container to finish starting (you can monitor with `docker compose logs seek`), then reindex:
-
-```bash
-docker compose exec seek bundle exec rake seek:reindex_all
-```
+The upgrade will trigger a full reindex into the new, empty, Solr 9 index.
 
 ## Moving from a standalone installation to Docker Compose
 

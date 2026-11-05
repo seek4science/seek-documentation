@@ -66,7 +66,7 @@ Now install the packages:
 ```bash
 sudo apt install build-essential cmake git graphviz imagemagick libcurl4-gnutls-dev libgmp-dev \
     libmagick++-dev libmysqlclient-dev libpq-dev libreadline-dev libreoffice libssl-dev \
-    libxml++2.6-dev libxslt1-dev mysql-server nodejs openjdk-11-jdk openssh-server poppler-utils zip
+    libxml++2.6-dev libxslt1-dev mysql-server nodejs openjdk-21-jdk openssh-server poppler-utils zip
 ```
 
 Installing these packages now will make installing Ruby easier later on:
@@ -76,13 +76,13 @@ sudo apt install autoconf automake bison curl gawk libffi-dev libgdbm-dev \
     libncurses5-dev libsqlite3-dev libyaml-dev sqlite3
 ```
 
-SEEK's Solr implementation currently requires Java 11, so you may need to switch the system's default Java runtime:
+Solr 9, used by SEEK, requires Java 11 or later and we recommend Java 21 (see [Setting Up Solr](setting-up-solr)), so you may need to switch the system's default Java runtime:
 
 ```bash
 sudo update-alternatives --config java
 ```
 
-...and select the version named `/usr/lib/jvm/java-11-openjdk-amd64/bin/java` or similar.
+...and select the version named `/usr/lib/jvm/java-21-openjdk-amd64/bin/java` or similar.
 
 ## Development or Production?
 

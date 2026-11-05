@@ -15,6 +15,12 @@ support SEEK and the associated tools.
 
 **If you are running using Docker Compose**, then please follow the steps there - [Upgrading between versions](docker/docker-compose#upgrading-between-versions)
 
+**If you are upgrading to version 1.19.0 or later**, SEEK now requires Solr 9, and the existing Solr 8 index cannot be reused.
+If you run Solr directly or using our Docker scripts, Solr needs upgrading and the index rebuilding - see
+[Upgrading from Solr 8 to Solr 9](setting-up-solr#upgrading-from-solr-8-to-solr-9). If you use Docker Compose, the updated
+_docker-compose.yml_ uses the new _fairdom/seek-solr_ image, and the Solr data volume needs recreating - see
+[Upgrading from Solr 8 to Solr 9](docker/docker-compose#upgrading-from-solr-8-to-solr-9).
+
 **You should always upgrade between minor (1.X) versions incrementally**, i.e:
 
 1.12.x --> 1.13.x --> 1.14.x --> 1.15.x,
