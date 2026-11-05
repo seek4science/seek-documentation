@@ -16,6 +16,8 @@ Release date: _5th November 2026_
 
 A patch release that fixes a vulnerability (thanks to [Jonathan Kats](https://github.com/kats1123) for reporting).
 
+**We strongly encourage updating your instance to this version.**
+
 ## Version 1.18.3
 
 Release date: _21st October 2026_
