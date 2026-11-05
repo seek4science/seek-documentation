@@ -36,6 +36,8 @@ sh ./script/start-docker-solr.sh
 
 The Docker container will be named _seek-search_ and the volume named _seek-solr-data-volume_.
 
+{% include callout.html type="note" content="Inside the container Solr listens on all interfaces, and the script publishes port 8983 only on the host's localhost address (`127.0.0.1`), so Solr is not reachable from other machines. If Solr needs to be reached from a different machine to SEEK, you will need to change how the port is published in the script, but make sure it is not open to the public. Be aware that ports published by Docker bypass host firewall rules such as those set with _ufw_." %}
+
 Once running, and with search enabled, you can trigger jobs to reindex all searchable content with
 
 ```bash
