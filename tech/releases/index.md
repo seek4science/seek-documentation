@@ -10,6 +10,12 @@ Please see [Getting FAIRDOM-SEEK]({{ "/get-seek" | relative_url }}) for details 
 
 If you have any comments or feedback about a release, then please [Contact Us]({{ "/contacting-us" | relative_url }}).
 
+## Version 1.18.4
+
+Release date: _5th November 2026_
+
+A patch release that fixes a vulnerability (thanks to [Jonathan Kats](https://github.com/kats1123) for reporting).
+
 ## Version 1.18.3
 
 Release date: _21st October 2026_
