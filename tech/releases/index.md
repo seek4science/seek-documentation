@@ -12,7 +12,7 @@ If you have any comments or feedback about a release, then please [Contact Us]({
 
 ## Version 1.18.4
 
-Release date: _5th November 2026_
+Release date: _10th November 2026_
 
 A patch release that fixes a vulnerability (thanks to [Jonathan Kats](https://github.com/kats1123) for reporting).
 
