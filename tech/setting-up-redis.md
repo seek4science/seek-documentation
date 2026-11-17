@@ -56,7 +56,8 @@ script doesn't read _.env.local_, so `REDIS_PASSWORD` must also be set when runn
 _script/reset-docker-redis.sh_, which recreates the container. To change the password, stop the container and start it
 again with the new one.
 
-{% include callout.html type="warning" content="The script publishes port 6379 on all network interfaces. We strongly recommend setting a password, and making sure port 6379 is blocked by your firewall, so that Redis can't be reached from outside the server. Note that Docker's port publishing can bypass firewall rules set with tools such as `ufw`." %}
+The script only publishes port 6379 on localhost (127.0.0.1), so Redis can only be reached from the same machine.
+Setting a password is still recommended, so that other processes on the server can't access it without one.
 
 The script doesn't support TLS, so leave `REDIS_TLS` unset when using it. TLS isn't needed, since SEEK connects to the
 container on the same machine.
@@ -116,11 +117,10 @@ sudo apt-get install redis-server redis-tools
 
 ### Starting Redis
 
-Whichever version you installed, enable and start the service:
+Whichever version you installed, enable and start the service with:
 
 ```bash
-sudo systemctl enable redis-server
-sudo systemctl start redis-server
+sudo systemctl enable --now redis-server
 ```
 
 Check that it's running with:
