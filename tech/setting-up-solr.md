@@ -6,14 +6,16 @@ description: Configure Apache Solr for search using Docker image or direct insta
 Since version _1.12_ of FAIRDOM-SEEK [Apache Solr](https://solr.apache.org/) now needs to be setup separately rather than using the built in _Sunspot Solr_ .
 
 This guide only relates to bare metal installations of FAIRDOM-SEEK. It doesn't affect using a 
-[Docker](docker/docker-compose) based installation, where the changes are already handled for you.
+[Docker Compose](docker/docker-compose) based installation, where Solr is provided by the `fairdom/seek-solr` image and the changes are already handled for you.
+
+From version _1.19_, SEEK requires **Solr 9**. If you are upgrading from an earlier version running Solr 8, see [Upgrading from Solr 8 to Solr 9](#upgrading-from-solr-8-to-solr-9).
 
 There are two alternatives to installing and running Apache Solr. If possible, the simplest is to use our Docker
 image. If this is not possible, there are also some instructions below on directly installing Apache Solr.
 
 ## Using the Docker Image
 
-Using Docker provides the easiest solution to running Solr for SEEK, using the official _solr:8.11.4_ image. The SEEK-specific configuration is mounted directly from your installation directory, so any configuration updates are automatically picked up when the container is restarted.
+Using Docker provides the easiest solution to running Solr for SEEK, using the official _solr:9.10.1_ image. The SEEK-specific configuration is mounted directly from your installation directory, and the configuration of the existing _seek_ core is refreshed from it each time the container is started, so any configuration updates are picked up when the container is restarted.
 
 You first need to have [Docker installed](docker/docker-install). We provide example scripts for managing the Solr service, which should be run from the root directory of your SEEK installation:
 
@@ -34,6 +36,8 @@ sh ./script/start-docker-solr.sh
 
 The Docker container will be named _seek-search_ and the volume named _seek-solr-data-volume_.
 
+{% include callout.html type="note" content="Inside the container Solr listens on all interfaces, and the script publishes port 8983 only on the host's localhost address (`127.0.0.1`), so Solr is not reachable from other machines. If Solr needs to be reached from a different machine to SEEK, you will need to change how the port is published in the script, but make sure it is not open to the public. Be aware that ports published by Docker bypass host firewall rules such as those set with _ufw_." %}
+
 Once running, and with search enabled, you can trigger jobs to reindex all searchable content with
 
 ```bash
@@ -44,7 +48,7 @@ bundle exec rake seek:reindex_all
 
 The following describes the steps for installing and setting up Solr on Ubuntu 24.04, but the process should be the same for
 all Debian based distributions, and very similar for others. It is based on the guide found at [https://tecadmin.net/install-apache-solr-on-ubuntu-20-04/](https://tecadmin.net/install-apache-solr-on-ubuntu-20-04/) 
-but the following steps have been updated for solr 8.11.4.
+but the following steps have been updated for solr 9.10.1.
 
 First you should make sure Java 21 is installed. OpenJDK is fine
 
@@ -69,9 +73,9 @@ The next step is to download and install Solr into _/opt/_, and set it up as a s
 
 ```bash
 cd /opt
-sudo wget https://downloads.apache.org/lucene/solr/8.11.4/solr-8.11.4.tgz
-sudo tar xzf solr-8.11.4.tgz solr-8.11.4/bin/install_solr_service.sh --strip-components=2
-sudo bash ./install_solr_service.sh solr-8.11.4.tgz
+sudo wget https://downloads.apache.org/solr/solr/9.10.1/solr-9.10.1.tgz
+sudo tar xzf solr-9.10.1.tgz solr-9.10.1/bin/install_solr_service.sh --strip-components=2
+sudo bash ./install_solr_service.sh solr-9.10.1.tgz
 ```
 
 The services can be stopped and started the usual way with
@@ -81,19 +85,21 @@ sudo service solr stop
 sudo service solr start
 ```
 
-You now need to set up the core configured for SEEK. Move to the root directory of the SEEK installation (in this example /srv/rails/seek), 
-and to avoid file permission issue copy the `solr` directory to a location where the `solr` user can access it, and then run the command to create the core with the configuration from SEEK.
+You now need to set up the core configured for SEEK. Move to the root directory of the SEEK installation (in this example /srv/rails/seek), copy the configuration to a temporary location, set ownership so the `solr` user can read it, and create the core.
 
 ```bash
 cd /srv/rails/seek
-cp -r solr /tmp/seek-solr
-sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr/seek/conf"
-rm -rf /tmp/seek-solr
+cp -r solr/seek /tmp/seek-solr-conf
+sudo chown -R solr:solr /tmp/seek-solr-conf
+sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr-conf"
+sudo rm -rf /tmp/seek-solr-conf
 ```
 
 The configuration and data for the SEEK core can be found in _/var/solr/data/seek_ .
 
 You should be able to confirm the service is running and the core setup by visiting [http://localhost:8983/solr](http://localhost:8983/solr)
+
+{% include callout.html type="note" content="Solr 9 only listens on localhost by default. If Solr is running on a different machine to SEEK, set `SOLR_JETTY_HOST` in _/etc/default/solr.in.sh_ to the address it should listen on, restart the service, and make sure the port is not open to the public." %}
 
 Solr is now setup, and you can trigger jobs to reindex the content with
 
@@ -107,7 +113,7 @@ When the Solr configuration changes between SEEK versions, the existing index da
 
 ### Using the Docker Image
 
-Since the configuration is mounted directly from your SEEK installation, no image update is required. Run the following from the root of your SEEK installation:
+Since the configuration is mounted directly from your SEEK installation, no image update is required, and simply restarting the container will apply the new configuration. However, to be sure the index is consistent with it, it is recommended to clear and rebuild the index. Run the following from the root of your SEEK installation:
 
 ```bash
 sh ./script/reset-docker-solr.sh
@@ -117,17 +123,72 @@ This will stop and remove the existing container, clear the index data, start a 
 
 ### Direct Installation
 
-Ensure the Solr service is running, then delete and recreate the core using the Solr CLI and trigger a full reindex. Run the following from the root of your SEEK installation (in this example /srv/rails/seek):
+Ensure the Solr service is running, then delete and recreate the core and trigger a full reindex. Run the following from the root of your SEEK installation (in this example /srv/rails/seek):
 
 ```bash
-cp -r solr/seek/conf /tmp/seek-solr-conf
+cd /srv/rails/seek
+cp -r solr/seek /tmp/seek-solr-conf
+sudo chown -R solr:solr /tmp/seek-solr-conf
 sudo su - solr -c "/opt/solr/bin/solr delete -c seek"
 sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr-conf"
+sudo rm -rf /tmp/seek-solr-conf
 bundle exec rake seek:reindex_all
-rm -rf /tmp/seek-solr-conf
 ```
 
-The config is copied to `/tmp` first so that the `solr` user can read it. Deleting the core also removes the existing index data, so a full reindex is required afterwards.
+The config is copied to `/tmp` and ownership set to the `solr` user before running the create command. Deleting the core also removes the existing index data, so a full reindex is required afterwards.
+
+## Upgrading from Solr 8 to Solr 9
+
+SEEK 1.19 and later requires Solr 9.10.1. The SEEK configuration has changed substantially for Solr 9, and an index created with Solr 8 cannot be reused, so the existing index must be deleted and rebuilt after upgrading.
+
+If you are using [Docker Compose](docker/docker-compose) see [Upgrading from Solr 8 to Solr 9](docker/docker-compose#upgrading-from-solr-8-to-solr-9) in the Docker Compose guide instead.
+
+### Using the Docker Image
+
+After updating your SEEK installation, run:
+
+```bash
+sh ./script/reset-docker-solr.sh
+```
+
+This will stop the existing container, remove the old data volume, start a fresh container using the new _solr:9.10.1_ image, and trigger a full reindex automatically.
+
+### Direct Installation
+
+First make sure Java 21 is installed, as described in [Installing Apache Solr](#installing-apache-solr). Then remove the existing Solr 8 installation. Leave `/var/solr` in place — the `solr` user and data directory will be reused by Solr 9.
+
+```bash
+sudo service solr stop
+sudo update-rc.d solr remove
+sudo rm -f /etc/init.d/solr
+sudo rm -rf /opt/solr /opt/solr-8.11.4 /opt/solr-8.11.4.tgz
+```
+
+Remove the existing seek core data. The Solr 9 installer starts the service immediately on completion, and Solr 9 cannot read a Solr 8 index, so the old data must be gone before installation:
+
+```bash
+sudo rm -rf /var/solr/data/seek
+```
+
+Download and install Solr 9.10.1. Note that the download URL path changed in Solr 9 from `lucene/solr/` to `solr/solr/`:
+
+```bash
+cd /opt
+sudo wget https://downloads.apache.org/solr/solr/9.10.1/solr-9.10.1.tgz
+sudo tar xzf solr-9.10.1.tgz solr-9.10.1/bin/install_solr_service.sh --strip-components=2
+sudo bash ./install_solr_service.sh solr-9.10.1.tgz
+```
+
+Create the seek core using the updated SEEK configuration. Run the following from the root of your SEEK installation (in this example `/srv/rails/seek`):
+
+```bash
+cd /srv/rails/seek
+cp -r solr/seek /tmp/seek-solr-conf
+sudo chown -R solr:solr /tmp/seek-solr-conf
+sudo su - solr -c "/opt/solr/bin/solr create -c seek -d /tmp/seek-solr-conf"
+sudo rm -rf /tmp/seek-solr-conf
+bundle exec rake seek:reindex_all
+```
 
 
 
