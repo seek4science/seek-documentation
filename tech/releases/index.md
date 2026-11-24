@@ -10,6 +10,17 @@ Please see [Getting FAIRDOM-SEEK]({{ "/get-seek" | relative_url }}) for details 
 
 If you have any comments or feedback about a release, then please [Contact Us]({{ "/contacting-us" | relative_url }}).
 
+## Version 1.18.5
+
+Release date: _23rd November 2026_
+
+A patch release that uses an updated version of Ruby and Nginx to fix discovered vulnerabilities.
+
+It mainly affects the Docker containers, but if running locally you should at least update to Ruby 3.3.14.
+If you use Nginx, check it has been updated with `apt` (or other package manager).
+
+**We strongly encourage updating your instance to this version.**
+
 ## Version 1.18.4
 
 Release date: _10th November 2026_
