@@ -10,6 +10,16 @@ Please see [Getting FAIRDOM-SEEK]({{ "/get-seek" | relative_url }}) for details 
 
 If you have any comments or feedback about a release, then please [Contact Us]({{ "/contacting-us" | relative_url }}).
 
+## Version 1.18.6
+
+Release date: _26th November 2026_
+
+A patch release that fixes a some issues where the content of hidden versions
+of a public item could be accessed in some circumstances.
+(thanks again to [Jonathan Kats](https://github.com/kats1123) for reporting).
+
+**We strongly encourage updating your instance to this version.**
+
 ## Version 1.18.5
 
 Release date: _23rd November 2026_
